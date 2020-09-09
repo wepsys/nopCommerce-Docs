@@ -1,0 +1,156 @@
+﻿---
+title: Manual (fixed or by weight and by total)
+uid: en/getting-started/configure-shipping/shipping-providers/manual
+author: git.AndreiMaz
+contributors: git.rajupaladiya, git.DmitriyKulagin, git.exileDev, git.mariannk
+---
+
+# Proveedor manual (fijo o por peso y por total)
+
+El envío manual (fijo o por peso y total) permite establecer tarifas fijas o calcular tarifas por peso y por total para todos los métodos de envío predefinidos.
+
+Para ver el ejemplo de cómo se puede aplicar este método a su tienda, consulte la sección [Ejemplo] (# ejemplo) a continuación.
+
+## Definir el proveedor de envío manual
+
+Vaya a **Configuración → Envío → Proveedores de envío**. Se muestra la ventana de proveedores de envío:
+
+![métodos de envío manual] (_static/manual/methods.jpg)
+
+Habilite el método de cálculo manual de tarifas de envío, de la siguiente manera:
+
+* En la fila **Manual (fijo o por peso y por total)**, haga clic en el botón **Editar**.
+* En la columna **Está activo**, marque la casilla de verificación.
+* Haga clic en el botón **Actualizar**. La opción *falso* se convierte en *verdadero*.
+
+Haga clic en el botón **Configurar** al lado de la opción Manual (fijo o por peso y por total) en la lista.
+
+Puede cambiar *Tarifa fija* cálculo de tarifa de envío a envío *Por peso/cálculo total* haciendo clic en el botón en la parte superior de la página.
+
+## Configurar tarifa fija
+
+![Configuración manual](_static/manual/fixed-rate-configure.jpg)
+
+Haga clic en el botón **Editar** al lado de un método de envío e ingrese la **Tarifa** y **Días de tránsito** (si es necesario) para ello.
+
+Haga clic en **Actualizar**.
+
+> [!NOTA]
+>
+> Puede agregar/eliminar métodos de envío en la *ventana de métodos de envío*, a la que se accede haciendo clic en! [Botón] (_static/manual/manual-shipping-manage-button.png) y restringir algunos métodos para los países seleccionados haciendo clic en! [Restricciones ](_static/manual/manual-shipping-restriction.png) en la parte superior.
+
+## Configurar tarifa por peso / total
+
+![por peso](_estático/manual/envío-manual-por-peso-total.png)
+
+La opción **envío por peso y por total** permite establecer diferentes tarifas de envío según el peso y el total del envío. La capacidad de cobrar diferentes tarifas según el peso y el total del envío ayuda a mantener bajos los costos de envío de la empresa cuando se envían artículos pesados, pero ofrece costos de envío razonables a los clientes que compran productos ligeros.
+
+Usar fórmula **[costo fijo adicional] + ([peso total del pedido] - [límite de peso inferior]) &veces; [tarifa por unidad de peso] + [order subtotal] &veces; [porcentaje de carga]**para calcular las tarifas, donde:
+
+* **costo fijo adicional** - es el costo del envío en caso de que el peso esté por debajo de cierto nivel (límite de peso más bajo).
+* **tarifa por unidad de peso** - es el costo de cada unidad de peso por encima del límite de peso inferior.
+* **subtotal del pedido y porcentaje de cargo**: son parámetros para calcular el costo adicional en función del subtotal del pedido.
+
+Por ejemplo, si tiene las siguientes condiciones de envío:
+
+* desde el peso 0 a 1 libra y el subtotal del pedido desde $ 1 y el subtotal del pedido hasta $ 10 el costo es $ 10. Debes crear las**siguientes reglas de envío**:
+  * Peso del pedido desde: **0**
+  * Peso del pedido hasta: **1**
+  * Subtotal del pedido desde: **1**
+  * Ordenar subtotal a: **10**
+  * Costo fijo adicional: **10**
+  * Límite de peso inferior: **0**
+  * Tarifa por unidad de peso: **0**
+* desde 1,1 libras a 2 libras y el subtotal del pedido desde $ 11 y el subtotal del pedido hasta $ 1000000 el costo es $ 15. Debes crear las **siguientes reglas de envío**:
+  * Peso del pedido desde: **1.000**
+  * Peso del pedido hasta: **2**
+  * Subtotal del pedido desde: **11**
+  * Ordenar subtotal a: **1000000**
+  * Costo fijo adicional: **15**
+  * Límite de peso inferior: **0**
+  * Tarifa por unidad de peso: **0**
+* más de 2 libras, el costo es de $ 3 por cada 0.5 libras adicionales. Debe crear las **siguientes reglas de envío**:
+  * Si su costo fijo es de $ 15 y $ 6 por libra de más de 2 libras
+  * Peso del pedido desde: **2.0001**
+  * Peso del pedido hasta: **99999**
+  * Costo fijo adicional: **15**
+  * Límite de peso inferior: **2**
+  * Tarifa por unidad de peso: **3**
+  
+> [!NOTA]
+>
+> Se cobrará proporcionalmente por peso adicional;
+> ejemplo por 2,1 libras cobrará $ 15 + (0,1 * 6) = $ 15,6
+
+Para agregar una nueva regla de envío, haga clic en **Agregar registro**. Se muestra la ventana *Agregar nuevo registro*:
+
+![Agregar regla](_static/manual/manual-shipping-add-new.jpg)
+
+Defina la siguiente información:
+
+* **Tienda** en la que se aplicarán las tarifas calculadas. Elija *para aplicar las reglas a todas las tiendas.
+* **Almacén** desde donde se realizará el envío. Elija *para aplicar las reglas a todos los almacenes.
+* **País, estado/provincia, código postal** de un destino de envío.
+* Seleccione un **método de envío** de la lista de opciones creadas previamente. Utilice **Administrar métodos de envío** en la parte superior para agregar/eliminar métodos de envío.
+* Cree su configuración de peso completando los campos **Peso del pedido desde** y **Peso del pedido hasta**. Si el peso del envío del cliente cae dentro de este rango, el costo adicional será fijo y se calculará de acuerdo con este registro.
+* Configure las reglas de precios para este registro usando los campos **Subtotal del pedido desde, Subtotal del pedido hasta, Costo fijo adicional, Límite de peso inferior, Tarifa por unidad de peso, Porcentaje de cargo (del subtotal)**.
+* Defina el campo **Días de tránsito** que define el número de días de entrega.
+
+> [!NOTA]
+>
+> Asegúrese de que la configuración **Configuración → Configuración → Configuración de envío → Considere las dimensiones y el peso de los productos asociados** sea verdadera.
+
+Clic en **Guardar**.
+
+> [!NOTA]
+>
+> Si desea limitar a sus clientes solo a los métodos configurados en esa pantalla, marque la casilla de verificación **Limitar los métodos de envío a los configurados** en la parte inferior de la página.
+
+
+## Configurar métodos de envío
+
+El propietario de una tienda puede definir la lista de métodos de envío requeridos utilizados en el proveedor *Manual (fijo o por peso y por total)*. Para administrar los métodos de envío:
+
+Vaya a **Configuración → Envío → Proveedores de envío**. Luego haga clic en el botón **Configurar** junto al proveedor *Manual (fijo o por peso y por total)*. Aparece la ventana de configuración:
+
+![Configurar](_static/manual/fixed-rate-configure.jpg)
+
+Haga clic en **Administrar métodos de envío**, se muestra la *ventana de métodos de envío*:
+
+![Métodos](_static/manual/fixed-rate-methods.jpg)
+
+Haga clic en el botón **Agregar nuevo**, se muestra la ventana *Agregar un nuevo método de envío*, de la siguiente manera:
+
+![Agregar nuevo](_static/manual/fixed-rate-methods-add-new.jpg)
+
+Defina los siguientes campos para un nuevo registro:
+
+* **Nombre** del método de envío visto por un cliente.
+* **Descripción** para el método de envío visto por un cliente.
+* **Mostrar orden** del método de envío. Un valor de 1 representa la parte superior de la lista.
+
+Clic en **Guardar**.
+
+> [!NOTA]
+>
+> Puede hacer clic en **Editar** en la ventana *Métodos de envío* para editar los métodos de envío existentes, como se describe anteriormente.
+
+## Restricciones del método de envío
+
+El propietario de una tienda puede definir restricciones para ciertos métodos de envío en ciertos países. Para hacerlo, vaya a **Configuración → Envío → Proveedores de envío**. Haga clic en el botón **Configurar** junto al proveedor * Manual (fijo o por peso y por total)*. Aparece la ventana de configuración:
+
+![Configurar](_static/manual/fixed-rate-configure.jpg)
+
+Haga clic en **Restricciones del método de envío**, se muestra la ventana *Restricciones del método de envío*:
+
+![Métodos](_estático/manual/fijo-restricciones-métodos.jpg)
+
+Seleccione uno o más de sus métodos de envío que desee deshabilitar en ciertos países.
+
+Si es necesario, puede seleccionar la columna de restricción completa para todos los países.
+
+Clic en **Guardar**.
+
+## Ejemplo
+
+[Ley dice que tiene una tienda ubicada en los EE. UU.](https://www.youtube.com/watch?v=1nYj0NqVUWw&t=8s)
