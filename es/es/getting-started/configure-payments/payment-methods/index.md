@@ -11,7 +11,7 @@ Un método de pago es la forma en que un cliente paga el pedido. nopCommerce adm
 
 Para definir los métodos de pago, vaya a **Configuración → Métodos de pago**.
 
-> [!SUGERENCIA]
+> [!TIP]
 >
 > De forma predeterminada, hay varios métodos de pago disponibles en nopCommerce, pero puede encontrar más complementos de pago en nopCommerce [marketplace] (https://www.nopcommerce.com/marketplace).
 
@@ -33,7 +33,7 @@ Haga clic en **Configurar** junto a un método de pago para configurarlo.
 
 ## Ver también
 
-* [Cheque/giropostal] (xref:en/Getting-started/configure-payments/payment-methods/cheque-money-order)
+* [Cheque/giropostal](xref:en/Getting-started/configure-payments/payment-methods/cheque-money-order)
 * [Tarjeta de crédito(procesamiento manual)](xref:es/Getting-started/configure-payments/payment-methods/credit-card-manual-processing)
 * [Estándar de PayPal](xref:en/Getting-started/configure-payments/payment-methods/paypal-standard)
 * [Botones de pago inteligente de PayPal](xref:es/Getting-started/configure-payments/payment-methods/paypal-smart-payment-buttons)

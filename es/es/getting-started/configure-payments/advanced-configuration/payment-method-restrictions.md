@@ -17,6 +17,6 @@ Seleccione las casillas de verificación del país o países en los que desea qu
 
 Clic en **Guardar**.
 
-> [!NOTA]
+> [!NOTE]
 >
 > Si es necesario, puede seleccionar la columna de restricción completa para todos los países.

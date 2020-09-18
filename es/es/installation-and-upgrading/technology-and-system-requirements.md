@@ -51,10 +51,10 @@ Para ejecutar nopCommerce, necesitará lo siguiente instalado en su servidor/com
 
 **Para nopCommerce 4.20 o superior. MS Visual Studio 2017 (versión 15.9 o superior). Y no olvide instalar .NET Core SDK ([descargar](https://dotnet.microsoft.com/download)). Requerido para desarrolladores que quieran editar el código fuente.**
 
-**Para nopCommerce 4.10 MS Visual Studio 2017 (versión 15.7 o superior). Y no olvide instalar .NET Core SDK ([descargar] (https://dotnet.microsoft.com/download)). Requerido para desarrolladores que quieran editar código fuente.**
+**Para nopCommerce 4.10 MS Visual Studio 2017 (versión 15.7 o superior). Y no olvide instalar .NET Core SDK ([descargar](https://dotnet.microsoft.com/download)). Requerido para desarrolladores que quieran editar código fuente.**
 
 **Para nopCommerce 4.00 o inferior. MS Visual Studio 2017 (versión 15.3 o superior). Y no olvide instalar .NET Core SDK ([descargar](https://dotnet.microsoft.com/download)). Requerido para desarrolladores que quieran editar el código fuente.**
 
-> [!NOTA]
+> [!NOTE]
 >
 > Si está instalando nopCommerce en Windows y va a utilizar la función de múltiples tiendas con SSL, entonces se requiere Windows Server 2012 con IIS 8 porque es compatible con SNI (Indicación de nombre de servidor).

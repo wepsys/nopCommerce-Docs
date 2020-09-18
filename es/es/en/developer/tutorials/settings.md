@@ -5,11 +5,11 @@ author: git.AndreiMaz
 contributors: git.exileDev
 ---
 
-# Settings API
+# Ajustes de la API
 
-Like any other website platforms nopCommerce has settings such as "Store name" or "One page checkout enabled". There are two ways to manage settings in nopCommerce.
+Como cualquier otra plataforma web, nopCommerce tiene ajustes como "Nombre de la tienda" o "Pago en una página habilitado". Hay dos maneras de administrar la configuración en nopCommerce.
 
-You can use **GetSettingByKey** and **SetSetting** methods of **ISettingService** implementation for loading and saving individual settings. The preferred approach for handling settings in nopCommerce is to create a new implementation of the **ISettings** interface. Each setting will be represented by a C# property and developers should rely on setting classes to be injected via the constructor when they are required. Below is an example settings class.
+Puede utilizar los métodos **GetSettingByKey** y **SetSetting** de implementación de **ISettingService** para cargar y guardar configuraciones individuales. El enfoque preferido para manejar las configuraciones en nopCommerce es crear una nueva implementación de la interfaz **ISettings**. Cada configuración estará representada por una propiedad C# y los desarrolladores deben confiar en las clases de configuración para ser inyectadas a través del constructor cuando sea necesario. A continuación se muestra un ejemplo de clase de configuración.
 
 ```csharp
 public class MediaSettings : ISettings

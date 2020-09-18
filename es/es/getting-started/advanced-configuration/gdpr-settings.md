@@ -44,7 +44,7 @@ Defina las siguientes configuraciones de consentimiento:
 
 A continuación, se muestra un ejemplo de una opción de consentimiento en la página de información del cliente:
 
-![acuerdo](_static/gdpr-settings/acuerdo.png)
+![agreement](_static/gdpr-settings/agreement.png)
 
 Si ha habilitado la configuración del registro de consentimiento, puede ver la actividad del registro yendo a: **Administración → Clientes → Solicitudes de GDPR (registro)**.
 

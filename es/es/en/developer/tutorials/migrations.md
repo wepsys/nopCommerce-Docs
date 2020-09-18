@@ -4,44 +4,44 @@ uid: en/developer/tutorials/migrations
 author: git.AndreiMaz
 contributors: git.skoshelev
 ---
-# How do migrations work?
+# ¿Cómo funcionan las migraciones?
 
-## Short description of the changes made in the approach to working with the database
+## Breve descripción de los cambios realizados en el enfoque de trabajo con la base de datos
 
-The work with the database was significantly reworked in the nopCommerce version 4.30. The first change that could be noticed is a complete rejection of navigation properties. We may think and argue about the usefulness of this approach but it definitely has a couple of positive points:
+El trabajo con la base de datos fue significativamente reelaborado en la versión 4.30 de nopCommerce. El primer cambio que se pudo notar es un completo rechazo de las propiedades de navegación. Podemos pensar y discutir sobre la utilidad de este enfoque, pero definitivamente tiene un par de puntos positivos:
 
-1. Simplify the understanding and maintenance of the code.
+1. Simplifica la comprensión y el mantenimiento del código.
     > [!NOTE]
-    > During the code refactoring, we found and corrected several inaccuracies affecting both performance and functionality.
-1. Full control over the queries and the moment of their execution (which positively affects the performance of the entire solution).
-1. Possibility to simplify the migration process to any database framework (most importantly).
+    > Durante la refactorización del código, encontramos y corregimos varias inexactitudes que afectaban tanto al rendimiento como a la funcionalidad.
+1. Control total sobre las consultas y el momento de su ejecución (lo que afecta positivamente al rendimiento de toda la solución).
+1. 2. Posibilidad de simplificar el proceso de migración a cualquier marco de base de datos (lo más importante).
 
-Since nopCommerce completely switched to .Net Core (version 4.10) and became a cross-platform solution, supporting several databases becomes more and more important issue. The nopCommerce team has conducted considerable research and analysis and decided to abandon the using of the standard Entity Framework Core. At the same time, we decided not to work with the database through LINQ queries using the OOP approach (what is the most common approach used by C#-developers). The final choice fell on a bunch of Linq2DB and FluentMigrator. Below, I will describe the role of each of these frameworks in details.
+Desde que nopCommerce cambió completamente a .Net Core (versión 4.10) y se convirtió en una solución multiplataforma, el soporte de varias bases de datos se convierte en un tema cada vez más importante. El equipo de nopCommerce ha llevado a cabo una considerable investigación y análisis y ha decidido abandonar el uso del estándar Entity Framework Core. Al mismo tiempo, decidimos no trabajar con la base de datos a través de consultas LINQ utilizando el enfoque OOP (que es el enfoque más común utilizado por los desarrolladores de C#). La elección final recayó en un montón de Linq2DB y FluentMigrator. A continuación, describiré el papel de cada uno de estos marcos en detalle.
 
 ## Linq2DB
 
 > [!NOTE]
-> Started from 4.30 version nopCommerce uses Linq2DB as an ORM Framework. Linq2DB is an object-relational mapper (ORM) that enables .NET developers to work with a database using .NET objects. It can map .Net objects to various numbers of Database providers.
+> A partir de la versión 4.30 nopCommerce utiliza Linq2DB como marco de trabajo ORM. Linq2DB es un mapeador objeto-relacional (ORM) que permite a los desarrolladores de .NET trabajar con una base de datos usando objetos .NET. Puede mapear objetos .Net a varios números de proveedores de bases de datos.
 
-In nopCommerce, Linq2DB is used as a database-access level. Currently, nopCommerce supports two the most popular databases: MS SQL Server and MySQL Server. If we analyze the code, we can easily see that each database is supported by its own class that implements the INopDataProvider interface. But if you do not plan to create your own database access provider, you can ignore the implementation details at all. For most development tasks, understanding just a few points will be sufficient:
+En nopCommerce, Linq2DB se utiliza como un nivel de acceso a la base de datos. Actualmente, nopCommerce soporta dos de las bases de datos más populares: MS SQL Server y MySQL Server. Si analizamos el código, podemos ver fácilmente que cada base de datos es soportada por su propia clase que implementa la interfaz INopDataProvider. Pero si no planea crear su propio proveedor de acceso a la base de datos, puede ignorar los detalles de implementación en absoluto. Para la mayoría de las tareas de desarrollo, la comprensión de sólo unos pocos puntos será suficiente:
 
-1. You need an object corresponding to the table in the database (POCO class).
-1. All work with table data is carried out through the IRepository `<TEntity>` interface. You do not even need to take care of its placement into the IoC, since it is registered through a call to the appropriate factory method.
-1. You need to control the creation of the table in the database.
+1. Necesita un objeto que corresponda a la tabla de la base de datos (clase POCO).
+1. Todo el trabajo con los datos de la tabla se lleva a cabo a través de la interfaz del IRepositorio `<TEntidad>`. No es necesario ni siquiera ocuparse de su colocación en la IO, ya que se registra a través de una llamada al método de fábrica apropiado.
+1. Necesitas controlar la creación de la tabla en la base de datos.
 
-And to solve the last problem, we need to deal with the second framework from the bundle, namely with FluentMigrator.
+Y para resolver el último problema, tenemos que ocuparnos del segundo marco del paquete, a saber, con FluentMigrator.
 
 ## FluentMigrator
 
 > [!NOTE]
-> Fluent Migrator is a migration framework for .NET much like Ruby on Rails Migrations. *Migrations* are a structured way to alter your database schema and are an alternative to creating lots of sql scripts that have to be run manually by every developer involved. Migrations solve the problem of evolving a database schema for multiple databases (for example, developer's local database, test database and production database). Database schema changes are described in classes written in C#. These classes can be checked into a version control system.
+> Fluent Migrator es un marco de migración para .NET muy parecido a Ruby on Rails Migrations. *Las migraciones* son una forma estructurada de alterar el esquema de tu base de datos y son una alternativa a la creación de muchos scripts sql que tienen que ser ejecutados manualmente por cada desarrollador involucrado. Las migraciones resuelven el problema de la evolución del esquema de una base de datos para múltiples bases de datos (por ejemplo, la base de datos local del desarrollador, la base de datos de prueba y la base de datos de producción). Los cambios en el esquema de la base de datos se describen en clases escritas en C#. Estas clases se pueden comprobar en un sistema de control de versiones.
 
-The detailed plan of adding your entities is described in the following article: [Plugin with data access](xref:en/developer/plugins/how-to-write-plugin-4.30). Therefore, we will remain only on general theoretical points:
+El plan detallado de añadir sus entidades se describe en el siguiente artículo:[Plugin with data access](xref:en/developer/plugins/how-to-write-plugin-4.30). Por lo tanto, nos quedaremos sólo en los puntos teóricos generales:
 
-1. Migrations are supported at the level of the nopCommerce code itself.
-1. You can create any migrations inherited from the abstract class **MigrationBase**.
-1. To simplify version control for migrations we added the **NopMigrationAttribute** attribute inherited from **MigrationAttribute** to the code. Now you can simply specify the date and time when the migration was created instead of the usual long number.
-1. We also added the **SkipMigrationOnUpdateAttribute** attribute that indicates if a migration should be skipped during the update process.
-1. You can create a table in the database in two ways:
-    * Use **Create.Table** method in the **Up** method of your migration class and specify all details using the extension methods.
-    * Use **IMigrationManager.BuildTable\<T\>** method in the **Up** method of your migration class and specify all details, if needed, using the implementation of the **IEntityBuilder** and **INameCompatibility** interfaces (in nopCommerce we use this approach).
+1. Las migraciones se soportan a nivel del propio código de nopCommerce.
+1. Puedes crear cualquier migración heredada de la clase abstracta **MigrationBase**.
+1. Para simplificar el control de versiones para las migraciones hemos añadido el atributo **NopMigrationAttribute** heredado de **MigrationAttribute** al código. Ahora puede simplemente especificar la fecha y la hora en que se creó la migración en lugar del número largo habitual.
+1. También añadimos el atributo **SkipMigrationOnUpdateAttribute** que indica si una migración debe ser omitida durante el proceso de actualización.
+1. Puede crear una tabla en la base de datos de dos maneras:
+    * Utilice el método **Create.Table** en el método **Up** de su clase de migración y especifique todos los detalles utilizando los métodos de extensión.
+    * Utilice el método **IMigrationManager.BuildTable\<T\>** en el método **Up** de su clase de migración y especifique todos los detalles, si es necesario, utilizando la implementación de las interfaces **IEntityBuilder** y **INameCompatibility** (en nopCommerce utilizamos este enfoque).

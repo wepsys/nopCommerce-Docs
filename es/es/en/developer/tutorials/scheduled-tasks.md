@@ -5,19 +5,19 @@ author: git.AndreiMaz
 contributors: git.sinaislam, git.DmitriyKulagin, git., git.exileDev
 ---
 
-# Scheduled Tasks
+# Tareas programadas
 
-With Scheduled tasks, you can schedule a task to run at certain periods. For example, nopCommerce sends queued emails periodically. The basic steps to create a new task are:
+Con las tareas programadas, se puede programar una tarea para que se ejecute en determinados períodos. Por ejemplo, nopCommerce envía periódicamente correos electrónicos en cola. Los pasos básicos para crear una nueva tarea son:
 
-1. Define a class which implements **IScheduleTask** interface. It has only one method that takes no arguments; **Execute**. As you guessed this method is invoked when the task should be run.
+1. Definir una clase que implemente la interfaz **IScheduleTask**. Sólo tiene un método que no toma argumentos; **Ejecutar**. Como has adivinado, este método es invocado cuando la tarea debe ser ejecutada.
 
-1. To schedule a task the developer should insert a new **ScheduleTask** record into the appropriate database table. You can use **IScheduleTaskService** for inserting such a record.
+1. Para programar una tarea el desarrollador debe insertar un nuevo registro **ScheduleTask** en la tabla de la base de datos apropiada. Puede utilizar **IScheduleTaskService** para insertar dicho registro.
 
 > [!IMPORTANT]
 > 
-> When insert the new record into **ScheduleTask** database table for new **ScheduleTask**, it is important to keep **Type** column  format **Namespace.TaskClassName, AssemblyName**.
+> Cuando se inserte el nuevo registro en la tabla de la base de datos de **ScheduleTask** para el nuevo **ScheduleTask**, es importante mantener el formato de columna **Namespace.TaskClassName, AssemblyName**.
 
-## Troubleshooting
+## Solución de problemas
 
-- Make sure your store has a valid URL.
-- Restart the application after adding new schedule task.
+- Asegúrate de que tu tienda tenga una URL válida.
+- Reinicie la aplicación después de agregar una nueva tarea programada.

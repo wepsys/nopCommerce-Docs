@@ -7,20 +7,20 @@ contributors: git.nopsg, git.DmitriyKulagin
 
 # Cómo escribir un widget para nopCommerce
 
-Para ampliar la funcionalidad de nopCommerce, se utilizan widgets. Hay varios tipos de widgets como [NivoSlider] (https://github.com/nopSolutions/nopCommerce/tree/master/src/Plugins/Nop.Plugin.Widgets.NivoSlider) y [Google Analytics](https://github.com/nopSolutions/nopCommerce/tree/master/src/Plugins/Nop.Plugin.Widgets.GoogleAnalytics) que ya se encuentran en el repositorio de nopCommerce. El mercado de nopCommerce ya contiene varios widgets (tanto gratuitos como de pago) que pueden cumplir con sus requisitos. Si no ha encontrado uno, entonces está en el lugar correcto porque este artículo lo guiará a través del proceso de creación de un widget de acuerdo con sus necesidades.
+Para ampliar la funcionalidad de nopCommerce, se utilizan widgets. Hay varios tipos de widgets como [NivoSlider](https://github.com/nopSolutions/nopCommerce/tree/master/src/Plugins/Nop.Plugin.Widgets.NivoSlider) y [Google Analytics](https://github.com/nopSolutions/nopCommerce/tree/master/src/Plugins/Nop.Plugin.Widgets.GoogleAnalytics) que ya se encuentran en el repositorio de nopCommerce. El mercado de nopCommerce ya contiene varios widgets (tanto gratuitos como de pago) que pueden cumplir con sus requisitos. Si no ha encontrado uno, entonces está en el lugar correcto porque este artículo lo guiará a través del proceso de creación de un widget de acuerdo con sus necesidades.
 
 ## La estructura del widget, los archivos necesarios y las ubicaciones
 
 1. Empiece por crear un nuevo proyecto **Biblioteca de clases** en la solución. Se recomienda colocar su widget en el directorio **Complementos**, ubicado en la carpeta raíz de la fuente, donde ya se encuentran otros widgets y complementos.
 
-    ! [image1] (_static/cómo-escribir-un-widget-para-nopCommerce/image1.png)
+    ![image1](_static/how-to-write-a-widget-for-nopCommerce/image1.png)
 
-    > [!NOTA]
-    > No confunda este directorio con el que existe en el directorio `Presentation\ Nop.Web`. El directorio de complementos en el directorio Nop.Web contiene los archivos compilados de complementos.
+    > [!NOTE]
+    > No confunda este directorio con el que existe en el directorio `Presentation\Nop.Web`. El directorio de complementos en el directorio Nop.Web contiene los archivos compilados de complementos.
 
-    Un nombre recomendado para un proyecto de widget es `Nop.Plugin.Widgets. {Name}`. `{Name}` es el nombre de su widget (por ejemplo, "** GoogleAnalytics **"). Por ejemplo, *el widget de Google Analytics* tiene el siguiente nombre: `Nop.Plugin.Widgets.GoogleAnalytics`. Pero tenga en cuenta que no es un requisito. Y puede elegir cualquier nombre para un widget. Por ejemplo, "*MyFirstNopWidget*". La estructura del directorio de complementos de una solución se parece a la siguiente.
+    Un nombre recomendado para un proyecto de widget es `Nop.Plugin.Widgets. {Name}`. `{Name}` es el nombre de su widget (por ejemplo, "**GoogleAnalytics**"). Por ejemplo, *el widget de Google Analytics* tiene el siguiente nombre: `Nop.Plugin.Widgets.GoogleAnalytics`. Pero tenga en cuenta que no es un requisito. Y puede elegir cualquier nombre para un widget. Por ejemplo, "*MyFirstNopWidget*". La estructura del directorio de complementos de una solución se parece a la siguiente.
 
-    ! [image2] (_static/cómo-escribir-un-widget-para-nopCommerce/image2.png)
+      ![image2](_static/how-to-write-a-widget-for-nopCommerce/image2.png)
 
 1. Una vez creado el proyecto de widget, el contenido del archivo **.Csproj** debe actualizarse utilizando cualquier aplicación de edición de texto disponible. Reemplace el contenido con el siguiente:
 
@@ -87,12 +87,12 @@ Para ampliar la funcionalidad de nopCommerce, se utilizan widgets. Hay varios ti
 
 Ahora puede ver el widget yendo a **Área de administración** → **Configuración** → **Complementos locales**.
 
-! [image4] (_ static / cómo-escribir-un-widget-para-nopCommerce / image4.png)
+![image4](_static/how-to-write-a-widget-for-nopCommerce/image4.png)
 
 Cuando se instala un complemento / widget, verá el botón **Desinstalar**. *Para mejorar el rendimiento, es una buena práctica desinstalar los complementos / widgets que no son necesarios*.
 
-! [image5] (_ static / cómo-escribir-un-widget-para-nopCommerce / image5.png)
-Habrá el botón **Instalar** y **Eliminar** cuando un complemento / widget no esté instalado o desinstalado. *La eliminación eliminará los archivos físicos del servidor*.
+![image5](_static/how-to-write-a-widget-for-nopCommerce/image5.png)
+Habrá el botón **Instalar** y **Eliminar** cuando un complemento/widget no esté instalado o desinstalado. *La eliminación eliminará los archivos físicos del servidor*.
 
 Pero como habrás adivinado, nuestro widget no hace nada. Ni siquiera tiene una interfaz de usuario para su configuración. Creemos una página para configurar el widget.
 
@@ -119,11 +119,11 @@ Así que comencemos:
     }
     ```
 
-1.También asegúrese de tener el archivo **_ViewImports.cshtml** en su directorio `Views`. Puede copiarlo desde cualquier otro complemento o widget existente.
+3.También asegúrese de tener el archivo **_ViewImports.cshtml** en su directorio `Views`. Puede copiarlo desde cualquier otro complemento o widget existente.
 
-     ![image7] (_static/cómo-escribir-un-widget-para-nopCommerce/image7.png)
+ ![image7](_static/how-to-write-a-widget-for-nopCommerce/image7.png)
 
-1. Cree el controlador. Agregue una carpeta `Controllers` en el nuevo widget y luego agregue una nueva clase de controlador. Una buena práctica es nombrar los controladores de complementos `Widgets {Nombre} Controller.cs`. Por ejemplo, **WidgetsGoogleAnalyticsController**. Por supuesto, no es un requisito nombrar a los controladores de esta manera, sino solo una recomendación. Luego, cree un método de acción apropiado para la página de configuración (en el área de administración). Vamos a llamarlo "` Configurar` ". Prepara una clase de modelo y pásala a la siguiente vista usando una ruta de vista física: `~ / Plugins / {PluginOutputDirectory} / Views / Configure.cshtml`.
+4. Cree el controlador. Agregue una carpeta `Controllers` en el nuevo widget y luego agregue una nueva clase de controlador. Una buena práctica es nombrar los controladores de complementos `Widgets {Nombre} Controller.cs`. Por ejemplo, **WidgetsGoogleAnalyticsController**. Por supuesto, no es un requisito nombrar a los controladores de esta manera, sino solo una recomendación. Luego, cree un método de acción apropiado para la página de configuración (en el área de administración). Vamos a llamarlo "` Configurar` ". Prepara una clase de modelo y pásala a la siguiente vista usando una ruta de vista física: `~ / Plugins / {PluginOutputDirectory} / Views / Configure.cshtml`.
 
     ```cs
     public IActionResult Configure()
@@ -217,5 +217,5 @@ Este paso es opcional. Algunos widgets pueden requerir lógica adicional durante
     }
     ```
 
-    > [!IMPORTANTE]
-    > Si anula uno de estos métodos, no oculte su implementación base - **base.Install()** and **base.Uninstall()** que ha sido marcado en las imágenes de arriba.
+ >[!IMPORTANTE]
+ > Si anula uno de estos métodos, no oculte su implementación base - **base.Install()** and **base.Uninstall()** que ha sido marcado en las imágenes de arriba

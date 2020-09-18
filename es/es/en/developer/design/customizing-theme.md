@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---
 
-#Personalización de temas de nopCommerce
+# Personalización de temas de nopCommerce
 
 ## Subiendo el logo de tu tienda
 
@@ -39,7 +39,7 @@ Para cargar el logotipo de su tienda en un sitio web de nopCommerce, existen bá
 1. Cambie logo.gif con `YourLogo.gif/jpg/png`
 1. Guarde los cambios en el archivo `Header.cshtml`
 
-> [!IMPORTANTE]
+> [!IMPORTANT]
 >
 > Es posible que deba actualizar el navegador o eliminar el historial o las cookies de su navegador para ver los cambios (nuevo logotipo de la tienda).
 

@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.exileDev, git.DmitriyKulagin
 ---
 
-#Descripción general (guía del diseñador)
+# Descripción general (guía del diseñador)
 
 ## Qué es un tema
 

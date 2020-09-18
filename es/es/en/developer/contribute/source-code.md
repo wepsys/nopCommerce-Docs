@@ -29,5 +29,3 @@ Si desea contribuir con algún código fuente al núcleo de nopCommerce (correcc
 * Crear una nueva rama de "desarrollar". Por favor, cree siempre una nueva sucursal para cada contribución. Debe crearlo únicamente a partir de nuestra rama de "desarrollo". No utilice "maestro".
 * Escriba el código y vuelva a su bifurcación de GitHub.
 * Crear solicitud de extracción. Por favor, lea más sobre esto en [https://help.github.com/articles/using-pull-requests/](https://help.github.com/articles/using-pull-requests/). Y por favor, siempre sincronice con nuestro repositorio antes de hacerlo.
-
-

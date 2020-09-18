@@ -9,13 +9,13 @@ contributors: git.nopsg, git.DmitriyKulagin
 
 ## Visión general
 
-Este artículo contiene una descripción del archivo `appsettings.json` y la` clase NopConfig`. En este artículo explicaremos cuáles son las diferentes configuraciones disponibles en estos archivos, qué hace cada configuración y cuándo usar esta configuración para cambiar la funcionalidad/comportamiento del proyecto nopCommerce.
+Este artículo contiene una descripción del archivo `appsettings.json` y la `clase NopConfig`. En este artículo explicaremos cuáles son las diferentes configuraciones disponibles en estos archivos, qué hace cada configuración y cuándo usar esta configuración para cambiar la funcionalidad/comportamiento del proyecto nopCommerce.
 
 ## descripción general del archivo appsettings.json
 
-Si ha trabajado en el proyecto `ASP.NET core` anteriormente o está familiarizado con el` ASP.NET core`, entonces es posible que haya usado el archivo `appsettings.json` y tenga algún conocimiento de qué es este archivo y para qué se usa. para.
+Si ha trabajado en el proyecto `ASP.NET core` anteriormente o está familiarizado con el `ASP.NET core`, entonces es posible que haya usado el archivo `appsettings.json` y tenga algún conocimiento de qué es este archivo y para qué se usa. para.
 
-El archivo `appsettings.json` se usa generalmente para almacenar los ajustes de configuración de la aplicación, como las cadenas de conexión de la base de datos, las variables globales del alcance de la aplicación y mucha otra información. En realidad, en `ASP.NET Core`, los ajustes de configuración de la aplicación se pueden almacenar en diferentes fuentes de configuración, como el archivo` appsettings.json`, el archivo `appsettings. {EnvironmentName}.json` (donde{Environment} es el alojamiento actual de la aplicación entornos como Desarrollo, Puesta en escena o Producción), `Secretos de usuario` (donde solíamos almacenar información confidencial), etc.
+El archivo `appsettings.json` se usa generalmente para almacenar los ajustes de configuración de la aplicación, como las cadenas de conexión de la base de datos, las variables globales del alcance de la aplicación y mucha otra información. En realidad, en `ASP.NET Core`, los ajustes de configuración de la aplicación se pueden almacenar en diferentes fuentes de configuración, como el archivo `appsettings.json`, el archivo `appsettings. {EnvironmentName}.json` (donde{Environment} es el alojamiento actual de la aplicación entornos como Desarrollo, Puesta en escena o Producción), `Secretos de usuario` (donde solíamos almacenar información confidencial), etc.
 
 ## Configuraciones disponibles en el archivo appsettings.json
 
@@ -29,7 +29,7 @@ Esta configuración espera un valor booleano. El valor predeterminado es "**fals
 
 #### UseHttpXForderedProto
 
-Esta configuración espera un valor booleano. El valor predeterminado es "**falso**". Es posible que desee establecer el valor en "**verdadero**" si su alojamiento utiliza un equilibrador de carga y si está habilitando la configuración **`UseHttpClusterHttps`** anterior. Esta configuración se usa para agregar **`X-Fordered-Proto`** en el encabezado` HTTP`. **`X-Fordered-Proto`** es un encabezado HTTP y es parte del estándar HTTP. Se establece en cada solicitud HTTP por un proxy o equilibrador de carga y puede ser utilizado por una aplicación de servidor para determinar qué protocolo utilizó el cliente para conectarse.
+Esta configuración espera un valor booleano. El valor predeterminado es "**falso**". Es posible que desee establecer el valor en "**verdadero**" si su alojamiento utiliza un equilibrador de carga y si está habilitando la configuración **`UseHttpClusterHttps`** anterior. Esta configuración se usa para agregar **`X-Fordered-Proto`** en el encabezado `HTTP`. **`X-Fordered-Proto`** es un encabezado HTTP y es parte del estándar HTTP. Se establece en cada solicitud HTTP por un proxy o equilibrador de carga y puede ser utilizado por una aplicación de servidor para determinar qué protocolo utilizó el cliente para conectarse.
 
 #### ForderedHttpHeader
 
@@ -57,6 +57,6 @@ Podemos usar "Azure Blob Storage" para almacenar datos de blobs. nopCommerce ya 
 
 nopCommerce admite *Redis* listo para usar. Para habilitar el `Redis` en nuestra aplicación, debemos establecer el valor apropiado para las siguientes configuraciones. Para obtener más información sobre [Redis](https://azure.microsoft.com/documentation/articles/cache-dotnet-how-to-use-azure-redis-cache).
 
-* **RedisEnabled:** Esta configuración espera un valor booleano. Establezca el valor en ** "verdadero" ** si desea habilitar `Redis`.
+* **RedisEnabled:** Esta configuración espera un valor booleano. Establezca el valor en **"verdadero"** si desea habilitar `Redis`.
 * **RedisDatabaseId:** ID de la base de datos de Redis. Si necesita utilizar una base de datos de Redis específica, simplemente establezca su número aquí. Establezca vacío si debe usar la base de datos diferente para cada tipo de datos (usado por defecto). establezca -1 si desea utilizar la base de datos predeterminada.
 * **RedisConnectionString:**

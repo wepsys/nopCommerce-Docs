@@ -15,10 +15,10 @@ Para ampliar la funcionalidad de nopCommerce, se utilizan complementos. Hay vari
 
     ![image1](_static/how-to-write-a-tax-plugin-4.20/image1.png)
 
-    > [!NOTA]
+    > [!NOTe]
     > No confunda este directorio con el que existe en el directorio `Presentation \ Nop.Web`. El directorio de complementos en el directorio Nop.Web contiene los archivos compilados de complementos.
 
-    Un nombre recomendado para un proyecto de complemento es `Nop.Plugin. {Group}. {Name}`. `{Grupo}` es su grupo de complementos (por ejemplo, `Pago` o` Envío`). `{Name}` es el nombre de su complemento (por ejemplo, `FixedOrByCountryStateZip`). Por ejemplo, el complemento de impuestos `FixedOrByCountryStateZip` tiene el siguiente nombre:` Nop.Plugin.Tax.FixedOrByCountryStateZip`. Pero tenga en cuenta que no es un requisito. Y puede elegir cualquier nombre para un complemento. Por ejemplo, `MyFirstTaxPlugin`. La estructura del directorio de complementos de una solución es la siguiente.
+    Un nombre recomendado para un proyecto de complemento es `Nop.Plugin. {Group}. {Name}`.`{Grupo}` es su grupo de complementos (por ejemplo,`Pago` o `Envío`). `{Name}` es el nombre de su complemento (por ejemplo, `FixedOrByCountryStateZip`). Por ejemplo, el complemento de impuestos `FixedOrByCountryStateZip` tiene el siguiente nombre: `Nop.Plugin.Tax.FixedOrByCountryStateZip`. Pero tenga en cuenta que no es un requisito. Y puede elegir cualquier nombre para un complemento. Por ejemplo, `MyFirstTaxPlugin`. La estructura del directorio de complementos de una solución es la siguiente.
 
     ![image2](_static/how-to-write-a-tax-plugin-4.20/image2.png)
 
@@ -52,7 +52,7 @@ Para ampliar la funcionalidad de nopCommerce, se utilizan complementos. Hay vari
     </Project>
     ```
 
-    > [!NOTA]
+    > [!NOTE]
      > El **PLUGIN_OUTPUT_DIRECTORY** debe reemplazarse por el nombre del complemento, por ejemplo, `Tax.FixedOrByCountryStateZip`.
 
 1. Después de actualizar el archivo **.Csproj**, se debe agregar el archivo `plugin.json`, que es necesario para el complemento. Este archivo contiene metainformación que describe su complemento. Simplemente copie este archivo de cualquier otro complemento / widget existente y modifíquelo según sus necesidades. Por ejemplo, el complemento **FixedOrByCountryStateZip** tiene el siguiente archivo `plugin.json`:
@@ -75,7 +75,7 @@ Para ampliar la funcionalidad de nopCommerce, se utilizan complementos. Hay vari
 
     ![image3](_static/how-to-write-a-tax-plugin-4.20/image3.png)
 
-1. El último paso requerido es crear una clase que implemente `BasePlugin` (espacio de nombres` Nop.Core.Plugins`) y la interfaz `ITaxProvider` (espacio de nombres` Nop.Services.Tax`). **ITaxProvider** implementa el método `GetTaxRate` que devuelve el tipo **CalculateTaxResult** (contiene la tasa de impuestos, los errores si los hay y el estado de éxito booleano) basado en la lógica personalizada, generalmente basada en la dirección del cliente.
+1. El último paso requerido es crear una clase que implemente `BasePlugin` (espacio de nombres `Nop.Core.Plugins`) y la interfaz `ITaxProvider` (espacio de nombres `Nop.Services.Tax`). **ITaxProvider** implementa el método `GetTaxRate` que devuelve el tipo **CalculateTaxResult** (contiene la tasa de impuestos, los errores si los hay y el estado de éxito booleano) basado en la lógica personalizada, generalmente basada en la dirección del cliente.
 
 ## Manejo de solicitudes. Controladores, modelos y vistas
 
@@ -89,7 +89,7 @@ Cuando se instala un complemento/widget, verá el botón **Desinstalar**. Es una
 
 Habrá el botón **Instalar** y **Eliminar** cuando un complemento/widget no esté instalado o desinstalado.
 
-> [!NOTA]
+> [!NOTe]
 > La eliminación eliminará los archivos físicos del servidor.
 
 Pero como adivinó, nuestro complemento no hace nada. Ni siquiera tiene una interfaz de usuario para su configuración. Creemos una página para configurar el complemento.
@@ -98,13 +98,13 @@ Lo que tenemos que hacer ahora es crear un controlador, un modelo, una vista y u
 
 * Los controladores MVC son responsables de responder a las solicitudes realizadas en un sitio web `ASP.NET MVC`. Cada solicitud del navegador se asigna a un controlador en particular.
 * Una vista contiene el marcado HTML y el contenido que se envía al navegador. Una vista es el equivalente a una página cuando se trabaja con una aplicación `ASP.NET MVC`.
-* Un componente de vista que implementa ** NopViewComponent ** que contiene lógica y códigos para representar una vista.
+* Un componente de vista que implementa **NopViewComponent** que contiene lógica y códigos para representar una vista.
 * Un modelo MVC contiene toda la lógica de su aplicación que no está contenida en una vista o un controlador.
 
 Así que comencemos:
 
-* ** Crea el modelo **. Agregue una carpeta `Modelos` en el nuevo complemento y luego agregue una nueva clase de modelo que se adapte a sus necesidades.
-* ** Crea la vista **. Agregue una carpeta `Vistas` en el nuevo complemento y luego agregue un archivo` .cshtml` llamado `Configure.cshtml`. Establecer la propiedad ** Acción de compilación ** del archivo de vista se establece en ** Contenido **, y la propiedad ** Copiar en el directorio de salida ** se establece en ** Copiar siempre **. Tenga en cuenta que la página de configuración debe usar el diseño * _ConfigurePlugin *.
+* **Crea el modelo**. Agregue una carpeta `Modelos` en el nuevo complemento y luego agregue una nueva clase de modelo que se adapte a sus necesidades.
+* **Crea la vista**. Agregue una carpeta `Vistas` en el nuevo complemento y luego agregue un archivo`.cshtml` llamado `Configure.cshtml`. Establecer la propiedad **Acción de compilación** del archivo de vista se establece en **Contenido**, y la propiedad **Copiar en el directorio de salida** se establece en **Copiar siempre**. Tenga en cuenta que la página de configuración debe usar el diseño *ConfigurePlugin*.
 
 ```html
 @model Nop.Plugin.Tax.FixedOrByCountryStateZip.Models.ConfigurationModel
@@ -162,9 +162,9 @@ Así que comencemos:
 @await Html.PartialAsync("~/Plugins/Tax.FixedOrByCountryStateZip/Views/_CountryStateZip.cshtml", Model)
 ```
 
-*También asegúrese de que tiene **_ViewImports.cshtml**  en el directorio 'Views'.  Puede copiarlo desde cualquier otro plugin o widget existente.
+* También asegúrese de que tiene **_ViewImports.cshtml**  en el directorio 'Views'.  Puede copiarlo desde cualquier otro plugin o widget existente.
 
-![image6](_static/cómo escribir-a-tax-plugin-4.20/image6.png)
+![image6](_static/how-to-write-a-tax-plugin-4.20/image6.png)
 
 * **Crear el controlador**. Agregue una carpeta 'Controllers'  en el nuevo plugin y, a continuación, agregue una nueva clase de controlador. Una buena práctica es nombrar controladores de plugin  **-Grupo-Nombre-Controller.cs**. Por ejemplo,  'FixedOrByCountryStateZipController'. Por supuesto, no es un requisito nombrar controladores de esta manera (pero sólo una recomendación). A continuación, cree un método de acción adecuado para la página de configuración (en el área de administración). Vamos a llamarlo  'Configurar'. Prepare una clase de modelo y páselo a la siguiente vista mediante una ruta de acceso de vista física:  **/Plugins/-PluginOutputDirectory/Views/Configure.cshtml**.
 
@@ -251,7 +251,7 @@ public override void Configure(EntityTypeBuilder<TaxRate> builder)
 }
 ```
 
-La clase Object Context implementa la clase **DbContext** (espacio de nombres `Microsoft.EntityFrameworkCore`) y la interfaz **IDbContext** (espacio de nombres` Nop.Data`). Esta interfaz `IDbContext` consta de métodos relacionados con la creación, eliminación de tablas y otras acciones personalizadas como ejecutar una consulta SQL sin procesar de acuerdo con el modelo que se agregó previamente en la carpeta` Dominio`.
+La clase Object Context implementa la clase **DbContext** (espacio de nombres `Microsoft.EntityFrameworkCore`) y la interfaz **IDbContext** (espacio de nombres `Nop.Data`). Esta interfaz `IDbContext` consta de métodos relacionados con la creación, eliminación de tablas y otras acciones personalizadas como ejecutar una consulta SQL sin procesar de acuerdo con el modelo que se agregó previamente en la carpeta `Dominio`.
 
 ```cs
 public class CountryStateZipObjectContext : DbContext, IDbContext
@@ -374,7 +374,7 @@ public class CountryStateZipObjectContext : DbContext, IDbContext
 }
 ```
 
-Para la operación de tasas impositivas **CRUD**, se crean servicios. En este caso, se crea la interfaz **ICountryStateZipService** y la clase **CountryStateZipService**. Contiene métodos como `InsertTaxRate`,` UpdateTaxRate`, `DeleteTaxRate`,` GetAllTaxRates` y `GetTaxRateById`. Estos nombres de métodos se explican por sí mismos y serán consumidos por los controladores. Se pueden introducir / agregar otros métodos según los requisitos.
+Para la operación de tasas impositivas **CRUD**, se crean servicios. En este caso, se crea la interfaz **ICountryStateZipService** y la clase **CountryStateZipService**. Contiene métodos como `InsertTaxRate`, `UpdateTaxRate`, `DeleteTaxRate`,`GetAllTaxRates` y `GetTaxRateById`. Estos nombres de métodos se explican por sí mismos y serán consumidos por los controladores. Se pueden introducir/agregar otros métodos según los requisitos.
 
 ### ICountryStateZipService.cs
 
@@ -527,9 +527,9 @@ public partial class CountryStateZipService : ICountryStateZipService
 }
 ```
 
-Lo último que necesitamos es registrar los servicios y configurar el contexto de la base de datos del complemento al iniciar la aplicación. Para esto, se agrega la carpeta **Infraestructura** que contiene las clases: `DependencyRegister` y` PluginDbStartup`.
+Lo último que necesitamos es registrar los servicios y configurar el contexto de la base de datos del complemento al iniciar la aplicación. Para esto, se agrega la carpeta **Infraestructura** que contiene las clases: `DependencyRegister` y `PluginDbStartup`.
 
-La clase **DependencyRegister** implementa la interfaz `IDependencyRegister` (espacio de nombres` Nop.Core.Infrastructure.DependencyManagement`) que tiene el método `Register`.
+La clase **DependencyRegister** implementa la interfaz `IDependencyRegister` (espacio de nombres `Nop.Core.Infrastructure.DependencyManagement`) que tiene el método `Register`.
 
 ```cs
 public class DependencyRegistrar : IDependencyRegistrar
@@ -561,7 +561,7 @@ public class DependencyRegistrar : IDependencyRegistrar
 }
 ```
 
-De manera similar, la clase **PluginDbStartup** implementa la interfaz `INopStartup` (espacio de nombres` Nop.Core.Infrastructure`) que tiene los métodos `ConfigureServices` y` Configure`. Para este ejemplo, el contexto del objeto se agrega en el método `ConfigureServices`.
+De manera similar, la clase **PluginDbStartup** implementa la interfaz `INopStartup` (espacio de nombres `Nop.Core.Infrastructure`) que tiene los métodos `ConfigureServices` y `Configure`. Para este ejemplo, el contexto del objeto se agrega en el método `ConfigureServices`.
 
 ```cs
 public class PluginDbStartup : INopStartup
@@ -679,5 +679,5 @@ public override void Uninstall()
 }
 ```
 
-> [!IMPORTANTE]
+> [!IMPORTANT]
 > Si anula uno de estos métodos, no oculte su implementación base -base.Install () y base.Uninstall ().

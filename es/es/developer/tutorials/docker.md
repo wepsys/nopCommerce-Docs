@@ -53,7 +53,7 @@ Este documento describe una guía paso a paso para compilar y ejecutar un conten
 
     Este comando lanzará nuestro contenedor en segundo plano (bandera [-d]) y establecerá el puerto 80 desde el contenedor al puerto 80 de la máquina host (bandera [–p]).
 
-    > [!CONSEJO]
+    > [!TIP]
     > 
     > Puede ver la lista de contenedores en ejecución con el siguiente comando:
     > 

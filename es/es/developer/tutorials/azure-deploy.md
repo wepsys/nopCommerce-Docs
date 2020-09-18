@@ -5,26 +5,26 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---
 
-# Paso a paso para implementar en Azure con GIT y compilaciones automáticas
+## Paso a paso para implementar en Azure con GIT y compilaciones automáticas
 
 ## Guía paso a paso para la implementación automática de nopCommerce con git en azure
 
 1. **Tu propio repositorio git** Necesitas tu propio repositorio, no puedes simplemente construir nopCommerce. Está diseñado para usarse con la función "Publicar" en Visual Studio 2017 de forma predeterminada. Yo mismo uso Bitbucket y lo mantengo sincronizado con el repositorio oficial.
 
 1. Configurar git en Azure
-    - Tutorial: [https://azure.microsoft.com/da-dk/documentation/articles/web-sites-publish-source-control/](https://azure.microsoft.com/da-dk/documentation/artículos/sitiosweb-publicación-control-fuente/)
+    - Tutorial:[https://azure.microsoft.com/da-dk/documentation/articles/web-sites-publish-source-control/](https://azure.microsoft.com/da-dk/documentation/artículos/sitiosweb-publicación-control-fuente/)
 
     - Aquí hay un gran video: [http://channel9.msdn.com/Shows/Azure-Friday/What-is-Kudu-Azure-Web-Sites-Deployment-with-David-Ebbo](http://channel9.msdn.com/Shows/Azure-Friday/What-is-Kudu-Azure-Web-Sites-Deployment-with-David-Ebbo)
 
 1. **Prepárese para la implementación local** Cuando se aseguró de que la compilación automática funciona, estamos listos para personalizar nuestros scripts de implementación. Esto es necesario porque la compilación automática predeterminada solo compila proyectos `nop.web`. El problema con esto es que no crea el sitio web de administración y ninguno de los complementos está construido. No puede hacer referencia a los complementos, ya que crearía referencias circulares. Así que ahora necesitamos que la compilación personalizada funcione, estos son los pasos de instalación (también mencione otros lugares)
-    - Instale NodeJs: [https://nodejs.org] (https://nodejs.org)
+    - Instale NodeJs: [https://nodejs.org](https://nodejs.org)
 
     - Instale la CLI de Azure: [https://azure.microsoft.com/documentation/articles/xplat-cli-install/](https://azure.microsoft.com/documentation/articles/xplat-cli-install/)
 
 1. **Hacer que NuGet funcione en el nivel de la línea de comandos.** El comportamiento predeterminado del script KUDO es buscar paquetes NuGet.
    - Para obtener acceso al archivo `Nuget.exe`, puede descargarlo desde aquí: [https://docs.nuget.org/consume/command-line-reference](https://docs.nuget.org/consume/ referencia de línea de comandos). También puede "Habilitar la restauración automática de paquetes NuGet" en Visual Studio 2017, y se agregará a su proyecto automáticamente.
 
-   - Asegúrese de que NuGet esté en la RUTA. Copie el archivo `nuget.exe` a la ubicación preferida (yo uso` c:/Archivos de programa/ Nuget/Nuget.exe`). Agréguelo a la variable de entorno PATH.
+   - Asegúrese de que NuGet esté en la RUTA. Copie el archiv o `nuget.exe` a la ubicación preferida (yo uso`c:/Archivos de programa/ Nuget/Nuget.exe`). Agréguelo a la variable de entorno PATH.
    - Confirme que NuGet está en su RUTA iniciando `cmd.exe` y escriba *nuget*. debería ver las opciones de comando.
 
 1. **Genere scripts de implementación localmente**

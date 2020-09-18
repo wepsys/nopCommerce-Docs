@@ -15,7 +15,7 @@ En este tutorial voy a utilizar la arquitectura de plugin nopCommerce para imple
 
 Comenzaremos a codificar con la capa de acceso a datos, pasaremos a la capa de servicio y, finalmente, terminaremos en la inserción de dependencias.
 
-> [!NOTA]
+> [!NOTE]
 >
 > La aplicación práctica de este plugin es cuestionable, pero no podía pensar en una característica que no viniera con nopCommerce y que encajaría en un post de tamaño razonable. Si utilizas este plugin en un entorno de producción no te ofrezco ninguna garantía. Siempre estoy interesado en historias de éxito y me encantaría saber que el post proporcionó algo más que un valor educativo.
 
@@ -55,9 +55,9 @@ namespace Nop.Plugin.Other.ProductViewTracker.Domain
 }
 ```
 
-**File Locations**: To figure out where certain files should exist analyze the namespace and create the file accordingly.
+**File Locations**: To averiguar dónde deberían existir ciertos archivos, analice el espacio de nombres y cree el archivo en consecuencia.
 
-The next class to create is the Entity Framework mapping class. Inside of the mapping class we map the columns, table relationships, and the database table.
+La siguiente clase para crear es la clase de mapeo de Entity Framework. Dentro de la clase de mapeo, mapeamos las columnas, las relaciones de la tabla y la tabla de la base de datos.
 
 ```csharp
 namespace Nop.Plugin.Other.ProductViewTracker.Data
@@ -86,7 +86,7 @@ namespace Nop.Plugin.Other.ProductViewTracker.Data
 }
 ```
 
-The next class is the most complicated and the most important class in the data access layer. The Entity Framework Object Context is a pass-through class that gives us database access and helps track entity state (e.g. add, update, delete). The context is also used to generate the database schema or update an existing schema. In custom context classes we cannot reference previously existing entities because those types are already associated to another object context. That is also why we do not have complex navigation properties in our tracking record.
+La siguiente clase es la más complicada y la más importante en la capa de acceso a datos. Entity Framework Object Context es una clase de paso que nos da acceso a la base de datos y ayuda a rastrear el estado de la entidad (por ejemplo, agregar, actualizar, eliminar). El contexto también se utiliza para generar el esquema de la base de datos o actualizar un esquema existente. En las clases de contexto personalizado, no podemos hacer referencia a entidades previamente existentes porque esos tipos ya están asociados a otro contexto de objeto. Es también por eso que no tenemos propiedades de navegación complejas en nuestro registro de seguimiento.
 
 ```csharp
 namespace Nop.Plugin.Other.ProductViewTracker.Data
@@ -233,7 +233,7 @@ namespace Nop.Plugin.Misc.RepCred.Infrastructure
 
 ## Service layer
 
-The service layer connects the data access layer and the presentation layer. Since it is bad form to share any type of responsibility in code each layer needs to be isolated. The service layer wraps the data layer with business logic and the presentation layer depends on the service layer. Because our task is very small our service layer does nothing but communicate with the repository (the repository in nopCommerce acts as a facade to the object context).
+La capa de servicio conecta la capa de acceso a datos y la capa de presentación. Dado que es de mala educación compartir cualquier tipo de responsabilidad en el código, cada capa debe estar aislada. La capa de servicio envuelve la capa de datos con lógica empresarial y la capa de presentación depende de la capa de servicio. Debido a que nuestra tarea es muy pequeña, nuestra capa de servicio no hace más que comunicarse con el repositorio (el repositorio en nopCommerce actúa como una fachada al contexto del objeto).
 
 ```csharp
 namespace Nop.Plugin.Other.ProductViewTracker.Services
@@ -274,7 +274,7 @@ namespace Nop.Plugin.Other.ProductViewTracker.Services
 
 ## Dependency Injection
 
-Martin Fowler has written a great description of dependency injection or Inversion of Control. I'm not going to duplicate his work, and you can find his article here. Dependency injection manages the life cycle of objects and provides instances for dependent objects to use. First we need to configure the dependency container so it understands which objects it will control and what rules might apply to the creation of those objects.
+Martin Fowler ha escrito una gran descripción de la inyección de dependencia o Inversión de control. No voy a duplicar su trabajo y puedes encontrar su artículo aquí. La inyección de dependencias gestiona el ciclo de vida de los objetos y proporciona instancias para que las utilicen los objetos dependientes. Primero, necesitamos configurar el contenedor de dependencias para que comprenda qué objetos controlará y qué reglas podrían aplicarse a la creación de esos objetos.
 
 ```csharp
 namespace Nop.Plugin.Other.ProductViewTracker.Infrastructure
@@ -302,11 +302,11 @@ namespace Nop.Plugin.Other.ProductViewTracker.Infrastructure
 }
 ```
 
-In the code above we register different types of objects so they can later be injected into controllers, services, and repositories. Now that we've covered the new topics I'll bring back some of the older ones so we can finish the plugin.
+En el código anterior registramos diferentes tipos de objetos para que luego puedan inyectarse en controladores, servicios y repositorios. Ahora que hemos cubierto los nuevos temas, traeré de vuelta algunos de los más antiguos para que podamos terminar el complemento.
 
 ## The view component
 
-Let's create a view component:
+Creemos un componente de vista:
 
 ```csharp
 namespace Nop.Plugin.Other.ProductViewTracker.Components
@@ -376,10 +376,10 @@ namespace Nop.Plugin.Other.ProductViewTracker
 
 ## The usage
 
-The tracking code should be added to `ProductTemplate.Simple.cshtml` and `ProductTemplate.Grouped.cshtml` files. These ones are product templates.
+El código de seguimiento debe agregarse a los archivos  `ProductTemplate.Simple.cshtml` y `ProductTemplate.Grouped.cshtml` Estos son plantillas de productos.
 
 ```csharp
 @await Component.InvokeAsync("ProductViewTrackerIndex", new { productId = Model.Id })
 ```
 
-P.S. You can also implement it as a widget. In this case you won't need to edit a cshtml file.
+P.S. También puede implementarlo como un widget. En este caso, no necesitará editar un archivo cshtml.

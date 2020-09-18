@@ -9,8 +9,8 @@ contributors: git.exileDev, git.DmitriyKulagin
 
 Supongamos que acaba de descargar un nuevo tema que está en un archivo zip.
 
-1. Extraiga el contenido de su archivo zip y cópielo en la carpeta "Temas" como se muestra en la siguiente figura:![Tema de extracción](_static/install-theme/extracting-theme.jpg)
-1. Vaya a la sección de administración (`http://www.yourdomain.com /admin`)
+1. Extraiga el contenido de su archivo zip y cópielo en la carpeta "Temas" como se muestra en la siguiente figura:![extracting-theme](_static/installing-theme/extracting-theme.jpg)
+1. Ir a la sección de administración(`http://www.yourdomain.com/admin`)
 1. Vaya a Configuración → Configuración → Configuración general y miscelánea
 1. Seleccione un nuevo tema del **Tema de tienda predeterminado** y haga clic en **Guardar**.
 

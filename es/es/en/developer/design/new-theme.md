@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.a-patel, git.exileDev, git.DmitriyKulagin
 ---
 
-# Crear / Escribir su propio tema (usando el tema actual/predeterminado)
+# Crear/Escribir su propio tema (usando el tema actual/predeterminado)
 
 Abra la solución nopCommerce o el sitio web (versión web) en Visual Studio - Vaya a esta ubicación:
 
@@ -45,5 +45,3 @@ Abra la solución nopCommerce o el sitio web (versión web) en Visual Studio - V
 Si desea probar los cambios , vaya a la sección De administrador > Aplicar el nuevo tema > Guardar cambio y obtener una vista previa de la tienda pública.
 
 ![paso-8](_static/new-theme/new-theme-step-8.jpg)
-
-

@@ -5,39 +5,39 @@ author: nop.sea
 contributors: git.RomanovM, git.DmitriyKulagin
 ---
 
-# A guide to expanding the functionality of the basic functions of nopCommerce through a plugin
+# Una guía para ampliar la funcionalidad de las funciones básicas de nopCommerce a través de un plugin
 
 ## Overview
 
-nopCommerce uses the plugins system to extend the functionality of nopCommerce admin panel and uses widget system to extend the functionality of the website. Plugins and Widgets are a set of independent programs or components which can be added to an existing system to extend some specific functionality and also can be removed from system without effecting the main system during the process. So by using the concept of Plugin and widgets we can add more functionality to our system and we can build them without altering or editing the core source code of nopCommerce solution. Which enables us to upgrade or downgrade our nopCommerce solution to the latest version or older version as we desire without having to rewrite plugin and widgets we already created.
+nopCommerce utiliza el sistema de plugins para ampliar la funcionalidad del panel de administración de nopCommerce y utiliza el sistema de widgets para ampliar la funcionalidad del sitio web. Los Plugins y Widgets son un conjunto de programas o componentes independientes que pueden ser añadidos a un sistema existente para extender alguna funcionalidad específica y también pueden ser eliminados del sistema sin afectar al sistema principal durante el proceso. Así que usando el concepto de Plugin y Widgets podemos añadir más funcionalidad a nuestro sistema y podemos construirlos sin alterar o editar el código fuente principal de la solución nopCommerce. Lo que nos permite actualizar o bajar nuestra solución nopCommerce a la última versión o a una versión más antigua como deseemos sin tener que reescribir el plugin y los widgets que ya hemos creado.
 
-## Difference between Plugin and Widget
+## Diferencia entre Plugin y Widget
 
-As we know both Plugin and widget are for extending the functionality of nopCommerce solution. Well then you may ask "what is the difference between them". Ultimately in nopCommerce you can think widget as a plugin but with extra feature. In order to create widget the process is mostly the same as creating a plugin, but by using widget we can show some UI (User Interface) to nopCommerce public website in some specific areas predefined by nopCommerce which is known as widget-zones. Which we cannot achieve only via plugin. You may think Widget as a Superset of Plugin.
+Como sabemos, tanto el plugin como el widget son para ampliar la funcionalidad de la solución nopCommerce. Bueno, entonces puedes preguntarte "¿cuál es la diferencia entre ellos?". En última instancia, en nopCommerce se puede pensar en un widget como un plugin pero con una característica extra. Para crear un widget el proceso es en su mayoría el mismo que el de crear un plugin, pero al usar widget podemos mostrar alguna interfaz de usuario (User Interface) al sitio web público de nopCommerce en algunas áreas específicas predefinidas por nopCommerce que se conoce como widget-zones. Lo cual no podemos lograr sólo a través de un plugin. Puedes pensar que Widget es un superconjunto de Plugin.
 
-I think you are bit more clear about what widgets and plugins are, when they can be used and what is the benefits of using them. So, now lets go and create a simple widget that shows "Hello World" message to the public site, to understand about how to create a widget in nopCommerce.
+Creo que tienes un poco más claro lo que son los widgets y plugins, cuándo se pueden usar y cuáles son los beneficios de usarlos. Así que, ahora vamos a crear un simple widget que muestre el mensaje "Hola Mundo" al sitio público, para entender cómo crear un widget en nopCommerce.
 
-## Initialize Plugin Project
+## Iniciar el Proyecto Plugin
 
 ### Step 1: Create a new project
 
-Go to the nopCommerce official website and download latest nopCommerce source code. Since right now the latest version is 4.2, this documentation is written according to v4.2. Open your nopCommerce solution in your favorite IDE (Visual Studio is recommended). There you will see a bunch of folders, If you want to know all about the folder structure then you may want to visit nopCommerce documentation. In the roof of the solution you will see a "Plugins" folder, expand that folder and you will see a list of plugin projects shipped with nopCommerce by default.
+Ve a la página web oficial de nopCommerce y descarga el último código fuente de nopCommerce. Como ahora mismo la última versión es la 4.2, esta documentación está escrita según la v4.2. Abre tu solución nopCommerce en tu IDE favorito (se recomienda Visual Studio). Allí verás un montón de carpetas, si quieres saber todo sobre la estructura de carpetas, puedes visitar la documentación de nopCommerce. En el techo de la solución verás una carpeta "Plugins", amplía esa carpeta y verás una lista de los proyectos de plugins que vienen con nopCommerce de forma predeterminada.
 
 ![image1](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image1.png)
 
-In order to create new Widget project, Right click on "Plugins" folder: Add=>New Project. After that add new project window will appear.
+Para crear un nuevo proyecto de Widget, haga clic con el botón derecho del ratón en la carpeta "Plugins": Add=>Nuevo proyecto. Después de eso aparecerá la ventana de añadir nuevo proyecto.
 
 ![image2](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image2.png)
 
-From left list of project type select ".NetCore" from that choose "Class Library" project Template. nopCommerce follows some standard naming conversion, which you can get more information from nopCommerce documentation. I have choose "Nop.Plugin.Widget.HelloWorld" as my project name by following the naming conversion of nopCommerce. And the location should be inside "/source/Plugins" directory. Now click "OK". This should create a new project inside Plugin directory. And you may see in your solution like this:
+De la lista izquierda de tipo de proyecto seleccione ".NetCore" de que elija "Class Library" proyecto Template. nopCommerce sigue algunos estándares de conversión de nombres, que puede obtener más información de la documentación de nopCommerce. He elegido "Nop.Plugin.Widget.HelloWorld" como nombre de proyecto siguiendo la conversión de nombres de nopCommerce. Y la ubicación debe estar dentro del directorio "/source/Plugins". Ahora haz clic en "OK". Esto debería crear un nuevo proyecto dentro del directorio de Plugins. Y puedes ver en tu solución algo como esto:
 
 ![image3](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image3.png)
 
-### Step 2: Configure your new project to be used as Widget
+### Paso 2: Configurar su nuevo proyecto para ser usado como Widget
 
-We need to configure a couple of things in our project for it to be used as a Plugin or Widget.
+Necesitamos configurar un par de cosas en nuestro proyecto para que sea usado como un Plugin o Widget.
 
-After you create your project successfully open its .csproj file, for that right click on your project and click {Your_Project_Name.csproj} menu from context menu and replace its content with the following code.
+Después de crear tu proyecto con éxito, abre su archivo .csproj, para ello haz clic con el botón derecho del ratón en tu proyecto y haz clic en el menú {Tu_Nombre_de_proyecto.csproj} del menú de contexto y reemplaza su contenido con el siguiente código.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -67,13 +67,13 @@ After you create your project successfully open its .csproj file, for that right
 </Project>
 ```
 
-Here replace {Plugin_Output_Directory} by your project name, in my case "Widget.HelloWorld".
+Aquí sustituye {Plugin_Output_Directory} por el nombre de tu proyecto, en mi caso "Widget.HelloWorld".
 
-What this will do is it copies all dll files related to this project into the `Nop.Web/Plugin/{Plugin_Output_Directory}`, because Plugin directory inside `Nop.Web` is the location where nopCommerce search from plugins and widgets to display in Plugin or widget list in admin panel.
+Lo que esto hará es copiar todos los archivos dll relacionados con este proyecto en el `Nop.Web/Plugin/{Plugin_Output_Directory}`, porque el directorio de plugins dentro de `Nop.Web` es la ubicación donde nopCommerce busca desde los plugins y widgets para mostrarlos en la lista de plugins o widgets en el panel de administración.
 
-### Step 3: Create a Plugin.json file
+### Paso 3: Crear un archivo Plugin.json
 
-This file is required for every Plugin or Widget we create in nopCommerce. This file contains meta information about our plugin that describes our plugin. It contains information like, Name of our plugin, which version of nopCommerce it is target/built for, some description about our plugin, version of our plugin and so on. After you create "Plugin.json" file, copy this content inside your file and modify according to your requirement.
+Este archivo es necesario para cada Plugin o Widget que creamos en nopCommerce. Este archivo contiene meta información sobre nuestro plugin que describe nuestro plugin. Contiene información como, Nombre de nuestro plugin, a qué versión de nopCommerce está destinado/construido, alguna descripción sobre nuestro plugin, versión de nuestro plugin y así sucesivamente. Después de crear el archivo "Plugin.json", copie este contenido dentro de su archivo y modifíquelo según sus necesidades.
 
 ```json
 {
@@ -89,13 +89,14 @@ This file is required for every Plugin or Widget we create in nopCommerce. This 
 }
 ```
 
-This file is used by nopCommerce while listing our Plugin/Widget in the plugin list in admin panel and to identify our plugin uniquely among all installed and uninstalled plugins in the entire application. So in order for nopCommerce to be able to read this file we need to copy this file to its output directory while building the project. To do that right click on Plugin.json file and click property. In Property set value for "Copy to output directory" to "copy if newer"
+Este archivo es utilizado por nopCommerce mientras se lista nuestro Plugin/Widget en la lista de plugins en el panel de administración y para identificar nuestro plugin de forma única entre todos los plugins instalados y desinstalados en toda la aplicación. Así que para que nopCommerce pueda leer este archivo necesitamos copiarlo en su directorio de salida mientras se construye el proyecto. Para ello, haga clic con el botón derecho del ratón en el archivo Plugin.json y haga clic en la propiedad. En la propiedad, pon el valor de "Copiar en el directorio de salida" en "copiar si es más reciente"
+
 
 ![image4](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image4.png)
 
-### Step 4: Create a class that extends from BasePlugin Class
+### Paso 4: Crear una clase que se extienda desde la clase BasePlugin
 
-Actually we need to have a class that inherent from IPlugin interface so that nopCommerce treats our project as plugin. But nopCommerce already has a class "BasePlugin" that inherits  from IPlugin interface and implements all methods from that interface. So, instead of inheriting from IPlugin interface we can extend from BasePlugin class. If we have some logic that needs to be executed during our plugin/widget installation and uninstallation process then we can override "Install" and "Uninstall" method from BasePlugin class to our class. Finally the class should look like this
+En realidad necesitamos tener una clase que sea inherente a la interfaz de IPlugin para que nopCommerce trate nuestro proyecto como un plugin. Pero nopCommerce ya tiene una clase "BasePlugin" que hereda de la interfaz IPlugin e implementa todos los métodos de esa interfaz. Así que, en lugar de heredar de la interfaz IPlugin podemos extender de la clase BasePlugin. Si tenemos alguna lógica que necesita ser ejecutada durante nuestro proceso de instalación y desinstalación de plugins y widgets, entonces podemos anular el método "Instalar" y "Desinstalar" de la clase BasePlugin a nuestra clase. Finalmente la clase debería verse así
 
 ```cs
 public class HelloWorldPlugin: BasePlugin
@@ -116,19 +117,19 @@ public class HelloWorldPlugin: BasePlugin
 }
 ```
 
-Now build your Project and run. Navigate to admin panel and under "Configuration" there is a "Local plugins" menu click that menu. Here you will see all plugins listed that are present in out `Nop.Web/Plugins` directory. In there you will see your newly created plugin. If you do not see then click on "Reload list of plugins" button, after that it will restart your application and lists all plugins available. Now you should see your plugin listed in that list. Click the green install button present in your plugins row.
+Ahora construye tu proyecto y corre. Navega al panel de administración y en "Configuración" hay un menú de "Plugins locales", haz clic en ese menú. Aquí verás todos los plugins listados que están presentes en nuestro directorio `Nop.Web/Plugins`. Allí verás tu nuevo plugin creado. Si no lo ve, haga clic en el botón "Reload list of plugins" (Recargar lista de plugins), después reiniciará su aplicación y mostrará todos los plugins disponibles. Ahora deberías ver tu plugin listado en esa lista. Haz clic en el botón verde de instalación presente en la fila de plugins.
 
 ![image5](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image5.png)
 
-Now after you click the install button, click "Restart your application to apply changes" button. It will restart your application and installs your plugin. After installation completes you will see a "Configure" and "Edit" button and a "Uninstall button" like this.
+Ahora, después de hacer clic en el botón de instalación, haga clic en el botón "Reiniciar la aplicación para aplicar los cambios". Esto reiniciará tu aplicación e instalará tu plugin. Después de que la instalación se complete, verás un botón de "Configurar" y "Editar" y otro de "Desinstalar" como este.
 
-![image6](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image6.png) Now your plugin is installed. But the "Configure" button will not work, since we don't have any configure page in our plugin.
+![image6](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image6.png) Ahora tu plugin está instalado. Pero el botón "Configurar" no funcionará, ya que no tenemos ninguna página de configuración en nuestro plugin.
 
-## Create a widget to show some UI in our public Site
+## Crear un widget para mostrar algo de UI en nuestro sitio público
 
-As previously mentioned, Widget is same as plugin but with extra features. So we can use this same plugin project to convert it to widget and render some UI to our public site. So lets see how we can extend this plugin to create a widget.
+Como se mencionó anteriormente, Widget es igual que el plugin pero con características adicionales. Así que podemos usar este mismo proyecto de plugin para convertirlo en widget y renderizar alguna interfaz de usuario a nuestro sitio público. Así que veamos cómo podemos extender este plugin para crear un widget.
 
-First we need to create a ViewComponent. Create a directory "Components" in the root of the project and create a ViewComponent class. We need to extend from this class from `NopViewComponent` base class.
+Primero necesitamos crear un ViewComponent. Crear un directorio "Componentes" en la raíz del proyecto y crear una clase ViewComponent. Necesitamos extender de esta clase desde la clase base `NopViewComponent`.
 
 ```cs
 [ViewComponent(Name = "HelloWorldWidget")]
@@ -141,7 +142,7 @@ public class ExampleWidgetViewComponent: NopViewComponent
 }
 ```
 
-Now go to the class one that extends from "BasePlugin" we have previously created, and inherent from IWidgetPlugin interface. This interface has two function declaration "GetWidgetZones" and "GetWidgetViewComponentName" which we need to implement in our class.
+Ahora vamos a la clase uno que se extiende desde "BasePlugin" que hemos creado previamente, e inherente a la interfaz de IWidgetPlugin. Esta interfaz tiene dos declaraciones de función "GetWidgetZones" y "GetWidgetViewComponentName" que necesitamos implementar en nuestra clase.
 
 ```cs
 public class HelloWorldPlugin: BasePlugin, IWidgetPlugin
@@ -190,10 +191,10 @@ Now if you build your project and navigate to admin panel and go to Configuratio
 
 ![image7](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image7.png)
 
-Here you may notice that this widget do not have "Configure" button. That is because we did not create a configuration view file for this widget and did not override "GetConfigurationPageUrl" method from BasePlugin class. Since we have already installed our plugin we do not have to install it again, but here you can see that widget is not active right now. We can activate this by clicking the edit button.
+Aquí puede notar que este widget no tiene el botón "Configurar". Esto se debe a que no creamos un archivo de vista de configuración para este widget y no anulamos el método "GetConfigurationPageUrl" de la clase BasePlugin. Como ya hemos instalado nuestro plugin no tenemos que volver a instalarlo, pero aquí podéis ver que el widget no está activo ahora mismo. Podemos activarlo pulsando el botón de edición.
 
 ![image8](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image8.png)
 
-Now after we set widget to active now our widget should work as expected. If we go to our home page before category we must see the "Hello World" message as shown in picture highlighted in yellow.
+Ahora, después de poner el widget en activo, nuestro widget debería funcionar como se esperaba. Si vamos a nuestra página de inicio antes de la categoría debemos ver el mensaje "Hola Mundo" como se muestra en la imagen resaltada en amarillo.
 
 ![image9](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image9.png)

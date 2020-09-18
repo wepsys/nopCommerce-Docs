@@ -13,11 +13,11 @@ Los plugins se utilizan para ampliar la funcionalidad de nopCommerce. nopCommerc
 
 # La estructura del plugin, los archivos requeridos y las ubicaciones
 
-1. Lo primero que debe hacer es crear un nuevo proyecto de "Biblioteca de clases" en la solución. Es una buena práctica colocar todos los plugins en el directorio ''Plugins'  en la raíz de su solución (no mezcle con el subdirectorio de plugins ubicado en el directorio ''Nop.Web''  que se utiliza para los plugins ya implementados). Es una buena práctica colocar todos los plugins en la carpeta de la solución "Plugins" (puede encontrar más información sobre las carpetas de la solución [aquí](http://msdn.microsoft.com/library/sx2027y2.aspx)).
+1. Lo primero que debe hacer es crear un nuevo proyecto de "Biblioteca de clases" en la solución. Es una buena práctica colocar todos los `\Plugins` en el directorio ''Plugins'  en la raíz de su solución (no mezcle con el subdirectorio de plugins ubicado en el directorio `\Nop.Web`  que se utiliza para los plugins ya implementados). Es una buena práctica colocar todos los plugins en la carpeta de la solución "Plugins" (puede encontrar más información sobre las carpetas de la solución [aquí](http://msdn.microsoft.com/library/sx2027y2.aspx)).
 
-Un nombre recomendado para un proyecto de plugin es "Nop.Plugin. #Grupo. "Nombre". "Grupo" es su grupo de plugins (por ejemplo, "Pago" o "Envío"). "Nombre" es el nombre del plugin (por ejemplo, "PayPalStandard"). Por ejemplo, el complemento de pago PayPal Standard tiene el siguiente nombre: Nop.Plugin.Payments.PayPalStandard. Pero tenga en cuenta que no es un requisito. Y puedes elegir cualquier nombre para un plugin. Por ejemplo, "MyGreatPlugin".
+Un nombre recomendado para un proyecto de plugin es "Nop.Plugin.{Group}.{Name}". {Group} es su grupo de plugins (por ejemplo, "Pago" o "Envío"). "Nombre" es el nombre del plugin (por ejemplo, "PayPalStandard"). Por ejemplo, el complemento de pago PayPal Standard tiene el siguiente nombre: Nop.Plugin.Payments.PayPalStandard. Pero tenga en cuenta que no es un requisito. Y puedes elegir cualquier nombre para un plugin. Por ejemplo, "MyGreatPlugin".
 
-![p1](_static/cómo-escribir-plugin-4.10/write_plugin_4.10_1.jpg)
+![p1](_static/how-to-write-plugin-4.00/write_plugin_4.00_1.jpg)
 
 
 
@@ -45,7 +45,7 @@ Un nombre recomendado para un proyecto de plugin es "Nop.Plugin. #Grupo. "Nombre
     ```
 Donde PLUGIN_OUTPUT_DIRECTORY debe reemplazarse con el nombre del complemento, por ejemplo, Payments.PayPalStandard.
 
-     Lo hacemos de esta manera para poder usar un nuevo enfoque para agregar referencias de terceros que se introdujo en .NET Core. Pero en realidad no es necesario. Además, las referencias de bibliotecas ya referenciadas se cargarán automáticamente. Por eso es muy conveniente.
+Lo hacemos de esta manera para poder usar un nuevo enfoque para agregar referencias de terceros que se introdujo en .NET Core. Pero en realidad no es necesario. Además, las referencias de bibliotecas ya referenciadas se cargarán automáticamente. Por eso es muy conveniente.
 
 1. El siguiente paso es crear un archivo `plugin.json` requerido para cada complemento. Este archivo contiene metainformación que describe su complemento. Simplemente copie este archivo de cualquier otro complemento existente y modifíquelo según sus necesidades. Por ejemplo, el complemento de pago estándar de PayPal tiene el siguiente archivo `plugin.json`:
 
@@ -65,7 +65,8 @@ Donde PLUGIN_OUTPUT_DIRECTORY debe reemplazarse con el nombre del complemento, p
 
     En realidad, todos los campos son autodescriptivos, pero aquí hay algunas notas. **El campo SystemName**  debe ser único. **El campo Versión**  es un número de versión de tu plugin; puedes establecerlo en cualquier valor que desees. **El campo SupportedVersions**  puede contener una lista de versiones compatibles de nopCommerce separadas por comas (asegúrese de que la versión actual de nopCommerce esté incluida en esta lista, de lo contrario, no se cargará). **El campo NombreDeArchicio**  tiene el siguiente formato  *Nop.Plugin. Grupo. "Nombre" (es  el nombre de archivo del ensamblado del complemento). Asegúrese de que la propiedad "Copiar en el directorio de salida" de este archivo esté establecida en "Copiar si es más reciente".
 
-! [p2](_static/cómo escribir-plugin-4.10/write_plugin_4.10_2.jpg)
+
+    ![p2](_static/how-to-write-plugin-4.10/write_plugin_4.10_2.jpg)
 
 1. El último paso necesario es crear una clase que implemente la interfaz IPlugin (espacio de nombres Nop.Core.Plugins). nopCommerce tiene la clase BasePlugin que ya implementa algunos métodos IPlugin y le permite evitar la duplicación de código fuente. Por ejemplo, tenemos la interfaz "IPaymentMethod" que se utiliza para crear nuevos plugins de métodos de pago. Contiene algunos métodos que son específicos solo para métodos de pago como ProcessPayment() o GetAdditionalHandlingFee(). Actualmente nopCommerce tiene las siguientes interfaces de plugins específicas:
 
@@ -79,7 +80,7 @@ Donde PLUGIN_OUTPUT_DIRECTORY debe reemplazarse con el nombre del complemento, p
 
 Si su plugin no cabe en ninguna de estas interfaces, utilice la interfaz "IMiscPlugin".
 
-> [!IMPORTANTE]
+> [!IMPORTANT]
 >
 > Después de cada compilación del proyecto, limpie la solución antes de realizar cambios. Algunos recursos se almacenarán en caché y pueden provocar locuras de los desarrolladores.
 
@@ -119,11 +120,11 @@ A continuación, para cada plugin que tiene una página de configuración debe e
 return $"{_webHelper.GetStoreLocation()}Admin/ControllerName/ActionName";
 ```
 
-[! IMPORTANTE]
+[!IMPORTANT]
 >
 > Después de cada compilación del proyecto, limpie la solución antes de realizar cambios. Algunos recursos se almacenarán en caché y pueden provocar locuras de los desarrolladores.
 
-• Manejo de solicitudes. Controladores, modelos y vistas
+## Manejo de solicitudes. Controladores, modelos y vistas
 
 Ahora puedes ver el plugin yendo a **Admin area > Configuración > Plugins**. Pero como adivinó nuestro plugin no hace nada. Ni siquiera tiene una interfaz de usuario para su configuración. Vamos a crear una página para configurar el plugin.
 
@@ -150,7 +151,7 @@ public override void Install()
 }
 ```
 
-> [!PROPINA]
+> [!Important]
 >
 > La lista de complementos instalados se encuentra en `\ App_Data \ installedPlugins.json`. La lista se crea durante la instalación.
 

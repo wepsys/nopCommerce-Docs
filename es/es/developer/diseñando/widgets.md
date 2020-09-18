@@ -16,14 +16,14 @@ Actualmente, la instalación predeterminada de nopCommerce permite al administra
 1. Google Analytics
 1. Control deslizante Nivo
 
-##Widget de Google Analytics
+## Widget de Google Analytics
 
 Google Analytics es una herramienta gratuita de estadísticas de sitios web de Google. Realiza un seguimiento de las estadísticas sobre los visitantes y la conversión de comercio electrónico en su sitio web. Este bloque de widgets se puede representar en:
 
 * Etiqueta de encabezado HTML
 * Después de la etiqueta HTML final `<body>`.
 
-Para configurar el widget de Google Analytics, vaya a `Administración → Configuración → Widgets`, haga clic en ** Configurar ** contra ** Google Analytics ** y agregue su código de Google Analytics.
+Para configurar el widget de Google Analytics, vaya a `Administración → Configuración → Widgets`, haga clic en **Configurar** contra **Google Analytics** y agregue su código de Google Analytics.
 
 ## Control deslizante Nivo
 

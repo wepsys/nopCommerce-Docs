@@ -11,7 +11,7 @@ contributors: git.skoshelev
 El trabajo con la base de datos fue reelaborado significativamente en la versión 4.30 de nopCommerce. El primer cambio que se pudo notar es un completo rechazo de las propiedades de navegación. Podemos pensar y discutir sobre la utilidad de este enfoque, pero definitivamente tiene un par de puntos positivos:
 
 1. Simplifique la comprensión y el mantenimiento del código.
-    > [!NOTA]
+    > [!NOTE]
     > Durante la refactorización del código, encontramos y corregimos varias inexactitudes que afectan tanto al rendimiento como a la funcionalidad.
 1. Control total sobre las consultas y el momento de su ejecución (lo que afecta positivamente el desempeño de toda la solución).
 1. Posibilidad de simplificar el proceso de migración a cualquier marco de base de datos (lo más importante).
@@ -20,7 +20,7 @@ Dado que nopCommerce cambió completamente a .Net Core (versión 4.10) y se conv
 
 ## Linq2DB
 
-> [!NOTA]
+> [!NOTE]
 > A partir de la versión 4.30, nopCommerce usa Linq2DB como marco ORM. Linq2DB es un mapeador relacional de objetos (ORM) que permite a los desarrolladores .NET trabajar con una base de datos utilizando objetos .NET. Puede asignar objetos .Net a varios proveedores de bases de datos.
 
 En nopCommerce, Linq2DB se utiliza como nivel de acceso a la base de datos. Actualmente, nopCommerce admite dos de las bases de datos más populares: MS SQL Server y MySQL Server. Si analizamos el código, podemos ver fácilmente que cada base de datos es compatible con su propia clase que implementa la interfaz INopDataProvider. Pero si no planea crear su propio proveedor de acceso a la base de datos, puede ignorar los detalles de implementación. Para la mayoría de las tareas de desarrollo, será suficiente comprender solo algunos puntos:
@@ -33,7 +33,7 @@ Y para resolver el último problema, tenemos que lidiar con el segundo marco del
 
 ## FluentMigrator
 
-> [!NOTA]
+> [!NOTE]
 > Fluent Migrator es un marco de migración para .NET muy parecido a Ruby on Rails Migrations. *Las migraciones* son una forma estructurada de alterar el esquema de su base de datos y son una alternativa a la creación de muchos scripts SQL que deben ser ejecutados manualmente por cada desarrollador involucrado. Las migraciones resuelven el problema de desarrollar un esquema de base de datos para múltiples bases de datos (por ejemplo, base de datos local del desarrollador, base de datos de prueba y base de datos de producción). Los cambios en el esquema de la base de datos se describen en clases escritas en C #. Estas clases se pueden registrar en un sistema de control de versiones.
 
 El plan detallado para agregar sus entidades se describe en el siguiente artículo: [Complemento con acceso a datos](xref:en/developer/plugins/how-to-write-plugin-4.30). Por lo tanto, nos quedaremos solo en puntos teóricos generales:

@@ -15,7 +15,7 @@ En este tutorial, usaré la arquitectura del complemento nopCommerce para implem
 
 Comenzaremos a codificar con la capa de acceso a datos, pasaremos a la capa de servicio y finalmente terminaremos con la inyección de dependencia.
 
-> [!NOTA]
+> [!NOTE]
 >
 > La aplicación práctica de este complemento es cuestionable, pero no pude pensar en una función que no venga con nopCommerce y que se ajuste a una publicación de tamaño razobnable. Si usa este complemento en un entorno de producción, no ofrezco garantías. Siempre me interesan las historias de éxito y me alegraría saber que la publicación aportó más que un valor educativo.
 
@@ -45,7 +45,7 @@ Agregue las siguientes carpetas y `plugin.json` file.
 }
 ```
 
-Luego agregue referencias a los proyectos **Nop.Web.Framework**. Esto será suficiente para nosotros, ya que otras dependencias, como ** NopCore** y **Nop.Data**, se conectarán automáticamente
+Luego agregue referencias a los proyectos **Nop.Web.Framework**. Esto será suficiente para nosotros, ya que otras dependencias, como **NopCore** y **Nop.Data**, se conectarán automáticamente
 
 ## La capa de acceso a datos (A.K.A. Creando nuevas entidades en nopCommerce)
 
@@ -120,7 +120,7 @@ namespace Nop.Plugin.Other.ProductViewTracker.Data
 }
 ```
 
-[!NOTA]
+>[!NOTE]
 > Preste atención al atributo **SkipMigrationOnUpdate**, su propósito se describe por el nombre. Este atributo le permite omitir las migraciones al realizar el procedimiento de actualización del complemento.
 
 ## Capa de servicio
@@ -166,7 +166,7 @@ namespace Nop.Plugin.Other.ProductViewTracker.Services
 
 ## Inyección de dependencia
 
-Martin Fowler ha escrito una gran descripción de la inyección de dependencia o Inversión de control. No voy a duplicar su trabajo, y puedes encontrar su artículo [aquí] (https://martinfowler.com/articles/injection.html). La inyección de dependencias gestiona el ciclo de vida de los objetos y proporciona instancias para que las utilicen los objetos dependientes. Primero, necesitamos configurar el contenedor de dependencias para que comprenda qué objetos controlará y qué reglas podrían aplicarse a la creación de esos objetos.
+Martin Fowler ha escrito una gran descripción de la inyección de dependencia o Inversión de control. No voy a duplicar su trabajo, y puedes encontrar su artículo [aquí](https://martinfowler.com/articles/injection.html). La inyección de dependencias gestiona el ciclo de vida de los objetos y proporciona instancias para que las utilicen los objetos dependientes. Primero, necesitamos configurar el contenedor de dependencias para que comprenda qué objetos controlará y qué reglas podrían aplicarse a la creación de esos objetos.
 
 ```csharp
 namespace Nop.Plugin.Other.ProductViewTracker.Infrastructure
@@ -254,7 +254,7 @@ namespace Nop.Plugin.Other.ProductViewTracker.Components
 
 ## La clase de complemento principal
 
-> [!IMPORTANTE]
+> [!IMPORTANT]
 >
 > Implementamos nuestro complemento como un widget. En este caso, no necesitaremos editar un archivo cshtml.
 

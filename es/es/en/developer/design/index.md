@@ -15,8 +15,6 @@ contributors: git.exileDev
 * [Tema de derecha a izquierda](xref:en/developer/design/right-to-left-theme)
 * [Widgets (Guía del diseñador)](xref:en/developer/design/widgets)
 * [Diseño responsivo](xref:en/developer/design/responsive)
-* [Consejos y trucos](xref:en /developer/design/tips-and-tricks)
+* [Consejos y trucos](xref:en/developer/design/tips-and-tricks)
 * [Contribuir con un tema](xref:en/developer/design/contributing-theme)
 * [Sistema de eventos de entidad](xref:en/developer/design/entity-events-system)
-
-

@@ -11,15 +11,15 @@ contributors: git.rajupaladiya, git.exileDev, git.mariannk
 
 Las fechas de entrega son rangos de tiempo que muestran el tiempo de entrega aproximado a un cliente. Las fechas de entrega se pueden aplicar a los productos y mostrarse en las páginas de detalles del producto.
 
-* Vaya a **Configuración → Envío → Fechas y rangos**. Los dos paneles siguientes se mostrarán en la ventana * Fechas y rangos *:
+* Vaya a **Configuración → Envío → Fechas y rangos**. Los dos paneles siguientes se mostrarán en la ventana *Fechas y rangos*:
 
 ### Panel de fechas de entrega
 
-![Fechas de entrega](_estático/fechas-y-rangos/fechas-de-entrega.png)
+![Delivery dates](_static/dates-and-ranges/delivery-dates.png)
 
 Haga clic en **Agregar nuevo**. Se muestra la ventana *Agregar una nueva fecha de entrega*:
 
-![Agregar nuevo](_estático/fechas-y-rangos/fechas-de-entrega-agregar-nuevo.png)
+![Add new](_static/dates-and-ranges/delivery-dates-add-new.png)
 
 * En el campo **Nombre**, ingrese el nombre de la nueva fecha de entrega, por lo general, es un rango de fechas.
 * En el campo **Mostrar pedido**, ingrese el orden de visualización de esta fecha de entrega. 1 representa la parte superior de la lista.
@@ -30,11 +30,11 @@ Haga clic en el botón **Guardar**.
 
 Aquí puede configurar rangos de disponibilidad de productos. Estas opciones se mostrarán en la página de edición del producto.
 
-![Rangos de disponibilidad](_estático/fechas-y-rangos/avialability-rangos.png)
+![Availability ranges](_static/dates-and-ranges/avialability-ranges.png)
 
 Haga clic en **Agregar nuevo** para agregar su propio rango. Se muestra la ventana *Agregar un nuevo rango de disponibilidad de producto *:
 
-![Agregar nuevos rangos de disponibilidad](_estático/fechas-y-rangos/avialability-rangos-agregar-nuevo.png)
+![Add new availability ranges](_static/dates-and-ranges/avialability-ranges-add-new.png)
 
 * En el campo **Nombre** ingrese el nombre del nuevo rango, por ejemplo, 2 meses.
 * En el campo **Orden de visualización**, ingrese el orden de visualización de este rango de disponibilidad. 1 representa la parte superior de la lista.

@@ -25,13 +25,13 @@ El siguiente procedimiento describe cómo configurar y proporcionar un registro 
 
 Vaya a **Clientes → Proveedores**. Se muestra la ventana *Proveedores*:
 
-! [Proveedores] (_static/vendor-management/vendor1.png)
+![Proveedores](_static/vendor-management/vendor1.png)
 
 Haga clic en **Agregar nuevo**.
 
 ### Información del proveedor
 
-! [Agregar proveedor](_static/vendor-management/vendor2.png)
+![Agregar proveedor](_static/vendor-management/vendor2.png)
 
 En el panel *Información del proveedor*, defina los siguientes detalles del proveedor:
 
@@ -42,7 +42,7 @@ En el panel *Información del proveedor*, defina los siguientes detalles del pro
 * Sube un proveedor **Imagen**.
 * **Comentario del administrador** un comentario opcional o información para uso interno.
 
-> [!NOTA]
+> [!NOTE]
 >
 > Algunas de las plantillas de mensajes de proveedores, como *OrderPaid.VendorNotification* y *OrderPlaced.VendorNotification*, están deshabilitadas de forma predeterminada. Vea cómo cambiar esto en la sección [Plantillas de mensajes](xref:es/running-your-store/content-management/message-templates).
 
@@ -57,13 +57,13 @@ Los propietarios de una tienda pueden crear atributos para un proveedor de la mi
 ### Dirección (opcional)
 En el panel *Direción (opcional)* ingrese la dirección del proveedor.
 
-! [Dirección (opcional)] (_static/vendor-management/address.jpg)
+![Dirección (opcional)](_static/vendor-management/address.jpg)
 
 ### Monitor
 
 En el panel *Pantalla*, defina los siguientes parámetros de pantalla:
 
-! [Pantalla] (_static/vendor-management/vendor4.png)
+![Pantalla](_static/vendor-management/vendor4.png)
 
 * Para **Permitir a los clientes seleccionar el tamaño de página** de una lista predefinida de opciones.
   * Si la casilla de verificación anterior está marcada, defina **Opciones de tamaño de página** (separados por comas).
@@ -74,7 +74,7 @@ En el panel *Pantalla*, defina los siguientes parámetros de pantalla:
 
 Consulte la sección [Paneles SEO](xref:en/running-your-store/search-engine-optimization#seo-Panels) para configurar el SEO.
 
-! [SEO](_static/vendor-management/seo.jpg)
+![SEO](_static/vendor-management/seo.jpg)
 
 ## Asignar un proveedor a un registro de cliente
 
@@ -84,21 +84,21 @@ Si no desea que los proveedores tengan acceso al área de administración, ignor
 
 Vaya a **Clientes → Clientes**. Se muestra la ventana *Clientes*:
 
-! [Clientes] (_static/vendor-management/vendor7.png)
+![Clientes](_static/vendor-management/vendor7.png)
 
 Cree un nuevo cliente o haga clic en **Editar** junto al registro de un cliente al que desea asignar un proveedor. Para obtener más información sobre cómo crear un cliente, consulte [Agregar un nuevo cliente] (xref: en / ejecutando-su-tienda / administración-de-clientes / administración-clientes # agregar-un-nuevo-cliente).
 
 * En el panel *Información del cliente*, asegúrese de que la función de cliente *Proveedores* esté seleccionada en el campo **Funciones de cliente**.
-  > [!NOTA]
+  > [!NOTE]
   >
   > Una cuenta de cliente de proveedor no puede pertenecer al rol de cliente *Administradores* predeterminado.
 
 * En el panel *Información del cliente*, busque el campo **Administrador del proveedor**. Seleccione un registro de proveedor creado previamente.
 
-! [Editar cliente](_static/vendor-management/edit-customer.jpg)
+![Editar cliente](_static/vendor-management/edit-customer.jpg)
 
 Una vez configurada la cuenta de cliente del proveedor, el proveedor puede usar esta cuenta de cliente para administrar productos, pedidos, envíos y ver informes. El enlace *Administración* en la parte superior de la tienda pública se mostrará después de iniciar sesión.
 
-> [!SUGERENCIA]
+> [!TIP]
 >
 > [Tutorial de YouTube: gestión de proveedores](https://www.youtube.com/watch?v=MH6r6tqfLF8&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4

@@ -13,9 +13,10 @@ Los plugins se utilizan para ampliar la funcionalidad de nopCommerce. nopCommerc
 
 1. Lo primero que debe hacer es crear un nuevo proyecto de "Biblioteca de clases" en la solución. Es una buena práctica colocar todos los plugins en el directorio ''Plugins'  en la raíz de su solución (no mezcle con el subdirectorio de plugins ubicado en el directorio ''Nop.Web''  que se utiliza para los plugins ya implementados). Es una buena práctica colocar todos los plugins en la carpeta de la solución "Plugins" (puede encontrar más información sobre las carpetas de la solución [aquí](http://msdn.microsoft.com/library/sx2027y2.aspx)).
 
-Un nombre recomendado para un proyecto de plugin es "Nop.Plugin. #Grupo. "Nombre". "Grupo" es su grupo de plugins (por ejemplo, "Pago" o "Envío"). "Nombre" es el nombre del plugin (por ejemplo, "PayPalStandard"). Por ejemplo, el complemento de pago PayPal Standard tiene el siguiente nombre: Nop.Plugin.Payments.PayPalStandard. Pero tenga en cuenta que no es un requisito. Y puedes elegir cualquier nombre para un plugin. Por ejemplo, "MyGreatPlugin".
+ A recommended name for a plugin". {Group} is your plugin group (for examp project is "Nop.Plugin.{Group}.{Name}le, "Payment" or "Shipping"). {Name} is your plugin name (for example, "PayPalStandard") (por ejemplo, "PayPalStandard"). Por ejemplo, el complemento de pago PayPal Standard tiene el siguiente nombre: Nop.Plugin.Payments.PayPalStandard. Pero tenga en cuenta que no es un requisito. Y puedes elegir cualquier nombre para un plugin. Por ejemplo, "MyGreatPlugin".
 
-![p1](_static/cómo escribir-plugin-4.20/write_plugin_4.20_1.jpg)
+![p1](_static/how-to-write-plugin-4.20/write_plugin_4.20_1.jpg)
+
 
 
 
@@ -49,7 +50,7 @@ Un nombre recomendado para un proyecto de plugin es "Nop.Plugin. #Grupo. "Nombre
     </Project>
     ```
 
-    > [!PROPINA]
+    > [!tip]
      >
      > Donde PLUGIN_OUTPUT_DIRECTORY debe reemplazarse con el nombre del complemento, por ejemplo, Payments.PayPalStandard.
      >
@@ -73,7 +74,7 @@ Un nombre recomendado para un proyecto de plugin es "Nop.Plugin. #Grupo. "Nombre
 
     En realidad, todos los campos son autodescriptivos, pero aquí hay algunas notas. **El campo SystemName**  debe ser único. **El campo Versión**  es un número de versión de tu plugin; puedes establecerlo en cualquier valor que desees. **El campo SupportedVersions**  puede contener una lista de versiones compatibles de nopCommerce separadas por comas (asegúrese de que la versión actual de nopCommerce esté incluida en esta lista, de lo contrario, no se cargará). **El campo NombreDeArchicio**  tiene el siguiente formato Nop.Plugin. Grupo. •Nombre.dll (es el nombre de archivo del ensamblado del plugin). Asegúrese de que *"Copiar en el directorio de salida"* propiedad de este archivo está establecida en  *"Copiar si es más reciente"*.
 
-! [p2](_static/cómo escribir-plugin-4.20/write_plugin_4.20_2.jpg)
+![p2](_static/how-to-write-plugin-4.20/write_plugin_4.20_2.jpg)
 
 1. El último paso necesario es crear una clase que implemente la interfaz **IPlugin**  (espacio de nombres Nop.Services.Plugins). nopCommerce tiene  **BasePlugin**  clase que ya implementa algunos métodos IPlugin y le permite evitar la duplicación de código fuente. nopCommerce también le proporciona algunas interfaces específicas derivadas de IPlugin. Por ejemplo, tenemos la interfaz "IPaymentMethod" que se utiliza para crear nuevos plugins de métodos de pago. Contiene algunos métodos que son específicos sólo para métodos de pago como  *ProcessPayment()*  o  *GetAdditionalHandlingFee()*. Actualmente nopCommerce tiene las siguientes interfaces de plugins específicas:
 
@@ -86,15 +87,15 @@ Un nombre recomendado para un proyecto de plugin es "Nop.Plugin. #Grupo. "Nombre
 - **ITaxProvider**. Los proveedores de impuestos se utilizan para obtener tasas de impuestos.
 - **IMiscPlugin**. Si su plugin no cabe en ninguna de estas interfaces
 
-> [! IMPORTANTE]
+> [!IMPORTANT]
 >
 > Nota importante: Después de cada compilación del proyecto, limpie la solución antes de realizar cambios. Algunos recursos se almacenarán en caché y pueden provocar locuras de los desarrolladores.
 
-> [! IMPORTANTE]
+> [!IMPORTANT]
 >
 > Es posible que deba reconstruir la solución después de agregar el complemento. Si no ve los archivos DLL de su complemento en Nop.Web, Plugins, PLUGIN_OUTPUT_DIRECTORY, debe reconstruir la solución. nopCommerce no mostrará su plugin en la página Plugins locales si sus archivos DLL no existen en la carpeta correcta en Nop.Web.
 
-• Manejo de solicitudes. Controladores, modelos y vistas
+## Manejo de solicitudes. Controladores, modelos y vistas
 
 Ahora puedes ver el plugin yendo a **Admin area > Configuración > Plugins locales**. Pero como adivinó nuestro plugin no hace nada. Ni siquiera tiene una interfaz de usuario para su configuración. Vamos a crear una página para configurar el plugin.
 
@@ -134,22 +135,22 @@ Donde *-CONTROLLER_NAME*  es un nombre de su controlador y  *-ACTION_NAME* es un
 
 Una vez que haya instalado su plugin y añadido el método de configuración, encontrará un enlace para configurar su plugin en **Admin ..
 
-> [!CONSEJO]
+> [!tip]
 >
 > Consejo: La forma más fácil de completar los pasos descritos anteriormente es abrir cualquier otro plugin y copiar estos archivos en su proyecto de plugin. A continuación, simplemente cambie el nombre de las clases y directorios adecuados.
 
 Por ejemplo, la estructura del proyecto del plugin PayPalStandard se parece a la imagen de abajo:
 
-! [p3](_static/cómo escribir-plugin-4.20/write_plugin_4.20_3.jpg)
+![p3](_static/how-to-write-plugin-4.20/write_plugin_4.20_3.jpg)
 
-• Manejo de los métodos "Instalar" y "Desinstalar"
+## Manejo de los métodos "Instalar" y "Desinstalar"
 
 Este paso es opcional. Algunos plugins pueden requerir lógica adicional durante la instalación del plugin. Por ejemplo, un complemento puede insertar nuevos recursos de configuración regional. Por lo tanto, abra la implementación de IPlugin (en la mayoría de los casos se derivará de la clase BasePlugin) e invalide los métodos siguientes:
 
 1. **Instalar**. Este método se invocará durante la instalación del plugin. Puede inicializar cualquier configuración aquí, insertar nuevos recursos de configuración regional o crear algunas tablas de base de datos nuevas (si es necesario).
 1. **Desinstalar**. Este método se invocará durante la desinstalación del plugin.
 
-> [!IMPORTANTE]
+> [!IMPORTANT]
 >
 > Nota importante: Si invalida uno de estos métodos, no oculte su implementación base.
 
@@ -170,7 +171,7 @@ public override void Install()
 }
 ```
 
->[!PROPINA]
+>[!TIP]
 >
 > Consejo: la lista de complementos instalados se encuentra en `\ App_Data \ Plugins.json`. La lista se crea durante la instalación.
 

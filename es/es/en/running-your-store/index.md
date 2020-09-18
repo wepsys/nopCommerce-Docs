@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.exileDev, git.dunaenko, git.mariannk
 ---
 
-# Running your store
+# Dirigiendo su tienda
 
 * [Product management](xref:en/running-your-store/catalog/index)
 * [Order management](xref:en/running-your-store/order-management/index)

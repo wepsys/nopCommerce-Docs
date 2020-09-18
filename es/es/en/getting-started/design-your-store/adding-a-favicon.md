@@ -5,69 +5,69 @@ author: git.RomanovM
 contributors: git.rajupaladiya, git.DmitriyKulagin, git.mariannk
 ---
 
-# Uploading favicons
+# Subir favicons
 
-Since the version 4.20 you can automatically upload favicons through the admin area.
+Desde la versión 4.20 puede cargar automáticamente favicons a través del área de administración.
 
 > [!NOTE]
-> 
-> For multistore case you need to repeat this upload procedure for each store.
+>
+> Para el caso de varias tiendas, debe repetir este procedimiento de carga para cada tienda.
 
-1. To upload favicons go to **Configuration → Settings → General settings.** The *Favicon and app icons* panel is displayed: 
+1. Para cargar favicons vaya a  **Configuración > Configuración > Ajustes generales.** Se muestra el panel *Iconos de favicon y aplicación*:  
 ![settings_block](_static/adding-a-favicon/settings_block.png)
 
-1. Click the green button **Upload icons archive**, the file selection dialog will be opened: ![file_selection_dialog](_static/adding-a-favicon/file_selection_dialog.png) Here you need to copy the path to your icons (it vary depends on the store and the virtual directory). For example: `/icons/icons_0`.
+1. Haga clic en el botón verde  **Cargar iconos archivo**, se abrirá el cuadro de diálogo de selección dearchivos: ![ file_selection_dialog](_static/adding-a-favicon/file_selection_dialog.png) Aquí es necesario copiar la ruta de acceso a sus iconos(varía depende de la tienda y el directorio virtual). Por ejemplo:  `/icons/icons_0`.
 
-1. There are several options for what to upload, depending on how friendly your site favicons should be for different devices:
+1. Hay varias opciones para qué cargar, dependiendo de lo amigable que sus favicons sitio deben ser para diferentes dispositivos:
 
-   - The most complete option is to use one of the favicon generators. In this manual, we will show an example of using a [RealFaviconGenerator](https://realfavicongenerator.net/). Thanks to this service, uploading the full favicon package will be carried out in a few clicks.
+- La opción más completa es utilizar uno de los generadores de favicon. En este manual, mostraremos un ejemplo del uso de un [RealFaviconGenerator](https://realfavicongenerator.net/). Gracias a este servicio, la carga del paquete favicon completo se llevará a cabo en unos pocos clics.
 
-      * Go to this generator main page where you will be invited to choose a picture for the favicon 
-      ![realfavicongenerator](_static/adding-a-favicon/realfavicongenerator.png)
+* Ir a esta página principal generador donde se le invitará a elegir una imagen para el favicon
+![realfavicongenerator](_static/adding-a-favicon/realfavicongenerator.png)
 
-      * After selecting a picture and clicking **Continue with this picture**, you will be redirected to the next page. Here you can adjust the display settings of favicons for specific devices and applications - iOS Web Clip, Android Chrome, Windows Metro, macOS Safari, etc. The service will automatically show display examples. You can customize them to your needs or leave the default ones.
+* Después de seleccionar una imagen y hacer clic en  **Continuar con esta imagen**, será redirigido a la página siguiente. Aquí puede ajustar la configuración de pantalla de favicons para dispositivos y aplicaciones específicos - iOS Web Clip, Android Chrome, Windows Metro, macOS Safari, etc. El servicio mostrará automáticamente ejemplos de visualización. Puede personalizarlos según sus necesidades o dejar las predeterminadas.
 
-      * At the bottom of the same page you can find the **Favicon Generator Options** panel. 
-      ![favicon_generator_options](_static/adding-a-favicon/favicon_generator_options.png)
+* En la parte inferior de la misma página se puede encontrar el panel **Opciones del generador de Favicon**.  
+![favicon_generator_options](_static/adding-a-favicon/favicon_generator_options.png)
 
-         - In this section, you must set certain settings. In the **Path** tab, select the option `I cannot or I do not want to place favicon files at the root of my web site. Instead I will place them here` and specify the path from the step 2. ![favicon_path](_static/adding-a-favicon/favicon_path.png)
+- En esta sección, debe establecer ciertos ajustes. En la pestaña **Path**,  seleccione la opción  'No puedo o no quiero colocar archivos favicon en la raíz de mi sitio web. En su lugar, los colocaré aquí'  y especificaré la ruta desde el paso 2. ![ favicon_path](_static/adding-a-favicon/favicon_path.png)
 
-         - In the **Version/Refresh** tab, select the option depending on whether your site is already in production. The setting description will help you with this. ![favicon_version](_static/adding-a-favicon/favicon_version.png)
+- En la pestaña Versión/Actualizar,seleccione la opción en función de si su sitio ya está en producción. La descripción de la configuración le ayudará con esto. ![favicon_version](_static/adding-a-favicon/favicon_version.png)
 
-         - In the **Additional fields** tab it is necessary to check the option to generate an html file in the package. ![favicon_additional_fields](_static/adding-a-favicon/favicon_additional_fields.png)
+- En la pestaña **Campos adicionales**  es necesario comprobar la opción para generar un archivo html en el paquete. ![ favicon_additional_fields](_static/adding-a-favicon/favicon_additional_fields.png)
 
-      * Now all settings are set, click the button to generate. ![generate_button](_static/adding-a-favicon/generate_button.png)
+* Ahora todos los ajustes están establecidos, haga clic en el botón para generar. ![generate_button](_static/adding-a-favicon/generate_button.png)
 
-      * Get your favicon package. ![download_package](_static/adding-a-favicon/download_package.png)
+* Obtener su paquete favicon. ![download_package](_static/adding-a-favicon/download_package.png)
 
-   - The simplest option is to use only **favicon.ico** file, that has been successfully used on many sites for a long time, until devices with different screen resolutions appeared.
+- La opción más simple es utilizar sólo el archivo favicon.ico,ico, que se ha utilizado con éxito en muchos sitios durante mucho tiempo, hasta que aparecieron dispositivos con diferentes resoluciones de pantalla.
 
-      * Find a sample favicon package that is located in `wwwroot/icons/samples/` directory and copy it.
+* Encuentra un paquete favicon de muestra que se encuentra en el directorio `wwwroot/icons/samples/`  y cópialo.
 
-      * In the new package delete all files except **favicon.ico** and **html_code.html**.
+* En el nuevo paquete, elimine todos los archivos excepto  **favicon.ico**  y  **html_code.html**.
 
-      * Replace in this package the file **favicon.ico** with your new favicon.
+* Reemplace en este paquete el archivo  **favicon.ico**  con su nuevo favicon.
 
-      * Edit the **html_code.html** file. Leave the only one line there: `<link rel="shortcut icon" href="/icons/icons_0/favicon.ico">`, assuming that `/icons/icons_0` is the path from the step 2.
+* Edite el archivo **html_code.html**.  Deje la única línea allí:  `<link rel="icono de acceso directo" href="/icons/icons_0/favicon.ico">`,suponiendo que  `/icons/icons_0` es la ruta desde el paso 2.
 
-      * Save these two files into a package. Your favicon package is ready.
+* Guarde estos dos archivos en un paquete. Tu paquete favicon está listo.
 
-   - An intermediate option is using the full favicon package without a generator.
+- Una opción intermedia es utilizar el paquete favicon completo sin un generador.
 
-      1. Find a sample favicon package that is located in `wwwroot/icons/samples/` directory and copy it.
+1. Busque un paquete de favicon de muestra que se encuentre en el directorio `wwwroot/icons/samples/`  y cópielo.
 
-      1. Replace the pictures in the new package with your own ones taking into account the original sizes.
+1. Sustituya las imágenes del nuevo paquete por las suyas propias teniendo en cuenta los tamaños originales.
 
-      1. Edit the **html_code.html** file, replace all entries of the `/icons/icons_0` with the path that was saved on the step 2.
+1. Edite el archivo **html_code.html**,  reemplace todas las entradas de  `wwwroot/icons/samples/`  por la ruta que se guardó en el paso 2.
 
-      1. Save this package. Your favicon package is ready.
+1. Guarde este paquete. Tu paquete favicon está listo.
 
-1. Return back to the admin area with a prepared favicon package to upload. Select the desired file and click **Upload icons archive**. ![upload_package](_static/adding-a-favicon/file_selection_dialog.png)
+1. Vuelva al área de administración con un paquete favicon preparado para cargar. Seleccione el archivo deseado y haga clic en  **Cargar archivo de iconos**. ![ upload_package](_static/adding-a-favicon/file_selection_dialog.png)
 
-1. Ensure your package is successfully uploaded. ![success](_static/adding-a-favicon/success.png)
+1. Asegúrese de que su paquete se ha cargado correctamente. ![éxito](_static/adding-a-favicon/success.png)
 
-1. To see the new favicon on the site you should clear cache in the admin area and in the browser then reload the page.
+1. Para ver el nuevo favicon en el sitio debe borrar la caché en el área de administración y en el navegador y luego volver a cargar la página.
 
 > [!TIP]
-> 
-> To create a favicon package, you can use any generators, third-party services, or do it manually. The only requirement is the existence of the **html_code.html** file with the html code, which will be placed in the `<head>` element of the site pages.
+>
+> Para crear un paquete favicon, puede utilizar cualquier generador, servicio de terceros o hacerlo manualmente. El único requisito es la existencia del archivo **html_code.html**  con el código html, que se colocará en el elemento `<head>`  de las páginas del sitio.

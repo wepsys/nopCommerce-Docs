@@ -22,15 +22,15 @@ Configure los detalles de su tienda principal, de la siguiente manera:
 * Ingrese la **URL de la tienda** de su tienda.
 * Seleccione la casilla de verificación **SSL habilitado** si su tienda está protegida por SSL. SSL (Secure Sockets Layer) es la tecnología de seguridad estándar para establecer un enlace cifrado entre un servidor web y un navegador. Este enlace garantiza que todos los datos que se transmiten entre el servidor web y los navegadores permanezcan privados e integrales. SSL es un estándar de la industria y lo utilizan millones de sitios web para proteger sus transacciones en línea con sus clientes.
 
-  > [!IMPORTANTE]
+  > [!IMPORTANT]
   >
   > Marque esta opción solo después de haber instalado el certificado SSL en su servidor. De lo contrario, no podrá acceder a su sitio y tendrá que editar manualmente el registro apropiado en su base de datos (tabla [Tienda]).
 
-  > [!SUGERENCIA]
+  > [!TIP]
   >
   > Lea más sobre la configuración de SSL en el siguiente capítulo: [Cómo instalar y configurar la certificación SSL](xref:es/Getting-started/advanced-configuration/how-to-install-and-configure-ssl-certificate).
 
-* El campo **HOST values​​** es una lista de posibles valores HTTP_HOST de su tienda (por ejemplo, `yourstore.com`,` www.yourstore.com`). Completar este campo solo es necesario cuando tiene una [solución de múltiples tiendas](xref:en/Getting-started/advanced-configuration/multi-store) para determinar la tienda actual. Este campo permite distinguir solicitudes a distintas URL y determina la tienda actual. También puede ver el valor HTTP_POST actual en **Sistema → Información del sistema**.
+* El campo **HOST values​​** es una lista de posibles valores HTTP_HOST de su tienda (por ejemplo, `yourstore.com`, `www.yourstore.com`). Completar este campo solo es necesario cuando tiene una [solución de múltiples tiendas](xref:en/Getting-started/advanced-configuration/multi-store) para determinar la tienda actual. Este campo permite distinguir solicitudes a distintas URL y determina la tienda actual. También puede ver el valor HTTP_POST actual en **Sistema → Información del sistema**.
 * En el campo **Idioma predeterminado**, elija un idioma predeterminado de su tienda. También puede dejarlo sin seleccionar. En este caso, se utilizará el primero encontrado (con el orden de visualización más bajo).
 * Defina el **orden de exhibición** para esta tienda. 1 representa la parte superior de la lista.
 * Defina el **Nombre de la empresa**.

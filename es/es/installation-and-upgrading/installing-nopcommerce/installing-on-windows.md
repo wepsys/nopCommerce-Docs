@@ -10,7 +10,7 @@ Este capítulo describe cómo descargar el software nopCommerce, cargarlo en su 
 
 Antes de comenzar la instalación, asegúrese de que su servidor web tenga los [requisitos mínimos para ejecutar nopCommerce](xref:en/installation-and-upgrade/technology-and-system-requirements).
 
-> [!NOTA]
+> [!NOTE]
 > Para obtener más información sobre las pautas de selección de alojamiento, visite [esta página](xref:en/installation-and-upgrade/installation-nopcommerce/choose-a-hosting-company).
 
 ## Descarga nopCommerce
@@ -26,7 +26,7 @@ El siguiente paso es cargar los archivos nopCommerce en su servidor. Para hacer 
 ## Crea una base de datos
 Antes de ejecutar nopCommerce, cree una nueva instancia de base de datos en su panel de control de alojamiento. Esta base de datos se utilizará para almacenar los datos de su sitio web.
 
-> [!NOTA]
+> [!NOTE]
 >
 > Al crear la base de datos, elija MS SQL Server versión *2012* o *superior* si se solicita.
 
@@ -38,7 +38,7 @@ Crea un nuevo sitio web en tu panel de control de hosting. Luego busque una URL 
 ## Instalar nopCommerce
 Usando la url del paso anterior acceda al sitio web desde su navegador.
 Una vez que abra el sitio por primera vez, será redirigido a la página de instalación, de la siguiente manera:
-! [instalación de nopCommerce](_static/installation-local/installation.jpg)
+![nopCommerce installation](_static/installing-local/installation.jpg)
 
 En el panel *Información de la tienda*, complete los siguientes detalles:
 * **Correo electrónico del usuario administrador**: esta es la dirección de correo electrónico del primer administrador del sitio.
@@ -59,8 +59,8 @@ En el panel *Información de la base de datos* debe ingresar la siguiente inform
 
 Haga clic en **Instalar** para iniciar el proceso de instalación. Cuando se completa el proceso de configuración, se muestra la página de inicio de su nuevo sitio.
 
-> [!NOTA]
+> [!NOTE]
 > El botón **Reiniciar la instalación** en la parte inferior de la página de instalación le permite reiniciar el proceso de instalación en caso de que algo salga mal.
 
-> [!NOTA]
+> [!NOTE]
 > Si desea restablecer completamente un sitio nopCommerce a su configuración predeterminada, puede eliminar el `dataSettings.json` file from the `App_Data` directory.

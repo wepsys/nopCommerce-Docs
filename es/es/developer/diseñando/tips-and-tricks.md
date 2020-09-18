@@ -13,7 +13,7 @@ contributors: git.DmitriyKulagin, git.sanju741, git.exileDev
 1. Las hojas de estilo CSS no le permiten comenzar el nombre de sus identificadores y clases con un número u otro carácter no alfabético.
 1. No se limite únicamente a las etiquetas span y div. Hay muchas otras características mejores que ofrece CSS para diseñar una página.
 
-> [!SUGERENCIA]
+> [!TIP]
 > 
 > Hacer uso de **Firefox Developer Tools**plug-in ofrecido por Mozilla. Es una herramienta muy útil que le permite editar, depurar y monitorear CSS, HTML y JavaScript se encuentran en cualquier página web. Puedes aprender más acerca de esto aquí: [Firefox Developer Tools.](https://developer.mozilla.org/en-US/docs/Tools) 
 > 

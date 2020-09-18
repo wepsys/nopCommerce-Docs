@@ -24,8 +24,8 @@ Los plugins se utilizan para ampliar la funcionalidad de nopCommerce. nopCommerc
     ![p1](_static/how-to-write-plugin-3.90/write_plugin_3.90_1.jpg)
 
     - En el menú Proyecto, haga clic en Propiedades.
-     - Haga clic en la pestaña Crear.
-     - Haga clic en el botón Examinar junto al cuadro Ruta de salida y seleccione un nuevo directorio de salida de compilación.
+    - Haga clic en la pestaña Crear.
+    - Haga clic en el botón Examinar junto al cuadro Ruta de salida y seleccione un nuevo directorio de salida de compilación.
 
      Debe seguir los pasos descritos anteriormente para todas las configuraciones existentes ("Depurar" y "Liberar").
 
@@ -49,7 +49,7 @@ Los plugins se utilizan para ampliar la funcionalidad de nopCommerce. nopCommerc
 
 1. También debe crear un archivo web.config y asegurarse de que se copia en la salida. Simplemente cópielo desde cualquier plugin existente.
 
-> [!IMPORTANTE]
+> [!IMPORTANT]
 >
 > En adelante, asegúrese de que las propiedades "Copiar local" de todas las referencias de ensamblado de terceros (incluidas las bibliotecas principales como Nop.Services.dll o Nop.Web.Framework.dll) estén establecidas en "False" (no copie)
 
@@ -61,17 +61,15 @@ Los plugins se utilizan para ampliar la funcionalidad de nopCommerce. nopCommerc
 - **IDiscountRequirementRule**. Le permite crear nuevas reglas de descuento como "El país de facturación de un cliente debe ser..."
 - **IPaymentMethod**. plugins que se utilizan para el procesamiento de pagos.
 - **IShippingRateComputationMethod**. Estos plugins se utilizan para recuperar métodos de entrega aceptados y tarifas de envío adecuadas. Por ejemplo, UPS, UPS, FedEx, etc.
-- **ITaxProvider**. Los proveedores de impuestos se utilizan para obtener tasas de impuestos
+- **ITaxProvider**. Los proveedores de impuestos se utilizan para obtener tasas de impuestos.
 
-.
+    uIf your plugin doesn't fit any of these interfaces, then use the "IMiscPlgin" interface.
 
-    If your plugin doesn't fit any of these interfaces, then use the "IMiscPlugin" interface.
-
->[!IMPORTANTE]
+>[!IMPORTANT]
 >
 > Después de cada compilación del proyecto, limpie la solución antes de realizar cambios. Algunos recursos se almacenarán en caché y pueden provocar locuras de los desarrolladores.
 
-# Manejo de solicitudes. Controladores, modelos y vistas
+## Manejo de solicitudes. Controladores, modelos y vistas
 
 Ahora puedes ver el plugin yendo a **Admin area > Configuración > Plugins**. Pero como adivinó nuestro plugin no hace nada. Ni siquiera tiene una interfaz de usuario para su configuración. Vamos a crear una página para configurar el plugin.
 
@@ -89,24 +87,22 @@ So let's start:
 - **Crear la vista**. Agregue una carpeta Vistas en el nuevo plugin, luego agregue una carpeta {Nombre} (donde {Nombre} es el nombre de su plugin), y finalmente agregue un archivo cshtml llamado `Configure.cshtml`. Nota importante: para las versiones 2.00-3.30, la vista debe marcarse como un recurso incrustado. Y a partir de las vistas de la versión 3.40, asegúrese de que la propiedad "Acción de compilación" del archivo de vista esté establecida en "Contenido" y que la propiedad "Copiar en el directorio de salida" esté establecida en "Copiar si es más reciente".
 - **Crea el controlador**. Agregue una carpeta de controladores en el nuevo plugin y luego agregue una nueva clase de controlador. Una buena práctica es nombrar los controladores de plugins `{Grupo} {Nombre} Controller.cs`. Por ejemplo, PaymentAuthorizeNetController. Por supuesto, no es un requisito nombrar los controladores de esta manera (sino solo una recomendación). Luego, cree un método de acción apropiado para la página de configuración (en el área de administración). Vamos a llamarlo "Configurar". Prepare una clase modelo y páselo a la siguiente vista. Para las versiones 2.00-3.30 de nopCommerce, debe pasar la ruta de vista incrustada: "Nop.Plugin. {Group}. {Name} .Views. {Group} {Name} .Configure". Y a partir de la versión 3.40 de nopCommerce, debe pasar la ruta de la vista física: `~ / Plugins / {PluginOutputDirectory} / Views / {ControllerName} / Configure.cshtml`. Por ejemplo, abra el plugin de pago Authorize.NET y observe su implementación de PaymentAuthorizeNetController.
 
-   > [!CONSEJO]
+   > [!tip]
 >
-> -  La forma más fácil de completar los pasos descritos anteriormente es abrir cualquier otro plugin y copiar estos archivos en su proyecto de plugin. A continuación, simplemente cambie el nombre de las clases y directorios adecuados.
-> -  Si desea limitar el acceso a un determinado método de acción del controlador a los administradores (propietarios de la tienda), a continuación, simplemente márquelo con [AdminAuthorize] atributo.
+> - La forma más fácil de completar los pasos descritos anteriormente es abrir cualquier otro plugin y copiar estos archivos en su proyecto de plugin. A continuación, simplemente cambie el nombre de las clases y directorios adecuados.
+> -Si desea limitar el acceso a un determinado método de acción del controlador a los administradores (propietarios de la tienda), a continuación, simplemente márquelo con [AdminAuthorize] atributo.
 
 Por ejemplo, la estructura del proyecto de Authorize.NET plugin se parece a la imagen de abajo
 
-! [p3](_static/cómo escribir-plugin-3.90/write_plugin_3.90_3.jpg)
+![p3](_static/how-to-write-plugin-3.90/write_plugin_3.90_3.jpg)
 
-• Rutas
+## Rutas
 
 Ahora necesitamos registrar rutas de plugin apropiadas. ASP.NET enrutamiento es responsable de asignar solicitudes de explorador entrantes a acciones de controlador MVC concretas. Puede encontrar más información sobre el enrutamiento [aquí](http://www.asp.net/mvc/tutorials/older-versions/controllers-and-routing/asp-net-mvc-routing-overview-cs). Así que sigue los siguientes pasos:
 
-- Algunas de las interfaces específicas del plugin (descritas anteriormente) y la interfaz "IMiscPlugin" tienen el siguiente método: "GetConfigurationRoute". Debe devolver una ruta a una acción del controlador que se utiliza para la configuración del plugin. Implemente el método "GetConfigurationRoute" de la interfaz del plugin. Este método informa a nopCommerce sobre qué ruta se utiliza para la configuración del plugin. Si el plugin no tiene una página de configuración, "GetConfigurationRoute" debe devolver null. Por ejemplo, vea el código siguiente:
+- Algunas de las interfaces específicas del plugin (descritas anteriormente) y la interfaz "IMiscPlugin" tienen el siguiente método: "GetConfigurationRoute". Debe devolver una ruta a una acción del controlador que se utiliza para la configuración del plugin. Implemente el método "GetConfigurationRoute" de la interfaz del plugin. Este método informa a nopCommerce sobre qué ruta se utiliza para la configuración del plugin. Si el plugin no tiene una página de configuración, "GetConfigurationRoute" debe devolver null. Por ejemplo, vea el código siguiente
 
-
-
-    ```csharp
+      ```csharp
     public void GetConfigurationRoute(out string actionName,
                 out string controllerName,
                 out RouteValueDictionary routeValues)
@@ -121,7 +117,7 @@ Ahora necesitamos registrar rutas de plugin apropiadas. ASP.NET enrutamiento es 
     }
     ```
 
--(opcional) Si necesita agregar alguna ruta personalizada, cree el archivo `RouteProvider.cs`. Informa al sistema nopCommerce sobre las rutas de los plugins. Por ejemplo, la siguiente clase RouteProvider agrega una nueva ruta a la que se puede acceder abriendo su navegador web y navegando a la URL `http://www.yourStore.com/Plugins/PaymentPayPalStandard/PDTHandler` (utilizada por el plugin de PayPal):
+- (optional)Si necesita agregar alguna ruta personalizada, entonces cree el archivo  `RouteProvider.cs`Informa al sistema nopCommerce sobre las rutas de los complementos. Por ejemplo, la siguiente clase RouteProvider agrega una nueva ruta a la que se puede acceder abriendo su navegador web y navegando a la URL `http://www.yourStore.com/Plugins/PaymentPayPalStandard/PDTHandler` URL (used by PayPal plugin):
 
     ```csharp
     public partial class RouteProvider : IRouteProvider
@@ -145,20 +141,26 @@ Ahora necesitamos registrar rutas de plugin apropiadas. ASP.NET enrutamiento es 
     }
     ```
 
-    Una vez que haya instalado su complemento y agregado el método de configuración, encontrará un enlace para configurar su complemento en Admin → Configuración → Complementos.
+    Una vez que haya instalado su plugin y agregado el método de configuración, encontrará un enlace para configurar su plugin en Admin → Configuración → Plugins.
 
-## Manejo de los métodos "Instalar" y "Desinstalar"
+## Handling "Install" and "Uninstall" methods
 
-Este paso es opcional. Algunos complementos pueden requerir lógica adicional durante la instalación del complemento. Por ejemplo, un complemento puede insertar nuevos recursos de configuración regional. Así que abra su implementación de IPlugin (en la mayoría de los casos se derivará de la clase BasePlugin) y anule los siguientes métodos:
+Este paso es opcional. Algunos plugin
+s pueden requerir lógica adicional durante la instalación del plugin. Por ejemplo, un complemento puede insertar nuevos recursos de configuración regional. Por lo tanto, abra la implementación de IPlugiMn (en la mayoría de los casos se derivará de la clase BasePlugin) e invalide los métodos siguientes:
 
-- Instalar en pc. Este método se invocará durante la instalación del complemento. Puede inicializar cualquier configuración aquí, insertar nuevos recursos de configuración regional o crear algunas tablas de base de datos nuevas (si es necesario).
-- Desinstalar. Este método se invocará durante la desinstalación del complemento.
+- Instalar. Este método se invocará durante la instalación de plugin. Puede inicializar cualquier configuración aquí, insertar nuevos recursos de configuración regional o crear algunas tablas de base de datos nuevas (si es necesario).
+- Desinstalar. Este método se invocará durante la desinstalación de plugin.
 
-> [!IMPORTANTE]
->
-> Si anula uno de estos métodos, no oculte su implementación base.
 
-Por ejemplo, la estructura del proyecto del complemento Authorize.NET se parece a la imagen a continuación
+
+
+> [!IMPORTANT]
+> 
+> Si invalida uno de estos métodos, no oculte su implementación base.
+
+Por ejemplo, la estructura del proyecto de Authorize.NET plugin se parece a la imagen de abajo
+
+
 
 ```csharp
 public override void Install()
@@ -175,7 +177,7 @@ public override void Install()
 }
 ```
 
-> [!SUGERENCIA]
+> [!TIP]
 >
 > La lista de complementos instalados se encuentra en `\App_Data\InstalledPlugins.txt`. La lista se crea durante la instalación.
 
@@ -185,5 +187,4 @@ Algunos complementos pueden quedar desactualizados y ya no funcionan con la vers
 
 ## Conclusión
 
-Con suerte, esto lo ayudará a comenzar con nopCommerce y lo preparará para crear complementos más elaborados.
-                                                   
+Con suerte, esto lo ayudará a comenzar con nopCommerce y lo preparará para crear complementos más elaborados .

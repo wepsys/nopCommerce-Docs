@@ -5,20 +5,20 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin
 ---
 
-# Coding Standards
+# Estándares de codificación
 
-There are three supported .NET coding convention categories:
+Hay tres categorías de convenciones de codificación .NET compatibles:
 
-## Language conventions
+## Convenciones de idioma
 
-### .NET code style settings
+### Configuración de estilo de código .NET
 
-#### "this." qualifiers
+#### "esta." calificadores
 
-This style rule can be applied to fields, properties, methods, or events.
+Esta regla de estilo se puede aplicar a campos, propiedades, métodos o eventos.
 
-- Prefer the code element *not* to be prefaced with `this.`
-- Prefer fields *not* to be prefaced with `this.`
+- Prefiere que el elemento de código *no* esté precedido por `this`.
+- Prefiere que los campos *no* estén precedidos por `this.`
 
   ```csharp
   //Right
@@ -66,11 +66,11 @@ This style rule can be applied to fields, properties, methods, or events.
   this.Elapsed += Handler;
   ```
 
-#### Language keywords instead of framework type names for type references
+#### Palabras clave de idioma en lugar de nombres de tipo de marco para referencias de tipo
 
-This style rule can be applied to local variables, method parameters, and class members, or as a separate rule to type member access expressions.
+Esta regla de estilo se puede aplicar a variables locales, parámetros de método y miembros de clase, o como una regla separada para escribir expresiones de acceso a miembros.
 
-- Prefer the language keyword for local variables, method parameters, and class members, instead of the type name, for types that have a keyword to represent them.
+- Prefiera la palabra clave de idioma para variables locales, parámetros de método y miembros de clase, en lugar del nombre de tipo, para tipos que tienen una palabra clave para representarlos.
 
   ```csharp
   //Right
@@ -82,7 +82,7 @@ This style rule can be applied to local variables, method parameters, and class 
   private Int32 _member;
   ```
 
-- Prefer the language keyword for member access expressions, instead of the type name, for types that have a keyword to represent them.
+- Prefiera la palabra clave del idioma para las expresiones de acceso a miembros, en lugar del nombre del tipo, para los tipos que tienen una palabra clave para representarlos.
 
   ```csharp
   //Right
@@ -94,11 +94,11 @@ This style rule can be applied to local variables, method parameters, and class 
   var local = Int32.MaxValue;
   ```
 
-#### Modifier preferences
+#### Preferencias de modificadores
 
-The style rules in this section concern modifier preferences, including requiring accessibility modifiers, specifying the desired modifier sort order, and requiring the read-only modifier.
+Las reglas de estilo de esta sección se refieren a las preferencias de los modificadores, incluido el requerimiento de modificadores de accesibilidad, la especificación del orden de clasificación del modificador deseado y el requerimiento del modificador de solo lectura.
 
-- Prefer accessibility modifiers to be declared except for public interface members.
+- Prefiere que se declaren modificadores de accesibilidad, excepto para los miembros de la interfaz pública.
 
   ```csharp
   //Right
@@ -128,11 +128,11 @@ The style rules in this section concern modifier preferences, including requirin
   }
   ```
 
-#### Parentheses preferences
+#### Preferencias de paréntesis
 
-The style rules in this section concern parentheses preferences, including the use of parentheses for arithmetic, relational, and other binary operators.
+Las reglas de estilo de esta sección se refieren a las preferencias de paréntesis, incluido el uso de paréntesis para operadores aritméticos, relacionales y otros operadores binarios.
 
-- Prefer parentheses to clarify arithmetic operator (*, /, %, +, -, <<, >>, &, ^, |) precedence
+- Preferir paréntesis para aclarar la precedencia del operador aritmético (*, /, %, +, -, <<, >>, &, ^, |)
 
   ```csharp
   //Right
@@ -144,7 +144,7 @@ The style rules in this section concern parentheses preferences, including the u
   var v = a + b * c;
   ```
 
-- Prefer parentheses to clarify relational operator (>, <, <=, >=, is, as, ==, !=) precedence
+-Prefiere paréntesis para aclarar el operador relacional (>, <, <=, >=, is, as, ==, !=) es, como Precedencia
 
   ```csharp
   //Right
@@ -156,7 +156,7 @@ The style rules in this section concern parentheses preferences, including the u
   var v = a < b == c > d;
   ```
 
-- Prefer parentheses to clarify other binary operator (&&, ||, ??) precedence
+- Prefiere los paréntesis para aclarar la precedencia de otros operadores binarios (&&, ||, ??)
 
   ```csharp
   //Right
@@ -168,7 +168,7 @@ The style rules in this section concern parentheses preferences, including the u
   var v = a || b && c;
   ```
 
-- Prefer to not have parentheses when operator precedence is obvious
+-Prefiero no tener paréntesis cuando la precedencia del operador es obvia
 
   ```csharp
   //Right
@@ -180,11 +180,11 @@ The style rules in this section concern parentheses preferences, including the u
   var v = (a.b).Length;
   ```
 
-#### Expression-level preferences
+#### Preferencias de nivel de expresión
 
-The style rules in this section concern expression-level preferences, including the use of object initializers, collection initializers, explicit or inferred tuple names, and inferred anonymous types.
+Las reglas de estilo de esta sección se refieren a las preferencias de nivel de expresión, incluido el uso de inicializadores de objeto, inicializadores de colección, nombres de tuplas explícitos o inferidos y tipos anónimos inferidos.
 
-- Prefer objects to be initialized using object initializers when possible
+- Prefiere que los objetos se inicialicen utilizando inicializadores de objetos cuando sea posible
 
   ```csharp
   //Right
@@ -197,7 +197,7 @@ The style rules in this section concern expression-level preferences, including 
   c.Age = 21;
   ```
 
-- Prefer collections to be initialized using collection initializers when possible
+- Prefiere que las colecciones se inicialicen usando inicializadores de colección cuando sea posible
 
   ```csharp
   //Right
@@ -212,7 +212,7 @@ The style rules in this section concern expression-level preferences, including 
   list.Add(3);
   ```
 
-- Prefer tuple names to ItemX properties
+- Prefiere los nombres de tupla a las propiedades de ItemX
 
   ```csharp
   //Right
@@ -250,7 +250,7 @@ The style rules in this section concern expression-level preferences, including 
   var anon = new { age, name };
   ```
 
-- Prefer autoproperties over properties with private backing fields
+- Prefiere las propiedades automáticas a las propiedades con campos de respaldo privados
 
   ```csharp
   //Right
@@ -270,7 +270,7 @@ The style rules in this section concern expression-level preferences, including 
   }
   ```
 
-- Prefer using a null check with pattern-matching over *`object.ReferenceEquals`*
+- Prefiero usar una verificación nula con coincidencia de patrones *`object.ReferenceEquals`*
 
   ```csharp
   //Right
@@ -284,7 +284,7 @@ The style rules in this section concern expression-level preferences, including 
       return;
   ```
 
-- Prefer assignments with a ternary conditional over an if-else statement
+- Prefiere asignaciones con un condicional ternario sobre una instrucción if-else
 
   ```csharp
   //Right
@@ -304,7 +304,7 @@ The style rules in this section concern expression-level preferences, including 
   }
   ```
 
-- Prefer return statements to use a ternary conditional over an if-else statement
+- Prefiere declaraciones de retorno para usar un condicional ternario sobre una instrucción if-else
 
   ```csharp
   //Right
@@ -323,7 +323,7 @@ The style rules in this section concern expression-level preferences, including 
   }
   ```
 
-- Prefer compound assignment expressions
+- Prefiere expresiones de asignación compuestas
 
   ```csharp
   //Right
@@ -335,11 +335,11 @@ The style rules in this section concern expression-level preferences, including 
   x = x + 1;
   ```
 
-#### Null-checking preferences
+#### Preferencias de verificación nula
 
-The style rules in this section concern null-checking preferences.
+Las reglas de estilo de esta sección se refieren a las preferencias de verificación de nulos.
 
-- Prefer null coalescing expressions to ternary operator checking
+- Prefiere expresiones de fusión nula a la verificación de operadores ternarios
 
   ```csharp
   //Right
@@ -352,7 +352,7 @@ The style rules in this section concern null-checking preferences.
   var v = x == null ? y : x;
   ```
 
-- Prefer to use null-conditional operator when possible
+- Prefiere usar un operador condicional nulo cuando sea posible
 
   ```csharp
   //Right
@@ -365,13 +365,13 @@ The style rules in this section concern null-checking preferences.
   var v = o != null ? o.String() : null;
   ```
 
-### C# code style settings
+### Configuración de estilo de código C#
 
-#### Implicit and explicit types
+#### Tipos implícitos y explícitos
 
-The style rules in this section concern the use of the var keyword versus an explicit type in a variable declaration. This rule can be applied separately to built-in types, when the type is apparent, and elsewhere.
+Las reglas de estilo en esta sección se refieren al uso de la palabra clave var frente a un tipo explícito en una declaración de variable. Esta regla se puede aplicar por separado a los tipos integrados, cuando el tipo es aparente y en otros lugares.
 
-- Prefer *`var`* is used to declare variables with built-in system types such as *`int`*
+- Preferir *`var`* se usa para declarar variables con tipos de sistema integrados como *`int`*
 
   ```csharp
   //Right
@@ -383,7 +383,7 @@ The style rules in this section concern the use of the var keyword versus an exp
   int x = 5;
   ```
 
-- Prefer *`var`* when the type is already mentioned on the right-hand side of a declaration expression
+-Prefiera *`var`* cuando el tipo ya se menciona en el lado derecho de una expresión de declaración
 
   ```csharp
   //Right
@@ -395,7 +395,7 @@ The style rules in this section concern the use of the var keyword versus an exp
   Customer obj = new Customer();
   ```
 
-- Prefer *`var`* over explicit type in all cases, unless overridden by another code style rule
+-Prefiere *`var`* sobre el tipo explícito en todos los casos, a menos que sea anulado por otra regla de estilo de código
 
   ```csharp
   //Right
@@ -407,9 +407,9 @@ The style rules in this section concern the use of the var keyword versus an exp
   bool f = this.Init();
   ```
 
-#### Expression-bodied members
+#### Miembros con cuerpo de expresión
 
-The style rules in this section concern the use of [expression-bodied members](https://docs.microsoft.com/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members) when the logic consists of a single expression. This rule can be applied to methods, constructors, operators, properties, indexers, and accessors.
+Las reglas de estilo de esta sección se refieren al uso de [miembros con cuerpo de expresión](https://docs.microsoft.com/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members) cuando la lógica consta de una sola expresión. Esta regla se puede aplicar a métodos, constructores, operadores, propiedades, indexadores y descriptores de acceso.
 
 - Prefer block bodies for methods
 
@@ -449,7 +449,7 @@ The style rules in this section concern the use of [expression-bodied members](h
       => new ComplexNumber(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary);
   ```
 
-- Prefer expression bodies for properties when they will be a single line
+- Prefiera cuerpos de expresión para propiedades cuando serán una sola línea
 
   ```csharp
   //Right
@@ -461,7 +461,7 @@ The style rules in this section concern the use of [expression-bodied members](h
   public int Age { get { return _age; }}
   ```
 
-- Prefer expression bodies for indexers
+- Preferir cuerpos de expresión para indexadores
 
   ```csharp
   //Right
@@ -497,11 +497,11 @@ The style rules in this section concern the use of [expression-bodied members](h
   Func<int, int> square = x => { return x * x; };
   ```
 
-#### Pattern matching
+#### La coincidencia de patrones
 
-The style rules in this section concern the use of [pattern matching](https://docs.microsoft.com/dotnet/csharp/pattern-matching) in C#.
+Las reglas de estilo de esta sección se refieren al uso de [coincidencia de patrones](https://docs.microsoft.com/dotnet/csharp/pattern-matching) en C #.
 
-- Prefer pattern matching instead of is expressions with type casts
+- Prefiere la coincidencia de patrones en lugar de expresiones con conversiones de tipo
 
   ```csharp
   //Right
@@ -513,7 +513,7 @@ The style rules in this section concern the use of [pattern matching](https://do
   if (o is int) {var i = (int)o; ... }
   ```
 
-- Prefer pattern matching instead of *`as`* expressions with null checks to determine if something is of a particular type
+- Prefiere la coincidencia de patrones en lugar de expresiones *`as`* con comprobaciones nulas para determinar si algo es de un tipo en particular
 
   ```csharp
   //Right
@@ -526,11 +526,11 @@ The style rules in this section concern the use of [pattern matching](https://do
   if (s != null) {...}
   ```
 
-#### Inlined variable declarations
+#### Declaraciones de variables en línea
 
-This style rule concerns whether out variables are declared inline or not. Starting in C# 7, you can [declare an out variable in the argument list of a method call](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/out-parameter-modifier#calling-a-method-with-an-out-argument), rather than in a separate variable declaration.
+Esta regla de estilo se refiere a si las variables de salida se declaran en línea o no. A partir de C # 7, puede [declarar una variable de salida en la lista de argumentos de una llamada de método](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/out-parameter-modifier#calling- un-método-con-un-argumento-out), en lugar de en una declaración de variable separada.
 
-- Prefer *`out`* variables to be declared inline in the argument list of a method call when possible
+- Prefiere que las variables *`out`* se declaren en línea en la lista de argumentos de una llamada al método cuando sea posible
 
   ```csharp
   //Right
@@ -543,9 +543,9 @@ This style rule concerns whether out variables are declared inline or not. Start
   if (int.TryParse(value, out i) {...}
   ```
 
-#### C# expression-level preferences
+#### Preferencias de nivel de expresión de C #
 
-This style rule concerns using the [default literal for default value expressions](https://docs.microsoft.com/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) when the compiler can infer the type of the expression.
+Esta regla de estilo se refiere al uso del [literal predeterminado para expresiones de valor predeterminado](https://docs.microsoft.com/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and -type-inference) cuando el compilador puede inferir el tipo de expresión.
 
 - Prefer *`default`* over *`default(T)`*
 
@@ -559,9 +559,9 @@ This style rule concerns using the [default literal for default value expression
   void DoWork(CancellationToken cancellationToken = default(CancellationToken)) {   ... }
   ```
 
-#### C# null-checking preferences
+#### Preferencias de comprobación de nulos de C #
 
-These style rules concern the syntax around null checking, including using throw expressions or throw statements, and whether to perform a null check or use the conditional coalescing operator (?.) when invoking a [lambda expression](https://docs.microsoft.com/dotnet/csharp/lambda-expressions).
+Estas reglas de estilo se refieren a la sintaxis en torno a la verificación nula, incluido el uso de expresiones throw o declaraciones throw, y si realizar una verificación nula o utilizar el operador de fusión condicional (?.) Al invocar un [lambda expression](https://docs.microsoft.com/dotnet/csharp/lambda-expressions).
 
 - Prefer to use throw expressions instead of throw statements
 
@@ -576,7 +576,7 @@ These style rules concern the syntax around null checking, including using throw
   this.s = s;
   ```
 
-- Refer to use the conditional coalescing operator (?.) when invoking a lambda expression, instead of performing a null check
+- Consulte el uso del operador de fusión condicional (?.) Al invocar una expresión lambda, en lugar de realizar una comprobación nula
 
   ```csharp
   //Right
@@ -588,11 +588,11 @@ These style rules concern the syntax around null checking, including using throw
   if (func != null) { func(args); }
   ```
 
-#### Code block preferences
+#### Preferencias de bloque de código
 
-This style rule concerns the use of curly braces { } to surround code blocks.
+Esta regla de estilo se refiere al uso de llaves { } para rodear bloques de código.
 
-- Prefer no curly braces if allowed
+- Prefiera no usar llaves si está permitido
 
   ```csharp
   //Right
@@ -604,15 +604,15 @@ This style rule concerns the use of curly braces { } to surround code blocks.
   if (test) { this.Display(); }
   ```
 
-## Formatting conventions
+## Convenciones de formato
 
-### .NET formatting settings
+### Configuración de formato .NET
 
-### Organize using directives
+### Organizar usando directivas
 
-These formatting rules concern the sorting and display of *`using`* directives and *`Imports`* statements.
+Estas reglas de formato se refieren a la clasificación y visualización de directivas *`using`* y declaraciones *`Imports`*.
 
-- Sort System.* *`using`* directives alphabetically, and place them before other using directives.
+- *Ordenar System.* *`Using`* *directivas alfabéticamente* y colocarlas antes que otras directivas using.
 
   ```csharp
   //Right
@@ -645,15 +645,15 @@ These formatting rules concern the sorting and display of *`using`* directives a
   using Octokit;
   ```
 
-### C# formatting settings
+### Configuración de formato de C#
 
-The formatting rules in this section apply only to C# code.
+Las reglas de formato de esta sección se aplican solo al código C#.
 
-#### New-line options
+#### Opciones de nueva línea
 
-These formatting rules concern the use of new lines to format code.
+Estas reglas de formato se refieren al uso de nuevas líneas para formatear el código.
 
-- Require braces to be on a new line for all expressions ("Allman" style).
+- Requiere que las llaves estén en una nueva línea para todas las expresiones (estilo "Allman").
 
   ```csharp
   //Right
@@ -675,7 +675,7 @@ These formatting rules concern the use of new lines to format code.
   }
   ```
 
-- Place else statements on a new line.
+- Coloque las declaraciones else en una nueva línea.
 
   ```csharp
   //Right
@@ -698,7 +698,7 @@ These formatting rules concern the use of new lines to format code.
   }
   ```
 
-- Place catch statements on a new line.
+- Coloque declaraciones de captura en una nueva línea.
 
   ```csharp
   //Right
@@ -721,7 +721,7 @@ These formatting rules concern the use of new lines to format code.
   }
   ```
 
-- Require finally statements to be on a new line after the closing brace.
+- Exigir que las declaraciones finalmente estén en una nueva línea después de la llave de cierre.
 
   ```csharp
   //Right
@@ -750,7 +750,7 @@ These formatting rules concern the use of new lines to format code.
   }
   ```
 
-- Require members of object initializers to be on separate lines
+- Requerir que los miembros de los inicializadores de objetos estén en líneas separadas
 
   ```csharp
   //Right
@@ -769,7 +769,7 @@ These formatting rules concern the use of new lines to format code.
   }
   ```
 
-- Require members of anonymous types to be on separate lines
+- Requerir que los miembros de tipos anónimos estén en líneas separadas
 
   ```csharp
   //Right
@@ -788,7 +788,7 @@ These formatting rules concern the use of new lines to format code.
   }
   ```
 
-- Require elements of query expression clauses to be on separate lines
+- Requerir que los elementos de las cláusulas de expresión de consulta estén en líneas separadas
 
   ```csharp
   //Right
@@ -803,9 +803,9 @@ These formatting rules concern the use of new lines to format code.
           select a * b;
   ```
 
-#### Indentation options
+#### Opciones de sangría
 
-These formatting rules concern the use of indentation to format code.
+Estas reglas de formato se refieren al uso de sangría para formatear el código.
 
 - Indent *`switch`* case contents
 
@@ -873,7 +873,7 @@ These formatting rules concern the use of indentation to format code.
   }
   ```
 
-- Labels are placed at the same indent as the current context
+- Las etiquetas se colocan en la misma sangría que el contexto actual
 
   ```csharp
   //Right
@@ -921,11 +921,11 @@ These formatting rules concern the use of indentation to format code.
   }
   ```
 
-#### Spacing options
+#### Opciones de espaciado
 
-These formatting rules concern the use of space characters to format code.
+Estas reglas de formato se refieren al uso de caracteres de espacio para formatear el código.
 
-- Remove space between the cast and the value
+- Eliminar espacio entre el elenco y el valor
 
   ```csharp
   //Right
@@ -937,7 +937,7 @@ These formatting rules concern the use of space characters to format code.
   int y = (int) x;
   ```
 
-- Place a space character after a keyword in a control flow statement such as a   *`for`* loop
+- Coloque un carácter de espacio después de una palabra clave en una declaración de flujo de control, como un bucle *`for`*
 
   ```csharp
   //Right
@@ -949,7 +949,7 @@ These formatting rules concern the use of space characters to format code.
   for(int i;i<x;i++) { ... }
   ```
 
-- Place a space character before the colon for bases or interfaces in a type   declaration
+- Coloque un carácter de espacio antes de los dos puntos para las bases o interfaces en una declaración de tipo
 
   ```csharp
   //Right
@@ -977,7 +977,7 @@ These formatting rules concern the use of space characters to format code.
   }
   ```
 
-- Place a space character after the colon for bases or interfaces in a type   declaration
+- Coloque un carácter de espacio después de los dos puntos para bases o interfaces en una declaración de tipo
 
   ```csharp
   //Right
@@ -1005,7 +1005,7 @@ These formatting rules concern the use of space characters to format code.
   }
   ```
 
-- Insert space before and after the binary operator
+- Insertar espacio antes y después del operador binario
 
   ```csharp
   //Right
@@ -1022,9 +1022,9 @@ These formatting rules concern the use of space characters to format code.
   return x  *  (x-y);
   ```
 
-- Remove space characters after the opening parenthesis and before the closing   parenthesis of a method declaration parameter list
-
-  ```csharp
+- Eliminar los espacios después del paréntesis de apertura y antes del paréntesis de cierre de una lista de parámetros de declaración de método
+  
+```csharp
   //Right
   void Bark(int x) { ... }
   ```
@@ -1034,7 +1034,7 @@ These formatting rules concern the use of space characters to format code.
   void Bark( int x ) { ... }
   ```
 
-- Remove space within empty parameter list parentheses for a method declaration
+- Quite el espacio entre paréntesis de la lista de parámetros vacía para una declaración de método
 
   ```csharp
   //Right
@@ -1063,7 +1063,7 @@ These formatting rules concern the use of space characters to format code.
 
   ```
 
-- Remove space characters between the method name and opening parenthesis in the   method declaration
+- Elimine los espacios entre el nombre del método y el paréntesis de apertura en la declaración del método
 
   ```csharp
   //Right
@@ -1075,7 +1075,7 @@ These formatting rules concern the use of space characters to format code.
   void M () { }
   ```
 
-- Remove space characters after the opening parenthesis and before the closing   parenthesis of a method call
+- Eliminar los caracteres de espacio después del paréntesis de apertura y antes del paréntesis de cierre de una llamada a método
 
   ```csharp
   //Right
@@ -1087,7 +1087,7 @@ These formatting rules concern the use of space characters to format code.
   MyMethod( argument );
   ```
 
-- Remove space within empty argument list parentheses
+- Eliminar el espacio dentro de los paréntesis de la lista de argumentos vacía
 
   ```csharp
   //Right
@@ -1115,7 +1115,7 @@ These formatting rules concern the use of space characters to format code.
   }
   ```
 
-- Remove space between method call name and opening parenthesis
+- Eliminar el espacio entre el nombre de la llamada al método y el paréntesis de apertura
 
   ```csharp
   //Right
@@ -1143,7 +1143,7 @@ These formatting rules concern the use of space characters to format code.
   }
   ```
 
-- Insert space after a comma
+- Insertar espacio después de una coma
 
   ```csharp
   //Right
@@ -1155,9 +1155,9 @@ These formatting rules concern the use of space characters to format code.
   int[] x = new int[] { 1,2,3,4,5 }
   ```
 
-- Remove space before a comma
-
-  ```csharp
+- Quitar espacio antes de una coma
+  
+```csharp
   //Right
   int[] x = new int[] { 1, 2, 3, 4, 5 };
   ```
@@ -1167,7 +1167,7 @@ These formatting rules concern the use of space characters to format code.
   int[] x = new int[] { 1 , 2 , 3 , 4 , 5 };
   ```
 
-- Insert space after each semicolon in a for statement
+- Inserte un espacio después de cada punto y coma en una instrucción for
 
   ```csharp
   //Right
@@ -1179,7 +1179,7 @@ These formatting rules concern the use of space characters to format code.
   for (int i = 0;i < x.Length;i++)
   ```
 
-- Remove space before each semicolon in a for statement
+- Quite el espacio antes de cada punto y coma en una instrucción for
 
   ```csharp
   //Right
@@ -1191,7 +1191,7 @@ These formatting rules concern the use of space characters to format code.
   for (int i = 0 ; i < x.Length ; i++)
   ```
 
-- Remove extra space characters in declaration statements
+- Eliminar los caracteres de espacio extra en las declaraciones de declaración
 
   ```csharp
   //Right
@@ -1203,7 +1203,7 @@ These formatting rules concern the use of space characters to format code.
   int    x    =    0   ;
   ```
 
-- Remove space before opening square brackets *`[`*
+- Quite el espacio antes de abrir los corchetes *`[`*
 
   ```csharp
   //Right
@@ -1215,7 +1215,7 @@ These formatting rules concern the use of space characters to format code.
   int [] numbers = new int [] { 1, 2, 3, 4, 5 };
   ```
 
-- Remove space between empty square brackets *`[]`*
+- Eliminar espacio entre corchetes vacíos*`[]`*
 
   ```csharp
   //Right
@@ -1227,7 +1227,7 @@ These formatting rules concern the use of space characters to format code.
   int[ ] numbers = new int[ ] { 1, 2, 3, 4, 5 };
   ```
 
-- Remove space characters in non-empty square brackets *`[0]`*
+- Quite los caracteres de espacio en corchetes que no estén vacíos *`[0]`*
 
   ```csharp
   //Right
@@ -1239,11 +1239,11 @@ These formatting rules concern the use of space characters to format code.
   int index = numbers[ 0 ];
   ```
 
-#### Wrap options
+#### Opciones de envoltura
 
-These formatting rules concern the use of single lines versus separate lines for statements and code blocks.
+Estas reglas de formato se refieren al uso de líneas simples frente a líneas separadas para sentencias y bloques de código.
 
-- Leave statements and member declarations on different lines
+- Deje declaraciones y declaraciones de miembros en diferentes líneas
 
   ```csharp
   //Right
@@ -1256,7 +1256,7 @@ These formatting rules concern the use of single lines versus separate lines for
   int i = 0; string name = "John";
   ```
 
-- Leave code block on single line
+- Deje el bloque de código en una sola línea
 
   ```csharp
   //Right
@@ -1271,9 +1271,9 @@ These formatting rules concern the use of single lines versus separate lines for
   }
   ```
 
-## Naming conventions
+## Convenciones de nombres
 
-- Constants are named only in capital letters with a delimiter *`_`*
+- Las constantes se nombran solo en mayúsculas con un delimitador *`_`*
 
   ```csharp
   //Right
@@ -1285,7 +1285,7 @@ These formatting rules concern the use of single lines versus separate lines for
   const int Test_Constant = 1;
   ```
 
-- Fields with *`public`* access are referred to as PascalCase notation
+- Los campos con acceso *`público`* se conocen como notación PascalCase
 
   ```csharp
   //Right
@@ -1297,7 +1297,7 @@ These formatting rules concern the use of single lines versus separate lines for
   public int testField;
   ```
 
-- Interface names must be in PascalCase notation and have the prefix *`I`*
+- Los nombres de interfaz deben estar en notación PascalCase y tener el prefijo *`I`*
 
   ```csharp
   //Right
@@ -1309,7 +1309,7 @@ These formatting rules concern the use of single lines versus separate lines for
   public interface testInterface;
   ```
 
-- The names of classes, structures, methods, enums, events, properties,   namespaces, and delegates should be in PascalCase notation
+- Los nombres de clases, estructuras, métodos, enumeraciones, eventos, propiedades, espacios de nombres y delegados deben estar en notación PascalCase
 
   ```csharp
   //Right
@@ -1321,7 +1321,7 @@ These formatting rules concern the use of single lines versus separate lines for
   public class someClass;
   ```
 
-- Assigned to the parameter of a generic type a descriptive name in the notation   PascalCase, unless enough of a letter and a descriptive name has no practical   value
+- Asignado al parámetro de un tipo genérico un nombre descriptivo en la notación PascalCase, a menos que una letra y un nombre descriptivo no tengan valor práctico
 
   ```csharp
   //Right
@@ -1330,7 +1330,7 @@ These formatting rules concern the use of single lines versus separate lines for
   public class List<T> { /*...*/ }
   ```
 
-- Use the name of the type *`T`* parameter for types that contain only a single letter type parameter
+- Utilice el nombre del parámetro type *`T`* para los tipos que contienen solo un parámetro de tipo de letra única
 
   ```csharp
   //Right
@@ -1339,7 +1339,7 @@ These formatting rules concern the use of single lines versus separate lines for
   public struct Nullable<T> where T : struct { /*...*/ }
   ```
 
-- Use the prefix *`T`* for descriptive names of type parameters
+- Utilice el prefijo *`T`* para los nombres descriptivos de los parámetros de tipo
 
   ```csharp
   //Right
@@ -1349,7 +1349,7 @@ These formatting rules concern the use of single lines versus separate lines for
   }
   ```
 
-  Specify the constraints associated with the type parameter in its name. For example, an *`ISession`* constraint parameter may be called *`TSession`*.
+  Especifique las restricciones asociadas con el parámetro de tipo en su nombre. Por ejemplo, un parámetro de restricción *`ISession`* puede llamarse *`TSession`*.
 
 - Private and protected class fields must begin with the prefix *`_`*
 
@@ -1365,7 +1365,7 @@ These formatting rules concern the use of single lines versus separate lines for
   protected int testField;
   ```
 
-- All other code elements such as variables, method parameters and class fields (except open ones) are named in camelCase notation.
+- Todos los demás elementos de código, como variables, parámetros de método y campos de clase (excepto los abiertos) se nombran en notación camelCase.
 
   ```csharp
   //Right

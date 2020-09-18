@@ -7,7 +7,7 @@ contributors: git.Sandeep911, git.exileDev, git.DmitriyKulagin
 
 # Cómo codificar mi propio método de pago
 
-Los métodos de pago se implementan como complementos en nopCommerce. Le recomendamos que lea [Cómo escribir un complemento para nopCommerce 4.30] (xref:en/developer/plugins/how-to-write-plugin-4.30) antes de comenzar a codificar un nuevo método de pago. Le explicará cuáles son los pasos necesarios para crear un complemento.
+Los métodos de pago se implementan como complementos en nopCommerce. Le recomendamos que lea [Cómo escribir un complemento para nopCommerce 4.30](xref:en/developer/plugins/how-to-write-plugin-4.30) antes de comenzar a codificar un nuevo método de pago. Le explicará cuáles son los pasos necesarios para crear un complemento.
 
 Entonces, en realidad, un método de pago es un complemento ordinario que implementa una interfaz IPaymentMethod (espacio de nombres Nop.Services.Payments). Como ya adivinó, la interfaz IPaymentMethod se utiliza para crear complementos de métodos de pago. Contiene algunos métodos que son específicos solo para métodos de pago como ProcessPayment () o GetAdditionalHandlingFee (). Así que agregue un nuevo proyecto de complemento de pago (biblioteca de clases) a la solución y comencemos.
 
@@ -34,13 +34,14 @@ public class PaymentPayPalStandardViewComponent : NopViewComponent
 }
 ```
 
-El método de invocación devuelve una vista de PaymentInfo adecuada desde la carpeta * / Views * de su complemento. Tenga en cuenta que usamos nuestra clase personalizada NopViewComponent como clase base en lugar de ViewComponent incorporado existente.
+El método de invocación devuelve una vista de PaymentInfo adecuada desde la carpeta */ Views* de su complemento. Tenga en cuenta que usamos nuestra clase personalizada NopViewComponent como clase base en lugar de ViewComponent incorporado existente.
 
 Luego, creemos la vista PaymentInfo que muestra la información de pago. Para el complemento PayPalStandard, esta vista es bastante simple. Allí solo mostramos un texto que dice que un cliente será redirigido a la página de pago. Pero es posible crear un componente de vista más complejo si es necesario. Por ejemplo, si desea recopilar la información del cliente en la página de información de pago, mire cómo ya se hace en el complemento de pago PayPalDirect.
 
 ## Procesando pago
 
 Ahora necesita crear una clase que implemente la interfaz **IPaymentMethod**. Esta es la clase que hará todo el trabajo real de comunicarse con su pasarela de pago. Cuando alguien crea un pedido, se llamará a los métodos **ProcessPayment** o **PostProcessPayment** de su clase. Así es como se define la clase CheckMoneyOrderPaymentProcessor (método de pago "CheckMoneyOrder"):
+
 ```csharp
 public class CheckMoneyOrderPaymentProcessor : BasePlugin, IPaymentMethod
 ```
@@ -48,7 +49,8 @@ public class CheckMoneyOrderPaymentProcessor : BasePlugin, IPaymentMethod
 La interfaz **IPaymentMethod** tiene varios métodos y propiedades que se requieren para implementar.
 
 - **ValidatePaymentForm** se utiliza en la tienda pública para validar la entrada del cliente. Devuelve una lista de advertencias (por ejemplo, un cliente no ingresó el nombre de su tarjeta de crédito). Si su método de pago no le pide al cliente que ingrese información adicional, ValidatePaymentForm debería devolver una lista vacía:
-    ```csharp
+ 
+   ```csharp
     public IList<string> ValidatePaymentForm(IFormCollection form)
     {
         return new List<string>();
@@ -84,7 +86,8 @@ La interfaz **IPaymentMethod** tiene varios métodos y propiedades que se requie
     ```
 
 - **GetPublicViewComponent**. Este método debe devolver el nombre del componente de vista que solía mostrar información pública a los clientes. Hemos creado un componente de vista apropiado en el paso anterior. Por ejemplo:
-    ```csharp
+  
+  ```csharp
     public string GetPublicViewComponent()
     {
         viewComponentName = "CheckMoneyOrder";

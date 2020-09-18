@@ -5,9 +5,9 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---
 
-# Developers tutorials
+# Tutoriales para desarrolladores
 
-The following is a list of common questions asked by developers working with nopCommerce. It also describes some of the architectural choices the nopCommerce team made.
+La siguiente es una lista de preguntas comunes hechas por desarrolladores que trabajan con nopCommerce. También describe algunas de las elecciones arquitectónicas que el equipo de nopCommerce hizo.
 
 * [System requirements for developing](xref:en/developer/tutorials/system-requirements-for-developing)
 * [Configuring code style](xref:en/developer/tutorials/code-style)

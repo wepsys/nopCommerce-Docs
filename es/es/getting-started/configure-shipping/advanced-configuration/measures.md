@@ -13,9 +13,9 @@ Para agregar nuevas dimensiones o pesos:
 
 Vaya a **Configuración → Envío → Medidas**. Las secciones *Dimensiones* y *Peso* se expanden de la siguiente manera:
 
-![dimensiones](_estático/medidas/dimensiones.png)
+![dimensions](_static/measures/dimensions.png)
 
-![pesos](_estático/medidas/pesos.png)
+![weights](_static/measures/weights.png)
 
 En la parte inferior de la sección, defina los siguientes detalles de la nueva unidad:
 * **Nombre** de la nueva unidad de dimensión (peso).
@@ -27,7 +27,7 @@ Luego haga clic en **Agregar nuevo registro**.
 
 La nueva unidad de dimensión (peso) se agrega a la tabla *Dimensiones* (*Pesos*).
 
-> [!NOTA]
+> [!NOTE]
 >
 > Puede establecer la dimensión primaria (peso) haciendo clic en **Marcar como dimensión primaria (peso)**.
 

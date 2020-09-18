@@ -14,7 +14,7 @@ Tenga en cuenta que nopCommerce ofrece integración con optimizaciones y servici
 ## Ver también
 
 * [Configuración de envío](xref:en/Getting-started/configure-shipping/shipping-settings)
-* [Proveedores de envío](xref: en/Getting-started/configure-shipping/shipping-Suppliers/index)
+* [Proveedores de envío](xref:en/Getting-started/configure-shipping/shipping-Suppliers/index)
 * [Almacenes](xref:en/Getting-started/configure-shipping/advanced-configuration/warehouse)
 * [Fechas y rangos](xref:es/Getting-started/configure-shipping/advanced-configuration/Fechas-y-Rangos)
 * [Medidas](xref:en/Getting-started/configure-shipping/advanced-configuration/Measures)

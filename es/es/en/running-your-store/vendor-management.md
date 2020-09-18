@@ -7,23 +7,23 @@ contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp, git.mariannk
 
 # Vendor management
 
-*Vendors* is a special category of customers that should be considered separately.
+*Vendedores* es una categoría especial de clientes que debe ser considerada por separado.
 
-nopCommerce has tools for *multi-vendor* and drop shipping that enable you to sell online without having to keep stocks or ship orders. In this case, each product is assigned to a particular vendor whose details (including email address) are stored.
+nopCommerce tiene herramientas para *multi-vendedores* y envíos directos que te permiten vender en línea sin tener que mantener existencias o enviar pedidos. En este caso, cada producto se asigna a un proveedor concreto cuyos datos (incluida la dirección de correo electrónico) se almacenan.
 
-When an order is placed an email is then sent to a vendor of each product in the order. The email includes the products, quantities, etc. The vendor ships the item to the customer on behalf of the merchant, who typically pays each of their vendors at the end of the month.
+Cuando se realiza un pedido, se envía un correo electrónico a un proveedor de cada producto del pedido. El correo electrónico incluye los productos, las cantidades, etc. El vendedor envía el artículo al cliente en nombre del comerciante, que normalmente paga a cada uno de sus vendedores al final del mes.
 
-Products from multiple independent vendors appear in the common product catalog and your website visitors can shop at one web store even if your products are supplied by hundreds of different vendors from all over the world.
+Los productos de múltiples vendedores independientes aparecen en el catálogo de productos comunes y los visitantes de su sitio web pueden comprar en una tienda web, incluso si sus productos son suministrados por cientos de vendedores diferentes de todo el mundo.
 
-Each vendor could be provided with an administrator panel access to manage their products, review sales reports, and order details regarding their products. Vendors can't see each other's activities.
+Cada vendedor podría tener acceso a un panel de administración para gestionar sus productos, revisar los informes de ventas y pedir detalles sobre sus productos. Los vendedores no pueden ver las actividades de los demás.
 
-The money goes to the merchant account of the store administrator who then manually distributes funds among the vendors according to the order history, which is tracked and managed separately for each provider. In this manner, the customer only sees one charge from the main company.
+El dinero va a la cuenta de comercio del administrador de la tienda que luego distribuye manualmente los fondos entre los vendedores según el historial de pedidos, que se rastrea y gestiona por separado para cada proveedor. De esta manera, el cliente sólo ve un cargo de la empresa principal.
 
-The following procedure describes how to set up and provide a vendor record with access to the vendor portal site.
+El siguiente procedimiento describe cómo configurar y proporcionar un registro de proveedores con acceso al portal de proveedores.
 
-## Set up a vendor account
+## Establecer una cuenta de proveedor
 
-Go to **Customers → Vendors**. The *Vendors* window is displayed:
+Ir a **Clientes → Vendedores**. La ventana de *Vendedores* se muestra:
 
 ![Vendors](_static/vendor-management/vendor1.png)
 
@@ -33,26 +33,26 @@ Click **Add new**.
 
 ![Add vendor](_static/vendor-management/vendor2.png)
 
-In the *Vendor info* panel, define the following vendor's details:
+En el panel *Información del proveedor*, defina los siguientes detalles del proveedor:
 
-* **Name** of the vendor.
-* **Description** for the vendor.
-* Vendor's **Email**. "Order placed" notifications will be sent to this email.
-* Tick the **Active** checkbox to activate the vendor.
-* Upload a vendor **Picture**.
-* **Admin comment** an optional comment or information for internal use.
+*  **Nombre** del vendedor.
+* **Descripción** del vendedor.
+* El correo electrónico del vendedor. Las notificaciones de "pedido realizado" serán enviadas a este correo.
+* Marque la casilla de verificación **Activo** para activar el vendedor.
+* Subir un vendedor **Imagen**.
+* **Administre un comentario** un comentario opcional o información para uso interno.
 
 > [!NOTE]
 > 
-> Some of vendor message templates, such as *OrderPaid.VendorNotification* and *OrderPlaced.VendorNotification*, are disabled by default. See how to change this in [Message templates](xref:en/running-your-store/content-management/message-templates) section. 
+> Algunas de las plantillas de mensajes de proveedores, como *OrderPaid.VendorNotification* y *OrderPlaced.VendorNotification*, están desactivadas por defecto. Vea cómo cambiar esto en [Message templates](xref:en/running-your-store/content-management/message-templates) section. 
 
 ### Vendor attributes
 
-When you create some additional vendor attributes the *Vendor attributes* panel will be displayed as well. 
+Cuando cree algunos atributos de proveedor adicionales, también se mostrará el panel *Atributos de proveedor*. 
 
-A store owners able to create attributes for a vendor much like they can for a product. This would allow for multi-vendor stores to collect and display more information about the vendor to customers.
+Los propietarios de tiendas pueden crear atributos para un proveedor de la misma manera que para un producto. Esto permitiría a las tiendas de varios proveedores recopilar y mostrar más información sobre el proveedor a los clientes.
 
- Learn more about vendor attributes and how to create them in the [Vendor attributes](#vendor-attributes) section below.
+ Aprenda más sobre los atributos de los proveedores y cómo crearlos en la sección[Vendor attributes](#vendor-attributes)  más abajo.
 
 ### Address (optional)
 In the *Address (optional)* panel enter the vendor address.
@@ -65,10 +65,10 @@ In the *Display* panel, define the following display parameters:
 
 ![Display](_static/vendor-management/vendor4.png)
 
-* To **Allow customers to select page size** from a predefined list of options.
-  * If the previous checkbox is ticked define **Page size options** (comma separated).
-* If the previous checkbox is unticked enter the **Page size**.
-* **Display order** of the vendor.
+* Para **Permitir a los clientes seleccionar el tamaño de la página** de una lista predefinida de opciones.
+  * Si la casilla anterior está marcada, definir **Opciones de tamaño de página** (separadas por comas).
+* Si la casilla de verificación anterior está desmarcada introduzca el **Tamaño de la página**.
+* **Visualizar el pedido** del proveedor.
 
 ### SEO
 
@@ -76,109 +76,109 @@ Refer to [SEO panels](xref:en/running-your-store/search-engine-optimization#seo-
 
 ![SEO](_static/vendor-management/seo.jpg)
 
-## Assigning a vendor to a customer record
+## Asignar un proveedor a un registro de clientes
 
-This step is optional and is required only if you want your vendors to be able to login to their administration portal and manage their products, orders, etc.
+Este paso es opcional y sólo es necesario si desea que sus proveedores puedan acceder a su portal de administración y gestionar sus productos, pedidos, etc.
 
-If you do not want vendors to have access to the admin area ignore this step to allow the store owner to manage all vendor mappings.
+Si no desea que los proveedores tengan acceso al área de administración, ignore este paso para permitir que el propietario de la tienda gestione todas las asignaciones de proveedores.
 
-Go to **Customers → Customers**. The *Customers* window is displayed:
+Ir a **Clientes → Clientes**. La ventana de *Clientes* se muestra:
 
 ![Customers](_static/vendor-management/vendor7.png)
 
-Create a new customer or click **Edit** beside a customer record you want to assign a vendor to. For more information about creating a customer refer to [Add a new customer](xref:en/running-your-store/customer-management/managing-customers#add-a-new-customer).
+Ccrear un nuevo cliente o hacer clic en **Editar** al lado de un registro de cliente al que quiere asignar un proveedor. Para obtener más información sobre la creación de un cliente, consulte [Add a new customer](xref:en/running-your-store/customer-management/managing-customers#add-a-new-customer).
 
-* In the *Customer info* panel, ensure the *Vendors* customer role is selected in the **Customer roles** field.
+* En el panel *Información del cliente*, asegúrate de que el rol de cliente de *Vendedores* está seleccionado en el campo **Roles del cliente**.
   > [!NOTE]
   > 
-  > A vendor customer account cannot belong to the default *Administrators* customer role.
+  > Una cuenta de cliente de proveedor no puede pertenecer al rol de cliente predeterminado de *Administradores*.
 
-* In the *Customer info* panel, find the **Manager of vendor** field. Select a vendor record created previously.
+* En el panel *Información del cliente*, busque el campo **Administrador del proveedor**. Seleccione un registro de proveedor creado previamente.
 
 ![Edit customer](_static/vendor-management/edit-customer.jpg)
 
-After the vendor's customer account is set up, the vendor can use this customer account to manage products, orders, shipments, and view reports. The *Administration* link at the top of the public store will be displayed after logging in.
+Una vez configurada la cuenta de cliente del proveedor, éste puede utilizarla para gestionar productos, pedidos, envíos y ver informes. El enlace *Administración* en la parte superior de la tienda pública se mostrará después de iniciar sesión.
 
 > [!TIP]
 > 
 > [YouTube tutorial: Managing vendors](https://www.youtube.com/watch?v=MH6r6tqfLF8&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4&index=9)
 
 
-## Vendor settings
+## Ajustes del proveedor
 
-This section describes how to define the vendor settings of your store. This includes the number of vendors to display, whether or not to show the vendor on the product details pages of the store and more.
+En esta sección se describe cómo definir la configuración del proveedor de su tienda. Esto incluye el número de proveedores que se deben mostrar, si se debe mostrar o no el proveedor en las páginas de detalles de los productos de la tienda y más.
 
-Go to **Configuration → Settings → Vendor settings**.
+Vaya a **Configuración → Ajustes → Ajustes de proveedor**.
 
-This page enables multi-store configuration, it means that the same settings can be defined for all stores, or differ from store to store. If you want to manage settings for a certain store, choose its name from multi-store configuration drop-down list and tick all needed checkboxes at the left side to set custom value for them. For further details refer to [Multi-store](xref:en/getting-started/advanced-configuration/multi-store).
+Esta página permite la configuración de varias tiendas, lo que significa que se pueden definir los mismos ajustes para todas las tiendas o que pueden ser diferentes de una tienda a otra. Si desea administrar la configuración de una tienda determinada, elija su nombre en la lista desplegable de configuración de varias tiendas y marque todas las casillas de verificación necesarias en el lado izquierdo para establecer un valor personalizado para ellas. Para obtener más detalles, consulte [Multi-store](xref:en/getting-started/advanced-configuration/multi-store).
 	
 ### Common
 
-In the *Common* panel define the following vendor settings:
+En el panel *Común* defina los siguientes ajustes del proveedor:
 ![Common](_static/vendor-management/vendorsettings1.png)
 
-* **Allow customers to apply for vendor account**. Firstly, a vendor request is filled by a user, thus creating a vendor account. Then the request is presented to a store-owner (via email notification) to be accepted.
+* **Permitir a los clientes solicitar una cuenta de proveedor**. En primer lugar, la solicitud de un proveedor es llenada por un usuario, creando así una cuenta de proveedor. Luego, la solicitud se presenta al propietario de la tienda (a través de una notificación por correo electrónico) para ser aceptada.
   > [!NOTE]
   > 
-  > A store owner has to add an appropriate customer record to "Vendors" role manually if he wants to grant access to the admin area. Read about it in the [Assigning a vendor to a customer record](#assigning-a-vendor-to-a-customer-record) section above.
+  > A store owner has to add an appropriate customer record to "Vendors" role manually if he wants to grant access to the admin area. Read about it in the [Assigning a proveedor a un registro de cliente](#asignación de un proveedor a un registro de cliente) sección anterior.
 
-  * If the previous checkbox is checked you can tick the **Terms of service** to require vendors to accept terms of service during registration.
+  * Si la casilla de verificación anterior está marcada, puede marcar la casilla **Términos de servicio** para exigir a los proveedores que acepten los términos de servicio durante el registro.
     > [!NOTE]
     >
-    > To edit these terms of service go to **Content management → Topics (pages)**. Find the **VendorTermsOfService** item and click **Edit**. Read more about it in the [Topics (pages)](xref:en/running-your-store/content-management/topics-pages) section.
+    > Para editar estos términos de servicio vaya a **Gestión de contenidos → Temas (páginas)**. Encuentre el artículo **Términos de Servicio del Proveedor** y haga clic en **Editar**. Lea más sobre ello en el [Topics (pages)](xref:en/running-your-store/content-management/topics-pages) section.
 
-* **Allow vendors to edit info** allows vendors to provide personal information in public store.
-  * Choose whether to **Notify about vendor information changes** to notify an admin about vendor information changes.
+* **Permitir a los vendedores editar la información** permite a los vendedores proporcionar información personal en la tienda pública.
+  * Elija si **Notificar sobre los cambios de información del vendedor** para notificar a un administrador sobre los cambios de información del vendedor.
 
-* **Maximum number of products** per vendor.
-* **Allow vendors to import products** allows vendors to import products.
+* **Máximo número de productos** por vendedor.
+* **Permitir a los vendedores importar productos** permite a los vendedores importar productos.
 
-### Catalog
+### Catálogo
 
-In the *Catalog* panel define the following vendor settings:
+En el panel *Catálogo* defina los siguientes ajustes del proveedor:
 ![Catalog](_static/vendor-management/vendorsettings2.png)
 
-* **Allow customers to contact vendors** (send emails using contact forms). This functionality is available on a vendor details page in the public store.
-* **Allow search by vendor** to customers, on an advanced search page.
-* Choose whether to **Show vendor on product details page** (if associated).
-* Choose whether to **Show vendor name on order details page** (if associated).
-* **Number of vendors to display** in the vendor navigation block in the admin area.
+* **Permitir a los clientes contactar con los vendedores** (enviar correos electrónicos utilizando formularios de contacto). Esta funcionalidad está disponible en una página de detalles del vendedor en la tienda pública.
+* **Permitir la búsqueda por vendedor** a los clientes, en una página de búsqueda avanzada.
+* Elija si desea **Mostrar el vendedor en la página de detalles del producto** (si está asociado).
+* Elija si desea **Mostrar el nombre del proveedor en la página de detalles del pedido** (si está asociada).
+* **Mostrar el número de proveedores** en el bloque de navegación de proveedores en el área de administración.
 
-### Vendor attributes
+### Atributos del proveedor
 
-You can create any number of vendor attributes. Some different attributes that could be created would be business name, website and etc.
+Puede crear cualquier número de atributos de proveedor. Algunos atributos diferentes que podrían ser creados serían el nombre de la empresa, el sitio web, etc.
 
 ![Vendor attributes](_static/vendor-management/vendorsettings3.png)
 
-#### Add a new attribute
-Click **Add new** to create a new vendor attribute as well as its values. The *Add new vendor attribute* window will be displayed, as follows:
+#### Añadir un nuevo atributo
+Haga clic en **Agregar nuevo** para crear un nuevo atributo de proveedor así como sus valores. Se mostrará la ventana *Agregar nuevo atributo de proveedor*, de la siguiente manera:
 
 ![Add new](_static/vendor-management/vendorsettings4.png)
 
-In the *Attribute info* panel, define the following information:
-* **Name** - the name of the vendor attribute.
-* **Required** - when an attribute is required, vendors must choose an appropriate attribute value before they can continue.
-* From the **Control type** drop-down list, select the required method for displaying the attribute value: *Drop-down list, Radio button list, Checkbox, Textbox, Multiline textbox, Read-only checkbox*.
-* **Display order** - the vendor attribute display order.
+En el panel de *Información de atributos*, defina la siguiente información:
+* **Nombre** - el nombre del atributo del vendedor.
+* **Required** - cuando se requiere un atributo, los vendedores deben elegir un valor de atributo apropiado antes de poder continuar.
+* En la lista desplegable **Tipo de control**, seleccione el método requerido para mostrar el valor de atributo: *Lista desplegable, Lista de botones de radio, Casilla de verificación, Casilla de texto, Casilla de texto multilínea, Casilla de verificación de sólo lectura*.
+* **Orden de visualización** - el orden de visualización del atributo del proveedor.
 
 > [!NOTE]
 > 
-> Dropdown lists, radio lists, checkbox and read-only checkbox require the store owner to define values. Textbox and multiline textbox control types do not require the store owner to define values since vendors will be required to fill these textbox fields.
+> Las listas desplegables, las listas de radio, la casilla de verificación y la casilla de verificación de sólo lectura requieren que el dueño de la tienda defina los valores. Los tipos de control de caja de texto y de caja de texto de varias líneas no requieren que el propietario de la tienda defina valores, ya que los proveedores deberán rellenar estos campos de caja de texto.
 
-Click **Save and continue edit** to proceed to the *Values* panel.
+Haga clic en **Save and continue edit** para proceder al panel de *Valores*.
 
-#### Add a new attribute value
+#### Agregar un nuevo valor de atributo
 
-In the *Values* panel, click **Add a new attribute value** to create a new attribute value.
+En el panel *Valores*, haga clic en **Agregar un nuevo valor de atributo** para crear un nuevo valor de atributo.
 
 ![Add a new attribute values](_static/vendor-management/vendorsettings5.png)
 
-In the *Add a new attribute value* window, define the following information:
+En la ventana *Añadir un nuevo valor de atributo*, defina la siguiente información:
 
-* **Name** - the attribute value name.
-* Tick the **Pre-selected** checkbox, to indicate the attribute value is pre-selected for a customer.
-* **Display order** - display order number of the attribute value.
+* **Nombre** - el nombre del valor de atributo.
+* Marque la casilla de verificación **Pre-seleccionado**, para indicar que el valor de atributo está preseleccionado para un cliente.
+* **Display order** - mostrar el número de orden del valor de atributo.
 
-You can edit and remove attribute values by clicking the corresponding buttons beside the attribute values in the *Values* panel.
+Puede editar y eliminar los valores de atributo haciendo clic en los botones correspondientes junto a los valores de atributo en el panel *Valores*.
 
-Click **Save**. The new attribute will be displayed in the public store.
+Haga clic en **Guardar**. El nuevo atributo se mostrará en la tienda pública.

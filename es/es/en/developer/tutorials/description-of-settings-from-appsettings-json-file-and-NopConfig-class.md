@@ -5,95 +5,94 @@ author: git.nopsg
 contributors: git.nopsg, git.DmitriyKulagin
 ---
 
-# Description settings from appsettings.json file and NopConfig and HostingConfig class
+# Descripción de la configuración del archivo appsettings.json y la clase NopConfig y HostingConfig
 
-## Overview
+## Visión general
 
-This article contains description of `appsettings.json` file and `NopConfig class`. In this article we will be explaining what are the different settings available in these files what each settings does and when to use this settings to change the functionality/behavior of nopCommerce project.
+Este artículo contiene una descripción del archivo `appsettings.json` y la `clase NopConfig`. En este artículo explicaremos cuáles son las diferentes configuraciones disponibles en estos archivos, qué hace cada configuración y cuándo usar esta configuración para cambiar la funcionalidad / comportamiento del proyecto nopCommerce.
 
-## appsettings.json file overview
+## descripción general del archivo appsettings.json
 
-If you have worked on `ASP.NET core` project previously or you are familiar wit `ASP.NET core` then you might have used `appsettings.json` file and have some understanding of what this file is and what this file is used for.
+Si ha trabajado anteriormente en el proyecto `ASP.NET core` o está familiarizado con el`ASP.NET core`, entonces es posible que haya usado el archivo `appsettings.json` y tenga cierta comprensión de qué es este archivo y para qué se usa. para.
 
-`appsettings.json` file is generally used to store the application configuration settings such as database connection strings, any application scope global variables and many other information. Actually in `ASP.NET Core`, the application configuration settings can be stored in different configurations sources such as `appsettings.json` file, `appsettings.{EnvironmentName}.json` file (where the {Environment} is the application's current hosting environments such as Development, Staging or Production), `User Secrets` (where we used to store sensitive information) etc.
+El archivo `appsettings.json` se usa generalmente para almacenar los ajustes de configuración de la aplicación, como cadenas de conexión de la base de datos, cualquier variable global del alcance de la aplicación y mucha otra información. En realidad, en `ASP.NET Core`, la configuración de la aplicación se puede almacenar en diferentes fuentes de configuración, como el archivo`appsettings.json`, el archivo `appsettings. {EnvironmentName} .json` (donde {Environment} es el alojamiento actual de la aplicación entornos como desarrollo, puesta en escena o producción), `secretos de usuario` (donde solíamos almacenar información confidencial), etc.
 
-## Settings available in appsettings.json file
+equilibrador de carga y si está habilitando la configuración **`UseHttpClusterHttps` **anterior. Esta configuración se usa para agregar** `X-Fordered-Proto`** en la configuración`HTTP` ##disponible en el archivo appsettings.json
 
-### Hosting
+g.### Hosting
 
-Hosting contains settings used to configure the hosting behavior. It is a json object and contains some properties settings which can be tweak to change the behavior for hosting.
+Hosting contains settings used to configure the hosting behavior. It is a json object and contains some properties settings which can be tweak to change the behavior for hostin
+### Alojamiento
 
-#### UseHttpClusterHttps
+El alojamiento contiene la configuración que se utiliza para configurar el comportamiento del alojamiento. Es un objeto json y contiene algunas configuraciones de propiedades que se pueden modificar para cambiar el comportamiento del alojamiento.
 
-This setting expects a boolean value. Default value is "**false**", you can set the value to "**true**" if your hosting uses a load balancer. It'll be used to determine whether the current request is HTTPS.
+#### UseHttpXForderedProto
 
-#### UseHttpXForwardedProto
+Esta configuración espera un valor booleano. El valor predeterminado es "**falso**". Es posible que desee establecer el valor en "**verdadero**" si su alojamiento utiliza un encabezado. **`X-Fordered-Proto`** es un encabezado HTTP y es parte del estándar HTTP. Se establece en cada solicitud HTTP por un proxy o equilibrador de carga y puede ser utilizado por una aplicación de servidor para determinar qué protocolo utilizó el cliente para conectarse.
 
-This setting expects a boolean value. Default value is "**false**", You might want to set the value to "**true**" if your hosting uses load balancer and the if you are enabling the above **`UseHttpClusterHttps`** setting. This setting is used to add **`X-Forwarded-Proto`** in the `HTTP` header. **`X-Forwarded-Proto`** is an HTTP Header and is part of the HTTP standard. It is set on each HTTP request by a proxy or load balancer and can be used by a server application to determine what protocol the client used to connect.
+#### ForderedHttpHeader
 
-#### ForwardedHttpHeader
-
-This setting expects a string value. You can use this setting if your hosting doesn't use `"X-FORWARDED-FOR"` header to determine IP address. In some cases server use other HTTP header. You can specify a custom HTTP header here. For example, CF-Connecting-IP, X-FORWARDED-PROTO, etc.
+Esta configuración espera un valor de cadena. Puede utilizar esta configuración si su alojamiento no utiliza el encabezado "" X-FORWARDED-FOR "` para determinar la dirección IP. En algunos casos, el servidor utiliza otro encabezado HTTP. Puede especificar un encabezado HTTP personalizado aquí. Por ejemplo, CF-Connecting-IP, X-FORWARDED-PROTO, etc.
 
 ### Nop
 
-Nop contains settings used to configure the behavior of nopCommerce itself. It is a json object and contains some properties settings which can be tweak to change the behavior of nopCommerce.
+Nop contiene ajustes que se utilizan para configurar el comportamiento de nopCommerce. Es un objeto json y contiene algunas configuraciones de propiedades que se pueden modificar para cambiar el comportamiento de nopCommerce.
 
 #### DisplayFullErrorStack
 
-This setting expects a boolean value. Default value is **"false"**. You can set the value to "**true**" if you want to see the full error in the production environment. Which is not what we usually suggest. But if you have a good reason to show full error during production environment then you can do it from this setting. For the development environment this setting is ignored and whatever the value you set for this setting full error will be shown. We can say that this setting is always enabled for development environment.
+Esta configuración espera un valor booleano. El valor predeterminado es **`falso`**. Puede establecer el valor en **`verdadero`** si desea ver el error completo en el entorno de producción. Que no es lo que solemos sugerir. Pero si tiene una buena razón para mostrar un error completo durante el entorno de producción, puede hacerlo desde esta configuración. Para el entorno de desarrollo, esta configuración se ignora y cualquiera que sea el valor que establezca para esta configuración, se mostrará el error completo. Podemos decir que esta configuración siempre está habilitada para el entorno de desarrollo.
 
 #### Azure Blob Storage
 
-We can use `Azure Blob Storage` to store blob data. nopCommerce already have feature integrated for that, we just need to set the following information correctly in order to use/enable this feature. Values for these setting can be obtained for Azure while you create the storage account.
+Podemos usar ``Azure Blob Storage`` para almacenar datos de blobs. nopCommerce ya tiene una función integrada para eso, solo necesitamos configurar la siguiente información correctamente para usar / habilitar esta función. Los valores de esta configuración se pueden obtener para Azure mientras crea la cuenta de almacenamiento.
 
-* **AzureBlobStorageConnectionString:** This setting expects a string value. Here you need to add your `AzureBlobStorage` connection string
-* **AzureBlobStorageContainerName:** Value for this setting is also of type string. In this setting we set the container name for Azure BLOB storage.
-* **AzureBlobStorageEndPoint:** This setting also expects a string value. Here we need to set the end point for Azure BLOB storage.
-* **AzureBlobStorageAppendContainerName:** This setting expects a boolean value. Set the value to "**true**" or "**false**" on the basis of whether the Container Name is appended to the `AzureBlobStorageEndPoint` when constructing the url.
+* **AzureBlobStorageConnectionString:** Esta configuración espera un valor de cadena. Aquí debe agregar su cadena de conexión `AzureBlobStorage`
+* **AzureBlobStorageContainerName:** El valor de esta configuración también es de tipo cadena. En esta configuración, establecemos el nombre del contenedor para el almacenamiento de Azure BLOB.
+* **AzureBlobStorageEndPoint:** Esta configuración también espera un valor de cadena. Aquí tenemos que establecer el punto final para el almacenamiento de Azure BLOB.
+* **AzureBlobStorageAppendContainerName:** Esta configuración espera un valor booleano. Establezca el valor en **`true`** o **`false`** en función de si el nombre del contenedor se anexa al `AzureBlobStorageEndPoint` al construir la URL.
 
 #### Redis
 
-nopCommerce supports *Redis* out of the box. In order to enable the `Redis` in our application we must set appropriate value for the following settings. For more information about [Redis](https://azure.microsoft.com/documentation/articles/cache-dotnet-how-to-use-azure-redis-cache).
+nopCommerce admite *Redis* listo para usar. Para habilitar el `Redis` en nuestra aplicación, debemos establecer el valor apropiado para las siguientes configuraciones. Para obtener más información sobre [Redis](https://azure.microsoft.com/documentation/articles/cache-dotnet-how-to-use-azure-redis-cache).
 
-* **RedisEnabled:** This setting expects a boolean value. Set the value to **"true"** if you want to enable `Redis`.
-* **RedisDatabaseId:** Redis database id, If you need to use a specific redis database, just set its number here. Set empty if should use the different database for each data type (used by default). set -1 if you want to use the default database.
-* **RedisConnectionString:** This setting expects a string value. Default value for this setting is `127.0.0.1:{PORT},ssl=False`. Here we need to set the "Connection String" for `Redis`. It is used when Redis is enabled.
-* **UseRedisToStoreDataProtectionKeys:** This setting expects a boolean value. This setting indicating whether the data protection system should be configured to persist keys in the Redis database.
-* **UseRedisForCaching:** This setting expects a boolean value. The system uses a In-Memory caching, so this setting is used to indicating whether we should use `Redis` server for caching, instead of default `in-memory caching`. So, use this setting if you want to use `Redis` for caching.
-* **UseRedisToStorePluginsInfo:** This setting expects a boolean value. nopCommerce uses `plugin.json` file to store plugin info. So, This setting indicating whether we should use Redis server to store the plugins info (instead of default plugin.json file).
+* **RedisEnabled:** Esta configuración espera un valor booleano. Establezca el valor en **"verdadero"** si desea habilitar `Redis`.
+* **RedisDatabaseId:** ID de la base de datos de Redis. Si necesita utilizar una base de datos de Redis específica, simplemente establezca su número aquí. Establezca vacío si debe usar la base de datos diferente para cada tipo de datos (usado por defecto). establezca -1 si desea utilizar la base de datos predeterminada.
+* **RedisConnectionString:** Esta configuración espera un valor de cadena. El valor predeterminado para esta configuración es `127.0.0.1: {PUERTO}, ssl = Falso`. Aquí necesitamos establecer la "Cadena de conexión" para `Redis`. Se usa cuando Redis está habilitado.
+* **UseRedisToStoreDataProtectionKeys:** Esta configuración espera un valor booleano. Esta configuración indica si el sistema de protección de datos debe configurarse para conservar las claves en la base de datos de Redis.
+* **UseRedisForCaching:** Esta configuración espera un valor booleano. El sistema utiliza un almacenamiento en caché en memoria, por lo que esta configuración se usa para indicar si debemos usar el servidor `Redis` para el `almacenamiento en caché`, en lugar del `almacenamiento en memoria caché` predeterminado.Por lo tanto, use esta configuración si desea usar`Redis` para el `almacenamiento en caché`.
+* **UseRedisToStorePluginsInfo:** Esta configuración espera un valor booleano. nopCommerce usa el archivo `plugin.json` para almacenar la información del plu. Entonces, esta configuración indica si debemos usar el servidor Redis para almacenar la información de los plus (en lugar del archivo plugin.json predeterminado).
 
-#### User Agent
+#### Agente de usuario
 
-In computing, a user agent is software (a software agent) that is acting on behalf of a user, such as a web browser that "retrieves, renders and facilitates end user interaction with Web content". For more information please visit [UserAgent](https://en.wikipedia.org/wiki/User_agent)
+En informática, un agente de usuario es un software (un agente de software) que actúa en nombre de un usuario, como un navegador web que "recupera, presenta y facilita la interacción del usuario final con el contenido web". Para mayor información por favor visite [UserAgent](https://en.wikipedia.org/wiki/User_agent)
 
-* **UserAgentStringsPath:** This setting stores the loction/path for `Browscap.xml` file, `Browscap.xml` is, as the filename might indicate, a browser capabilities database. It's essentially a list of all known browsers and bots, along with their default capabilities and limitations.
-* **CrawlerOnlyUserAgentStringsPath:** This setting stores the location/path for `browscap.crawlersonly.xml`. It stores user agents only for "CrawlerOnly"
+* **UserAgentStringsPath:** Esta configuración almacena la ubicación / ruta para el archivo `Browscap.xml`,`Browscap.xml` es, como podría indicar el nombre del archivo, una base de datos de capacidades del navegador. Es esencialmente una lista de todos los navegadores y bots conocidos, junto con sus capacidades y limitaciones predeterminadas.
+* **CrawlerOnlyUserAgentStringsPath:** Esta configuración almacena la ubicación / ruta de `browscap.crawlersonly.xml`. Almacena agentes de usuario solo para "CrawlerOnly"
 
-#### Installation
+#### Instalación
 
-It contains settings that used to configure the behavior of nopCommerce during the nopCommerce installation.
+Contiene configuraciones que solían configurar el comportamiento de nopCommerce durante la instalación de nopCommerce.
 
-* **DisableSampleDataDuringInstallation:** This setting expects a boolean value. This setting indicating whether a store owner can install sample data during installation. If you don't want store owner to install sample data during installation then just set the value for this setting to "**true**".
-* **UseFastInstallationService:** This setting expects a boolean value. By default the value for this setting is "**false**". this setting indicating whether to use the fast installation or not.
-* **PluginsIgnoredDuringInstallation:** This setting expects a boolean value. By default the value for this setting is "**false**". You might want to set value for this setting to "**true**" if you don't want to `Install` any `Plugin` during nopCommerce installation
+* **DisableSampleDataDuringInstallation:** Esta configuración espera un valor booleano. Esta configuración indica si el propietario de una tienda puede instalar datos de muestra durante la instalación. Si no desea que el propietario de la tienda instale datos de muestra durante la instalación, simplemente establezca el valor de esta configuración en "**verdadero**".
+* **UseFastInstallationService:** Esta configuración espera un valor booleano. De forma predeterminada, el valor de esta configuración es "**falso**". esta configuración indica si se debe utilizar la instalación rápida o no.
+* **PluginsIgnoredDuringInstallation:** Esta configuración espera un valor booleano. De forma predeterminada, el valor de esta configuración es "**falso**". Es posible que desee establecer el valor de esta configuración en "**verdadero**" si no desea `Instalar` ningún `plu` durante la instalación de nopCommerce
 
 #### Plugins
 
-* **ClearPluginShadowDirectoryOnStartup:** This setting expects a boolean value. You might want to Set the value to "**true**" if you want to clear `/Plugins/bin` directory during application startup.
-* **CopyLockedPluginAssembilesToSubdirectoriesOnStartup:** This setting expects a boolean value. You might want to set the value to "**true**" if you want to copy "locked" assemblies from `/Plugins/bin` directory to temporary subdirectories during application startup.
-* **UsePluginsShadowCopy:** This setting expects a boolean value. You might want to set the value to "**true**" if you want to copy plugins library to the `/Plugins/bin` directory on application startup.
-* **UseUnsafeLoadAssembly:** This setting expects a boolean value. You might want to set the value to "**true**" if you want to load an assembly into the load-from context, bypassing some security checks.
+* **ClearPluginShadowDirectoryOnStartup:** Esta configuración espera un valor booleano. Es posible que desee establecer el valor en "**true**" si desea borrar el directorio `/ Plugins / bin` durante el inicio de la aplicación.
+* **CopyLockedPluginAssembilesToSubdirectoriesOnStartup:** Esta configuración espera un valor booleano. Es posible que desee establecer el valor en "**true**" si desea copiar ensamblados "bloqueados" del directorio `/ Plugins / bin` a subdirectorios temporales durante el inicio de la aplicación.
+* **UsePluginsShadowCopy:** Esta configuración espera un valor booleano. Es posible que desee establecer el valor en "**true**" si desea copiar la biblioteca de complementos al directorio `/ Plugins / bin` al iniciar la aplicación.
+* **UseUnsafeLoadAssembly:** Esta configuración espera un valor booleano. Es posible que desee establecer el valor en "**true**" si desea cargar un ensamblado en el contexto de carga, omitiendo algunas comprobaciones de seguridad.
 
 #### UseRowNumberForPaging
 
-This setting expects a boolean value. Default value for this setting is "**false**". You may want to set the value to "**true**" if you want to configure your nopCommerce application for backwards compatibility with `SQL Server 2008` and `SQL Server 2008R2`.
+Esta configuración espera un valor booleano. El valor predeterminado para esta configuración es "**falso**". Es posible que desee establecer el valor en "**true**" si desea configurar su aplicación nopCommerce para que sea compatible con versiones anteriores de `SQL Server 2008`y `SQL Server 2008R2`.
 
 #### UseSessionStateTempDataProvider
 
-This setting expects a boolean value. Default value for this setting is "**false**". You might want to set the value to "**true**" if you want to store `TempData` in the session state. By default the cookie-based `TempData` provider is used to store `TempData` in cookies.
+Esta configuración espera un valor booleano. El valor predeterminado para esta configuración es "**falso**". Es posible que desee establecer el valor en "**verdadero**" si desea almacenar `TempData` en el estado de la sesión. De forma predeterminada, el proveedor `TempData` basado en cookies se utiliza para almacenar `TempData` en las cookies.
 
-### NopConfig and HostingConfig Class
+### Clase NopConfig y HostingConfig
 
-As we can see `appsettings.json` file has lots of settings defined in it, which we can use in our application so that our application behaves according to the setting defined in this file. But we don't want to read these settings from `appsettings.json` file each time we need to access these settings. So, this is where `NopConfig` and `HostingConfig` class comes into play. We can find these class in `Libraries/Nop.Core/Configuration`. If you open these class then you can see that the properties of these classes are same as properties in `appsettings.json` file.
-if you look at the properties from `HostingConfig` class and `Host` setting in `appsetting.json` and `NopConfig` class and `Nop` setting in `appsettings.json` file, they have same properties. This is because we load settings from `appsettings.json` to these files and inject to controllers using dependency injection mechanism.
+Como podemos ver, el archivo `appsettings.json` tiene muchas configuraciones definidas en él, que podemos usar en nuestra aplicación para que nuestra aplicación se comporte de acuerdo con la configuración definida en este archivo. Pero no queremos leer estas configuraciones del archivo `appsettings.json` cada vez que necesitamos acceder a estas configuraciones. Entonces, aquí es donde entran en juego las clases `NopConfig` y `HostingConfig`. Podemos encontrar estas clases en `Libraries / Nop.Core / Configuration`. Si abre estas clases, puede ver que las propiedades de estas clases son las mismas que las propiedades en el archivo `appsettings.json`.
+si observa las propiedades de la clase `HostingConfig` y la configuración de `Host` en `appsetting.json` y la clase`NopConfig` y la configuración de `Nop` en el archivo`appsettings.json`, tienen las mismas propiedades. Esto se debe a que cargamos la configuración de `appsettings.json` a estos archivos y la inyectamos a los controladores mediante el mecanismo de inyección de dependencia.

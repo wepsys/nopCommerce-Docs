@@ -15,7 +15,7 @@ Para ver el ejemplo de cómo se puede aplicar este método a su tienda, consulte
 
 Vaya a **Configuración → Envío → Proveedores de envío**. Se muestra la ventana de proveedores de envío:
 
-![métodos de envío manual] (_static/manual/methods.jpg)
+![métodos de envío manual](_static/manual/methods.jpg)
 
 Habilite el método de cálculo manual de tarifas de envío, de la siguiente manera:
 
@@ -35,13 +35,13 @@ Haga clic en el botón **Editar** al lado de un método de envío e ingrese la *
 
 Haga clic en **Actualizar**.
 
-> [!NOTA]
+> [!NOTE]
 >
-> Puede agregar/eliminar métodos de envío en la *ventana de métodos de envío*, a la que se accede haciendo clic en! [Botón] (_static/manual/manual-shipping-manage-button.png) y restringir algunos métodos para los países seleccionados haciendo clic en! [Restricciones ](_static/manual/manual-shipping-restriction.png) en la parte superior.
+> Puede agregar/eliminar métodos de envío en la *ventana de métodos de envío*, a la que se accede haciendo clic en ![Botón](_static/manual/manual-shipping-manage-button.png) y restringir algunos métodos para los países seleccionados haciendo clic en ![Restricciones](_static/manual/manual-shipping-restriction.png) en la parte superior.
 
 ## Configurar tarifa por peso / total
 
-![por peso](_estático/manual/envío-manual-por-peso-total.png)
+![by weight](_static/manual/manual-shipping-by-weight-total.png)
 
 La opción **envío por peso y por total** permite establecer diferentes tarifas de envío según el peso y el total del envío. La capacidad de cobrar diferentes tarifas según el peso y el total del envío ayuda a mantener bajos los costos de envío de la empresa cuando se envían artículos pesados, pero ofrece costos de envío razonables a los clientes que compran productos ligeros.
 
@@ -77,7 +77,7 @@ Por ejemplo, si tiene las siguientes condiciones de envío:
   * Límite de peso inferior: **2**
   * Tarifa por unidad de peso: **3**
   
-> [!NOTA]
+> [!NOTE]
 >
 > Se cobrará proporcionalmente por peso adicional;
 > ejemplo por 2,1 libras cobrará $ 15 + (0,1 * 6) = $ 15,6
@@ -96,13 +96,13 @@ Defina la siguiente información:
 * Configure las reglas de precios para este registro usando los campos **Subtotal del pedido desde, Subtotal del pedido hasta, Costo fijo adicional, Límite de peso inferior, Tarifa por unidad de peso, Porcentaje de cargo (del subtotal)**.
 * Defina el campo **Días de tránsito** que define el número de días de entrega.
 
-> [!NOTA]
+> [!NOTE]
 >
 > Asegúrese de que la configuración **Configuración → Configuración → Configuración de envío → Considere las dimensiones y el peso de los productos asociados** sea verdadera.
 
 Clic en **Guardar**.
 
-> [!NOTA]
+> [!NOTE]
 >
 > Si desea limitar a sus clientes solo a los métodos configurados en esa pantalla, marque la casilla de verificación **Limitar los métodos de envío a los configurados** en la parte inferior de la página.
 
@@ -131,19 +131,19 @@ Defina los siguientes campos para un nuevo registro:
 
 Clic en **Guardar**.
 
-> [!NOTA]
+> [!NOTE]
 >
 > Puede hacer clic en **Editar** en la ventana *Métodos de envío* para editar los métodos de envío existentes, como se describe anteriormente.
 
 ## Restricciones del método de envío
 
-El propietario de una tienda puede definir restricciones para ciertos métodos de envío en ciertos países. Para hacerlo, vaya a **Configuración → Envío → Proveedores de envío**. Haga clic en el botón **Configurar** junto al proveedor * Manual (fijo o por peso y por total)*. Aparece la ventana de configuración:
+El propietario de una tienda puede definir restricciones para ciertos métodos de envío en ciertos países. Para hacerlo, vaya a **Configuración → Envío → Proveedores de envío**. Haga clic en el botón **Configurar** junto al proveedor *Manual (fijo o por peso y por total)*. Aparece la ventana de configuración:
 
 ![Configurar](_static/manual/fixed-rate-configure.jpg)
 
 Haga clic en **Restricciones del método de envío**, se muestra la ventana *Restricciones del método de envío*:
 
-![Métodos](_estático/manual/fijo-restricciones-métodos.jpg)
+![Methods](_static/manual/fixed-rate-restrictions-methods.jpg)
 
 Seleccione uno o más de sus métodos de envío que desee deshabilitar en ciertos países.
 
@@ -153,4 +153,55 @@ Clic en **Guardar**.
 
 ## Ejemplo
 
-[Ley dice que tiene una tienda ubicada en los EE. UU.](https://www.youtube.com/watch?v=1nYj0NqVUWw&t=8s)
+Ley's say you have a store located in the USA and ships to the USA and Canada. You set up a three shipping methods available, such as: 
+- **Ground** that allows shipping by land transport.
+- **Next day air** that provides one day air shipping.
+- **2nd day air** allowing two days air shipping.
+
+> [!TIP]
+>
+> Puede agregar sus propios métodos de envío haciendo clic en el botón  **Administrar métodos de envío** en la página *Configurar - Manual (Fijo o Por peso y Por total)* page.  
+
+A continuación, supongamos que la tarifa de envío depende del total del pedido y de la dirección de envío. Por ejemplo:
+- Si un cliente paga $150 por el pedido, proporcionamos un envío gratuito por el método **Ground** solo a EE. UU. Si el total del pedido es inferior a $150, cobraremos $10. La entrega a los EE.UU. tomará 5 días.
+- Para Canadá, un cliente debe pedir $250 para tener un envío gratuito por el método **Ground**.  Si el total del pedido es inferior a $250, cobraremos $20. La entrega en este caso tomará 7 días.
+- Si un cliente necesita una entrega de **aire al día siguiente**  costará $60 para los EE.UU. Supongamos que desea desactivar la opción de **aire al día siguiente** para Canadá.
+- Si un cliente está listo para esperar un día más, le sugerimos que utilice el **envío aéreo del segundo día**,que cuesta $40 para los EE.UU. y Canadá también.
+
+Teniendo en cuenta todos los requisitos anteriores, configuraremos el método de pago en la página *Configurar - Manual (Fijo o Por Peso y Por Total)*  de la siguiente manera:
+
+- **Ground** method
+  ![Configuration Ground](_static/manual/configuration-ground.jpg)
+
+- **Next day air** method
+  ![Configuration Next day air](_static/manual/configuration-nextday.jpg)
+
+- **2nd day air** method
+  ![Configuration 2nd day air](_static/manual/configuration-2ndday.jpg)
+
+To disable the **Next day air** option for Canada click the **Shipping method restrictions** button and fill the *Shipping method restrictions* the following way:
+![Configuration example](_static/manual/restrictions-example.jpg)
+
+### Veamos cómo se ven las opciones de envío en la tienda pública
+
+1. Cuando un cliente de EE. UU. Visita la página del producto (o la página del carrito de compras), se muestra la estimación de envío, de la siguiente manera:
+  ![Estimation](_static/manual/estimate-product-page.jpg)
+    > [!TIP]
+    >
+    > Por cierto, puede deshabilitar la estimación de envío desmarcando las casillas **Envío estimado habilitado (página del carrito)** y **Envío estimado habilitado (página del producto)** en la página **Configuración → Configuración → Configuración de envío**.
+
+    Cuando el cliente proceda con los detalles del envío, se mostrarán las siguientes opciones:
+    ![Estimation USA](_static/manual/estimation-popup-usa.jpg)
+
+2.Cuando un cliente elige Canadá en la ventana de estimación de envío, se mostrarán las siguientes opciones:
+  ![Estimation Canada](_static/manual/estimation-popup-canada.jpg)
+    Como puede ver, la opción **Aire al día siguiente**  ya no está disponible.
+
+> [!TIP]
+>
+> En caso de que desee proporcionar puntos de recogida a sus clientes ver cómo configurar esto en el
+ [Pickup points](xref:en/getting-started/configure-shipping/advanced-configuration/pickup-points) chapter.
+
+## Tutorials
+
+* [Configuring manual shipping method](https://www.youtube.com/watch?v=1nYj0NqVUWw&t=8s)

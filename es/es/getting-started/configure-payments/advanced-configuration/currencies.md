@@ -21,19 +21,19 @@ Los tipos de cambio fluctúan a diario. Por lo tanto, puede editar el tipo de ca
 
 Para definir la configuración de moneda, vaya a **Configuración → Monedas**.
 
-![Monedas](_estático/monedas/monedas1.png)
+![Currencies](_static/currencies/currencies1.png)
 
 En la lista desplegable **Proveedor de tasa de cambio actual**, seleccione el proveedor de tasa de cambio que se utilizará para obtener las tasas en vivo.
 
-> [!NOTA]
+> [!NOTE]
 >
 > De forma predeterminada, en nopCommerce solo hay un proveedor de tipos de cambio disponible: ECB. Para obtener las tasas en vivo del BCE, debe seleccionar EUR como moneda de tipo de cambio principal.
 
  Marque la casilla de verificación **Actualización automática habilitada** para permitir recibir una actualización automática de los tipos de cambio cada hora.
 
- Clic en Guardar**.
+ Clic en **Guardar**.
 
-> [!NOTA]
+> [!NOTE]
 >
 > De forma predeterminada, todos los tipos de cambio se actualizan una vez por hora. Puede cambiar la configuración de actualización de los tipos de cambio en **Sistema → Programar tareas**, elija **Actualizar tipos de cambio**.
 
@@ -43,7 +43,7 @@ En la lista desplegable **Proveedor de tasa de cambio actual**, seleccione el pr
 
 Haga clic en el botón **Agregar nuevo**.
 
-![monedas3](_estático/monedas/monedas3.png)
+![currencies3](_static/currencies/currencies3.png)
 
 Defina la configuración de moneda:
 
@@ -53,9 +53,9 @@ Defina la configuración de moneda:
 * En la lista desplegable **Mostrar configuración regional**, seleccione la configuración regional de visualización para los valores de moneda.
 * Introduzca **Formato personalizado** que se aplicará a los valores de la moneda. En este campo, puede especificar cualquier símbolo para la moneda que se muestra en la tienda pública, el número de decimales, etc.
 * En **Limitado a tiendas**, seleccione una tienda creada previamente de la lista desplegable. Deje el campo vacío en caso de que esta funcionalidad no sea necesaria.
-  > [!NOTA]
+  > [!NOTE]
   >
-> Para utilizar esta funcionalidad, debe desactivar la siguiente configuración: **Configuración del catálogo → Ignorar las reglas de "límite por tienda" (en todo el sitio)**. Lea más sobre la funcionalidad de múltiples tiendas [aquí] (xref:en/Getting-started/advanced-configuration/multi-store).
+> Para utilizar esta funcionalidad, debe desactivar la siguiente configuración: **Configuración del catálogo → Ignorar las reglas de "límite por tienda" (en todo el sitio)**. Lea más sobre la funcionalidad de múltiples tiendas [aquí](xref:en/Getting-started/advanced-configuration/multi-store).
 
 * De la lista desplegable **Tipo de redondeo**, elija uno de los tipos de redondeo:
   * *Redondeo predeterminado*

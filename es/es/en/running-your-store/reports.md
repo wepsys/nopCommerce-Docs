@@ -5,49 +5,49 @@ author: git.AndreiMaz
 contributors: git.exileDev, git.mariannk
 ---
 
-# Reports
+# Informes
 
-Reports are important for management, they allow to monitor store performance, track key metrics and support decision making. nopCommerce reports provide access to sales and customer information.
+Los informes son importantes para la gestión, ya que permiten supervisar el rendimiento de la tienda, hacer un seguimiento de las métricas clave y apoyar la toma de decisiones. Los informes de nopCommerce proporcionan acceso a la información sobre ventas y clientes.
 
 ## Dashboard
 
-The dashboard is the first page you see when accessing the admin area. It enables you to view your store statistics, including the total number of orders that were processed over the period of time you choose (year, month, week), registered customers, low stock products, the most popular products in your store, etc.
+El tablero es la primera página que se ve al acceder al área de administración. Le permite ver las estadísticas de su tienda, incluyendo el número total de pedidos que se procesaron durante el período de tiempo que usted elija (año, mes, semana), clientes registrados, productos de bajo stock, los productos más populares de su tienda, etc.
 
 ![Dashboard](_static/reports/dashboard.png)
 
-The dashboard consist of several blocks:
+El tablero de mandos consta de varios bloques:
 
 ### nopCommerce news
-Displays general nopCommerce news like new version releases.
+Muestra las noticias generales de nopCommerce como los lanzamientos de nuevas versiones.
 ![News](_static/reports/news.png)
 
 ### Common statistics 
 ![Common](_static/reports/common.png)
 
-Here you can find links to more detailed reports:
-* Sales → Orders
-* Sales → Return requests
-* Customers → Registered customers
-* Reports → Low stock
+Aquí puede encontrar enlaces a informes más detallados:
+* Ventas → Pedidos
+* Ventas → Solicitudes de devolución
+* Clientes → Clientes registrados
+* Informes → Baja de existencias
 
 ### Orders
-This diagram enables you to know the number of orders that were processed in the last week, month, year.
+Este diagrama le permite saber el número de pedidos que fueron procesados en la última semana, mes, año.
 ![Orders](_static/reports/orders.jpg)
 
-### New customers
-This diagram shows the number of customers registered in last week, month, year.
+### Nuevos clientes
+Este diagrama muestra el número de clientes registrados en la última semana, mes, año.
 ![New customers](_static/reports/customers.jpg)
 
-### Order totals
-This section enables you to know the total of orders that were processed in the last day, week, month, year. Orders are shown by order status.
+### Los totales de la orden
+Esta sección le permite conocer el total de pedidos que fueron procesados en el último día, semana, mes, año. Los pedidos se muestran por el estado del pedido.
 ![Order totals](_static/reports/order-totals.png)
 
-### Incomplete orders
-This section enables you to know the number of orders that are currently incomplete.
+### Pedidos incompletos
+Esta sección permite conocer el número de pedidos que actualmente están incompletos.
 ![Orders incomplete](_static/reports/order-incomplete.png)
 
-### Latest orders
-Latest orders section shows you the latest placed orders.
+### Últimos pedidos
+La sección de últimos pedidos muestra los últimos pedidos realizados.
 ![Latest orders](_static/reports/order-latest.png)
 
 ### Popular search keywords
@@ -60,115 +60,115 @@ This section displays the bestsellers by quantity and by amount.
 ![Bestsellers](_static/reports/bestsellers.png)
 
 
-## Country report
-Country report contains a list of orders that includes the number of orders and the total order sum in each country. This enables store owners to view the orders per country.
+## Informe del país
+El informe del país contiene una lista de pedidos que incluye el número de pedidos y la suma total de los mismos en cada país. Esto permite a los propietarios de las tiendas ver los pedidos por país.
 
-To view country reports, go to **Reports → Country Report**.
+Para ver los informes de los países, vaya a **Informes → Informe del país**.
 
 ![Country report](_static/reports/country-report.png)
 
-To set up the report, enter one or more of the following search criteria:
-* **Start date** for the search.
-* **End date** for the search.
-* **Order status**, such as *All*, *Pending*, *Processing*, *Complete*, or *Cancelled*.
-* **Payment status**, such as *All*, *Pending*, *Authorized*, *Paid*, *Refunded*, *Partially refunded*, or *Voided*.
+Para configurar el informe, introduzca uno o más de los siguientes criterios de búsqueda:
+* **Fecha de inicio** de la búsqueda.
+* **Fecha de finalización** para la búsqueda.
+* **Estado del pedido**, como *Todo*, *Pendiente*, *Procesando*, *Completo*, o *Cancelado*.
+* **Estado de pago**, como *Todo*, *Pendiente*, *Autorizado*, *Pagado*, *Reembolsado*, *Reembolsado parcialmente*, o *Anulado*.
 
 Then click **Run report**.
 
 
-## Customer reports
-Customer reports give a store owner general information about registered customers and their orders. You can find different reports in the **Reports → Customer reports** menu.
+## Informes de los clientes
+Los informes de los clientes dan al dueño de la tienda información general sobre los clientes registrados y sus pedidos. Puedes encontrar diferentes informes en el menú **Reportes → Informes de clientes**.
 
-### Registered customers
-To run this report go to **Reports → Customer reports → Registered customers**.
-This report displays the number of registered customers for a certain period.
-You can track the number of users registered within the last day, week, two weeks, month and year.
+### Clientes registrados
+Para ejecutar este informe vaya a **Informes → Informes de clientes → Clientes registrados**.
+Este informe muestra el número de clientes registrados durante un cierto período.
+Puede rastrear el número de usuarios registrados en el último día, semana, dos semanas, mes y año.
 
 ![Registered customers](_static/reports/customer-registered.png)
 
-### Customers by order total
-To run this report go to **Reports → Customer reports → Customers by order total**.
-In this report, you can see the orders total spent by customers and the number of orders by customers.
+### Clientes por total del pedido
+Para ejecutar este informe vaya a **Informes → Informes de clientes → Clientes por total de pedidos**.
+En este informe se puede ver el total de pedidos gastados por los clientes y el número de pedidos de los clientes.
 
 ![Customers by order total](_static/reports/Customers-by-order-total.png)
 
-Enter one or several search criteria to compile a report:
-* Registration **Start date**.
-* Registration **End date**.
-* **Order status**, such as *All*, *Pending*, *Processing*, *Complete*, or *Cancelled*.
-* **Payment status**, such as *All*, *Pending*, *Authorized*, *Paid*, *Refunded*, *Partially refunded*, or *Voided*.
-* **Shipping Status** as *All*, *Shipping not required*, *Not yet shipped*, *Partially shipped*, *Shipped*, *Delivered*.
+Introduzca uno o varios criterios de búsqueda para elaborar un informe:
+* Registro **Fecha de inicio**.
+* Registro **Fecha de finalización**.
+* **Estado del pedido**, como *Todo*, *Pendiente*, *Procesando*, *Completo*, o *Cancelado*.
+* **Estado de pago**, como *Todo*, *Pendiente*, *Autorizado*, *Pagado*, *Reembolsado*, *Reembolsado parcialmente*, o *Anulado*.
+* **Estado de envío** como *Todo*, *Envío no requerido*, *No enviado todavía*, *Enviado parcialmente*, *Enviado*, *Entregado*.
 
-Then click **Run report**.
+Entonces haz clic en **Run report**.
 
-### Customers by number of orders
-To run this report go to **Reports → Customer reports → Customers by number of orders**.
-This report displays top 20 customers based on the total number of orders issued.
+### Clientes por número de pedidos
+Para ejecutar este informe vaya a **Informes → Informes de clientes → Clientes por número de pedidos**.
+Este informe muestra los 20 principales clientes según el número total de pedidos emitidos.
 
 ![Customers by number of orders](_static/reports/Customers-by-number-of-orders.png)
 
 Enter one or several search criteria to compile a report:
 
-* Registration **Start date**.
-* Registration **End date**.
-* **Order status**, such as *All*, *Pending*, *Processing*, *Complete*, or *Cancelled*.
-* **Payment status**, such as *All*, *Pending*, *Authorized*, *Paid*, *Refunded*, *Partially refunded*, or *Voided*.
-* **Shipping Status** as *All*, *Shipping not required*, *Not yet shipped*, *Partially shipped*, *Shipped*, *Delivered*.
+* Registro **Fecha de inicio**.
+* Registro **Fecha de finalización**.
+* **Estado del pedido**, como *Todo*, *Pendiente*, *Procesando*, *Completo*, o *Cancelado*.
+* **Estado de pago**, como *Todo*, *Pendiente*, *Autorizado*, *Pagado*, *Reembolsado*, *Reembolsado parcialmente*, o *Anulado*.
+* **Estado de envío** como *Todo*, *Envío no requerido*, *No enviado todavía*, *Enviado parcialmente*, *Enviado*, *Entregado*.
 
-Then click **Run report**.
+Entonces haz clic en **Run report**.
 
 
-## Low stock report
+## Informe de bajas existencias
 
-The low stock report contains a list of products that are currently under stock. In the example shown below, the min stock quantity was set to 20 and the stock quantity is 0, therefore a low stock report is generated for this product. You can set up low stock settings when adding the product.
+El informe de existencias bajas contiene una lista de productos que se encuentran actualmente en existencias. En el ejemplo que se muestra a continuación, la cantidad mínima de existencias se fijó en 20 y la cantidad de existencias es 0, por lo que se genera un informe de existencias bajas para este producto. Puede configurar las opciones de existencias bajas al agregar el producto.
 
-To view low stock reports, go to **Reports → Low stock**. The *Low stock* report window is displayed, as follows: 
+Para ver los informes de existencias bajas, vaya a **Reportes → Existencias bajas**. La ventana del informe de *Baja Existencias* se muestra de la siguiente manera: 
 ![Low stock report](_static/reports/low-stock-reports.png)
 
-The low stock reports could be filtered by the **Published** property, which represents the *Published* property of products.
+Los informes de existencias bajas podrían ser filtrados por la propiedad **Publicada**, que representa la propiedad *Publicada* de los productos.
 
-In the displayed table, click **View** to view the product details page where the stock quantity can be updated.
+En la tabla que se muestra, haga clic en **Ver** para ver la página de detalles del producto donde se puede actualizar la cantidad de existencias.
 
 
-## Bestsellers and never purchased
+## Los más vendidos y nunca comprados
 
-Knowing the bestselling products and products never purchased is very important for any shop owner. 
+Conocer los productos más vendidos y los que nunca se han comprado es muy importante para cualquier propietario de una tienda. 
 
-First of all, this can help in making better purchasing decisions: you can scale up on your popular items and exclude unpopular ones from your products list. When analyzing, consider, for example, whether certain colors sell faster, or whether your product sales depend on a season. 
+En primer lugar, esto puede ayudar a tomar mejores decisiones de compra: puede ampliar sus artículos populares y excluir los impopulares de su lista de productos. Cuando analice, considere, por ejemplo, si ciertos colores se venden más rápido, o si las ventas de sus productos dependen de una temporada. 
 
-Secondly, defining most and least selling goods can help you to *re-evaluate product design and marketing*. Maybe your best items go faster just because of their placement in your web store, or because of a better description. Come up with different options and test them. To do it more effectively, engage with your customers. *Conduct different surveys* to find out why the best selling items are preferred, what makes them special for your buyers. Use the insights to improve your marketing and increase sales.
+En segundo lugar, definir los productos más y menos vendidos puede ayudarte a *reevaluar el diseño y la comercialización del producto*. Tal vez tus mejores artículos se venden más rápido sólo por su colocación en tu tienda web, o por una mejor descripción. Piensa en diferentes opciones y pruébalas. Para hacerlo de manera más efectiva, comprométase con sus clientes. *Conduce diferentes encuestas* para averiguar por qué se prefieren los artículos más vendidos, qué los hace especiales para tus compradores. Utilice los conocimientos para mejorar su marketing y aumentar las ventas.
 
-### Bestsellers
-To view bestsellers in nopCommerce, go to **Reports → Bestsellers**. Enter one or more of the following search criteria to run the report:
-* **Start date** and/or **End date**.
-* **Store**, if you want to select one of your stores.
-* **Order status**, such as *All*, *Pending*, *Processing*, *Complete*, or *Cancelled*.
-* **Payment status**, such as *All*, *Pending*, *Authorized*, *Paid*, *Refunded*, *Partially refunded*, or *Voided*.
-* Choose the **Category**. 
-* Choose the **Manufacturer**.
-* Choose the **Billing country**.
-* Choose the **Vendor**.
+### Los más vendidos
+Para ver los bestsellers en nopCommerce, ve a **Reportes → Bestsellers**. Introduzca uno o más de los siguientes criterios de búsqueda para ejecutar el informe:
+* **Fecha de inicio** y/o **Fecha de finalización**.
+* **Store**, si quieres seleccionar una de tus tiendas.
+* **Estado del pedido**, como *Todo*, *Pendiente*, *Procesando*, *Completo*, o *Cancelado*.
+* **Estado de pago**, como *Todo*, *Pendiente*, *Autorizado*, *Pagado*, *Reembolsado*, *Reembolsado parcialmente*, o *Anulado*.
+* Elija la **Categoría**. 
+* Elija el **Fabricante**.
+* Elija el **País de facturación**.
+* Elija el **Vendedor**.
 
-Then click **Run report**.
+Luego haga clic en **Run report**.
 
-The report will break down your best-selling products based on both units sold and revenue:
+El informe desglosará sus productos más vendidos basándose en las unidades vendidas y los ingresos:
 
 ![Bestsellers](_static/reports/bestsellers.jpeg)
 
-### Products never purchased
+### Productos nunca comprados
 
-To view products never purchased, go to **Reports → Products never purchased**. Enter one or more of the following search criteria to run the report:
-* Choose the **Category**. 
-* Choose the **Manufacturer**.
-* **Store**, if you want to select one of your stores.
-* Choose the **Vendor**.
-* **Start date** and/or **End date**.
+Para ver los productos nunca comprados, vaya a **Informes → Productos nunca comprados**. Introduzca uno o más de los siguientes criterios de búsqueda para ejecutar el informe:
+* Elija la **Categoría**. 
+* Elija el **Fabricante**.
+* **Tienda**, si desea seleccionar una de sus tiendas.
+* Elija el **Vendedor**.
+* **Fecha de inicio** y/o **Fecha de finalización**.
 
-Then click **Run report**.
+Luego haga clic en **Run report**.
 
 ![Products never purchased](_static/reports/never-purchased.jpg)
 
 
-## Tutorials
+## Tutoriales
 
 * [Running reports in nopCommerce](https://www.youtube.com/watch?v=IbfoppTG9tM)

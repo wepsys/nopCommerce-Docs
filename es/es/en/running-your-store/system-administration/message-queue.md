@@ -5,47 +5,47 @@ author: git.AndreiMaz
 contributors: git.exileDev, git.mariannk
 ---
 
-# Message queue
+# Cola de mensajes
 
-Emails are not sent immediately in nopCommerce. They are queued. Message queue contains all emails that are already sent or not yet sent.
+Los correos electrónicos no se envían inmediatamente en nopCommerce. Están en cola. La cola de mensajes contiene todos los correos electrónicos que ya se han enviado o que aún no se han enviado.
 
-To load the message queue, from the **System** menu, select **Message queue**. The *Message queue* window is displayed, as follows:
-![Message queue](_static/message-queue/message-queue.png)
+Para cargar la cola de mensajes, en el menú **Sistema**, seleccione **Cola de mensajes**. Se muestra la ventana *Cola de mensajes*, de la siguiente manera:
+!![Message queue item details](_static/message-queue/edit.jpg)
 
-Enter one or more of the following criteria to search for messages:
-  * From the **Start date** field, select the start date.
-  * From the **End date** field, select the end date.
-  * In the **From address** field, enter the source address of a message.
-  * In the **To address** field, enter the target address of a message.
-  * Tick the **Load not sent emails only** checkbox, to only load emails that have not been sent yet.
-  * In the **Maximum send attempts** field, enter the maximum number of attempts to send a message.
-  * In the **Go directly to email #** field, enter the email number and click **Go** to display the required email.
+Introduzca uno o más de los siguientes criterios para buscar mensajes:
+  * En el campo **Fecha de inicio**, seleccione la fecha de inicio.
+  * En el campo **Fecha de finalización**, seleccione la fecha de finalización.
+  * En el campo **From address**, introduzca la dirección de origen de un mensaje.
+  * En el campo **Hacia la dirección**, ingrese la dirección de destino de un mensaje.
+  * Marque la casilla de verificación **Cargar sólo correos electrónicos no enviados**, para cargar sólo los correos electrónicos que aún no han sido enviados.
+  * En el campo **Máximo de intentos de envío**, introduzca el número máximo de intentos de envío de un mensaje.
+  * En el campo **Ir directamente al correo electrónico#**, introduzca el número de correo electrónico y haga clic en **Ir** para mostrar el correo electrónico requerido.
 
-Click **Search** to load the message queue matching the criteria.
+Haga clic en **Buscar** para cargar la cola de mensajes que coincida con los criterios.
 
-On this page, you can click the **Delete selected** button to delete selected emails from the grid. You can click **Delete all** to remove all emails.
+En esta página, puedes hacer clic en el botón **Borrar seleccionados** para eliminar los correos electrónicos seleccionados de la cuadrícula. Puedes hacer clic en **Borrar todo** para eliminar todos los correos electrónicos.
 
-## Message queue item details
+## Detalles del elemento de la cola de mensajes
 
-To view the message queue item details click the **Edit** button beside the message. The *Edit message queue item* window will be displayed:
+Para ver los detalles de los elementos de la cola de mensajes, haga clic en el botón **Editar** junto al mensaje. Aparecerá la ventana *Editar elemento de la cola de mensajes*:
 
-![Message queue item details](_static/message-queue/edit.jpg)
+![Detalles de los artículos de la cola de mensajes](_static/message-queue/edit.jpg)
 
-In this window you can delete the message by clicking the **Delete** button. Or you can requeue the message using the **Requeue** button.
+En esta ventana puede borrar el mensaje haciendo clic en el botón **Borrar**. O puede volver a poner en orden el mensaje usando el botón **Requeue**.
 
-On this page you can edit the following message details:
+En esta página puedes editar los siguientes detalles del mensaje:
 
-* **From** email address.
-* **From name**.
-* **To** email address.
-* **To name**.
-* **ReplyTo** email address.
-* **ReplyTo name**.
-* **Cc** email address.
-* **Bcc** email address.
-* Email message **Subject**.
-* Email message **Body**.
-* Tick the **Send immediately** checkbox to send this message immediately.
-* Enter the number of **Sent attempts**. This is the number of times to attempt to send this message.
+* **De** dirección de correo electrónico.
+* **De nombre**.
+* **Hasta** dirección de correo electrónico.
+* **A nombre**.
+* **Responder a la dirección de correo electrónico.
+* **Responder a nombre**.
+* **Cc** dirección de correo electrónico.
+* **Bcc** dirección de correo electrónico.
+* Mensaje de correo electrónico **Sujeto**.
+* Mensaje de correo electrónico **Cuerpo**.
+* Marque la casilla de verificación **Enviar inmediatamente** para enviar este mensaje inmediatamente.
+* Introduce el número de **Intentos de envío**. Este es el número de veces para intentar enviar este mensaje.
 
-Click **Save** or **Save and continue edit** to save the message details. 
+Haga clic en **Save** o **Save y continúe editando** para guardar los detalles del mensaje. 

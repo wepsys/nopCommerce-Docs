@@ -29,15 +29,15 @@ En esta página, puede hacer clic en el botón **Eliminar seleccionados** para e
 
 Para ver los detalles del elemento de la cola de mensajes, haga clic en el botón **Editar** al lado del mensaje. Aparecerá la ventana *Editar elemento de la cola de mensajes*:
 
-! [Detalles del elemento de la cola de mensajes](_static/message-queue/edit.jpg)
+![Detalles del elemento de la cola de mensajes](_static/message-queue/edit.jpg)
 
 En esta ventana puede eliminar el mensaje haciendo clic en el botón **Eliminar**. O puede poner en cola el mensaje usando el botón **Solicitar**.
 
 En esta página puede editar los siguientes detalles del mensaje:
 
-* **De la dirección de correo electrónico.
+* **De** la dirección de correo electrónico.
 * **De nombre**.
-* ** A ** dirección de correo electrónico.
+* **A** dirección de correo electrónico.
 * **Nombrar**.
 * **Responder a** dirección de correo electrónico.
 * **Responder al nombre**.

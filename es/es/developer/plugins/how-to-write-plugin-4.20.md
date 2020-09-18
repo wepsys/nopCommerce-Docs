@@ -11,8 +11,8 @@ Los complementos se utilizan para ampliar la funcionalidad de nopCommerce. nopCo
 
 ## La estructura del complemento, los archivos requeridos y las ubicaciones
 
-1. Lo primero que debe hacer es crear un nuevo proyecto de "Biblioteca de clases" en la solución. Es una buena práctica colocar todos los complementos en el directorio`\lugins` en la raíz de su solución (no se mezcle con el subdirectorio \ Plugins ubicado en el directorio` \ Nop.Web`
-que se usa para los complementos ya implementados). Es una buena práctica colocar todos los complementos en la carpeta de la solución "Complementos" (puede encontrar más información sobre las carpetas de la solución [aquí] (http://msdn.microsoft.com/library/sx2027y2.aspx)).
+1. Lo primero que debe hacer es crear un nuevo proyecto de "Biblioteca de clases" en la solución. Es una buena práctica colocar todos los complementos en el directorio `\lugins` en la raíz de su solución (no se mezcle con el subdirectorio \ Plugins ubicado en el directorio `\ Nop.Web`
+que se usa para los complementos ya implementados). Es una buena práctica colocar todos los complementos en la carpeta de la solución "Complementos" (puede encontrar más información sobre las carpetas de la solución [aquí](http://msdn.microsoft.com/library/sx2027y2.aspx)).
 
     Un nombre recomendado para un proyecto de complemento es "Nop.Plugin. {Group}. {Name}". {Group} es su grupo de complementos (por ejemplo, "Pago" o "Envío"). {Name} es el nombre de su complemento (por ejemplo, "PayPalStandard"). Por ejemplo, el complemento de pago estándar de PayPal tiene el siguiente nombre: Nop.Plugin.Payments.PayPalStandard. Pero tenga en cuenta que no es un requisito. Y puede elegir cualquier nombre para un complemento. Por ejemplo, "MyGreatPlugin".
 
@@ -48,7 +48,7 @@ que se usa para los complementos ya implementados). Es una buena práctica coloc
     </Project>
     ```
 
-    > [!PROPINA]
+    > [!TIP]
     >
     > Donde PLUGIN_OUTPUT_DIRECTORY debe reemplazarse con el nombre del complemento, por ejemplo, Payments.PayPalStandard.
     >
@@ -86,11 +86,11 @@ que se usa para los complementos ya implementados). Es una buena práctica coloc
 - **ITaxProvider**. Los proveedores de impuestos se utilizan para obtener tasas impositivas.
 - **IMiscPlugin**. Si su complemento no se ajusta a ninguna de estas interfaces
 
-> [!IMPORTANTE]
+> [!IMPORTANT]
 >
 > Nota importante: después de la construcción de cada proyecto, limpie la solución antes de realizar cambios. Algunos recursos se almacenarán en caché y pueden provocar la locura del desarrollador.
 
-> [!IMPORTANTE]
+> [!IMPORTANT]
 >
 > Es posible que deba reconstruir su solución después de agregar su complemento. Si no ve los archivos DLL para su complemento en Nop.Web \ Plugins \ PLUGIN_OUTPUT_DIRECTORY, debe reconstruir su solución. nopCommerce no incluirá su complemento en la página Complementos locales si sus DLL no existen en la carpeta correcta en Nop.Web.
 
@@ -104,7 +104,7 @@ Lo que tenemos que hacer ahora es crear un controlador, un modelo y una vista.
 1. Una vista contiene el marcado HTML y el contenido que se envía al navegador. Una vista es el equivalente a una página cuando se trabaja con una aplicación ASP.NET MVC.
 1. Un modelo MVC contiene toda la lógica de su aplicación que no está contenida en una vista o un controlador.
 
-Puede encontrar más información sobre el patrón MVC [aquí] (http://www.asp.net/mvc/tutorials/older-versions/overview/understanding-models-views-and-controllers-cs).
+Puede encontrar más información sobre el patrón MVC [aquí](http://www.asp.net/mvc/tutorials/older-versions/overview/understanding-models-views-and-controllers-cs).
 
 Así que comencemos:
 
@@ -131,11 +131,11 @@ public override string GetConfigurationPageUrl()
 }
 ```
 
-Donde * {CONTROLLER_NAME} * es el nombre de su controlador y * {ACTION_NAME} * es el nombre de la acción (generalmente es "Configurar").
+Donde *{CONTROLLER_NAME}* es el nombre de su controlador y *{ACTION_NAME}* es el nombre de la acción (generalmente es "Configurar").
 
-Una vez que haya instalado su complemento y agregado el método de configuración, encontrará un enlace para configurar su complemento en ** Admin → Configuration → Local Plugins **.
+Una vez que haya instalado su complemento y agregado el método de configuración, encontrará un enlace para configurar su complemento en **Admin → Configuration → Local Plugins**.
 
-> [!SUGERENCIA]
+> [!TIP]
 >
 > Consejo: la forma más sencilla de completar los pasos descritos anteriormente es abrir cualquier otro complemento y copiar estos archivos en su proyecto de complemento. Luego simplemente cambie el nombre de las clases y directorios apropiados.
 
@@ -150,11 +150,11 @@ Este paso es opcional. Algunos complementos pueden requerir lógica adicional du
 1. **Instalar**. Este método se invocará durante la instalación del complemento. Puede inicializar cualquier configuración aquí, insertar nuevos recursos de configuración regional o crear algunas tablas de base de datos nuevas (si es necesario).
 1. **Desinstalar**. Este método se invocará durante la desinstalación del complemento.
 
-> [!IMPORTANTE]
+> [!IMPORTANT]
 >
 > Nota importante: si anula uno de estos métodos, no oculte su implementación básica.
 
-Por ejemplo, el método "Install" anulado debe incluir la siguiente llamada al método: * base.Install () *. El método "Instalar" del complemento PayPalStandard se parece al código siguiente
+Por ejemplo, el método "Install" anulado debe incluir la siguiente llamada al método: *base.Install ()*. El método "Instalar" del complemento PayPalStandard se parece al código siguiente
 
 ```csharp
 public override void Install()
@@ -169,13 +169,13 @@ public override void Install()
 }
 ```
 
-> [!SUGERENCIA]
+> [!TIP]
 >
 > Sugerencia: La lista de complementos instalados se encuentra en `\App_Data\Plugins.json`. La lista se crea durante la instalación.
 
 ## Rutas
 
-Aquí veremos cómo registrar rutas de complementos. El enrutamiento de ASP.NET Core es responsable de asignar las solicitudes entrantes del navegador a acciones particulares del controlador MVC. Puede encontrar más información sobre el enrutamiento [aquí] (https://docs.microsoft.com/aspnet/core/fundamentals/routing). Entonces sigue los siguientes pasos:
+Aquí veremos cómo registrar rutas de complementos. El enrutamiento de ASP.NET Core es responsable de asignar las solicitudes entrantes del navegador a acciones particulares del controlador MVC. Puede encontrar más información sobre el enrutamiento [aquí](https://docs.microsoft.com/aspnet/core/fundamentals/routing). Entonces sigue los siguientes pasos:
 
 1. Si necesita agregar alguna ruta personalizada, cree el archivo `RouteProvider.cs`. Informa al sistema nopCommerce sobre las rutas de los complementos. Por ejemplo, la siguiente clase RouteProvider agrega una nueva ruta a la que se puede acceder abriendo su navegador web y navegando a `http://www.yourStore.com/Plugins/PaymentPayPalStandard/PDTHandler` URL (utilizado por el complemento de PayPal):
 
@@ -201,4 +201,4 @@ Con suerte, esto lo ayudará a comenzar con nopCommerce y lo preparará para cre
 
 ## Plantilla de complemento
 
-Puede utilizar nuestra plantilla de Visual Studio para nuevos complementos de nopCommerce. Puede ahorrar mucho tiempo a los desarrolladores. Porque ahora no tienen que hacer manualmente todos los pasos iniciales. Como creación de carpetas (controladores, vistas, modelos, etc.), otros archivos necesarios (DependencyRegistrar.cs,_ViewImports.cshtml, ObjectContex, plugin.json, etc.), configuración, referencias de proyectos, etc. Encuéntrelo y las instrucciones de instalación [aquí] (https://github.com/nopSolutions/nopCommerce-plugin-template-VS/)
+Puede utilizar nuestra plantilla de Visual Studio para nuevos complementos de nopCommerce. Puede ahorrar mucho tiempo a los desarrolladores. Porque ahora no tienen que hacer manualmente todos los pasos iniciales. Como creación de carpetas (controladores, vistas, modelos, etc.), otros archivos necesarios (DependencyRegistrar.cs,_ViewImports.cshtml, ObjectContex, plugin.json, etc.), configuración, referencias de proyectos, etc. Encuéntrelo y las instrucciones de instalación [aquí](https://github.com/nopSolutions/nopCommerce-plugin-template-VS/)

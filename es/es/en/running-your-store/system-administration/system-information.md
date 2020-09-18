@@ -5,10 +5,10 @@ author: git.AndreiMaz
 contributors: git.exileDev, git.mariannk
 ---
 
-# System information
+# Información del sistema
 
-The following procedure describes how to view the system information of the store and system server.
+El siguiente procedimiento describe cómo ver la información del sistema de la tienda y del servidor del sistema.
 
-To view system information go to **System** menu, select **System Information**. The *System information* will be displayed, as follows:
+Para ver la información del sistema vaya al menú **Sistema**, seleccione **Información del sistema**. Se mostrará la *Información del sistema*, de la siguiente manera:
 
 ![System information](_static/system-information/system-information.png)

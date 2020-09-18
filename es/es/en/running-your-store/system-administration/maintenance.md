@@ -5,13 +5,13 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 ---
 
-# Maintenance
+# tMaintenance
 
 From the **System** menu, select **Maintenance**. The *Maintenance* window is displayed, as follows:
 
 ![Maintenance](_static/maintenance/maintenance.jpg)
 
-## Delete guest customer records
+## Delete guest cusomer records
 
 From the *Deleting guest customers* panel, click the **Delete** button. This option enables you to delete customer records created for guest visitors.
 

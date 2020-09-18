@@ -7,30 +7,31 @@ contributors: git.exileDev, git.mariannk
 
 # Log
 
-The system log report displays a list of all the errors, warnings and information messages that were created in the system. To view the log go to **System → Log**. The *Log* window is displayed, as follows:
+El informe del log del sistema muestra una lista de todos los errores, advertencias y mensajes de información que se crearon en el sistema. Para ver el log vaya a **System → Log**. La ventana *Log* se muestra como sigue:
 
 ![Log](_static/log/log.png)
 
-A log item include the log type, description of the error and date. You can click the **Delete selected** button to remove the selected log items or click the **Clear log** button to clear all log.
+Un elemento de registro incluye el tipo de registro, la descripción del error y la fecha. Puede hacer clic en el botón **Borrar seleccionado** para eliminar los elementos de registro seleccionados o hacer clic en el botón **Borrar registro** para borrar todo el registro.
 
-To search for the system log enter one or more of the following information:
-  * From the **Created from** field, select the start date for the search.
-  * From the **Created to** field, select the end date for the search.
-  * In the **Message** field, select the message or part of the message to search by.
-  * From the **Log level** dropdown list, select the type of log information to display, as follows:
-    * *All*
-    * *Debug*
-    * *Information*
-    * *Warning*
-    * *Error*
-    * *Fatal*
+Para buscar el registro del sistema, introduzca una o más de las siguientes informaciones:
+  * En el campo **Creado desde**, seleccione la fecha de inicio de la búsqueda.
+  * En el campo **Creado hasta**, seleccione la fecha final de la búsqueda.
+  * En el campo **Mensaje**, seleccione el mensaje o parte del mensaje por el que desea realizar la búsqueda.
+  * En la lista desplegable **Nivel de registro**, seleccione el tipo de información de registro a mostrar, como sigue:
+    * *Todos*
+    * * Debug *
+    * * Información *
+    * * Advertencia *
+    * * Error *
+    * * Fatal *
 
-Click **Search**. The log system window will be displayed based on the search criteria.
+Haz clic en **Búsqueda**. La ventana del sistema de registro se mostrará en función de los criterios de búsqueda.
 
-## View system log details
+## Ver detalles del registro del sistema
 
-Clicking **View** displays additional details of the error that occurred, as follows:
+Al hacer clic en **Ver** se muestran detalles adicionales del error que ocurrió, de la siguiente manera:
 
 ![Log entry - Details](_static/log/log-details.jpg)
 
-You can click **Delete** to remove a log from the system if required.
+
+Puede pulsar **Borrar** para eliminar un registro del sistema si es necesario.

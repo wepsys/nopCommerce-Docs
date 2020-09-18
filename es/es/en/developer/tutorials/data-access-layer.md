@@ -5,6 +5,6 @@ author: git.AndreiMaz
 contributors: git.exileDev
 ---
 
-# nopCommerce Data Access Layer
+# capa de acceso a datos nopCommerce
 
-The Nop.Data project contains a set of classes and functions for reading from and writing to a database or other data store. The Nop.Data library helps separate data-access logic from your business objects. nopCommerce uses the Linq2DB Code-First approach. Code-First allows a developer to define entities in the source code (all core entities are defined in the Nop.Core project), and then use Linq2DB and FluentMigrator to generate the database from the C# classes. That's why it's called Code-First. You can then query your objects using LINQ, which translates to SQL behind the scenes and is executed against the database. NopCommerce uses [Fluent API](https://fluentmigrator.github.io/articles/technical/fluent-api-create.html) to fully customize the persistence mapping.
+El proyecto Nop.Data contiene un conjunto de clases y funciones para leer y escribir en una base de datos u otro almacén de datos. La biblioteca Nop.Data ayuda a separar la lógica de acceso a datos de sus objetos comerciales. nopCommerce utiliza el enfoque Linq2DB Code-First. Code-First permite a un desarrollador definir entidades en el código fuente (todas las entidades centrales se definen en el proyecto Nop.Core) y luego usar Linq2DB y FluentMigrator para generar la base de datos a partir de las clases C #. Por eso se llama Code-First. Luego puede consultar sus objetos usando LINQ, que se traduce a SQL detrás de escena y se ejecuta en la base de datos. NopCommerce usa [Fluent API](https://fluentmigrator.github.io/articles/technical/fluent-api-create.html) para personalizar completamente el mapeo de persistencia.

@@ -17,7 +17,7 @@ Para acceder a su cuenta en UPS, utilice un nombre de usuario, una contraseña y
     * Número de licencia de acceso XML
 
 1. En el área de administración de nopCommerce, vaya a **Configuración → Envío → Proveedores de envío**.
- ! [Métodos de tarifas de envío](_static/ups/shipping-rate-methods.jpg)
+ ![Métodos de tarifas de envío](_static/ups/shipping-rate-methods.jpg)
 1. Habilite este método de la siguiente manera:
     * En la fila UPS (United Postal Service), haga clic en el botón **Editar**.
     * En la columna Está **activo**, marque la marca de verificación.

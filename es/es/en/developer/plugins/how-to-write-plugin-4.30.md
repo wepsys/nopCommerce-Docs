@@ -47,7 +47,7 @@ Los complementos se utilizan para ampliar la funcionalidad de nopCommerce. nopCo
     </Project>
     ```
 
-    >[!PROPINA]
+    >[!TIP]
      >
      > Donde PLUGIN_OUTPUT_DIRECTORY debe reemplazarse con el nombre del complemento, por ejemplo, Payments.PayPalStandard.
      >
@@ -77,7 +77,7 @@ Los complementos se utilizan para ampliar la funcionalidad de nopCommerce. nopCo
 
     En realidad, todos los campos son autodescriptivos, pero aquí hay algunas notas. El campo **SystemName** debe ser único. El campo **Versión** es un número de versión de su complemento; puede configurarlo en cualquier valor que desee. El campo **SupportedVersions** puede contener una lista de versiones de nopCommerce compatibles separadas por comas (asegúrese de que la versión actual de nopCommerce esté incluida en esta lista, de lo contrario, no se cargará). El campo **FileName** tiene el siguiente formato Nop.Plugin. {Group}. {Name} .dll (es el nombre de archivo de ensamblaje de su complemento). Asegúrese de que la propiedad *"Copiar al directorio de salida"* de este archivo esté establecida en *"Copiar si es más reciente"*.
 
-    ![p2] (_static/how-to-write-plugin-4.30/write_plugin_4.30_2.jpg)
+    ![p2](_static/how-to-write-plugin-4.30/write_plugin_4.30_2.jpg)
 
 1. El último paso requerido es crear una clase que implemente la interfaz **IPlugin** (espacio de nombres Nop.Services.Plugins). nopCommerce tiene la clase **BasePlugin** que ya implementa algunos métodos IPlugin y le permite evitar la duplicación del código fuente. nopCommerce también le proporciona algunas interfaces específicas derivadas de IPlugin. Por ejemplo, tenemos la interfaz "IPaymentMethod" que se utiliza para crear nuevos complementos de métodos de pago. Contiene algunos métodos que son específicos solo para métodos de pago como *ProcessPayment ()* o *GetAdditionalHandlingFee ()*. Actualmente, nopCommerce tiene las siguientes interfaces de complementos específicas:
 
@@ -90,11 +90,11 @@ Los complementos se utilizan para ampliar la funcionalidad de nopCommerce. nopCo
 - **ITaxProvider**. Los proveedores de impuestos se utilizan para obtener tasas impositivas.
 - **IMiscPlugin**. Si su complemento no se ajusta a ninguna de estas interfaces
 
-> [!IMPORTANTE]
+> [!IMPORTANT]
 >
 > Nota importante: Después de la construcción de cada proyecto, limpie la solución antes de realizar cambios. Algunos recursos se almacenarán en caché y pueden provocar la locura del desarrollador.
 
-> [!IMPORTANTE]
+> [!IMPORTANT]
 >
 > Es posible que deba reconstruir su solución después de agregar su complemento. Si no ve los archivos DLL para su complemento en Nop.Web\Plugins\PLUGIN_OUTPUT_DIRECTORY, debe reconstruir su solución. nopCommerce no incluirá su complemento en la página Complementos locales si sus DLL no existen en la carpeta correcta en Nop.Web.
 
@@ -131,11 +131,12 @@ public override string GetConfigurationPageUrl()
 }
 ```
 
-Donde *{CONTROLLER_NAME} * es un nombre de su controlador y * {ACTION_NAME} * es un nombre de acción (generalmente es "Configurar").
+Donde *{CONTROLLER_NAME}* es un nombre de su controlador y 
+*{ACTION_NAME}* es un nombre de accin (generalmente es "Configurar").
 
-Una vez que haya instalado su complemento y agregado el método de configuración, encontrará un enlace para configurar su complemento en **Admin → Configuración → Complementos locales **.
+Una vez que haya instalado su complemento y agregado el método de configuración, encontrará un enlace para configurar su complemento en **Admin → Configuración → Complementos locales**.
 
-> [!SUGERENCIA]
+> [!tip]
 >
 > Consejo: La forma más sencilla de completar los pasos descritos anteriormente es abrir cualquier otro complemento y copiar estos archivos en su proyecto de complemento. Luego simplemente cambie el nombre de las clases y directorios apropiados.
 
@@ -151,7 +152,7 @@ Este paso es opcional. Algunos complementos pueden requerir lógica adicional du
 1. **Desinstalar**. Este método se invocará durante la desinstalación del complemento.
 1. **Actualización**. Este método se invocará durante la actualización del complemento (cuando se cambie su versión en el archivo `plugin.json`).
 
-> [!IMPORTANTE]
+> [!IMPORTANT]
 >
 > Nota importante: si anula uno de estos métodos, no oculte su implementación básica.
 
@@ -170,7 +171,7 @@ public override void Install()
 }
 ```
 
-> [!PROPINA]
+> [!tiP]
 >
 > La lista de complementos instalados se encuentra en `\ App_Data \ plugins.json`. La lista se crea durante la instalación.
 
@@ -203,4 +204,4 @@ Con suerte, esto lo ayudará a comenzar con nopCommerce y lo preparará para cre
 
 ## Plantilla de complemento
 
-Puede utilizar nuestra plantilla de Visual Studio para los nuevos complementos de nopCommerce. Puede ahorrar mucho tiempo a los desarrolladores, porque ahora no tienen que realizar manualmente todos los pasos iniciales. Como la creación de carpetas (controladores, vistas, modelos, etc.), otros archivos necesarios (DependencyRegistrar.cs, _ViewImports.cshtml, ObjectContex, plugin.json, etc.), configuración, referencias de proyectos, etc. Encuéntrelo y las instrucciones de instalación [aquí] (https://github.com/nopSolutions/nopCommerce-plugin-template-VS/)
+Puede utilizar nuestra plantilla de Visual Studio para los nuevos complementos de nopCommerce. Puede ahorrar mucho tiempo a los desarrolladores, porque ahora no tienen que realizar manualmente todos los pasos iniciales. Como la creación de carpetas (controladores, vistas, modelos, etc.), otros archivos necesarios (DependencyRegistrar.cs, _ViewImports.cshtml, ObjectContex, plugin.json, etc.), configuración, referencias de proyectos, etc. Encuéntrelo y las instrucciones de instalación [aquí](https://github.com/nopSolutions/nopCommerce-plugin-template-VS/)

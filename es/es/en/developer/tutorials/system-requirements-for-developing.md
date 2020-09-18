@@ -5,9 +5,9 @@ author: nop.sea
 contributors: git.RomanovM, git.DmitriyKulagin
 ---
 
-# System requirements for developing
+# Requisitos del sistema para desarrollar
 
-## Operating System
+## Sistema operativo
 
 * Windows
 
@@ -39,31 +39,31 @@ contributors: git.RomanovM, git.DmitriyKulagin
 
 > [!NOTE]
 >
-> For more information about browser support please visit [Supported OS versions](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1-supported-os.md)
+> Para obtener más información sobre la compatibilidad de los navegadores, visite [Supported OS versions](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1-supported-os.md)
 
-## 1. Supported Browsers
+## 1. Navegadores soportados
 
-* Microsoft Internet Explorer 9 and above (IE6 and IE7 were supported in versions prior 3.60, IE8 was support in versions prior 4.10)
-* Mozilla Firefox 2.0 and above
+* Microsoft Internet Explorer 9 y superior (IE6 e IE7 eran compatibles en las versiones anteriores a la 3.60, IE8 era compatible en las versiones anteriores a la 4.10)
+* Mozilla Firefox 2.0 y superior
 * Google Chrome 1.x
 * Apple Safari 2.x
 
-## 2. Tools Required for Development
+## 2. Herramientas necesarias para el desarrollo
 
-Since it is based on Microsoft's ASP.NET framework we need to install a few tools before starting developing on top of nopCommerce.
+Como está basado en el marco ASP.NET de Microsoft, necesitamos instalar algunas herramientas antes de empezar a desarrollar en nopCommerce.
 
 ### \.NET Core 3.1 runtime & .NET Core SDK
 
-Since nopCommerce 4.30 is based on .NET Core 3.1 framework. We need to install [.NET Core 3.1 runtime](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-aspnetcore-3.1.3-windows-hosting-bundle-installer) and [.NET Core SDK](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-3.1.201-windows-x64-installer) before we start development on nopCommerce.
+Ya que nopCommerce 4.30 está basado en el marco de .NET Core 3.1. Necesitamos instalar [.NET Core 3.1 runtime](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-aspnetcore-3.1.3-windows-hosting-bundle-installer) y [.NET Core SDK](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-3.1.201-windows-x64-installer) antes de empezar el desarrollo en nopCommerce.
 
-### Visual Studio 2019 or Above / Visual Studio Code
+### Visual Studio 2019 o superior / Código de Visual Studio
 
-As we know nopCommerce is based on 'Microsoft's ASP.NET framework' and Visual Studio IDE is best for developing Dot Net based Applications. Since .NET Core is platform independent so we can develop and deploy .Net based application on any platform but visual studio is not available in other platforms than window. So we can use Visual Studio Code as the alternative of Visual Studio for developing on Windows as well as in other platform.
+Como sabemos, nopCommerce se basa en el 'ASP.NET framework' de Microsoft y Visual Studio IDE es el mejor para desarrollar aplicaciones basadas en Dot Net. Ya que el núcleo de .NET es independiente de la plataforma, podemos desarrollar y desplegar aplicaciones basadas en .Net en cualquier plataforma, pero Visual Studio no está disponible en otras plataformas que no sean Windows. Así que podemos usar el código de Visual Studio como la alternativa de Visual Studio para desarrollar en Windows así como en otra plataforma.
 
-### Microsoft SQL Server 2012 or Above / MySql Server 5.7 or Above
+### Microsoft SQL Server 2012 o superior / MySql Server 5.7 o superior
 
-Started from 4.30 version nopCommerce uses Linq2DB as an ORM Framework. Linq2DB  is an object-relational mapper (ORM) that enables .NET developers to work with a database using .NET objects. It can map .Net objects to various numbers of Database providers. And you may choose between MS SQL Server and MySql server.
+A partir de la versión 4.30 nopCommerce utiliza Linq2DB como marco de trabajo ORM. Linq2DB es un mapeador objeto-relacional (ORM) que permite a los desarrolladores de .NET trabajar con una base de datos usando objetos .NET. Puede mapear objetos .Net a varios números de proveedores de bases de datos. Y puede elegir entre MS SQL Server y MySql server.
 
-### Internet Information Service (IIS) 7.0 or above
+### Servicio de Información de Internet (IIS) 7.0 o superior
 
-For hosting nopCommerce app/project we can use IIS. Which is Microsoft technology used to host Microsoft web based applications on windows. But you are not limited for hosting your nopCommerce in windows only you can host nopCommerce in Linux and MacOS too. As you may know you that IIS is not supported in other platform then windows. So, you can use other tools like Apache or Nginx to host your application on Linux server.
+Para alojar un proyecto o aplicación de nopCommerce podemos usar IIS. Que es la tecnología de Microsoft utilizada para alojar aplicaciones web de Microsoft en Windows. Pero no estás limitado para alojar tu nopCommerce en windows sólo puedes alojar nopCommerce en Linux y MacOS también. Como sabrán, IIS no está soportada en otra plataforma que no sea Windows. Por lo tanto, puedes usar otras herramientas como Apache o Nginx para alojar tu aplicación en un servidor Linux.

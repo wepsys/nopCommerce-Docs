@@ -37,7 +37,7 @@ Las secciones del tablero se contraen fácilmente haciendo clic en el icono! [El
 
 La barra lateral se coloca a la izquierda de cada página en el área de administración. Le permite navegar a través de la funcionalidad del administrador de nopCommerce.
 
-¡La barra lateral se puede contraer fácilmente haciendo clic en el icono de "hamburguesa" junto al logotipo! [Tablero2](_static/admin-area-overview/hamburger.jpg)
+¡La barra lateral se puede contraer fácilmente haciendo clic en el icono de "hamburguesa" junto al logotipo ![Tablero2](_static/admin-area-overview/hamburger.jpg)
 
 ### Campo de búsqueda
 

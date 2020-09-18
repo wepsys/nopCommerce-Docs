@@ -5,15 +5,19 @@ author: git.AndreiMaz
 contributors: git.exileDev, git.DmitriyKulagin
 ---
 
-# Choose and install a theme
+# Elija e instale un tema
 
-After downloading a new theme which is in a zip file, extract the contents of your zip file and copy it to the **Themes** folder like shown on the picture below:
+Después de descargar un nuevo tema que está en un archivo zip, extraiga el contenido de su archivo zip y cópielo en la carpeta **Themes**  como se muestra en la imagen de abajo:
+
+
 
 ![p1](_static/choose-and-install-a-theme/instal_theme1.jpg)
 
-1. Go to **admin panel → Configuration → Settings → General settings**.
+1. Ir a  **panel de administración > Configuración > Ajustes > Ajustes generales**.
 
-    ![p2](_static/choose-and-install-a-theme/instal_theme2.png)
+![p2](_static/choose-and-install-a-theme/instal_theme2.png)
 
-1. Select your new theme in the **Default store theme** field and click **Save**.
-1. Go to the public store. You should be able to see the new theme applied to your store.
+1. Seleccione su nuevo tema en el campo **Tema de tienda predeterminado**  y haga clic en  **Guardar**.
+1. Vaya a la tienda pública. Deberías poder ver el nuevo tema aplicado a tu tienda.
+
+

@@ -19,5 +19,3 @@ Y aquí están algunos de los beneficios de alojar su plugin en el directorio [M
 El equipo de nopCommerce examina cada extensión en busca de calidad y para asegurarse de que cumple con todos nuestros requisitos (incluyendo la documentación y las imágenes). Si su envío no pasa nuestras reseñas, le diremos por qué y cómo solucionarlo. De lo contrario, sus envíos exitosos aparecerán en nuestro mercado.
 
 Por favor, encuentre una lista completa de nuestros requisitos e información sobre el proceso de revisión [aquí](https://www.nopcommerce.com/submitting-plugins-to-nopcommerce-marketplace).
-
-

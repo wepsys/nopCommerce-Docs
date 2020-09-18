@@ -11,15 +11,15 @@ nopCommerce es un software de comercio electrónico de código abierto que conti
 
 La documentación de nopCommerce está aquí para ayudarlo en el proceso de configuración de su tienda. Estos le permitirán poner en marcha su sitio rápidamente.
 
-<h2 class="click-links-title">Install</h2>
+<h2 class="click-links-title">Instalar</h2>
 <div class="quick-links">
-	<div class="quick-item pre-installed">
-		<a href="/en/installation-and-upgrading/installing-nopcommerce/pre-installed-nopcommerce.html"><h3>Pre instalado</h3></a>
+	<div class="quick-item pre-instalado">
+		<a href="/es/instalación-y-mejora/instalación-nopcommerce/pre-instalación-nopcommerce.html"><h3>Pre instalado</h3></a>
 		<p>Solución de instalación de nopCommerce simple y rápida creada por el equipo de nopCommerce y Winhost</p>
 	</div>
 	<div class="quick-item manually">
-		<a href="/en/installation-and-upgrading/installing-nopcommerce/index.html"><h3>Install manually</h3></a>
-		<p>Choose a <a href="/en/installation-and-upgrading/installing-nopcommerce/choose-a-hosting-company.html">hosting company</a> and install nopCommerce <a href="/en/installation-and-upgrading/installing-nopcommerce/installing-local.html">locally</a>, on <a href="/en/installation-and-upgrading/installing-nopcommerce/installing-on-windows.html">Windows</a>, <a href="/en/installation-and-upgrading/installing-nopcommerce/installing-on-microsoft-azure.html">Microsoft Azure</a> or <a href="/en/installation-and-upgrading/installing-nopcommerce/installing-on-linux.html">Linux</a></p>
+		<a href="/es/instalación-y-actualización-instalación-nopcommerce/index.html"><h3>Instalar manualmente</h3></a>
+		<p>Elige una <a href="/es/instalación-y-actualización-instalación-nopcommerce/elegir una empresa de alojamiento.html">hosting company</a> e instala nopCommerce <a href="/es/instalación-y-actualización-instalación-nopcommerce/instalación-local.html">localmente</a>, en <a href="/es/instalación-y-actualización-instalación-nopcommerce/instalación-en-ventanas. html">Windows</a>, <a href="/es/instalación-y-actualización/instalación-nopcomercio/instalación-en-microsoft-azure.html">Microsoft Azure</a> o <a href="/es/instalación-y-actualización-instalación-nopcomercio/instalación-en-linux.html">Linux</a></p>
 	</div>
 </div>
 

@@ -5,68 +5,68 @@ author: git.AndreiMaz
 contributors: git.rajupaladiya, git.exileDev, git.DmitriyKulagin, git.IvanIvanIvanov, git.ivkadp
 ---
 
-# nopCommerce interface
+# Interfaz de nopCommerce
 
-This chapter covers the basics of nopCommerce interface.
+Este capítulo cubre los fundamentos de la interfaz de nopCommerce.
 
-Once logged in, you should see the **Administration** hyperlink at the top of your website. Or you can simply add `/admin` to the end of your site's URL to open the admin area. For example: `www.example.com/admin`.
+Una vez conectado, deberías ver el hipervínculo de **Administración** en la parte superior de tu sitio web. O simplemente puedes añadir `/admin` al final de la URL de tu sitio para abrir el área de administración. Por ejemplo: "www.example.com/admin".
 
-The first screen that is displayed after logging in the nopCommerce administration area is the *Dashboard*:
+La primera pantalla que se muestra después de entrar en el área de administración de nopCommerce es el *Dashboard*:
 
 ![dashboard](_static/admin-area-overview/dashboard.png)
 
-The dashboard has the following sections:
+El tablero de mandos tiene las siguientes secciones:
 
-* **nopCommerce news** is a section where important news, sales, and promotions information from nopCommerce are shown.
+*** **Noticias de nopCommerce** es una sección donde se muestra información importante de noticias, ventas y promociones de nopCommerce.
 
-* **Common statistics** of your webstore which includes numbers of orders, pending return requests, registered customers and low stock products.
+* **Estadísticas comunes** de tu tienda web que incluyen números de pedidos, solicitudes de devolución pendientes, clientes registrados y productos de bajo stock.
 
-* Other sections showing the vital statistics of your webstore: **orders, new customers, order totals, incomplete orders, latest orders, popular search keywords, bestsellers by quantity, bestsellers by amount**: 
+* Otras secciones que muestran las estadísticas vitales de tu webstore: **Pedidos, nuevos clientes, totales de pedidos, pedidos incompletos, últimos pedidos, palabras clave de búsqueda populares, bestsellers por cantidad, bestsellers por cantidad**:
 
-![Stats](_static/admin-area-overview/stats.jpg)
+![Estadísticas](_static/admin-area-overview/stats.jpg)
 
-Learn more about these reports [here](xref:en/running-your-store/reports).
+Aprenda más sobre estos informes [aquí](xref:es/running-your-store/reports).
 
-The dashboard sections are easily collapsed by clicking the ![item](_static/admin-area-overview/item.png) icon.
+Las secciones del tablero se pueden colapsar fácilmente haciendo clic en el icono ![item](_static/admin-area-overview/item.png).
 
-## Common nopCommerce page elements
+## Elementos comunes de la página nopCommerce
 
 ### Sidebar
 
 ![Sidebar](_static/admin-area-overview/sidebar.jpg)
 
-The sidebar is placed on the left of each page in the administration area. It allows you to navigate through nopCommerce administrator's functionality.
+La barra lateral se coloca a la izquierda de cada página en el área de administración. Le permite navegar a través de las funciones del administrador de nopCommerce.
 
-The sidebar can be easily collapsed by clicking the "hamburger" icon next to the logo ![dashboard2](_static/admin-area-overview/hamburger.jpg)
+La barra lateral se puede colapsar fácilmente haciendo clic en el icono "hamburguesa" junto al logotipo ![dashboard2](_static/admin-area-overview/hamburger.jpg)
 
 ### Search field
 
-![dashboard3](_static/admin-area-overview/search.jpg)
+![tablero3](_static/admin-area-overview/search.jpg)
 
-On the top of the sidebar, there is a search field. Start typing a name of a section you want to navigate to, the search line auto-suggests the options, proceed directly to the required one.
+En la parte superior de la barra lateral, hay un campo de búsqueda. Empieza a escribir el nombre de la sección a la que quieres navegar, la línea de búsqueda sugiere automáticamente las opciones, procede directamente a la requerida.
 
-### System menu
+### Menú del sistema
 
 ![dashboard4](_static/admin-area-overview/menu.jpg)
 
-This part of the interface shows the name of a logged-in user, logout button, public store link and a small menu from which a user can select to clear cache or restart application.
+Esta parte de la interfaz muestra el nombre de un usuario que ha iniciado la sesión, el botón de cierre de sesión, el enlace a la tienda pública y un pequeño menú en el que el usuario puede seleccionar para borrar la memoria caché o reiniciar la aplicación.
 
-## Basic and advanced modes
+## Modos básico y avanzado
 
-On some pages in the administration area you will see the following switch:
+En algunas páginas del área de administración verá el siguiente interruptor:
 
-![dashboard5](_static/admin-area-overview/dashboard5.png)
+![dashboard5](_static/admin-area-overview/dashboard.png)
 
-This two-position *Basic-Advanced* switch allows you to switch between page display modes.
+Este interruptor de dos posiciones *Básico-Avanzado* le permite cambiar entre los modos de visualización de página.
 
-For the convenience of use, we made the **Basic** mode where the most frequent settings are shown.
+Para mayor comodidad de uso, hemos creado el modo **Básico** donde se muestran los ajustes más frecuentes.
 
-If you cannot find a required setting on a page, switch to the **Advanced** mode to see all available settings.
+Si no puede encontrar un ajuste necesario en una página, cambie al modo **Avanzado** para ver todos los ajustes disponibles.
 
-On some pages, the switch has a **Settings** button beside. You can use it to set up the basic mode according to your needs by adding/removing the required settings.
+En algunas páginas, el conmutador tiene un botón de **Ajustes** al lado. Puede usarlo para configurar el modo básico de acuerdo con sus necesidades añadiendo/eliminando los ajustes necesarios.
 
-![dashboard6](_static/admin-area-overview/dashboard6.png)
+![tablero6](_static/admin-area-overview/dashboard6.png)
 
-Click **Settings** to see a list of the available settings. Tick the checkboxes of the **desired setting**. The added settings will then be displayed in the **Basic** mode.
+Haga clic en **Settings** para ver una lista de los ajustes disponibles. Marque las casillas de verificación de la **configuración deseada**. Los ajustes añadidos se mostrarán entonces en el modo **Básico**.
 
-![dashboard7](_static/admin-area-overview/dashboard7.png)
+![tablero7](_static/admin-area-overview/dashboard7.png)

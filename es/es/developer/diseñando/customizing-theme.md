@@ -29,16 +29,17 @@ Para cargar el logotipo de su tienda en un sitio web de nopCommerce, existen bá
 
     Puede mencionar la ruta de su logotipo personalizado aquí.
 
-    > [!NOTA]
+    > [!NOTE]
     > 
     > En el código css mencionado anteriormente: logo.gif es el nombre del archivo de imagen del logotipo de la tienda
 
 1. Cambiar logo.gif con `YourLogo.gif/jpg/png`
 1. Guarde los cambios en el `Header.cshtml` file
-
-> []
 > 
->  (nuevo logo de la tienda).
+
+> [!IMPORTANT]
+>
+>Es posible que deba actualizar el navegador o eliminar el historial o las cookies de su navegador para ver los cambios (nuevo logotipo de la tienda).
 
 Si desea realizar cambios en la hoja de estilo con respecto al logotipo, busque el siguiente código en su `styles.css`:
 
@@ -60,7 +61,7 @@ Si desea realizar cambios en la hoja de estilo con respecto al logotipo, busque 
 
 ## Cómo cambiar un diseño
 
-1. / realizar cambios en el diseño base (i.e. `_Root.cshtml`) de su sitio web nopCommerce. Busque este código CSS en su `style.css`
+1. /  si deceas realizar cambios en el diseño base (i.e. `_Root.cshtml`) de su sitio web nopCommerce. Busque este código CSS en su `style.css`
 
     ```css
     .master-wrapper-content {
@@ -80,7 +81,7 @@ Si desea realizar cambios en la hoja de estilo con respecto al logotipo, busque 
     }
     ```
 
-1. Si desea personalizar / realizar cambios en el diseño de `_ColumnOne.cshtml`. Busque este código CSS en su `style.css`
+1. Si desea personalizar/realizar cambios en el diseño de `_ColumnOne.cshtml`. Busque este código CSS en su `style.css`
 
     ```css
     .center-1 {
@@ -88,7 +89,7 @@ Si desea realizar cambios en la hoja de estilo con respecto al logotipo, busque 
     }
     ```
 
-1. Si desea personalizar / realizar cambios en el diseño de `_ColumnTwo.cshtml`.  `style.css`
+1. Si desea personalizar/realizar cambios en el diseño de `_ColumnTwo.cshtml`.  `style.css`
 
     ```css
         .center-2, .side-2 {
@@ -103,14 +104,14 @@ Si desea realizar cambios en la hoja de estilo con respecto al logotipo, busque 
 
 ## Cómo realizar cambios en el menú de encabezado (menú superior)
 
-1. Si desea personalizar / realizar cambios en el menú de encabezado (menú superior) de su sitio web nopCommerce, vaya a la siguiente         ubicación:
+1. Si desea personalizar/realizar cambios en el menú de encabezado (menú superior) de su sitio web nopCommerce, vaya a la siguiente ubicación:
 
     Ir a la carpeta raíz de nopCommerce `/Views/Shared/Components/TopMenu/Default.cshtml`
 1. Abrir archivo `Default.cshtml` - Puede agregar o eliminar elementos de menú en` <li> `según sus requisitos.
 
 ## Cómo realizar cambios en el pie de página (o enlaces de pie de página)
 
-1. Si desea personalizar / realizar cambios en un pie de página (o enlaces de pie de página) de su sitio web nopCommerce, vaya a la siguiente ubicación:
+1. Si desea personalizar/realizar cambios en un pie de página (o enlaces de pie de página) de su sitio web nopCommerce, vaya a la siguiente ubicación:
 
     Ir a la carpeta raíz de nopCommerce `/Views/Shared/Components/Footer/Default.cshtml`
 1. Abra el archivo `Default.cshtml` - Puede agregar o eliminar enlaces en` <li> `o completar` <ul> `según sus requisitos.

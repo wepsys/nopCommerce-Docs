@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.exileDev
 ---
 
-#  Validación de datos
+# Validación de datos
 
 La validación de datos es el proceso de asegurar que un programa funcione con datos limpios, correctos y útiles. La mayoría de los desarrolladores de .NET utilizan validadores de anotaciones de datos. Pero nopCommerce usa Fluent Validation. Es una pequeña biblioteca de validación para .NET que utiliza una interfaz fluida y expresiones lambda para crear reglas de validación para sus objetos comerciales. Debe completar dos pasos para agregar una validación a algunos modelos en nopCommerce:
 

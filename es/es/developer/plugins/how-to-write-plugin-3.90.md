@@ -13,11 +13,11 @@ Los complementos se utilizan para ampliar la funcionalidad de nopCommerce. nopCo
 
 ## La estructura del complemento, los archivos requeridos y las ubicaciones
 
-1. Lo primero que debe hacer es crear un nuevo proyecto de "Biblioteca de clases" en la solución. Es una buena práctica colocar todos los complementos en el directorio `\ Plugins` en la raíz de su solución (no se mezcle con el subdirectorio \ Plugins ubicado en el directorio` \ Nop.Web` que se usa para los complementos ya implementados). Es una buena práctica colocar todos los complementos en la carpeta de la solución "Complementos" (puede encontrar más información sobre las carpetas de la solución [aquí] (http://msdn.microsoft.com/library/sx2027y2.aspx)).
+1. Lo primero que debe hacer es crear un nuevo proyecto de "Biblioteca de clases" en la solución. Es una buena práctica colocar todos los complementos en el directorio `\ Plugins` en la raíz de su solución (no se mezcle con el subdirectorio \ Plugins ubicado en el directorio`\Nop.Web` que se usa para los complementos ya implementados). Es una buena práctica colocar todos los complementos en la carpeta de la solución "Complementos" (puede encontrar más información sobre las carpetas de la solución [aquí](http://msdn.microsoft.com/library/sx2027y2.aspx)).
 
     Un nombre recomendado para un proyecto de complemento es "Nop.Plugin. {Group}. {Name}". {Group} es su grupo de complementos (por ejemplo, "Pago" o "Envío"). {Name} es el nombre de su complemento (por ejemplo, "PayPalStandard"). Por ejemplo, el complemento de pago estándar de PayPal tiene el siguiente nombre: Nop.Plugin.Payments.PayPalStandard. Pero tenga en cuenta que no es un requisito. Y puede elegir cualquier nombre para un complemento. Por ejemplo, "MyGreatPlugin".
 
-    ! [p1] (_static/how-to-write-plugin-3.90 /write_plugin_3.90_4.jpg)
+    ![p1](_static/how-to-write-plugin-3.90/write_plugin_3.90_4.jpg)
 
 1. Una vez creado el proyecto del complemento, actualice la ruta de salida de la compilación del proyecto. Configúrelo en `.. \ .. \ Presentation\Nop.Web\Plugins \{Group}.{Name}`. Por ejemplo, el complemento de pago Authorize.NET tiene la siguiente ruta de salida: `.. \ .. \ Presentation\Nop.Web\ Plugins\ Payments.AuthorizeNet`. Una vez hecho esto, las DLL de complementos correspondientes se copiarán automáticamente en el directorio `\ Presentation\Nop.Web\Plugins`, que es buscado por el núcleo de nopCommerce en busca de complementos válidos. Pero tenga en cuenta que tampoco es un requisito. Y puede elegir cualquier nombre de directorio de salida para un complemento.
 
@@ -43,13 +43,13 @@ Los complementos se utilizan para ampliar la funcionalidad de nopCommerce. nopCo
     Descripción: Este complemento permite pagar con PayPal Standard
     ```
 
-   En realidad, todos los campos son autodescriptivos, pero aquí hay algunas notas. **SystemName** El campo debe ser único. **Version** el campo es un número de versión de su complemento; puede configurarlo en cualquier valor que desee. **SupportedVersions** El campo puede contener una lista de versiones de nopCommerce compatibles separadas por comas (asegúrese de que la versión actual de nopCommerce esté incluida en esta lista, de lo contrario, no se cargará). **FileName** El campo tiene el siguiente formato * Nop.Plugin. {Group}. {Name} .dll * (es el nombre del archivo de ensamblaje de su complemento). Asegúrese de que la propiedad "Copiar al directorio de salida" de este archivo esté establecida en "Copiar si es más reciente".
+   En realidad, todos los campos son autodescriptivos, pero aquí hay algunas notas. **SystemName** El campo debe ser único. **Version** el campo es un número de versión de su complemento; puede configurarlo en cualquier valor que desee. **SupportedVersions** El campo puede contener una lista de versiones de nopCommerce compatibles separadas por comas (asegúrese de que la versión actual de nopCommerce esté incluida en esta lista, de lo contrario, no se cargará). **FileName** El campo tiene el siguiente formato *Nop.Plugin. {Group}. {Name} .dll* (es el nombre del archivo de ensamblaje de su complemento). Asegúrese de que la propiedad "Copiar al directorio de salida" de este archivo esté establecida en "Copiar si es más reciente".
 
     ![p2](_static/how-to-write-plugin-3.90/write_plugin_3.90_2.jpg)
 
 1. También debe crear un archivo web.config y asegurarse de que se haya copiado en la salida. Simplemente cópielo de cualquier complemento existente.
 
-    > [!IMPORTANTE]
+    > [!IMPORTANT]
     > 
     > En el futuro, asegúrese de que las propiedades de "Copiar local" de todas las referencias de ensamblado de terceros (incluidas las bibliotecas principales como Nop.Services.dll o Nop.Web.Framework.dll) estén configuradas en "False" (no copiar)
 
@@ -65,7 +65,7 @@ Los complementos se utilizan para ampliar la funcionalidad de nopCommerce. nopCo
 
     Si su complemento no se ajusta a ninguna de estas interfaces, utilice la interfaz "IMiscPlugin".
 
-> [!IMPORTANTE]
+> [!IMPORTANT]
 > 
 > Después de la construcción de cada proyecto, limpie la solución antes de realizar cambios. Algunos recursos se almacenarán en caché y pueden provocar la locura del desarrollador.
 
@@ -86,7 +86,7 @@ Así que comencemos:
 - **Crear la vista**. Agregue una carpeta de Vistas en el nuevo complemento, luego agregue una carpeta {Nombre} (donde {Nombre} es el nombre de su complemento) y finalmente agregue un archivo cshtml llamado `Configure.cshtml`. Nota importante: para las versiones 2.00-3.30, la vista debe marcarse como un recurso incrustado. Y a partir de las vistas de la versión 3.40, asegúrese de que la propiedad "Acción de compilación" del archivo de vista esté establecida en "Contenido" y que la propiedad "Copiar en el directorio de salida" esté establecida en "Copiar si es más reciente".
 - **Crea el controlador**. Agregue una carpeta de controladores en el nuevo complemento y luego agregue una nueva clase de controlador. Una buena práctica es nombrar los controladores de complementos `{Grupo} {Nombre} Controller.cs`. Por ejemplo, PaymentAuthorizeNetController. Por supuesto, no es un requisito nombrar a los controladores de esta manera (sino solo una recomendación). Luego, cree un método de acción apropiado para la página de configuración (en el área de administración). Vamos a llamarlo "Configurar". Prepare una clase modelo y páselo a la siguiente vista. Para las versiones 2.00-3.30 de nopCommerce, debe pasar la ruta de la vista incrustada: "Nop.Plugin. {Group}. {Name} .Views. {Group} {Name} .Configure". Y a partir de la versión 3.40 de nopCommerce, debe pasar la ruta de la vista física:                   `~/Plugins/ {PluginOutputDirectory}/Views/{ControllerName}/Configure.cshtml`. Por ejemplo, abra el complemento de pago Authorize.NET y observe su implementación de PaymentAuthorizeNetController.
 
-    > [!SUGERENCIA]
+    > [!TIP]
     > 
     > - La forma más fácil de completar los pasos descritos anteriormente es abrir cualquier otro complemento y copiar estos archivos en su proyecto de complemento. Luego simplemente cambie el nombre de las clases y directorios apropiados.
     > - Si desea limitar el acceso a un determinado método de acción del controlador a los administradores (propietarios de tiendas), simplemente márquelo con el atributo [AdminAuthorize].
@@ -97,7 +97,7 @@ Así que comencemos:
 
 ## Rutas
 
-Ahora necesitamos registrar las rutas de complementos adecuadas. El enrutamiento ASP.NET es responsable de asignar las solicitudes entrantes del navegador a acciones particulares del controlador MVC. Puede encontrar más información sobre enrutamiento [aquí] (http://www.asp.net/mvc/tutorials/older-versions/controllers-and-routing/asp-net-mvc-routing-overview-cs). Entonces sigue los siguientes pasos:
+Ahora necesitamos registrar las rutas de complementos adecuadas. El enrutamiento ASP.NET es responsable de asignar las solicitudes entrantes del navegador a acciones particulares del controlador MVC. Puede encontrar más información sobre enrutamiento [aquí](http://www.asp.net/mvc/tutorials/older-versions/controllers-and-routing/asp-net-mvc-routing-overview-cs). Entonces sigue los siguientes pasos:
 
 - Algunas de las interfaces de complementos específicas (descritas anteriormente) y la interfaz "IMiscPlugin" tienen el siguiente método: "GetConfigurationRoute". Debería devolver una ruta a una acción de controlador que se utiliza para la configuración del complemento. Implemente el método "GetConfigurationRoute" de la interfaz de su complemento. Este método informa a nopCommerce sobre qué ruta se usa para la configuración del complemento. Si su complemento no tiene una página de configuración, entonces "GetConfigurationRoute" debería devolver un valor nulo. Por ejemplo, vea el código a continuación:
 
@@ -149,7 +149,7 @@ Este paso es opcional. Algunos complementos pueden requerir lógica adicional du
 - Instalar en pc. Este método se invocará durante la instalación del complemento. Puede inicializar cualquier configuración aquí, insertar nuevos recursos de configuración regional o crear algunas tablas de base de datos nuevas (si es necesario).
 - Desinstalar. Este método se invocará durante la desinstalación del complemento.
 
-> [!IMPORTANTE]
+> [!IMPORTANT]
 >
 > Si anula uno de estos métodos, no oculte su implementación base.
 
@@ -170,7 +170,7 @@ public override void Install()
 }
 ```
 
-> [!SUGERENCIA]
+> [!TIP]
 > 
 >La lista de complementos instalados se encuentra en `\App_Data\InstalledPlugins.txt`. La lista se crea durante la instalación.
 

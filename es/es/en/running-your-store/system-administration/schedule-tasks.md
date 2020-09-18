@@ -5,26 +5,26 @@ author: git.AndreiMaz
 contributors: git.exileDev, git.mariannk
 ---
 
-# Schedule tasks
+# Programe las tareas
 
-The *Schedule tasks* window enables the store owner to schedule a task to run during certain periods in the background and to view useful information regarding the task and whether it was completed successfully. For example, nopCommerce sends queued emails periodically. The tasks run on a separate thread coming from the ASP.NET thread pool.
+La ventana *Programar tareas* permite al propietario de la tienda programar una tarea para que se ejecute durante determinados períodos en segundo plano y ver información útil sobre la tarea y si se completó con éxito. Por ejemplo, nopCommerce envía periódicamente correos electrónicos en cola. Las tareas se ejecutan en un hilo independiente que proviene del grupo de hilos de ASP.NET.
 
-To view the scheduled tasks, from the **System** menu, select **Schedule tasks**. The *Schedule tasks* window is displayed, as follows:
+Para ver las tareas programadas, en el menú **Sistema**, seleccione **Programar tareas**. Se muestra la ventana *Programar tareas*, de la siguiente manera:
 ![Schedule tasks](_static/schedule-tasks/schedule-tasks.png)
 
-To edit a scheduled task, click the **Edit** button beside the task. The window is expanded, as follows:
+Para editar una tarea programada, haga clic en el botón **Editar** al lado de la tarea. La ventana se expande, como sigue:
 ![Schedule tasks - Edit](_static/schedule-tasks/schedule-tasks-edit.png)
 
-You can edit the scheduled task the following way:
-* Edit the **Name**.
-* Edit the number of **Seconds (run period)**. Task period should not exceed 24 days.
-* Tick the **Enabled** checkbox in order to enable the task.
-* Tick the **Stop on error** checkbox in order to stop the task when an error occurs.
+Puedes editar la tarea programada de la siguiente manera:
+* Editar el **Nombre**.
+* Editar el número de **Segundos (período de ejecución)**. El período de la tarea no debe exceder los 24 días.
+* Marque la casilla de verificación **Habilitado** para habilitar la tarea.
+* Marque la casilla de verificación **Detener en error** para detener la tarea cuando se produzca un error.
 
-Click **Update** to save your changes.
+Haga clic en **Actualizar** para guardar los cambios.
 
 > [!NOTE]
 >
-> Do not forget to restart the application once a task has been modified.
+> No olvide reiniciar la aplicación una vez que una tarea haya sido modificada.
 
-If required, you can click **Run now**, to run a scheduled task on-demand.
+Si es necesario, puede hacer clic en **Ejecutar ahora**, para ejecutar una tarea programada a petición.

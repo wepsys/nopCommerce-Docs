@@ -18,5 +18,3 @@ contributors: git.exileDev
 * Implementar un nuevo plugin (módulo de pasarela de pago, etc.).
 * Cuéntales a tus amigos sobre nopCommerce.
 * Nuestros logotipos. PNG: [250x250](http://www.nopcommerce.com/images/nopLogos/nopcommerce_logo_250x250-trans.png) y[340x140](http://www.nopcommerce.com/images/nopLogos/nopcommerce_logo-340x140-trans.png). PSD: [250x250](http://www.nopcommerce.com/images/nopLogos/250x250.psd) y[340x140](http://www.nopcommerce.com/images/nopLogos/340x140.psd) y[1600x1200](http://www.nopcommerce.com/images/nopLogos/1600x1200.psd)
-
-

@@ -5,29 +5,29 @@ author: git.nopsg
 contributors: git.nopsg, git.DmitriyKulagin
 ---
 
-# Content Security Policy (CSP) Headers
+# Encabezados de la Política de seguridad de contenido (CSP)
 
-Content-Security-Policy is the name of a HTTP response header that modern browsers use to enhance the security of the document (or web page). The HTTP Content Security Policy response header gives website admins a sense of control by giving them the authority to restrict the resources such as JavaScript and CSS a user is allowed to load within site. In other words, you can whitelist your site's content sources. Although it is primarily used as a HTTP response header, you can also apply it via a meta tag.
+Content-Security-Policy es el nombre de un encabezado de respuesta HTTP que los navegadores modernos utilizan para mejorar la seguridad del documento (o página web). El encabezado de respuesta de la Política de seguridad de contenido HTTP les da a los administradores del sitio web una sensación de control al otorgarles la autoridad para restringir los recursos como JavaScript y CSS que un usuario puede cargar dentro del sitio. En otras palabras, puede incluir en la lista blanca las fuentes de contenido de su sitio. Aunque se utiliza principalmente como encabezado de respuesta HTTP, también puede aplicarlo a través de una metaetiqueta.
 
 ```html
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://img.nopcommerce.com; object-src 'none'; script-src 'self'; style-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self';">
 ```
 
-In order to add this custom meta tag, you can go to `www.yourStore.com/Admin/Setting/GeneralCommon` and find **`Custom <head> tag`** and add this as shown in image below.
+Para agregar esta metaetiqueta personalizada, puede ir a `www.yourStore.com/Admin/Setting/GeneralCommon` and find **`Custom <head> tag`** and add this as shown in image below.
 
 ![custom CSP head tag image](_static/csp-headers/custom-csp-head-tag.png)
 
-Content Security Policy protects against **Cross Site Scripting (XSS)** and other form of attacks such as **Click Jacking**. Although it doesn't eliminate their possibility entirely, it can sure minimize the damage. Compatibility isn't a problem as most of the major browsers support CSP. It is not supported in Internet Explorer.
+La política de seguridad de contenido protege contra **Cross Site Scripting (XSS)** y otras formas de ataques como **Click Jacking**. Aunque no elimina por completo su posibilidad, seguramente puede minimizar el daño. La compatibilidad no es un problema, ya que la mayoría de los principales navegadores admiten CSP. No es compatible con Internet Explorer.
 
-In order to test your browser if it supports CSP or not, you can follow this [link](https://content-security-policy.com/browser-test/).
+Para probar su navegador si es compatible con CSP o no, puede seguir este [enlace](https://content-security-policy.com/browser-test/).
 
-## CSP Directive Reference
+## Referencia de la directiva CSP
 
-The **Content-Security-Policy** header value is made up of one or more directives (defined below), multiple directives are separated with a *semicolon (;)*
+El valor del encabezado **Content-Security-Policy** se compone de una o más directivas (definidas a continuación), las directivas múltiples se separan con un *punto y coma (;)*
 
 ### default-src
 
-The *default-src* directive defines the default policy for fetching resources such as JavaScript, Images, CSS, Fonts, AJAX requests, Frames, HTML5 Media. Not all directives fallback to *default-src*.
+La directiva *default-src* define la política predeterminada para obtener recursos como JavaScript, imágenes, CSS, fuentes, solicitudes AJAX, marcos, HTML5 Media. No todas las directivas recurren a *default-src*.
 
 ```html
 default-src 'self' cdn.nopcommerce.com;
@@ -35,7 +35,7 @@ default-src 'self' cdn.nopcommerce.com;
 
 ### script-src
 
-Defines valid sources of JavaScript.
+Define fuentes válidas de JavaScript.
 
 ```html
 script-src 'self' js.nopcommerce.com;
@@ -43,7 +43,7 @@ script-src 'self' js.nopcommerce.com;
 
 ### style-src
 
-Defines valid sources of stylesheets or CSS.
+Define fuentes válidas de hojas de estilo o CSS.
 
 ```html
 style-src 'self' css.nopcommerce.com;
@@ -51,7 +51,7 @@ style-src 'self' css.nopcommerce.com;
 
 ### img-src
 
-Defines valid sources of images.
+Define fuentes válidas de imágenes.
 
 ```html
 img-src 'self' img.nopcommerce.com;
@@ -59,7 +59,7 @@ img-src 'self' img.nopcommerce.com;
 
 ### connect-src
 
-Applies to *XMLHttpRequest (AJAX), WebSocket or EventSource*. If not allowed the browser emulates a **400** HTTP status code.
+Se aplica a *XMLHttpRequest (AJAX), WebSocket o EventSource*. Si no está permitido, el navegador emula un código de estado HTTP **400**.
 
 ```html
 connect-src 'self';
@@ -155,21 +155,21 @@ worker-src 'none';
 
 ### manifest-src
 
-Restricts the URLs that application manifests can be loaded.
+Restringe las URL en las que se pueden cargar los manifiestos de la aplicación.
 
 ```html
 manifest-src 'none';
 ```
 
-### navigate-to
+### navegar a
 
-Restricts the URLs that the document may navigate to by any means. For example when a link is clicked, a form is submitted, or *window.location* is invoked. If *form-action* is present then this directive is ignored for form submissions. [Implementation Status](https://www.chromestatus.com/features/6457580339593216)
+Restringe las URL a las que puede navegar el documento por cualquier medio. Por ejemplo, cuando se hace clic en un enlace, se envía un formulario o se invoca *window.location*. Si *form-action* está presente, esta directiva se ignora para los envíos de formularios. [Estado de implementación](https://www.chromestatus.com/features/6457580339593216)
 
 ```html
 navigate-to nopcommerce.com
 ```
 
-## Content-Security-Policy Examples
+## Ejemplos de políticas de seguridad de contenido
 
 ### Allow everything but only from the same origin
 
@@ -177,40 +177,40 @@ navigate-to nopcommerce.com
 default-src 'self';
 ```
 
-### Only Allow Scripts from the same origin
+### Permitir solo scripts del mismo origen
 
 ```html
 script-src 'self';
 ```
 
-### Allow Google Analytics, Google AJAX CDN and Same Origin
+### Permitir Google Analytics, Google AJAX CDN y Same Origin
 
 ```html
 script-src 'self' www.google-analytics.com ajax.googleapis.com;
 ```
 
-### Starter Policy
+### Política de inicio
 
 ```html
 default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self';
 ```
 
-This policy allows images, scripts, AJAX, and CSS from the same origin, and does not allow any other resources to load (eg object, frame, media, etc). It is a good starting point for many sites.
+Esta política permite imágenes, scripts, AJAX y CSS del mismo origen y no permite que se carguen otros recursos (por ejemplo, objetos, marcos, medios, etc.). Es un buen punto de partida para muchos sitios.
 
-## Content-Security-Policy Error Messages
+## Mensajes de error de política de seguridad de contenido
 
-Based on the browser, the CSP error messages may differ.
+Según el navegador, los mensajes de error de CSP pueden diferir.
 
-In chrome developer tools, we can see following message.
+En las herramientas de desarrollo de Chrome, podemos ver el siguiente mensaje.
 
 ```js
 Refused to load the script 'script-uri' because it violates the following Content Security Policy directive: "your CSP directive".
 ```
 
-In firefox developer tools as following.
+En las herramientas de desarrollo de Firefox de la siguiente manera.
 
 ```js
 Content Security Policy: A violation occurred for a report-only CSP policy ("An attempt to execute inline scripts has been blocked"). The behavior was allowed, and a CSP report was sent.
 ```
 
-In addition to a console message, a **securitypolicyviolation** event is fired on the window. For more info, follow this [link](https://www.w3.org/TR/CSP2/#firing-securitypolicyviolationevent-events.).
+Además de un mensaje de consola, se dispara un evento **securitypolicyviolation** en la ventana. Para obtener más información, siga este [link](https://www.w3.org/TR/CSP2/#firing-securitypolicyviolationevent-events.).

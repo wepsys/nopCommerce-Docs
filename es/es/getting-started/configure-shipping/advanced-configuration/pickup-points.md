@@ -9,7 +9,7 @@ contributors: git.exileDev, git.mariannk
 
 El punto de recogida es una opción que ofrece a los clientes la flexibilidad de seleccionar un punto donde puedan recibir paquetes.
 
-> [!NOTA]
+> [!NOTE]
 >
 > Esta opción está disponible solo cuando la casilla de verificación **"Recoger en tienda" habilitada** está marcada en la página de configuración de envío (**Configuración → Configuración → Configuración de envío**).
 
@@ -17,7 +17,7 @@ Para administrar proveedores de puntos de recogida:
 
 Vaya a **Configuración → Envío → Puntos de recogida**, se muestra la página *Proveedores de puntos de recogida*:
 
-![Proveedores de puntos de recogida] (_static/pickup-points/pickup-point-Suppliers.jpg)
+![Pickup point providers](_static/pickup-points/pickup-point-providers.jpg)
 
 De forma predeterminada, solo está disponible una opción **Recoger en tienda**. Asegúrese de que el proveedor del punto de recogida esté activo. De lo contrario, haga clic en el botón **Editar** y marque la casilla de verificación en la columna ** Está activo **. Luego, guarde los cambios haciendo clic en el botón **Actualizar**.
 

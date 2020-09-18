@@ -62,7 +62,7 @@ Los complementos se utilizan para ampliar la funcionalidad de nopCommerce. nopCo
     }
     ```
 
-    En realidad, todos los campos son autodescriptivos, pero aquí hay algunas notas. El campo **SystemName** debe ser único. El campo ** Versión ** es un número de versión de su complemento; puede configurarlo en cualquier valor que desee. El campo **SupportedVersions** puede contener una lista de versiones de nopCommerce compatibles separadas por comas (asegúrese de que la versión actual de nopCommerce esté incluida en esta lista, de lo contrario, no se cargará). El campo **FileName** tiene el siguiente formato * Nop.Plugin. {Group}. {Name} .dll * (es el nombre de archivo de ensamblaje de su complemento). Asegúrese de que la propiedad "Copiar en el directorio de salida" de este archivo esté establecida en "Copiar si es más reciente".
+    En realidad, todos los campos son autodescriptivos, pero aquí hay algunas notas. El campo **SystemName** debe ser único. El campo **Versión** es un número de versión de su complemento; puede configurarlo en cualquier valor que desee. El campo **SupportedVersions** puede contener una lista de versiones de nopCommerce compatibles separadas por comas (asegúrese de que la versión actual de nopCommerce esté incluida en esta lista, de lo contrario, no se cargará). El campo **FileName** tiene el siguiente formato *Nop.Plugin. {Group}. {Name} .dll* (es el nombre de archivo de ensamblaje de su complemento). Asegúrese de que la propiedad "Copiar en el directorio de salida" de este archivo esté establecida en "Copiar si es más reciente".
 
     ![p2](_static/how-to-write-plugin-4.00/write_plugin_4.00_2.jpg)
 
@@ -78,13 +78,13 @@ Los complementos se utilizan para ampliar la funcionalidad de nopCommerce. nopCo
 
     Si su complemento no se ajusta a ninguna de estas interfaces, utilice la interfaz "IMiscPlugin".
 
-> [!IMPORTANTE]
+> [!IMPORTANT]
 >
 > Después de la construcción de cada proyecto, limpie la solución antes de realizar cambios. Algunos recursos se almacenarán en caché y pueden provocar la locura del desarrollador.
 
 ## Manejo de solicitudes. Controladores, modelos y vistas
 
-Ahora puede ver el complemento yendo a ** Área de administración → Configuración → Complementos **. Pero como adivinó, nuestro complemento no hace nada. Ni siquiera tiene una interfaz de usuario para su configuración. Creemos una página para configurar el complemento.
+Ahora puede ver el complemento yendo a **Área de administración → Configuración → Complementos**. Pero como adivinó, nuestro complemento no hace nada. Ni siquiera tiene una interfaz de usuario para su configuración. Creemos una página para configurar el complemento.
 
 Lo que tenemos que hacer ahora es crear un controlador, un modelo y una vista.
 
@@ -97,7 +97,7 @@ Puede encontrar más información sobre el patrón MVC [aquí] (http://www.asp.n
 Así que comencemos:
 
 - **Crea el modelo**. Agregue una carpeta de modelos en el nuevo complemento y luego agregue una nueva clase de modelo que se adapte a sus necesidades.
-- **Crear la vista**. Agregue una carpeta Vistas en el nuevo complemento y luego agregue un archivo cshtml llamado `Configure.cshtml`. La propiedad "Acción de compilación" del archivo de vista se establece en "Contenido" y la propiedad "Copiar en el directorio de salida" se establece en "Copiar si es más reciente". Tenga en cuenta que la página de configuración debe utilizar el diseño "_ConfigurePlugin". También asegúrese de tener el archivo_ViewImports en su directorio \ Views. Puede copiarlo desde cualquier otro complemento existente.
+- **Crear la vista**. Agregue una carpeta Vistas en el nuevo complemento y luego agregue un archivo cshtml llamado `Configure.cshtml`. La propiedad "Acción de compilación" del archivo de vista se establece en "Contenido" y la propiedad "Copiar en el directorio de salida" se establece en "Copiar si es más reciente". Tenga en cuenta que la página de configuración debe utilizar el diseño "_ConfigurePlugin". También asegúrese de tener el archivo_ViewImports en su directorio\Views. Puede copiarlo desde cualquier otro complemento existente.
 - **Crea el controlador**. Agregue una carpeta de controladores en el nuevo complemento y luego agregue una nueva clase de controlador. Una buena práctica es nombrar los controladores de complementos `{Grupo} {Nombre} Controller.cs`. Por ejemplo, PaymentPayPalStandardController. Por supuesto, no es un requisito nombrar los controladores de esta manera (sino solo una recomendación). Luego, cree un método de acción apropiado para la página de configuración (en el área de administración). Vamos a llamarlo "Configurar". Prepare una clase de modelo y páselo a la siguiente vista usando una ruta de vista física: - `~ / Plugins / {PluginOutputDirectory} / Views / Configure.cshtml`.
 - Utilice los siguientes atributos para su método de acción:
 
@@ -116,15 +116,15 @@ return $"{_webHelper.GetStoreLocation()}Admin/ControllerName/ActionName";
 
 Donde ControllerName es un nombre del controlador y ActionName es un nombre de acción (normalmente es "Configurar").
 
-Una vez que haya instalado su plugin y añadido el método de configuración, encontrará un enlace para configurar su plugin en Admin .
+Una vez que haya instalado su plugin y añadido el método de configuración, encontrará un enlace para configurar su plugin en Admin.
 
-> [!CONSEJO]
+> [!TIP]
 >
 > La forma más fácil de completar los pasos descritos anteriormente es abrir cualquier otro plugin y copiar estos archivos en su proyecto de plugin. A continuación, simplemente cambie el nombre de las clases y directorios adecuados.
 
 Por ejemplo, la estructura del proyecto del plugin PayPalStandard se parece a la imagen de abajo:
 
-![p3](_static/cómo escribir-plugin-4.00/write_plugin_4.00_3.jpg)
+![p3](_static/how-to-write-plugin-4.00/write_plugin_4.00_3.jpg)
 
 
 
@@ -135,7 +135,7 @@ Este paso es opcional. Algunos complementos pueden requerir lógica adicional du
 - Instalar en pc. Este método se invocará durante la instalación del complemento. Puede inicializar cualquier configuración aquí, insertar nuevos recursos de configuración regional o crear algunas tablas de base de datos nuevas (si es necesario).
 - Desinstalar. Este método se invocará durante la desinstalación del complemento.
 
-> [!IMPORTANTE]
+> [!IMPORTANT]
 > 
 > Si anula uno de estos métodos, no oculte su implementación base.
 
@@ -153,13 +153,13 @@ public override void Install()
 }
 ```
 
-> [!SUGERENCIA]
+> [!TIP]
 >
 > La lista de complementos instalados se encuentra en `\ App_Data \ installedPlugins.json`. La lista se crea durante la instalación.
 
 ## Rutas
 
-Aquí veremos cómo registrar rutas de complementos. El enrutamiento de ASP.NET Core es responsable de asignar las solicitudes entrantes del navegador a determinadas acciones del controlador MVC. Puede encontrar más información sobre el enrutamiento [aquí] (https://docs.microsoft.com/aspnet/core/fundamentals/routing). Así que sigue los siguientes pasos:
+Aquí veremos cómo registrar rutas de complementos. El enrutamiento de ASP.NET Core es responsable de asignar las solicitudes entrantes del navegador a determinadas acciones del controlador MVC. Puede encontrar más información sobre el enrutamiento [aquí](https://docs.microsoft.com/aspnet/core/fundamentals/routing). Así que sigue los siguientes pasos:
 
 -Si necesita agregar alguna ruta personalizada, cree el archivo `RouteProvider.cs`. Informa al sistema nopCommerce sobre las rutas de los complementos. Por ejemplo, la siguiente clase RouteProvider agrega una nueva ruta a la que se puede acceder abriendo su navegador web y navegando a la URL `http: // www.yourStore.com / Plugins / PaymentPayPalStandard / PDTHandler` (utilizada por el complemento de PayPal):
 
@@ -183,7 +183,7 @@ Aquí veremos cómo registrar rutas de complementos. El enrutamiento de ASP.NET 
 
 ## Actualizar nopCommerce puede romper los complementos
 
-Algunos complementos pueden quedar desactualizados y ya no funcionan con la versión más reciente de nopCommerce. Si tiene problemas después de actualizar a la versión más reciente, elimine el complemento y visite el sitio web oficial de nopCommerce para ver si hay una versión más nueva disponible. Muchos autores de complementos actualizarán sus complementos para adaptarse a la versión más reciente, sin embargo, algunos no lo harán y su complemento se volverá obsoleto con las mejoras en nopCommerce. Pero en la mayoría de los casos, simplemente puede abrir un archivo `plugin.json` apropiado y actualizar el campo ** SupportedVersions **.
+Algunos complementos pueden quedar desactualizados y ya no funcionan con la versión más reciente de nopCommerce. Si tiene problemas después de actualizar a la versión más reciente, elimine el complemento y visite el sitio web oficial de nopCommerce para ver si hay una versión más nueva disponible. Muchos autores de complementos actualizarán sus complementos para adaptarse a la versión más reciente, sin embargo, algunos no lo harán y su complemento se volverá obsoleto con las mejoras en nopCommerce. Pero en la mayoría de los casos, simplemente puede abrir un archivo `plugin.json` apropiado y actualizar el campo **SupportedVersions**.
 
 ## Conclusión
 

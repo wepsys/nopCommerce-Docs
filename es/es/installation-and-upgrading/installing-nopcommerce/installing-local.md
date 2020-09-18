@@ -11,7 +11,7 @@ Este capítulo describe cómo descargar el software nopCommerce, cargarlo en su 
 
 Antes de comenzar la instalación, asegúrese de que su servidor web tenga los [requisitos mínimos para ejecutar nopCommerce](xref:en/installation-and-upgrade/technology-and-system-requirements).
 
-> [!NOTA]
+> [!NOTE]
 > Para obtener más información sobre las pautas de selección de alojamiento, visite [esta página](xref:en/installation-and-upgrade/installation-nopcommerce/choose-a-hosting-company).
 
 Hay varias opciones disponibles al descargar nopCommerce. Para determinar qué opción descargar, debe decidir cómo la usará. Las siguientes opciones están disponibles:
@@ -83,7 +83,7 @@ Puede utilizar cualquiera de los siguientes métodos de autenticación para cone
 * **Autenticación de Windows integrada**: cuando se conecta mediante este método, SQL Server valida el nombre de la cuenta y la contraseña mediante el token principal de Windows en el sistema operativo. Esto significa que Windows confirma la identidad del usuario. SQL Server no solicita una contraseña y no realiza la validación de identidad. La autenticación de Windows es el modo de autenticación predeterminado y es mucho más seguro que la autenticación del servidor SQL. La autenticación de Windows utiliza el protocolo de seguridad Kerberos, proporciona la aplicación de la política de contraseñas con respecto a la validación de la complejidad para contraseñas seguras, brinda soporte para el bloqueo de cuentas y admite la caducidad de contraseñas. Una conexión realizada mediante la autenticación de Windows a veces se denomina conexión de confianza, porque el servidor SQL confía en las credenciales proporcionadas por Windows.
 
 Una vez que abra el sitio por primera vez, será redirigido a la página de instalación, de la siguiente manera:
-![instalación de nopCommerce](_static/installation-local/installation.jpg)
+![nopCommerce installation](_static/installing-local/installation.jpg)
 
 En el panel *Información de la tienda*, complete los siguientes detalles:
 * **Correo electrónico del usuario administrador**: esta es la dirección de correo electrónico del primer administrador del sitio.
@@ -94,7 +94,7 @@ En el panel *Información de la tienda*, complete los siguientes detalles:
 En el panel *Información de la base de datos* debe ingresar la siguiente información:
 * **Base de datos**: aquí puede seleccionar Microsoft SQL Server o MySQL.
 * **Cree una base de datos si no existe**: se recomienda que cree su base de datos y el usuario de la base de datos de antemano para garantizar una instalación exitosa. Simplemente cree una instancia de base de datos y agregue el usuario de la base de datos. El proceso de instalación creará todas las tablas, procedimientos almacenados, etc.
-* **Ingrese una cadena de conexión sin procesar (avanzado)**: marque esta casilla de verificación si desea ingresar una ** Cadena de conexión ** en lugar de completar los campos de conexión.
+* **Ingrese una cadena de conexión sin procesar (avanzado)**: marque esta casilla de verificación si desea ingresar una **Cadena de conexión** en lugar de completar los campos de conexión.
 * **Nombre del servidor**: esta es la IP, URL o nombre del servidor de su base de datos. Obtenga el nombre de su servidor del sistema de administración de la base de datos o del panel de control de alojamiento.
 * **Nombre de la base de datos**: este es el nombre de la base de datos utilizada por nopCommerce. Si optó por crear su base de datos con anticipación, use el nombre que le dio a su base de datos aquí.
 * **Use la autenticación de Windows integrada**: si está instalando en un proveedor de alojamiento, puede usar su cuenta de SQL Server y proporcionar las credenciales que creó con su base de datos. En este caso, no hackear esta opción. Si está utilizando un entorno de desarrollo, puede seleccionar la autenticación de Windows. En este caso, marque esta casilla de verificación. Si utiliza la autenticación de Windows, la cuenta que aloja el grupo de aplicaciones en IIS debe ser un usuario de la base de datos.
@@ -104,14 +104,14 @@ En el panel *Información de la base de datos* debe ingresar la siguiente inform
 
 Haga clic en **Instalar** para iniciar el proceso de instalación. Cuando se completa el proceso de configuración, se muestra la página de inicio de su nuevo sitio.
 
-> [!NOTA]
+> [!NOTE]
 > El botón **Reiniciar la instalación** en la parte inferior de la página de instalación le permite reiniciar el proceso de instalación en caso de que algo salga mal.
 
-> [!NOTA]
+> [!NOTE]
 > Si está utilizando nopCommerce 3.90 y una versión inferior, asegúrese de que su grupo de aplicaciones esté configurado en modo *Integrado*.
 
-> [!NOTA]
-> Si desea restablecer completamente un sitio nopCommerce a su configuración predeterminada, puede eliminar el archivo `dataSettings.json` del directorio` App_Data`. Al usar IIS, es posible que desee leer este artículo.
+> [!NOTE]
+> Si desea restablecer completamente un sitio nopCommerce a su configuración predeterminada, puede eliminar el archivo `dataSettings.json` del directorio `App_Data`. Al usar IIS, es posible que desee leer este artículo.
 
 
 

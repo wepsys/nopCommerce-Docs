@@ -5,11 +5,11 @@ author: git.AndreiMaz
 contributors: git.exileDev
 ---
 
-• Cómo codificar mi propio método de cálculo de la tarifa de envío
+# Cómo codificar mi propio método de cálculo de la tarifa de envío
 
 Si los clientes tienen algunos productos que se pueden enviar, pueden elegir una opción de envío durante el proceso de pago. Estas opciones de envío se devuelven de los métodos de cálculo de la tarifa de envío (como UPS, USPS, FedEx, etc.). Los métodos de cálculo de la tasa de envío se implementan como plugins en nopCommerce. Le recomendamos que lea [Cómo escribir un plugin para nopCommerce 4.30](xref:en/developer/plugins/how-to-write-plugin-4.30) antes de comenzar acodificar un nuevo método de cálculo de la tasa de envío. El artículo le explicará los pasos necesarios para crear un plugin. Así que en realidad un método de cálculo de la tasa de envío es un complemento ordinario que implementa una interfaz **IShippingRateComputationMethod**  (espacio de nombres Nop.Services.Shipping). Así que agregue un nuevo proyecto de plugin de envío (biblioteca de clases) a la solución y comencemos.
 
-• Controladores, vistas, modelos
+## Controladores, vistas, modelos
 
 Agregue un controlador y un método de acción /*Configure** adecuado y una vista. Estos definirán cómo el propietario de una tienda ve las opciones de configuración en el panel de administración (Sistema , Configuración, Envío y Proveedores de envío). Este artículo no explica cómo configurar plugins, pero puede encontrar más información al respecto [aquí](xref:en/getting-started/configure-shipping/shipping-providers/index).
 
@@ -17,7 +17,7 @@ Agregue un controlador y un método de acción /*Configure** adecuado y una vist
 
 Una vez completado este paso, puede empezar a agregar la lógica de negocios necesaria para obtener las opciones de envío.
 
-• Obtener opciones de envío
+## Obtener opciones de envío
 
 Ahora necesita crear una clase que implemente la interfaz IShippingRateComputationMethod.*  . Esta es la clase que hará todo el trabajo real. Cuando nopCommerce calcula los totales de envío o necesita obtener una lista de opciones de envío disponibles, se llamará a los métodos **GetShippingOptions**  o  GetFixedRate de su clase. Así es como se define la clase UPSComputationMethod ("método UPS"):
 

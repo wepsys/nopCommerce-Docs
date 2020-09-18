@@ -188,12 +188,12 @@ public class HelloWorldPlugin: BasePlugin, IWidgetPlugin
 
 Ahora, si construye su proyecto y navega hasta el panel de administración y vaya a Configuración => Widgets. Verá su widget en la lista.
 
-![image7](_estática/guía-para-expandir-la-funcionalidad-de-las-funciones-básicas-de-nop-commerce-mediante-un-complemento/image7.png)
+![image7](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image7.png)
 
 Aquí puede notar que este widget no tiene el botón "Configurar". Esto se debe a que no creamos un archivo de vista de configuración para este widget y no anulamos el método "GetConfigurationPageUrl" de la clase BasePlugin. Como ya hemos instalado nuestro complemento, no tenemos que volver a instalarlo, pero aquí puede ver que el widget no está activo en este momento. Podemos activar esto haciendo clic en el botón editar.
 
-![image8](_estática/guía-para-expandir-la-funcionalidad-de-las-funciones-básicas-de-nop-commerce-a-través-de-un-complemento/image8.png)
+![image8](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image8.png)
 
 Ahora, después de configurar el widget como activo, nuestro widget debería funcionar como se esperaba. Si vamos a nuestra página de inicio antes de la categoría debemos ver el mensaje "Hola mundo" como se muestra en la imagen resaltada en amarillo.
 
-![image9] (_estática/guía-para-expandir-la-funcionalidad-de-las-funciones-básicas-de-nop-commerce-mediante-un-complemento/image9.png)
+!![image9](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image9.png)

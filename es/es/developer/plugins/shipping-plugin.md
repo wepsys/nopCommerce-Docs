@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.exileDev
 ---
 
-# Cómo codificar mi propio método de cálculo de tarifas de envío
+## Cómo codificar mi propio método de cálculo de tarifas de envío
 
 Si los clientes tienen algunos productos que se pueden enviar, pueden elegir una opción de envío durante el pago. Estas opciones de envío se devuelven a partir de métodos de cálculo de tarifas de envío (como UPS, USPS, FedEx, etc.). Los métodos de cálculo de tarifas de envío se implementan como complementos en nopCommerce. Le recomendamos que lea [Cómo escribir un complemento para nopCommerce 4.30](xref:en/developer/plugins/how-to-write-plugin-4.30) antes de comenzar a codificar un nuevo método de cálculo de tarifas de envío. El artículo le explicará los pasos necesarios para crear un complemento. Entonces, en realidad, un método de cálculo de tarifas de envío es un complemento ordinario que implementa una interfaz **IShippingRateComputationMethod** (espacio de nombres Nop.Services.Shipping). Así que agregue un nuevo proyecto de complemento de envío (biblioteca de clases) a la solución y comencemos.
 

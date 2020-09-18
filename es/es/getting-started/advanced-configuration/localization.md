@@ -9,14 +9,14 @@ contributors: git.DmitriyKulagin, git.ivkadp, git.mariannk
 
 En nopCommerce, su tienda puede tener varios idiomas instalados. Sin embargo, los clientes solo verán los datos que se han definido en su idioma seleccionado.
 
-> [!SUGERENCIA]
+> [!TIP]
 >
 > De forma predeterminada, se instala el idioma inglés.
 
 Para ver o editar los idiomas instalados, vaya a **Configuración → Idiomas**:
 ![idioma](_static/localization/Language.png)
 
-> [!NOTA]
+> [!NOTE]
 >
 > Puede descargar nuevos paquetes de idiomas del [Marketplace] oficial (http://www.nopcommerce.com/marketplace).
 
@@ -33,17 +33,17 @@ Para agregar un nuevo idioma, haga clic en **Agregar nuevo**. En la ventana *Agr
    >
    > La opción **URL amigables para SEO con varios idiomas** debe estar habilitada en el panel **Configuración → Configuración → Configuración general → Configuración de localización**.
 
-* El **Nombre del archivo de imagen de la bandera**: ingrese el nombre del archivo de la imagen de la bandera. La imagen debe guardarse en el directorio `… / images / flags`. También puede elegir una imagen de una lista predefinida.
+* El **Nombre del archivo de imagen de la bandera**: ingrese el nombre del archivo de la imagen de la bandera. La imagen debe guardarse en el directorio `…/ images / flags`. También puede elegir una imagen de una lista predefinida.
 * Marque **De derecha a izquierda** si es necesario (por ejemplo, para árabe, hebreo, etc.).
   
-  > [!NOTA]
+  > [!NOTE]
   >
   > El tema activo debe ser compatible con RTL (tener un archivo de estilo CSS apropiado). Esta opción afecta solo a la tienda pública.
 
 * La **moneda predeterminada** para un idioma específico. Si no se especifica, se utilizará el primero encontrado (con el orden de visualización más bajo).
 * **Opción limitada a tiendas** que permite configurar este idioma para una tienda (s) específica (s). Puede elegir la (s) tienda (s) de una lista creada previamente. Deje este campo vacío si no usa esta opción.
   
-  > [!NOTA]
+  > [!NOTE]
   >
   > Para usar el límite de la tienda en la opción **Ignorar las reglas de "límite por tienda" (en todo el sitio)**, debe deshabilitarse en el panel **Configuración → Configuración → Configuración del catálogo → Rendimiento**.
 
@@ -52,7 +52,7 @@ Para agregar un nuevo idioma, haga clic en **Agregar nuevo**. En la ventana *Agr
 
 Haga clic en **Guardar** para guardar los cambios.
 
-> [!NOTA]
+> [!NOTE]
 >
 > Después de agregar un nuevo idioma, podrá importar y exportar recursos de cadena utilizando **Importar recursos**
 y botones **Exportar recursos** en la parte superior de la página. El panel *Recursos de cadenas* de la página de edición de idioma le permitirá ver los recursos de idioma existentes y agregar nuevos manualmente.
@@ -67,10 +67,10 @@ Si desea agregar un nuevo idioma a su tienda, debe:
     ![LanguageAddNew](_static/localization /language-add-new.png)
 
 1. Complete los campos obligatorios y haga clic en **Guardar y continuar con la edición**.
-  ![LanguageSave] (_static/localization/language-save.png)
+  ![LanguageSave](_static/localization/language-save.png)
 
 1. Haga clic en **Importar recursos**. Y especifique la ruta al archivo del paquete de idioma (*.xml) que descargó.
-  ![LanguageImport] (_static /localization/language-import.png)
+  ![LanguageImport](_static/localization/language-import.png)
 
 Si encontró un error en la traducción o desea tener un nombre personalizado, puede editar los recursos de cadena en el panel *Recursos de cadena*.
 
@@ -93,7 +93,7 @@ Por ejemplo, desea cambiar el nombre de un panel en la parte superior de la pág
 1. Los cambios se implementan
   ![Ejemplo3](_static/localization/lang-example-after-change.jpeg)
 
-Para agregar un nuevo recurso de cadena, use el panel ** Agregar nuevo registro **. Esta ventana le permite agregar un nuevo registro de recursos a la cuadrícula, de la siguiente manera:
+Para agregar un nuevo recurso de cadena, use el panel **Agregar nuevo registro**. Esta ventana le permite agregar un nuevo registro de recursos a la cuadrícula, de la siguiente manera:
 ![Agregar nuevo registro](_static/ localization/lang-add-resource.png)
 
 * En el campo **Nombre del recurso**, ingrese el identificador de la cadena del recurso.

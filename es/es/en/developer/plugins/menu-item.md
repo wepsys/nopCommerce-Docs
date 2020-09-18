@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.Sandeep911, git.DmitriyKulagin, git.exileDev
 ---
 
-# Cómo agregar un elemento de menú en el área de administración desde un complemento
+# Cómo agregar un elemento de menú en el área de administración desde un plungin
 
 En nopCommerce, el menú de administración se crea a partir del archivo *sitemap.config* que se encuentra en la carpeta *~/Areas /Admin*.
 

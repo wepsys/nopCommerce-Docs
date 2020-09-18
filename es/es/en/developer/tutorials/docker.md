@@ -7,29 +7,27 @@ contributors: git.exileDev, git.DmitriyKulagin
 
 # Docker
 
-This document describes a step-by-step guide to building and running a Docker container.
+Este documento describe una guía paso a paso para compilar y ejecutar un contenedor Docker.
 
-1. **Preparing for the deployment of virtual Docker** in Windows environment.
+1. **Preparación para la implementación de Docker virtual** en el entorno de Windows.
 
-    You need to download and install the [Kitematic](https://kitematic.com/) application. This program will allow us to deploy a Linux virtual machine in VirtualBox with Docker installed and manage it from our main computer. After the first launch, we choose that we will work through VirtualBox and wait until the application installs and starts the virtual machine.
-
-1. **Run the command shell** to the Docker via the [Kitematic](https://kitematic.com/)  interface. To do this, simply click on the inconspicuous button in the interface.
+    Necesita descargar e instalar la aplicación [Kitematic](https://kitematic.com/). Este programa nos permitirá desplegar una máquina virtual Linux en VirtualBox con Docker instalado y gestionarlo desde nuestro ordenador principal. Después del primer lanzamiento, elegimos que trabajaremos a través de VirtualBox y esperamos hasta que la aplicación se instale e inicie la máquina virtual.
+1. **Ejecute el shell de comandos** en Docker a través de la interfaz [Kitematic](https://kitematic.com/). Para hacer esto, simplemente haga clic en el botón discreto en la interfaz.
 
     ![docker_1](_static/docker/docker_1.png)
 
-    All further work will take place in the familiar PowerShell window.
+    Todo el trabajo adicional se llevará a cabo en la ventana familiar de PowerShell.
 
-1. **We collect the Docker container**. For the convenience of executing commands, go to the directory where Dockerfile is located (the root directory of the nopCommerce source files).
+1. **Recogemos el contenedor Docker**. Para la comodidad de ejecutar comandos, vaya al directorio donde se encuentra Dockerfile (el directorio raíz de los archivos fuente de nopCommerce).
 
-    The command that we need:
+    El comando que necesitamos:
 
     ```csharp
     [docker build -t nopcommerce .]
     ```
+    Este comando crea el contenedor de acuerdo con las instrucciones descritas en el archivo "Dockerfile". El primer lanzamiento del ensamblaje llevará mucho tiempo, ya que requerirá descargar dos imágenes básicas para aplicaciones .Net Core.
 
-    This command builds the container according to the instructions described in the "Dockerfile" file. The first launch of the assembly will take a lot of time, since it will require downloading two basic images for .Net Core applications.
-
-    The first image containing the SDK is required for the intermediate container, which will assemble the application by repairing all the dependencies, and then execute the process of publishing the `Nop.Web` application to a separate directory, from which you will create the resulting container with the name *nopcommerce* later (you can create an image without name, but the name is more convenient. To specify the name of the container during assembly, you must specify the flag [–t], as was done in our case).
+    La primera imagen que contiene el SDK es necesaria para el contenedor intermedio, que ensamblará la aplicación reparando todas las dependencias, y luego ejecutará el proceso de publicación de la aplicación `Nop.Web` en un directorio separado, desde el cual creará el resultado contenedor con el nombre *nopcommerce* más adelante (puede crear una imagen sin nombre, pero el nombre es más conveniente. Para especificar el nombre del contenedor durante el ensamblaje, debe especificar la bandera [–t], como se hizo en nuestro caso ).
 
     After installation, if everything went well, executing the next command:
 
@@ -37,45 +35,43 @@ This document describes a step-by-step guide to building and running a Docker co
     [docker images]
     ```
 
-    We should see something similar to this:
-
+    Deberíamos ver algo similar a esto:
     ![docker_2](_static/docker/docker_2.png)
+    Esta es una lista de todos los contenedores cargados, entre los cuales cuando vemos fácilmente nuestro contenedor, está creado y listo para usar.
 
-    This is a list of all loaded containers, among which we can easily see our container, it is created and ready to go.
+1. **Ejecute y pruebe el contenedor.**
 
-1. **Run and test the container.**
-
-    First, let's start the container with the command:
+    Primero, comencemos el contenedor con el comando:
 
     ```csharp
     [docker run -d -p 80:80 nopcommerce]
     ```
 
-    This command will launch our container in the background (flag [-d]) and set port 80 from the container to port 80 of the host machine (flag [–p]).
+    Este comando lanzará nuestro contenedor en segundo plano (bandera [-d]) y establecerá el puerto 80 desde el contenedor al puerto 80 de la máquina host (bandera [–p]).
 
     > [!TIP]
     > 
-    > You can view the list of running containers using the next command:
+    > Puede ver la lista de contenedores en ejecución con el siguiente comando:
     > 
     > ```csharp
     > [docker ps]
     > ```
 
-    Since we are launching the docker through a virtual machine, we need to first get an IP address at which we can test the operation of the application. To do this, execute the command, which will start the redirection service and give us the IP address on which we can verify that the application has started.
+    Dado que estamos iniciando la ventana acoplable a través de una máquina virtual, primero debemos obtener una dirección IP en la que podamos probar el funcionamiento de la aplicación. Para ello ejecutamos el comando, que iniciará el servicio de redirección y nos dará la dirección IP en la que podemos verificar que la aplicación se ha iniciado.
 
     ```csharp
     [docker-machine ip]
     ```
 
-    Having clicked on this address, we should see the page with the installation of nopCommerce.
+    Habiendo hecho clic en esta dirección, deberíamos ver la página con la instalación de nopCommerce.
 
     ![docker_3](_static/docker/docker_3.png)
 
-    This will be our verification that the container is being created, launched and successfully operating.
+    Esta será nuestra verificación de que el contenedor se está creando, lanzando y funcionando correctamente.
 
-1. But to **fully test** the operation of the application in this way will only work if you have a SQL server that our container can access. But, as a rule, ours and user environments are limited, so we have prepared a layout file that will allow you to deploy the nopCommerce container in conjunction with the container containing the SQL server.
+1. Pero para **probar completamente** el     funcionamiento de la aplicación de esta manera solo funcionará si tienes un servidor SQL al que pueda acceder nuestro contenedor. Pero, como regla, nuestros entornos y los de los usuarios son limitados, por lo que hemos preparado un archivo de diseño que le permitirá implementar el contenedor nopCommerce junto con el contenedor que contiene el servidor SQL.
 
-    To begin, stop all containers so as not to interfere. Use the command for this:
+    Para empezar, detenga todos los contenedores para no interfere. Use the command for this:
 
     ```csharp
     [docker stop $ (docker ps -a -q)]
@@ -87,13 +83,13 @@ This document describes a step-by-step guide to building and running a Docker co
     [docker-compose up -d]
     ```
 
-    This command uses the docker-compose.yml file for deployment, which describes the creation of two containers "nopcommerce_web" and "nopcommerce_database", which provide a bundle of applications and a database. Now we will get the IP address for the tests by executing the command:
+   Este comando utiliza el archivo docker-compose.yml para la implementación, que describe la creación de dos contenedores "nopcommerce_web" y "nopcommerce_database", que proporcionan un paquete de aplicaciones y una base de datos. Ahora obtendremos la dirección IP para las pruebas ejecutando el comando:
 
     ```csharp
     [docker-machine ip]
     ```
 
-    And by opening the page at this address in the browser, we will be able to test everything we want. To connect to the database server, we use the following data (as described in the docker-compose.yml file):
+    Y abriendo la página en esta dirección del navegador, podremos probar todo lo que queramos. Para conectar con el servidor de la base de datos, utilizamos los siguientes datos (como se describe en el archivo docker-compose.yml):
 
     ```csharp
     Server name: nopcommerce_mssql_server
@@ -101,7 +97,7 @@ This document describes a step-by-step guide to building and running a Docker co
     Password: nopCommerce_db_password
     ```
 
-1. After testing is complete, you can remove all containers so that they do not interfere next time. Two commands will help to execute it:
+1. Después de que la prueba esté completa, puede retirar todos los contenedores para que no interfieran la próxima vez. Dos comandos ayudarán a ejecutarlo:
 
     ```csharp
     [docker stop $ (docker ps -a -q)]

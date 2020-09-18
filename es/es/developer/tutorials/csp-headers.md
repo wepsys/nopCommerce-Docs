@@ -23,7 +23,7 @@ Para probar su navegador si es compatible con CSP o no, puede seguir esto [link]
 
 ## Default CSP (Referencia de la directiva CSP)
 
-El valor del encabezado ** Content-Security-Policy ** se compone de una o más directivas (definidas a continuación), las directivas múltiples se separan con un * punto y coma (;) *
+El valor del encabezado **Content-Security-Policy** se compone de una o más directivas (definidas a continuación), las directivas múltiples se separan con un *punto y coma (;)*
 
 ### default-src (directivas-src) 
 
@@ -99,7 +99,7 @@ frame-src 'self';
 
 ### sandbox
 
-Habilita una caja de arena para el recurso solicitado similar al atributo *iframe sandbox*. El sandbox aplica una misma política de origen, evita ventanas emergentes, complementos y se bloquea la ejecución del script. Puede mantener el valor de la zona de pruebas vacío para mantener todas las restricciones en su lugar, o agregar valores: * allow-forms allow-same-origin allow-scripts allow-popups, allow-modals, allow-Orientation-lock, allow-pointer-lock, allow-presentation, allow-popups-to-escape-sandbox, *y* allow-top-navigation *
+Habilita una caja de arena para el recurso solicitado similar al atributo *iframe sandbox*. El sandbox aplica una misma política de origen, evita ventanas emergentes, complementos y se bloquea la ejecución del script. Puede mantener el valor de la zona de pruebas vacío para mantener todas las restricciones en su lugar, o agregar valores: *allow-forms allow-same-origin allow-scripts allow-popups, allow-modals, allow-Orientation-lock, allow-pointer-lock, allow-presentation, allow-popups-to-escape-sandbox,* y *allow-top-navigation*
 
 ```html
 sandbox allow-forms allow-scripts;
@@ -123,7 +123,7 @@ form-action 'self';
 
 ### frame-ancestors (marco-ancestros)
 
-Define fuentes válidas para trabajadores web y contextos de navegación anidados cargados con elementos como `<frame> <iframe> <object> <embed> <applet>`. Establecer esta directiva en ** 'none' ** debería ser aproximadamente equivalente a **X-Frame-Options: DENY**
+Define fuentes válidas para trabajadores web y contextos de navegación anidados cargados con elementos como `<frame> <iframe> <object> <embed> <applet>`. Establecer esta directiva en **'none'** debería ser aproximadamente equivalente a **X-Frame-Options: DENY**
 
 ```html
 frame-ancestors 'none';

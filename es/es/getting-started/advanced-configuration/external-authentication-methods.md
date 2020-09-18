@@ -17,7 +17,7 @@ Vaya a **Configuración → Autenticación externa**. Se muestra la ventana *Aut
 
 ![Autenticación externa](_static/external-authentication-methods/external-authentication.png)
 
-Haga clic en **Editar** junto a un método de autenticación y marque **Está activo** para activar el método. También puede definir el método **Orden de visualización**. Luego haga clic en el botón ** Actualizar ** para guardar los cambios.
+Haga clic en **Editar** junto a un método de autenticación y marque **Está activo** para activar el método. También puede definir el método **Orden de visualización**. Luego haga clic en el botón **Actualizar** para guardar los cambios.
 
 Haga clic en **Configurar** para la configuración del método.
 
@@ -34,7 +34,7 @@ El método de autenticación de Facebook es un complemento de autenticación ext
 1. Complete el formulario y toque el **botón Crear ID de aplicación**.
 1. Se muestra la página *Configuración del producto*, que le permite seleccionar las funciones para su nueva aplicación. Haga clic en **Comenzar** en *Facebook Login*.
 1. Haga clic en el enlace **Configuración** en el menú de la izquierda. Se le presentará la página *Configuración de OAuth del cliente* con algunos valores predeterminados ya establecidos.
-1. Ingrese `https://yoursitename.com/signin-facebook` en el campo **URI de redireccionamiento de OAuth válido** reemplazando` yoursitename.com` con la URL de su sitio.
+1. Ingrese `https://yoursitename.com/signin-facebook` en el campo **URI de redireccionamiento de OAuth válido** reemplazando `yoursitename.com` con la URL de su sitio.
 1. Haga clic en **Guardar cambios**.
 1. Haga clic en el enlace **Panel de control** en el panel de navegación de la izquierda.
 1. Copie su **App ID / API Key** y **App secret** en el formulario de la página de configuración del complemento.

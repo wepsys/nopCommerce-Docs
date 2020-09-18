@@ -9,11 +9,11 @@ contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 
 Este capítulo cubre la configuración de las herramientas de impuestos nopCommerce.
 
-> [!NOTA]
+> [!NOTE]
 >
 > Este capítulo incluye instrumentos tributarios incorporados de nopCommerce, no servicios tributarios de terceros.
 
-nopCommerce también admite servicios externos, pero requieren la instalación de complementos de un [mercado] (http://www.nopcommerce.com/marketplace). El proceso de instalación de dichos módulos se describe en el capítulo [Complementos](xref:en/developer/plugins/index).
+nopCommerce también admite servicios externos, pero requieren la instalación de complementos de un [mercado](http://www.nopcommerce.com/marketplace). El proceso de instalación de dichos módulos se describe en el capítulo [Complementos](xref:en/developer/plugins/index).
 
 ## Guía de configuración del IVA de la UE
 
@@ -35,7 +35,7 @@ Vaya a **Configuración → Países**. Asegúrese de que todos los países inclu
 
 ![Países](_static/index/countries.jpg)
 
-> [!NOTA]
+> [!NOTE]
 >
 > Jersey, Guernsey y las demás Islas del Canal no forman parte del Reino Unido y no están incluidas en el ámbito del IVA. Si vende en esos lugares, es posible que deba cambiar eso.
 
@@ -47,7 +47,7 @@ Configure una categoría de impuestos para cada tipo de IVA en su país. Por eje
 
 Vaya a **Configuración → Proveedores de impuestos**. Haga que **Manual (fijoo por país/estado/código postal)** sea el predeterminado utilizando el botón **Marcar como proveedor principal**.
 
-![Proveedores de impuestos](_static/index/tax-Suppliers.jpg)
+![Tax providers](_static/index/tax-providers.jpg)
 
 Haga clic en **Configurar** en la línea del proveedor **Manual (fijo o por país/estado/código postal)** para editar las tasas de impuestos. En la parte superior de la página verá el interruptor. Elija **Tarifa fija** allí.
 
@@ -60,7 +60,7 @@ Asegúrese de que todos los productos tengan asignada una categoría de impuesto
 ![Producto](_static/index/product.jpg)
 
 
-# Ver también
+### Ver también
 
 * [Configuración de impuestos](xref:en/getting-started/configure-taxes/tax-settings)
 * [Proveedores de impuestos](xref:en/getting-started/configure-taxes/tax-providers/index)

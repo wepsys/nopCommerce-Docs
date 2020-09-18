@@ -7,16 +7,16 @@ contributors: git.DmitriyKulagin, git.ivkadp, git.mariannk
 
 # Todos los ajustes
 
-* Todas las configuraciones * es una herramienta avanzada para modificar todas las configuraciones del sitio en una pantalla. Por ejemplo, tiene varias tiendas y necesita crear una copia exacta de la configuración de la primera tienda. Luego, hacer todos los cambios en una pantalla con la ayuda de * Todas las configuraciones * puede ahorrarle mucho tiempo.
+*All settings* es una herramienta avanzada para modificar todas las configuraciones del sitio en una pantalla. Por ejemplo, tiene varias tiendas y necesita crear una copia exacta de la configuración de la primera tienda. Luego, hacer todos los cambios en una pantalla con la ayuda de *All settings* puede ahorrarle mucho tiempo.
 
-> [!NOTA]
+> [!NOTE]
 >
 > La modificación de la configuración en esta ventana solo se recomienda para usuarios avanzados. No se recomienda modificar esta configuración a menos que el usuario esté muy familiarizado con el sistema.
 
 Para definir la configuración:
 
-Vaya a **Configuración → Configuración → Todas las configuraciones (avanzadas)**. Se muestra la ventana * Todas las configuraciones (avanzadas)*:
-
+Vaya a **Configuración → Configuración → Todas las configuraciones (avanzadas)**. Se muestra la ventana *All settings*:
+adas
 ![Todos los ajustes](_static/all-settings/allsettings.png)
 
 ## Agregar una nueva configuración

@@ -45,14 +45,14 @@ Puede limitar cualquier método de pago a la tienda y al rol del cliente. Esto s
 
 2. Puede configurar los siguientes límites:
 
-	* En el campo **Limitado a roles de cliente**, elija uno o varios roles de cliente, es decir, administradores, proveedores, invitados, que podrán utilizar este complemento. Si no necesita esta opción, deje este campo vacío.
+* En el campo **Limitado a roles de cliente**, elija uno o varios roles de cliente, es decir, administradores, proveedores, invitados, que podrán utilizar este complemento. Si no necesita esta opción, deje este campo vacío.
 
-		> [!Importante]
+> [!IMPORTANT]
 > Para utilizar esta funcionalidad, debe deshabilitar la siguiente configuración: **Configuración del catálogo → Ignorar las reglas de ACL (en todo el sitio)**. Leer más sobre la lista de control de acceso [aquí] (xref:en/running-your-store/customer-management/access-control-list).
 
 * Utilice la opción **Limitado a tiendas** para limitar este complemento a una determinada tienda. Si tiene varias tiendas, elija una o varias de la lista. Si no usa esta opción, deje este campo vacío.
 
-> [!Importante]
+> [!IMPORTANT]
 > Para utilizar esta funcionalidad, debe desactivar la siguiente configuración: **Configuración del catálogo → Ignorar las reglas de "límite por tienda" (en todo el sitio)**. Más información sobre la funcionalidad de varias tiendas [aquí](xref:en/getting-started/advanced-configuration/multi-store).
 
 Click **guardar**.

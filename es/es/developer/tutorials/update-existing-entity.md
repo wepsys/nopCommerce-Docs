@@ -58,7 +58,7 @@ namespace Nop.Data.Migrations
 }
 ```
 
-> [!NOTA]
+> [!NOTE]
 > Dado que las migraciones solo aparecieron en nopCommerce 4.30, no implementa la llamada al procedimiento de actualización. Por lo tanto, debe agregar el siguiente código al método **ApplicationBuilderExtensions.StartEngine**
 
 ```csharp

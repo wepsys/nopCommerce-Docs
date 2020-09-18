@@ -5,13 +5,13 @@ author: git.AndreiMaz
 contributors: git.exileDev, git.mariannk
 ---
 
-# System administration
+# Administración del sistema
 
-This chapter covers technical aspects of running a nopCommerce store. It describes how to expand the store functionality by technical means, such as additional external plugins, external authentication for the easier checkout process, configuration of widgets and setting up the e-mail accounts.
+Este capítulo cubre los aspectos técnicos de la gestión de una tienda nopCommerce. Describe cómo ampliar la funcionalidad de la tienda por medios técnicos, como plugins externos adicionales, autenticación externa para facilitar el proceso de compra, configuración de widgets y establecimiento de las cuentas de correo electrónico.
 
-This chapter concentrates more on the back-end, the front-end is covered in the [Design](xref:en/getting-started/design-your-store/index) chapter.
+Este capítulo se centra más en el back-end, el front-end se trata en el capítulo [Diseño](xref:es/getting-start/design-your-store/index).
 
-## See here
+## Mira aquí
 
 * [System information](xref:en/running-your-store/system-administration/system-information)
 * [Log](xref:en/running-your-store/system-administration/log)

@@ -45,7 +45,7 @@ Puede limitar cualquier método de pago a la tienda y al rol del cliente. Esto s
 
 1. Haga clic en el botón **Editar** y se mostrará la ventana *Editar detalles del complemento*, de la siguiente manera:
 
-![Complementos] (_static/credit-card-manual-processing/edit.jpg)
+![Complementos](_static/credit-card-manual-processing/edit.jpg)
 
 2. Puede configurar los siguientes límites:
 
@@ -56,8 +56,8 @@ Puede limitar cualquier método de pago a la tienda y al rol del cliente. Esto s
 
 * Utilice la opción **Limitado a tiendas** para limitar este complemento a una determinada tienda. Si tiene varias tiendas, elija una o varias de la lista. Si no usa esta opción, deje este campo vacío.
 
-> [!Importante]
-> Para utilizar esta funcionalidad, debe desactivar la siguiente configuración: **Configuración del catálogo → Ignorar las reglas de "límite por tienda" (en todo el sitio)**. Lea más sobre la funcionalidad de múltiples tiendas [aquí] (xref:en/Getting-started/advanced-configuration/multi-store).
+> [!Important]
+> Para utilizar esta funcionalidad, debe desactivar la siguiente configuración: **Configuración del catálogo → Ignorar las reglas de "límite por tienda" (en todo el sitio)**. Lea más sobre la funcionalidad de múltiples tiendas [aquí](xref:en/Getting-started/advanced-configuration/multi-store).
 
 Clic en **Guardar**.
 

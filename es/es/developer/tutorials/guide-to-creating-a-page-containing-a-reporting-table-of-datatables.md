@@ -19,7 +19,7 @@ Entonces, en este tutorial crearemos un complemento con una página que contiene
 
 ## Crea un proyecto de complemento nopCommerce
 
-Supongo que ya sabe dónde y cómo crear el proyecto de complemento nopCommerce y configurar el proyecto de acuerdo con el estándar nopCommerce. Si no lo sabe, puede visitar el enlace [esta página](xref:en/developer/plugins/how-to-write-plugin-4.30) para saber cómo crear y configurar el proyecto de complemento nopCommerce.
+Supongo que ya sabe dónde y cómo crear el proyecto de complemento nopCommerce y configurar el proyecto de acuerdo con el estándar nopCommerce. Si no lo sabe, puede visitar el enlace [esta_página](xref:en/developer/plugins/how-to-write-plugin-4.30) para saber cómo crear y configurar el proyecto de complemento nopCommerce.
 
 Si ha seguido el enlace proporcionado anteriormente para crear y configurar su proyecto de complemento, puede terminar con la estructura de carpetas como esta.
 

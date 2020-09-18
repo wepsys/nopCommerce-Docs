@@ -18,6 +18,6 @@ Un tema también puede incluir una hoja de estilo en cascada (archivo `.CSS`). C
 
 Un tema nopCommerce se usa básicamente para tener un diseño y una apariencia consistentes en todas las páginas o en un sitio web completo. El tema nopCommerce consta de varios archivos de apoyo, incluidas hojas de estilo para la apariencia de la página e imágenes de apoyo.
 
-![ubicación-de-temas](_tatic/overview/location-of-themes.png)
+![location-of-themes](_static/overview/location-of-themes.png)
 
-** Ubicación de los temas en nopCommerce **: Todos los temas se encuentran en `[carpeta raíz de nopCommerce]/Themes/`.
+**Ubicación de los temas en nopCommerce**: Todos los temas se encuentran en `[carpeta raíz de nopCommerce]/Themes/`.

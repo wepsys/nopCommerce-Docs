@@ -5,10 +5,10 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin
 ---
 
-# Configuring code style
+# Configurando el estilo del código
 
-Certain coding guidelines exist in a company nopCommerce, one has to follow these guidelines when creating source code. Visual Studio 2019 helps to maintain the necessary style of code using the [.editorconfig](https://github.com/nopSolutions/nopCommerce/blob/develop/.editorconfig) file.
+Existen ciertas pautas de codificación en una empresa nopCommerce, uno tiene que seguir estas pautas al crear el código fuente. Visual Studio 2019 ayuda a mantener el estilo de código necesario mediante el archivo [.editorconfig](https://github.com/nopSolutions/nopCommerce/blob/develop/.editorconfig).
 
 > [!TIP]
-> 
-> More information about this subject can be found by reading the documentation "[Code style preferences](https://docs.microsoft.com/visualstudio/ide/code-styles-and-code-cleanup?view=vs-2019)"
+>
+> Puede encontrar más información sobre este tema leyendo la documentación "[Preferencias de estilo de código](https://docs.microsoft.com/visualstudio/ide/code-styles-and-code-cleanup?view=vs-2019) "

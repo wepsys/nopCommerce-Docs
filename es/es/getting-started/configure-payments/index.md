@@ -9,13 +9,13 @@ contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp
 
 **Pagos** es el núcleo del comercio electrónico. Esta sección cubrirá la configuración global de la tienda que permite recibir pagos.
 
-> [!NOTA]
+> [!NOTE]
 >
-> nopCommerce se está asociando con los principales proveedores de pagos y admite las principales pasarelas de pago que se pueden encontrar en nopCommerce [marketplace] (https://www.nopcommerce.com/en/marketplace).
+> nopCommerce se está asociando con los principales proveedores de pagos y admite las principales pasarelas de pago que se pueden encontrar en nopCommerce [marketplace](https://www.nopcommerce.com/en/marketplace).
 
 Este capítulo describe cómo configurar los métodos de pago, las divisas y las restricciones de los métodos de pago.
 
-> [!SUGERENCIA]
+> [!TIP]
 >
 > Cómo instalar el complemento de pago (o cualquier otro) se trata en el capítulo [Complementos en nopCommerce](xref:en/Getting-started/advanced-configuration/plugins-in-nopcommerce).
 

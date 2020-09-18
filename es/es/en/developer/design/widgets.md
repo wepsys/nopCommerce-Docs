@@ -27,8 +27,6 @@ Para configurar el widget de Google Analytics, vaya a "Administración , Configu
 
 Nivo Slider
 
-Nivo slider es un deslizador de imagen jquery agradable y limpio para su sitio web / página de inicio para mostrar una serie de imágenes de desplazamiento con efectos de transición únicos.
+Nivo slider es un deslizador de imagen jquery agradable y limpio para su sitio web/página de inicio para mostrar una serie de imágenes de desplazamiento con efectos de transición únicos.
 
 De forma predeterminada, nopCommerce viene con la integración del deslizador nivo como un widget (habilitado por defecto) que le permite mostrar una serie de imágenes que se desplazan automáticamente en su página de inicio.
-
-

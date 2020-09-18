@@ -13,7 +13,7 @@ El complemento de widget de control deslizante Nivo le permite mostrar un contro
 
 Vaya a **Configuración → Widgets**. Se muestra la ventana *Widgets*:
 
-! [Widgets](_static/nivo-slider/nivo-slider-widgets.png)
+![Widgets](_static/nivo-slider/nivo-slider-widgets.png)
 
 Haga clic en **Editar** junto al complemento deslizante de Nivo. La ventana se expande de la siguiente manera:
 

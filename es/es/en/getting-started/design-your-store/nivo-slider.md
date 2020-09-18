@@ -7,32 +7,32 @@ contributors: git.exileDev
 
 # Nivo slider plugin
 
-Nivo slider widget plugin allows you to display a slider on the homepage of your store.
+El plugin de widgets Nivo Slider te permite mostrar un deslizador en la página de inicio de tu tienda.
 
-## Configure the Nivo slider plugin
+## Configura el plugin de deslizamiento de Nivo
 
-Go to **Configuration → Widgets**. The *Widgets* window is displayed:
+Ir a **Configuración → Widgets**. Aparece la ventana *Widgets*:
 
 ![Widgets](_static/nivo-slider/nivo-slider-widgets.png)
 
-Click **Edit** beside the Nivo slider plugin. The window is expanded, as follows:
+Haz clic en **Editar** junto al plugin del deslizador de Nivo. La ventana se expande, como sigue:
 
 ![Nivo Edit](_static/nivo-slider/nivo-slider-edit.png)
 
-Tick the **Is active** checkbox, to enable the plugin. 
+Marque la casilla **Is active**, para activar el plugin. 
 
-Click **Configure**. The *Configure – Nivo slider* window is displayed, as follows:
+Haga clic en **Configurar**. La ventana *Configurar - deslizador Nivo* se muestra como sigue:
 
 ![Nivo - Configure](_static/nivo-slider/nivo-slider-configure.jpg)
 
-Perform the following for each slide you would like to upload:
+Realiza lo siguiente para cada diapositiva que quieras subir:
 
-* In the **Picture** field, click **Upload a file** to upload the required picture. Click **Remove picture** to remove the existing one.
-* In the **Comment** field, enter a comment for the picture or leave empty to not display any text.
-* In the **Image alternate text** field, enter alternate text that will be added to image.
-* In the **URL** field, enter the required URL or leave empty if you do not want the picture to be clickable.
+* En el campo **Imagen**, haga clic en **Subir un archivo** para subir la imagen requerida. Haga clic en **Quitar imagen** para eliminar la existente.
+* En el campo **Comentario**, introduzca un comentario para la imagen o déjelo vacío para no mostrar ningún texto.
+* En el campo **Texto alternativo de la imagen**, introduzca el texto alternativo que se añadirá a la imagen.
+* En el campo **URL**, introduzca la URL requerida o déjela vacía si no quiere que la imagen sea accesible.
 
-Click **Save**. 
+Haga clic en **Save**. 
 
-Now you can go to the homepage of your public store and the updated image slider:
+Ahora puedes ir a la página de inicio de tu tienda pública y el deslizador de imágenes actualizado:
 ![Homepage](_static/nivo-slider/homepage.jpg)

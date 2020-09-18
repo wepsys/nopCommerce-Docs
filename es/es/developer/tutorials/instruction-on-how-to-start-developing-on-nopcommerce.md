@@ -75,6 +75,54 @@ Antes de comenzar a trabajar con nopCommerce, debemos asegurarnos de que nuestra
 
 Para descargar, visite [este sitio](https://www.nopcommerce.com/download-nopcommerce). Allí puede ver dos botones de descarga, uno con un código fuente y otro sin código fuente, como se muestra en la siguiente imagen.
 
-![image1] (_estática/instrucción-sobre-cómo-empezar-a-desarrollar-en-nopcommerce/image1.png)
+![image1](_static/instruction-on-how-to-start-developing-on-nopcommerce/image1.png)
 
-Ya que estamos descargando nopCommerce para propósitos de desarrollo, necesitamos descargar el que dice "Paquete con código fuente" que contiene todo el código fuente de nopCommerce. En orden
+Ya que estamos descargando nopCommerce para propósitos de desarrollo, necesitamos descargar el que dice "Paquete con código fuente" que contiene todo el código fuente de nopCommerce. Para descargar nopCommerce, debe iniciar sesión o registrar una nueva cuenta. Ahora puede descargar nopCommerce como un archivo RAR y extraerlo a la ubicación de la carpeta que desee.
+
+### Paso 2: Abra la solución nopCommerce en Visual Studio
+
+Abra la carpeta, dentro de esa carpeta verá un montón de archivos y carpetas que contienen todo el código fuente de nopCommerce.
+
+![image2](_static/instruction-on-how-to-start-developing-on-nopcommerce/image2.png)
+
+Allí también verá un archivo de solución con la extensión `.sln`, haga doble clic en ese archivo de solución para abrir el proyecto nopCommerce en su Visual Studio.
+
+### Paso 3: Ejecución del proyecto nopCommerce con Visual Studio
+
+nopCommerce no requiere que usted tenga ninguna configuración adicional sólo para ejecutar el proyecto. nopCommerce está listo para salir de la caja. Por lo tanto, ahora puede ejecutar el proyecto con Visual Studio pulsando ctrl+F5 o solo F5 para ejecutar el proyecto en modo de depuración, o puede ejecutar con el botón físico con el icono de reproducción en Visual Studio. Después de ejecutar el proyecto por primera vez, verá una página de instalación como la siguiente:
+
+![image3](_static/instruction-on-how-to-start-developing-on-nopcommerce/nop_install.jpg)
+
+Aquí necesita llenar toda la información necesaria para completar su instalación.
+
+### Información de la tienda
+
+Aquí se requiere que proporcione una dirección de correo electrónico y una contraseña que luego se utilizarán como su cuenta de administrador en su tienda de nopCommerce.
+
+### Información de la base de datos
+
+Aquí debe proporcionar la información que desea utilizar para este proyecto.
+
+Aquí tiene dos elegir el almacenamiento de la base de datos. Puede utilizar MS SQL Server o servidor MySQL. Es tu decisión la que quieres usar.
+
+Por el bien de este tutorial vamos a utilizar MS SQL Server.
+
+También verá la casilla de verificación preguntando si desea crear una base de datos si no existe, marque la casilla de verificación.
+
+Avanzando más, debe configurar la cadena de conexión. Para eso, tienes dos opciones. Uno es rellenar el formulario con "Nombre de SQL Server" y "Nombre de base de datos". En el nombre de SQL ServerSQL Server debe proporcionar el nombre del servidor SQL y, en el nombre de la base de datos, debe proporcionar un nombre de base de datos que desee crear o, si ya tiene uno, no creará sino que usará el existente. Sin embargo, también puede elegir la opción "Enter raw connection string" y luego debe escribir toda la cadena de conexión por sí mismo. Después de eso, debe proporcionar las credenciales de su servidor SQL para la autenticación.
+
+Después de llenar toda esta información que necesita para presionar "instalar" botón, tomará alrededor de 1 minuto para completar la instalación, entonces usted será redirigido a la página de inicio de la tienda en línea.
+
+### 4. Cómo configurar nopCommerce para que se ejecute en HTTPS
+
+Para establecer SSL/HTTPS para tu nopCommerce necesitas ir a la ventana de propiedades del proyecto 'Nop.Web'  en Carpeta de presentación ya que es el proyecto de inicio para nopCommerce. Para abrir la ventana de propiedades haga clic derecho en el proyecto 'Nop.Web'  y en la parte inferior del menú contextual verá un menú llamado "Propiedades", simplemente haga clic en ese menú y aparecerá una ventana de propiedades. En la ventana de propiedades vaya a la pestaña "Depurar".
+
+![image4](_static/instruction-on-how-to-start-developing-on-nopcommerce/image4.png)
+
+Marque el "Habilitar SSL", e ingrese el URL HTTPS además de él. A continuación, guarde este proyecto.
+
+Ahora ejecute el proyecto de nuevo y navegue a la dirección URL dada y puede ver que ahora se está ejecutando en SSL/HTTPS. Así que esta es la única manera de configurar HTTPS en su WebProject, pero también hay otra manera de configurar SSL. Para ello, vaya a su proyecto 'Nop.Web'  y expanda el proyecto dentro de allí verá un archivo virtual llamado "Propiedades" en la estructura de su proyecto justo debajo de "Dependencias". Dentro de Properties encontrará un archivo JSON llamado launchSetting.json. Abra ese archivo y verá un montón de configuración ya escrita en ese archivo.
+
+Dentro de ese archivo puede tener una sección como se muestra en la figura anterior. Por lo tanto, para habilitar SSL solo necesita reemplazar 0 en la propiedad "sslPort" en el puerto que desea ejecutar para la conexión SSL, asegúrese de que el puerto está disponible. Para probar, ejecute el proyecto y vaya a 'https://localhost:yourport'.
+
+

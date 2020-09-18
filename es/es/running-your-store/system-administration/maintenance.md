@@ -18,12 +18,12 @@ Para buscar el registro del sistema, ingrese una o más de la siguiente informac
   * En el campo **Creado hasta**, seleccione la fecha de finalización de la búsqueda.
   * En el campo **Mensaje**, seleccione el mensaje o parte del mensaje para buscar.
   * En la lista desplegable **Nivel de registro**, seleccione el tipo de información de registro que se mostrará, de la siguiente manera:
-    * *Todas*
-    * *Depurar*
-    * *Información*
-    * *Advertencia*
-    * * Error*
-    * *Fatal*
+  * *Todas*
+  * *Depurar*
+  * *Información*
+  * *Advertencia*
+  * *Error*
+  * *Fatal*
 
 Haga clic en **Buscar**. La ventana del sistema de registro se mostrará según los criterios de búsqueda.
 
@@ -31,6 +31,6 @@ Haga clic en **Buscar**. La ventana del sistema de registro se mostrará según 
 
 Al hacer clic en **Ver**, se muestran detalles adicionales del error que se produjo, de la siguiente manera:
 
-! [Entrada de registro - Detalles](_static/log/log-details.jpg)
+![Entrada-de-registro-Detalles](_static/log/log-details.jpg)
 
 [Puede hacer clic en **Eliminar** para eliminar un registro del sistema si es necesario.](https://www.youtube.com/watch?v=CNgTJZoWHTA)

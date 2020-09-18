@@ -15,7 +15,7 @@ En este tutorial, usaré la arquitectura del complemento nopCommerce para implem
 
 Comenzaremos a codificar con la capa de acceso a datos, pasaremos a la capa de servicio y finalmente terminaremos con la inyección de dependencia.
 
-> [!NOTA]
+> [!NOTe]
 >
 > La aplicación práctica de este complemento es cuestionable, pero no pude pensar en una función que no venga con nopCommerce y que se ajuste a una publicación de tamaño razonable. Si usa este complemento en un entorno de producción, no ofrezco garantías. Siempre me interesan las historias de éxito y me alegraría saber que la publicación aportó más que un valor educativo.
 
@@ -23,7 +23,7 @@ Comenzaremos a codificar con la capa de acceso a datos, pasaremos a la capa de s
 
 Cree un nuevo proyecto de biblioteca de clases "Nop.Plugin.Other.ProductViewTracker".
 
-![complemento-con-acceso-a-datos.4.30_1](_estático/complemento-con-acceso-a-datos.4.30/complemento-con-acceso-a-datos.4.30_1.jpg)
+!![plugin-with-data-access.4.30_1](_static/plugin-with-data-access.4.30/plugin-with-data-access.4.30_1.jpg)
 
 Agregue las siguientes carpetas y el archivo `plugin.json`.
 
@@ -47,7 +47,7 @@ Puede ver el contenido del archivo `plugin.json` a continuación:
 
 A continuación, agregue referencias a los proyectos **Nop.Web.Framework**.  Esto será suficiente para nosotros, ya que otras dependencias, como  **Nop.Core**  y  **Nop.Data**, seconectarán automáticamente
 
-• La capa de acceso a datos (A.K.A. Creación de nuevas entidades en nopCommerce)
+## La capa de acceso a datos (A.K.A. Creación de nuevas entidades en nopCommerce)
 
 Dentro del espacio de nombres "dominio" vamos a crear una clase pública denominada ProductViewTrackerRecord. Esta clase extiende BaseEntity, pero de lo contrario es un archivo muy aburrido. Algo a recordar es que no tenemos propiedades de navegación (propiedades relacionales), porque el marco Linq2DB, que usamos para trabajar con bases de datos no admite las propiedades de navegación.
 
@@ -122,7 +122,7 @@ namespace Nop.Plugin.Other.ProductViewTracker.Data
 }
 ```
 
->[!NOTA]
+>[!NOTe]
 > Preste atención al atributo **SkipMigrationOnUpdate**, su propósito se describe por el nombre. Este atributo le permite omitir las migraciones al realizar el procedimiento de actualización del complemento.
 
 ## Capa de servicio
@@ -168,7 +168,7 @@ namespace Nop.Plugin.Other.ProductViewTracker.Services
 
 ## Inyección de dependencia
 
-Martin Fowler ha escrito una gran descripción de la inyección de dependencia o Inversión de control. No voy a duplicar su trabajo, y puedes encontrar su artículo [aquí] (https://martinfowler.com/articles/injection.html). La inyección de dependencias gestiona el ciclo de vida de los objetos y proporciona instancias para que las utilicen los objetos dependientes. Primero, necesitamos configurar el contenedor de dependencias para que comprenda qué objetos controlará y qué reglas podrían aplicarse a la creación de esos objetos.
+Martin Fowler ha escrito una gran descripción de la inyección de dependencia o Inversión de control. No voy a duplicar su trabajo, y puedes encontrar su artículo [aquí](https://martinfowler.com/articles/injection.html). La inyección de dependencias gestiona el ciclo de vida de los objetos y proporciona instancias para que las utilicen los objetos dependientes. Primero, necesitamos configurar el contenedor de dependencias para que comprenda qué objetos controlará y qué reglas podrían aplicarse a la creación de esos objetos.
 
 ```csharp
 namespace Nop.Plugin.Other.ProductViewTracker.Infrastructure
@@ -260,7 +260,7 @@ namespace Nop.Plugin.Other.ProductViewTracker.Components
 
 > [!IMPORTANT]
 >
-> We implement our plugin as a widget. In this case we won't need to edit a cshtml file.
+> Implementamos nuestro complemento como un widget. En este caso no necesitaremos editar un cshtml file.
 
 ```csharp
 namespace Nop.Plugin.Other.ProductViewTracker

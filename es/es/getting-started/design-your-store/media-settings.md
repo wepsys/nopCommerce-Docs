@@ -16,7 +16,7 @@ Para definir la configuración del material, vaya a **Configuración → Configu
 En el panel *Común*, defina la configuración de la siguiente manera:
 - Haga clic en el botón **Cambiar** arriba **Las imágenes se almacenan en** opción para elegir entre la base de datos o el sistema de archivos.
 
-  > [!NOTA]
+  > [!NOTE]
   >
   > Se recomienda hacer una copia de seguridad de la base de datos antes de hacer clic en el botón **Cambiar**.
 - En el campo **Tamaño máximo de imagen**, ingrese el tamaño máximo de imagen (es decir, el lado más largo) permitido para la carga de imágenes (en píxeles).

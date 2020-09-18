@@ -13,7 +13,7 @@ Con las tareas programadas, puede programar una tarea para que se ejecute en det
 
 1. Para programar una tarea, el desarrollador debe insertar un nuevo registro **ScheduleTask** en la tabla de base de datos correspondiente. Puede utilizar **IScheduleTaskService** para insertar dicho registro.
 
-> [!IMPORTANTE]
+> [!IMPORTANT]
 >
 > Cuando inserte el nuevo registro en la tabla de base de datos **ScheduleTask** para la nueva **ScheduleTask**, es importante mantener el formato de columna **Tipo**  **Espacio de nombres.TaskClassName, AssemblyName**.
 

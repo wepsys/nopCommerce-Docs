@@ -9,7 +9,7 @@ contributors: git.exileDev, git.mariannk
 
 Si vende productos que se pueden enviar, deberá configurar métodos de envío para que su tienda entregue los pedidos a los clientes. Puede definir sus propios métodos de envío o utilizar los métodos de envío predefinidos proporcionados por los transportistas populares, como UPS y Shipstation. nopCommerce tiene complementos de envío preinstalados que conectan la plataforma con los principales proveedores de envío, además de herramientas integradas para cálculos de envío complejos, como envío por peso o por envío de tarifa fija y total.
 
-> [!SUGERENCIA]
+> [!TIP]
 >
 > De forma predeterminada, hay varios proveedores de envío disponibles en nopCommerce, pero puede encontrar más proveedores de envío en nopCommerce [marketplace](https://www.nopcommerce.com/marketplace).
 

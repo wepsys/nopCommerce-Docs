@@ -9,11 +9,11 @@ contributors: git.DmitriyKulagin, git.exileDev
 
 > En informática, un complemento (o complemento) es un conjunto de componentes de software que agregan capacidades específicas a una aplicación de software más grande (Wikipedia).
 
-Los complementos se utilizan para ampliar la funcionalidad de nopCommerce. nopCommerce tiene varios tipos de complementos. Por ejemplo, métodos de pago (como PayPal), proveedores de impuestos, métodos de cálculo de métodos de envío (como UPS, USP, FedEx), widgets (como el bloque de 'chat en vivo') y muchos otros. nopCommerce ya se distribuye con muchos complementos diferentes. También puede buscar varios complementos en el [sitio-oficial-denopCommerce] (https://www.nopcommerce.com/marketplace) para ver si alguien ya ha creado un complemento que se adapte a sus necesidades. De lo contrario, este artículo lo guiará a través del proceso de creación de su propio complemento.
+Los complementos se utilizan para ampliar la funcionalidad de nopCommerce. nopCommerce tiene varios tipos de complementos. Por ejemplo, métodos de pago (como PayPal), proveedores de impuestos, métodos de cálculo de métodos de envío (como UPS, USP, FedEx), widgets (como el bloque de 'chat en vivo') y muchos otros. nopCommerce ya se distribuye con muchos complementos diferentes. También puede buscar varios complementos en el [sitio-oficial-denopCommerce](https://www.nopcommerce.com/marketplace) para ver si alguien ya ha creado un complemento que se adapte a sus necesidades. De lo contrario, este artículo lo guiará a través del proceso de creación de su propio complemento.
 
 ## La estructura del complemento, los archivos necesarios y las ubicaciones
 
-1. Lo primero que debe hacer es crear un nuevo proyecto de "Biblioteca de clases" en la solución. Es una buena práctica colocar todos los complementos en el directorio`\Plugins`en la raíz de su solución (no se mezcle con el subdirectorio\Plugins ubicado en el directorio`\Nop.Web`que se usa para los complementos ya implementados). Es una buena práctica colocar todos los complementos en la carpeta de la solución "Complementos" (puede encontrar más información sobre las carpetas de la solución [aquí] (http://msdn.microsoft.com/library/sx2027y2.aspx)).
+1. Lo primero que debe hacer es crear un nuevo proyecto de "Biblioteca de clases" en la solución. Es una buena práctica colocar todos los complementos en el directorio`\Plugins`en la raíz de su solución (no se mezcle con el subdirectorio\Plugins ubicado en el directorio`\Nop.Web`que se usa para los complementos ya implementados). Es una buena práctica colocar todos los complementos en la carpeta de la solución "Complementos" (puede encontrar más información sobre las carpetas de la solución [aquí](http://msdn.microsoft.com/library/sx2027y2.aspx)).
 
     Un nombre recomendado para un proyecto de complemento es "Nop.Plugin.{Group}.{Name}".{Group} es su grupo de complementos (por ejemplo, "Pago"o"Envío").{Name} es el nombre de su complemento (por ejemplo,"PayPalStandard").Por ejemplo, el complemento de pago estándar de PayPal tiene el siguiente nombre:Nop.Plugin.Payments.PayPalStandard. Pero tenga en cuenta que no es un requisito. Y puede elegir cualquier nombre para un complemento. Por ejemplo, "MyGreatPlugin".
 
@@ -47,7 +47,7 @@ Los complementos se utilizan para ampliar la funcionalidad de nopCommerce. nopCo
     Lo hacemos de esta manera para poder usar un nuevo enfoque para agregar referencias de terceros que se introdujo en .NET Core. Pero en realidad no es necesario. Además, las referencias de bibliotecas ya referenciadas se cargarán automáticamente. Por eso es muy conveniente.
 
 1. El siguiente paso es crear un archivo `plugin.json` requerido para cada complemento. Este archivo contiene metainformación que describe su complemento. Simplemente copie este archivo de cualquier otro complemento existente y modifíquelo según sus necesidades. Por ejemplo, el complemento de pago estándar de PayPal tiene el siguiente archivo `plugin.json`:
-    ```json
+     ```json
     {
      "Group": "Payment methods",
      "FriendlyName": "PayPal Standard",
@@ -67,8 +67,8 @@ Los complementos se utilizan para ampliar la funcionalidad de nopCommerce. nopCo
 
 El último paso requerido es crear una clase que implemente la interfaz IPlugin (espacio de nombres Nop.Core.Plugins). nopCommerce tiene la clase BasePlugin que ya implementa algunos métodos IPlugin y le permite evitar la duplicación del código fuente. nopCommerce también le proporciona algunas interfaces específicas derivadas de IPlugin. Por ejemplo, tenemos la interfaz "IPaymentMethod" que se utiliza para crear nuevos complementos de métodos de pago. Contiene algunos métodos que son específicos solo para métodos de pago como ProcessPayment () o GetAdditionalHandlingFee (). Actualmente, nopCommerce tiene las siguientes interfaces de complementos específicas:
 
-    - **IExternalAuthenticationMethod**. Se utiliza para crear métodos de autenticación externos como Facebook, Twitter, OpenID, etc.
-    - **IWidgetPlugin**. Te permite crear widgets. Los widgets se representan en algunas partes de su sitio. Por ejemplo, puede ser un bloque de "chat en vivo" en la columna izquierda de su sitio.
+- **IExternalAuthenticationMethod**. Se utiliza para crear métodos de autenticación externos como Facebook, Twitter, OpenID, etc.
+  - **IWidgetPlugin**. Te permite crear widgets. Los widgets se representan en algunas partes de su sitio. Por ejemplo, puede ser un bloque de "chat en vivo" en la columna izquierda de su sitio.
     - **IExchangeRateProvider**. Se utiliza para obtener el tipo de cambio de moneda.
     - **IDiscountRequirementRule**. Le permite crear nuevas reglas de descuento, como "El país de facturación de un cliente debe ser ...".
     - **IPaymentMethod**. Complementos que se utilizan para el procesamiento de pagos.
@@ -89,12 +89,12 @@ Lo que tenemos que hacer ahora es crear un controlador, un modelo y una vista.
 - Una vista contiene el marcado HTML y el contenido que se envía al navegador. Una vista es el equivalente a una página cuando se trabaja con una aplicación ASP.NET MVC.
 - Un modelo MVC contiene toda la lógica de su aplicación que no está contenida en una vista o un controlador.
 
-Puede encontrar más información sobre el patrón MVC [aquí] (http://www.asp.net/mvc/tutorials/older-versions/overview/understanding-models-views-and-controllers-cs).
+Puede encontrar más información sobre el patrón MVC [aquí](http://www.asp.net/mvc/tutorials/older-versions/overview/understanding-models-views-and-controllers-cs).
 
 Así que comencemos:
 
 - **Crea el modelo**. Agregue una carpeta de Modelos en el nuevo complemento y luego agregue una nueva clase de modelo que se adapte a sus necesidades.
-- **Crear la vista**. Agregue una carpeta Vistas en el nuevo complemento y luego agregue un archivo cshtml llamado `Configure.cshtml`. Establecer la propiedad "Acción de compilación" del archivo de vista se establece en "Contenido", y la propiedad "Copiar en el directorio de salida" se establece en "Copiar si es más reciente". Tenga en cuenta que la página de configuración debe utilizar el diseño "_ConfigurePlugin". También asegúrese de tener el archivo _ViewImports en su directorio \ Views. Puede copiarlo desde cualquier otro complemento existente.
+- **Crear la vista**. Agregue una carpeta Vistas en el nuevo complemento y luego agregue un archivo cshtml llamado `Configure.cshtml`. Establecer la propiedad "Acción de compilación" del archivo de vista se establece en "Contenido", y la propiedad "Copiar en el directorio de salida" se establece en "Copiar si es más reciente". Tenga en cuenta que la página de configuración debe utilizar el diseño "ConfigurePlugin". También asegúrese de tener el archivo _ViewImports en su directorio \ Views. Puede copiarlo desde cualquier otro complemento existente.
 - **Crea el controlador**. Agregue una carpeta de controladores en el nuevo complemento y luego agregue una nueva clase de controlador. Una buena práctica es nombrar los controladores de complementos `{Grupo} {Nombre} Controller.cs`. Por ejemplo, PaymentPayPalStandardController. Por supuesto, no es un requisito nombrar a los controladores de esta manera (sino solo una recomendación). Luego, cree un método de acción apropiado para la página de configuración (en el área de administración). Vamos a llamarlo "Configurar". Prepare una clase de modelo y páselo a la siguiente vista utilizando una ruta de vista física: - `~ /Plugins/{PluginOutputDirectory}/Views/Configure.cshtml`.
 - Utilice los siguientes atributos para su método de acción:
 
@@ -115,7 +115,7 @@ Donde ControllerName es un nombre de su controlador y ActionName es un nombre de
 
 Una vez que haya instalado su complemento y agregado el método de configuración, encontrará un enlace para configurar su complemento en Admin → Configuración → Complementos.
 
-> [!SUGERENCIA]
+> [!TIP]
 >
 > La forma más sencilla de completar los pasos descritos anteriormente es abrir cualquier otro complemento y copiar estos archivos en su proyecto de complemento. Luego simplemente cambie el nombre de las clases y directorios apropiados.
 
@@ -130,7 +130,7 @@ Este paso es opcional. Algunos complementos pueden requerir lógica adicional du
 - Instalar en pc. Este método se invocará durante la instalación del complemento. Puede inicializar cualquier configuración aquí, insertar nuevos recursos de configuración regional o crear algunas tablas de base de datos nuevas (si es necesario).
 - Desinstalar. Este método se invocará durante la desinstalación del complemento.
 
-> [!IMPORTANTE]
+> [!TIP]
 >
 > Si anula uno de estos métodos, no oculte su implementación base.
 
@@ -148,13 +148,13 @@ public override void Install()
 }
 ```
 
-> [!UGERENCIA]
+> [!TIP]
 >
 > La lista de complementos instalados se encuentra en `\pp_Data\installedPlugins.json`. La lista se crea durante la instalación.
 
 ## Rutas
 
-Aquí veremos cómo registrar rutas de complementos. El enrutamiento de ASP.NET Core es responsable de asignar las solicitudes entrantes del navegador a acciones particulares del controlador MVC. Puede encontrar más información sobre el enrutamiento [aquí] (https://docs.microsoft.com/aspnet/core/fundamentals/routing). Entonces sigue los siguientes pasos:
+Aquí veremos cómo registrar rutas de complementos. El enrutamiento de ASP.NET Core es responsable de asignar las solicitudes entrantes del navegador a acciones particulares del controlador MVC. Puede encontrar más información sobre el enrutamiento [aquí](https://docs.microsoft.com/aspnet/core/fundamentals/routing). Entonces sigue los siguientes pasos:
 
 - Si necesita agregar alguna ruta personalizada, cree el archivo `RouteProvider.cs`. Informa al sistema nopCommerce sobre las rutas de los complementos. Por ejemplo, la siguiente clase RouteProvider agrega una nueva ruta a la que se puede acceder abriendo su navegador web y navegando a la URL `http://www.yourStore.com/Plugins/PaymentPayPalStandard/PDTHandler` (utilizada por el complemento de PayPal):
 

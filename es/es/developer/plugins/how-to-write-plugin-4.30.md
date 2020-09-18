@@ -7,7 +7,7 @@ contributors: git.skoshelev
 
 # Cómo escribir un complemento para nopCommerce
 
-Los complementos se utilizan para ampliar la funcionalidad de nopCommerce. nopCommerce tiene varios tipos de complementos. Por ejemplo, métodos de pago (como PayPal), proveedores de impuestos, métodos de cálculo de métodos de envío (como UPS, USP, FedEx), widgets (como el bloque de 'chat en vivo') y muchos otros. nopCommerce ya se distribuye con muchos complementos diferentes. También puede buscar varios complementos en el [sitio oficial de nopCommerce] (https://www.nopcommerce.com/marketplace) para ver si alguien ya ha creado un complemento que se adapte a sus necesidades. De lo contrario, este artículo lo guiará a través del proceso de creación de su propio complemento.
+Los complementos se utilizan para ampliar la funcionalidad de nopCommerce. nopCommerce tiene varios tipos de complementos. Por ejemplo, métodos de pago (como PayPal), proveedores de impuestos, métodos de cálculo de métodos de envío (como UPS, USP, FedEx), widgets (como el bloque de 'chat en vivo') y muchos otros. nopCommerce ya se distribuye con muchos complementos diferentes. También puede buscar varios complementos en el [sitio oficial de nopCommerce](https://www.nopcommerce.com/marketplace) para ver si alguien ya ha creado un complemento que se adapte a sus necesidades. De lo contrario, este artículo lo guiará a través del proceso de creación de su propio complemento.
 
 ## La estructura del complemento, los archivos requeridos y las ubicaciones
 
@@ -47,7 +47,7 @@ Los complementos se utilizan para ampliar la funcionalidad de nopCommerce. nopCo
     </Project>
     ```
 
-    > [! SUGERENCIA]
+    > [!TIP]
      >
      > Donde PLUGIN_OUTPUT_DIRECTORY debe reemplazarse con el nombre del complemento, por ejemplo, Payments.PayPalStandard.
      >
@@ -69,30 +69,30 @@ Los complementos se utilizan para ampliar la funcionalidad de nopCommerce. nopCo
     }
     ```
 
-    > [! NOTA]
+    > [!NOTE]
     > Además, el archivo `plugin.json` puede contener los siguientes campos:
     >
-    > * ** LimitedToStores **: la lista de identificadores de tiendas en las que está disponible este complemento. Si está vacío, este complemento está disponible en todas las tiendas.
-    > * ** LimitedToCustomerRoles **: la lista de identificadores de roles de clientes para los que está disponible este complemento. Si está vacío, este complemento está disponible para todos.
-    > * ** DependsOnSystemNames **: la lista de nombres de sistema de complementos de los que depende este complemento
+    > * **LimitedToStores**: la lista de identificadores de tiendas en las que está disponible este complemento. Si está vacío, este complemento está disponible en todas las tiendas.
+    > * **LimitedToCustomerRoles**: la lista de identificadores de roles de clientes para los que está disponible este complemento. Si está vacío, este complemento está disponible para todos.
+    > * **DependsOnSystemNames**: la lista de nombres de sistema de complementos de los que depende este complemento
 
-    En realidad, todos los campos son autodescriptivos, pero aquí hay algunas notas. El campo **SystemName** debe ser único. El campo **Versión** es un número de versión de su complemento; puede configurarlo en cualquier valor que desee. El campo **SupportedVersions** puede contener una lista de versiones de nopCommerce compatibles separadas por comas (asegúrese de que la versión actual de nopCommerce esté incluida en esta lista; de lo contrario, no se cargará). El campo **FileName** tiene el siguiente formato Nop.Plugin. {Group}. {Name} .dll (es el nombre de archivo de ensamblaje de su complemento). Asegúrese de que la propiedad *"Copiar en el directorio de salida" * de este archivo esté establecida en *"Copiar si es más reciente"*.
+    En realidad, todos los campos son autodescriptivos, pero aquí hay algunas notas. El campo **SystemName** debe ser único. El campo **Versión** es un número de versión de su complemento; puede configurarlo en cualquier valor que desee. El campo **SupportedVersions** puede contener una lista de versiones de nopCommerce compatibles separadas por comas (asegúrese de que la versión actual de nopCommerce esté incluida en esta lista; de lo contrario, no se cargará). El campo **FileName** tiene el siguiente formato Nop.Plugin. {Group}. {Name} .dll (es el nombre de archivo de ensamblaje de su complemento). Asegúrese de que la propiedad *"Copiar en el directorio de salida"* de este archivo esté establecida en *"Copiar si es más reciente"*.
 
     ![p2](_static/how-to-write-plugin-4.30/write_plugin_4.30_2.jpg)
 
 1. El último paso requerido es crear una clase que implemente la interfaz **IPlugin** (espacio de nombres Nop.Services.Plugins). nopCommerce tiene la clase **BasePlugin** que ya implementa algunos métodos de IPlugin y le permite evitar la duplicación del código fuente. nopCommerce también le proporciona algunas interfaces específicas derivadas de IPlugin. Por ejemplo, tenemos la interfaz "IPaymentMethod" que se utiliza para crear nuevos complementos de métodos de pago. Contiene algunos métodos que son específicos solo para métodos de pago como *ProcessPayment ()* o *GetAdditionalHandlingFee ()*. Actualmente, nopCommerce tiene las siguientes interfaces de complementos específicas:
 
-> [!IMPORTANTE]
+> [!IMPORTANT]
 >
 > Nota importante: después de la construcción de cada proyecto, limpie la solución antes de realizar cambios. Algunos recursos se almacenarán en caché y pueden provocar la locura del desarrollador.
 
-> [!IMPORTANTE]
+> [!IMPORTANT]
 >
 > Es posible que deba reconstruir su solución después de agregar su complemento. Si no ve los archivos DLL para su complemento en Nop.Web\Plugins\PLUGIN_OUTPUT_DIRECTORY, debe reconstruir su solución. nopCommerce no incluirá su complemento en la página Complementos locales si sus DLL no existen en la carpeta correcta en Nop.Web.
 
 ## Manejo de solicitudes. Controladores, modelos y vistas
 
-Ahora puede ver el complemento yendo a ** Área de administración → Configuración → Complementos locales **. Pero como adivinó, nuestro complemento no hace nada. Ni siquiera tiene una interfaz de usuario para su configuración. Creemos una página para configurar el complemento.
+Ahora puede ver el complemento yendo a **Área de administración → Configuración → Complementos locales**. Pero como adivinó, nuestro complemento no hace nada. Ni siquiera tiene una interfaz de usuario para su configuración. Creemos una página para configurar el complemento.
 
 Lo que tenemos que hacer ahora es crear un controlador, un modelo y una vista.
 
@@ -100,7 +100,7 @@ Lo que tenemos que hacer ahora es crear un controlador, un modelo y una vista.
 1. Una vista contiene el marcado HTML y el contenido que se envía al navegador. Una vista es el equivalente a una página cuando se trabaja con una aplicación ASP.NET MVC.
 1. Un modelo MVC contiene toda la lógica de su aplicación que no está contenida en una vista o un controlador.
 
-Puede encontrar más información sobre el patrón MVC [aquí] (https://docs.microsoft.com/aspnet/core/mvc/overview?view=aspnetcore-3.1).
+Puede encontrar más información sobre el patrón MVC [aquí](https://docs.microsoft.com/aspnet/core/mvc/overview?view=aspnetcore-3.1).
 
 Así que comencemos:
 
@@ -130,7 +130,7 @@ Donde *{CONTROLLER_NAME}* es el nombre de su controlador y *{ACTION_NAME}* es el
 
 Una vez que haya instalado su complemento y agregado el método de configuración, encontrará un enlace para configurar su complemento en **Admin → Configuración → Complementos locales**.
 
-> [!SUGERENCIA]
+> [!TIP]
 >
 > Consejo: la forma más sencilla de completar los pasos descritos anteriormente es abrir cualquier otro complemento y copiar estos archivos en su proyecto de complemento. Luego simplemente cambie el nombre de las clases y directorios apropiados.
 
@@ -146,7 +146,7 @@ Este paso es opcional. Algunos complementos pueden requerir lógica adicional du
 1. **Desinstalar**. Este método se invocará durante la desinstalación del complemento.
 1. **Actualización**. Este método se invocará durante la actualización del complemento (cuando se cambie su versión en el archivo `plugin.json`).
 
-[!IMPORTANTE]
+>[!IMPORTANT]
 >
 > Nota importante: si anula uno de estos métodos, no oculte su implementación básica.
 
@@ -165,13 +165,13 @@ public override void Install()
 }
 ```
 
-> [!SUGERENCIA]
+> [!TIP]
 >
 > La lista de complementos instalados se encuentra en `\App_Data\plugins.json`. La lista se crea durante la instalación.
 
 ## Rutas
 
-Aquí veremos cómo registrar rutas de complementos. El enrutamiento de ASP.NET Core es responsable de asignar las solicitudes entrantes del navegador a acciones particulares del controlador MVC. Puede encontrar más información sobre el enrutamiento [aquí] (https://docs.microsoft.com/aspnet/core/fundamentals/routing). Entonces sigue los siguientes pasos:
+Aquí veremos cómo registrar rutas de complementos. El enrutamiento de ASP.NET Core es responsable de asignar las solicitudes entrantes del navegador a acciones particulares del controlador MVC. Puede encontrar más información sobre el enrutamiento [aquí](https://docs.microsoft.com/aspnet/core/fundamentals/routing). Entonces sigue los siguientes pasos:
 
 Si necesita agregar alguna ruta personalizada, cree el archivo `RouteProvider.cs`. Informa al sistema nopCommerce sobre las rutas de los complementos. Por ejemplo, la siguiente clase RouteProvider agrega una nueva ruta a la que se puede acceder abriendo su navegador web y navegando a la URL `http://www.yourStore.com/Plugins/PaymentPayPalStandard/PDTHandler` (utilizada por el complemento de PayPal):
 
@@ -198,4 +198,4 @@ Con suerte, esto lo ayudará a comenzar con nopCommerce y lo preparará para cre
 
 ## Plantilla de complemento
 
-Puede utilizar nuestra plantilla de Visual Studio para nuevos complementos de nopCommerce. Puede ahorrar mucho tiempo a los desarrolladores, porque ahora no tienen que realizar manualmente todos los pasos iniciales. Como creación de carpetas (controladores, vistas, modelos, etc.), otros archivos necesarios (DependencyRegistrar.cs, _ViewImports.cshtml, ObjectContex, plugin.json, etc.), configuración, referencias de proyectos, etc. Encuéntrelo y las instrucciones de instalación [aquí] (https://github.com/nopSolutions/nopCommerce-plugin-template-VS/)
+Puede utilizar nuestra plantilla de Visual Studio para nuevos complementos de nopCommerce. Puede ahorrar mucho tiempo a los desarrolladores, porque ahora no tienen que realizar manualmente todos los pasos iniciales. Como creación de carpetas (controladores, vistas, modelos, etc.), otros archivos necesarios (DependencyRegistrar.cs, _ViewImports.cshtml, ObjectContex, plugin.json, etc.), configuración, referencias de proyectos, etc. Encuéntrelo y las instrucciones de instalación [aquí](https://github.com/nopSolutions/nopCommerce-plugin-template-VS/)

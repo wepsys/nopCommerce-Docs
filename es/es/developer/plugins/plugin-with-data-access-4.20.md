@@ -15,9 +15,10 @@ En este tutorial, usaré la arquitectura del complemento nopCommerce para implem
 
 Comenzaremos a codificar con la capa de acceso a datos, pasaremos a la capa de servicio y finalmente terminaremos con la inyección de dependencia.
 
-> [!NOTA]
+> [!NOTE]
 
 > La aplicación práctica de este complemento es cuestionable, pero no pude pensar en una función que no vega con nopCommerce y que se ajuste a una publicación de tamaño razonable. Si usa este complemento en un entorno de producción, no ofrezco garantías. Siempre me interesan las historias de éxito y me alegraría saber que la publicación aportó más que un valor educativo.
+
 ## Empezando
 
 Cree un nuevo proyecto de biblioteca de clases "Nop.Plugin.Other.ProductViewTracker".
@@ -32,12 +33,11 @@ Puede ver el `plugin.json`archivo y la imagenes continuación.
 
 ![plugin-with-data-access_3](_static/plugin-with-data-access/plugin-with-data-access_3.jpg)
 
+Luego agregue referencias a los siguientes proyectos: Nop.Core, Nop.Data, Nop.Web.Framework
 
+## La capa de acceso a datos (A.K.A. Creación de nuevas entidades en nopCommerce)
 
-
-## The Data Access Layer (A.K.A. Creating new entities in nopCommerce)
-
-Inside of the "domain" namespace we're going to create a public class named ProductViewTrackerRecord. This class extends BaseEntity, but it is otherwise a very boring file. Something to remember is that all properties are marked as virtual and it isn't just for fun. Virtual properties are required on database entities because of how Entity Framework instantiates and tracks classes. One other thing to note is that we do not have navigation properties (relational properties), and I'll cover those in more detail later.
+Dentro del espacio de nombres "dominio" vamos a crear una clase pública denominada ProductViewTrackerRecord. Esta clase extiende BaseEntity, pero de lo contrario es un archivo muy aburrido. Algo a recordar es que todas las propiedades están marcadas como virtuales y no es sólo por diversión. Las propiedades virtuales son necesarias en las entidades de base de datos debido a cómo Entity Framework crea instancias y realiza un seguimiento de las clases. Otra cosa a tener en cuenta es que no tenemos propiedades de navegación (propiedades relacionales), y las cubriré con más detalle más adelante.
 
 ```csharp
 namespace Nop.Plugin.Other.ProductViewTracker.Domain
@@ -53,9 +53,9 @@ namespace Nop.Plugin.Other.ProductViewTracker.Domain
 }
 ```
 
-**File Locations**: To figure out where certain files should exist analyze the namespace and create the file accordingly.
+**Localización de archivos**: Para averiguar dónde deberían existir ciertos archivos, analiza el espacio de nombres y crea el archivo en consecuencia.
 
-The next class to create is the Entity Framework mapping class. Inside of the mapping class we map the columns, table relationships, and the database table.
+La siguiente clase a crear es la clase de mapeo Entity Framework. Dentro de la clase de mapeo se mapean las columnas, las relaciones de la tabla y la tabla de la base de datos.
 
 ```csharp
 namespace Nop.Plugin.Other.ProductViewTracker.Data
@@ -84,7 +84,7 @@ namespace Nop.Plugin.Other.ProductViewTracker.Data
 }
 ```
 
-The next class is the most complicated and the most important class in the data access layer. The Entity Framework Object Context is a pass-through class that gives us database access and helps track entity state (e.g. add, update, delete). The context is also used to generate the database schema or update an existing schema. In custom context classes we cannot reference previously existing entities because those types are already associated to another object context. That is also why we do not have complex navigation properties in our tracking record.
+La siguiente clase es la clase más complicada y la más importante de la capa de acceso a datos. El contexto de objeto de Entity Framework es una clase de paso a través que nos da acceso a la base de datos y ayuda a realizar un seguimiento del estado de la entidad (por ejemplo, agregar, actualizar, eliminar). El contexto también se utiliza para generar el esquema de base de datos o actualizar un esquema existente. En las clases de contexto personalizadas no podemos hacer referencia a entidades existentes anteriormente porque esos tipos ya están asociados a otro contexto de objeto. También es por eso que no tenemos propiedades de navegación complejas en nuestro registro de seguimiento.
 
 ```csharp
 namespace Nop.Plugin.Other.ProductViewTracker.Data
@@ -180,9 +180,9 @@ namespace Nop.Plugin.Other.ProductViewTracker.Data
 }
 ```
 
-## Application Startup
+## Inicio de la aplicación
 
-This part registers the record object context we created in the previous step.
+Esta parte registra el contexto del objeto de registro que creamos en el paso anterior.
 
 ```csharp
 using Microsoft.AspNetCore.Builder;
@@ -229,9 +229,9 @@ namespace Nop.Plugin.Misc.RepCred.Infrastructure
 }
 ```
 
-## Service layer
+## Capa de servicio
 
-The service layer connects the data access layer and the presentation layer. Since it is bad form to share any type of responsibility in code each layer needs to be isolated. The service layer wraps the data layer with business logic and the presentation layer depends on the service layer. Because our task is very small our service layer does nothing but communicate with the repository (the repository in nopCommerce acts as a facade to the object context).
+La capa de servicio conecta la capa de acceso a datos y la capa de presentación. Dado que es una mala forma compartir cualquier tipo de responsabilidad en el código, cada capa debe estar aislada. La capa de servicio ajusta la capa de datos con lógica de negocios y la capa de presentación depende de la capa de servicio. Debido a que nuestra tarea es muy pequeña, nuestra capa de servicio no hace más que comunicarse con el repositorio (el repositorio en nopCommerce actúa como fachada al contexto del objeto).
 
 ```csharp
 namespace Nop.Plugin.Other.ProductViewTracker.Services

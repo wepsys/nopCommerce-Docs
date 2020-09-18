@@ -13,14 +13,12 @@ nopCommerce tema de tienda pública predeterminado **DefaultClean**  viene con l
 
 Para activar la versión "De derecha a izquierda" del tema, vaya a "Administración , Configuración , Idiomas",haga clic en  **Editar**  un idioma y asegúrese de que la opción **De derecha a izquierda**  esté habilitada.
 
-![rtm-settings](_static/de derecha a izquierda-tema/rtm-settings.png)
+![rtm-settings](_static/right-to-left-theme/rtm-settings.png)
 
-Ahora, si ves la tienda pública, se verá así:
+Now, if you see the public store, it will look like this:
 
-![rtm-public](_static/de derecha a izquierda-tema/rtm-public.jpg)
+![rtm-public](_static/right-to-left-theme/rtm-public.jpg)
 
-Los estilos utilizados para la compatibilidad con RTL se encuentran en el archivo 'styles.rtl.css'.
+Styles used for RTL support are located in `styles.rtl.css` file.
 
-![rtm-css](_static/de derecha a izquierda-tema/rtm-css.jpg)
-
-
+![rtm-css](_static/right-to-left-theme/rtm-css.jpg)

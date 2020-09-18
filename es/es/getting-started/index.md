@@ -11,10 +11,10 @@ Si es un novato en nopCommerce, siga los pasos a continuación para configurar s
 
 ## 1. Configura tu tienda
 
-- [Configure los ajustes generales de la tienda] (xref:en/Getting-Start/Advanced-Configuration/Your-Store-Information)
+- [Configure los ajustes generales de la tienda](xref:en/Getting-Start/Advanced-Configuration/Your-Store-Information)
 - [Configurar métodos de pago](xref:en/Getting-started/configure-payments/payment-methods/index)
 - [Configurar opciones de envío](xref:en/Getting-started/configure-shipping/index)
-- Configure la lista de usuarios: cree [diferentes grupos] (xref:en/running-your-store/customer-management/customer-roles) de usuarios, déles [acceso separado a áreas de su sitio](xref:en/running-your-store/customer-management/access-control-list), ofertas y así sucesivamente.
+- [Configure la lista de usuarios: [cree diferentes grupos](xref:en/running-your-store/customer-management/customer-roles) de usuarios, déles [acceso separado a áreas de su sitio](xref:en/running-your-store/customer-management/access-control-list), ofertas y así sucesivamente.
 
 ## 2. Crea un catálogo y agrega productos
 
@@ -24,8 +24,8 @@ Un catálogo es lo que tratan constantemente sus clientes. Por eso es fundamenta
 
 Las categorías y los fabricantes se utilizarán en su catálogo para el filtrado de productos. Aprenda a lidiar con ellos y facilite la navegación del sitio.
 
-* [Categorías] (xref: es/ejecutar-su-tienda/catálogo/categorías)
-* [Fabricantes] (xref:en/running-your-store/catalog/Manufacturers)
+* [Categorías](xref:es/ejecutar-su-tienda/catálogo/categorías)
+* [Fabricantes](xref:en/running-your-store/catalog/Manufacturers)
 
 ### Agregar productos
 
@@ -37,7 +37,7 @@ Puede agregar productos manualmente uno por uno o importar su catálogo desde un
 
 ¿Qué pasa si sus productos son variables, por ejemplo, vende zapatillas en diferentes colores y tamaños? En nopCommerce puede configurar las especificaciones y los atributos del producto para gestionar esto.
 
-* [Productos agrupados (variantes)] (xref:es/ejecutar-su-tienda/catálogo/productos/productos-agrupados-variantes)
+* [Productos agrupados (variantes)](xref:es/ejecutar-su-tienda/catálogo/productos/productos-agrupados-variantes)
 
 ## 3. Mejore la experiencia del cliente en su tienda
 
@@ -71,7 +71,7 @@ Comercializar tu tienda es fundamental para fidelizar a tus clientes y concienci
 
 La aplicación de precios especiales a los productos puede alentar a sus clientes a realizar una compra antes y (o) a comprar más.
 
-* [Descuentos] (xref:es/ejecutar-su-tienda/herramientas-promocionales/descuentos)
+* [Descuentos](xref:es/ejecutar-su-tienda/herramientas-promocionales/descuentos)
 * [Precios de nivel](xref:en/running-your-store/otional-tools/tier-precios)
 
 ### Programa de fidelidad
@@ -100,4 +100,10 @@ nopCommerce le permite ejecutar más de una tienda usando una interfaz desde una
 
 ### Multi vendedor
 
-* Las herramientas de envío directo y de múltiples proveedores le permiten vender en línea sin tener que mantener existencias ni enviarpedidos. Vea el [tutorial-de-vídeo](https://www.youtube.com/watch?v=MH6r6tqf     
+* Las herramientas de envío directo y de múltiples proveedores le permiten vender en línea sin tener que mantener existencias ni enviarpedidos. Vea el [tutorial-de-vídeo](https://www.youtube.com/watchv=MH6r6tqfLF8&index=9&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4) on multi-vendor support.
+
+* [Vendor management](xref:en/running-your-store/vendor-management)
+
+> [!TIP]
+> 
+> Si tiene algunos problemas para configurar el catálogo de su tienda, no dude en hacer preguntas en[community forums](http://www.nopcommerce.com/boards/forum/5/general-support) or request [premium support](http://www.nopcommerce.com/nopcommerce-premium-support-services) services.

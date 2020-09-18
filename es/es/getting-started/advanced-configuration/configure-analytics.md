@@ -6,7 +6,7 @@ contributors: git.exileDev, git.mariannk
 ---
 # Complemento de Google Analytics
 
-Esta sección describe cómo agregar e integrar el complemento ** Google Analytics ** en su tienda.
+Esta sección describe cómo agregar e integrar el complemento **Google Analytics** en su tienda.
 
 Para configurar el plugin de Google Analytics:
 

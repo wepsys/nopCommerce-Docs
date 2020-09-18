@@ -154,7 +154,7 @@ Para fines de demostración, digamos que tenemos que redirigir la solicitud a nu
 </rewrite>
 ```
 
-> [!NOTA]
+> [!NOTE]
 >
 > Al usar esta regla, podemos redirigir todas las páginas de un nombre de dominio antiguo a la misma página en un nombre de dominio nuevo.
 

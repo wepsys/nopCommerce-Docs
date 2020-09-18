@@ -5,33 +5,33 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 ---
 
-# Email accounts
+# Cuentas de correo electrónico
 
-This chapter describes how to set up email accounts associated with your store: a general contact email, a sales representative email, a customer support email and more.
+Este capítulo describe cómo configurar las cuentas de correo electrónico asociadas a su tienda: un correo electrónico de contacto general, un correo electrónico de representante de ventas, un correo electrónico de asistencia al cliente y más.
 
-To manage email accounts, go to **Configuration → Email accounts**. The *Email accounts* window displays the email accounts of the store owner, as shown below. After the email accounts are configured, the store owner can then select the required email account on the message template details page, as described in the [Message templates](xref:en/running-your-store/content-management/message-templates) chapter.
+Para administrar las cuentas de correo electrónico, vaya a **Configuración → Cuentas de correo electrónico**. La ventana *Cuentas de correo electrónico* muestra las cuentas de correo electrónico del propietario de la tienda, como se muestra a continuación. Una vez configuradas las cuentas de correo electrónico, el propietario de la tienda puede seleccionar la cuenta de correo electrónico necesaria en la página de detalles de la plantilla de mensajes, como se describe en la sección [Message templates](xref:en/running-your-store/content-management/message-templates) chapter.
 
 ![Email accounts](_static/email-accounts/email-accounts.png)
 
-## Add a new email account
+## Agregar una nueva cuenta de correo electrónico
 
-To add a new email account click **Add new**. The *Add a new email account* window is displayed:
+Para añadir una nueva cuenta de correo electrónico haga clic en **Añadir nuevo**. Aparecerá la ventana *Añadir una nueva cuenta de correo electrónico*:
 
 ![Add a new email account](_static/email-accounts/email-accounts-add-new.png)
 
-Define the following email account information:
+Defina la siguiente información de la cuenta de correo electrónico:
 
-* In the **Email address** field enter the from email address for all outgoing emails of your store. Example, `sales@yourstore.com`.
-* In the **Email display name** field, enter the displayed name for outgoing emails of your store. Example, "Your store sales department".
-* In the **Host** field, enter the host name of IP address of your email server.
-* In the **Port** field, enter the SMTP port of your email server.
-* In the **User** field, enter the user name of your email server.
-* In the **Password** field, enter the password of your email server.
-* Select the **SLL** checkbox, to use Security Sockets Layer to encrypt the SMTP connection.
-* Select the **Use default credentials** checkbox, to use default credentials for the connection.
+* En el campo **Dirección de correo electrónico** introduzca la dirección de correo electrónico de origen para todos los correos electrónicos salientes de su tienda. Por ejemplo, `sales@yourstore.com`.
+* En el campo **Nombre de visualización de correo electrónico**, introduzca el nombre que se muestra para los correos electrónicos salientes de su tienda. Ejemplo: "El departamento de ventas de tu tienda".
+* En el campo **Host**, introduzca el nombre de host de la dirección IP de su servidor de correo electrónico.
+* En el campo **Puerto**, introduzca el puerto SMTP de su servidor de correo electrónico.
+* En el campo **Usuario**, ingrese el nombre de usuario de su servidor de correo electrónico.
+* En el campo **Contraseña**, introduzca la contraseña de su servidor de correo electrónico.
+* Seleccione la casilla de verificación **SLL**, para usar la Capa de Sockets de Seguridad para encriptar la conexión SMTP.
+* Seleccione la casilla de verificación **Use default credentials**, para utilizar las credenciales predeterminadas para la conexión.
 
-Click **Save**. The window is expanded, as follows:
+Haga clic en **Guardar**. La ventana se expande, de la siguiente manera:
 
 ![Email account  - Details](_static/email-accounts/email-accounts-details.png)
 
-In the **Send email to** field, enter the email address for the test email and click **Send test email**.
+En el campo **Enviar correo electrónico a**, introduzca la dirección de correo electrónico del correo electrónico de prueba y haga clic en **Enviar correo electrónico de prueba**.

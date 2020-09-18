@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin
 ---
 
-#Estándares de codificación
+# Estándares de codificación
 
 Hay tres categorías de convenciones de codificación .NET compatibles:
 
@@ -17,9 +17,11 @@ Hay tres categorías de convenciones de codificación .NET compatibles:
 
 Esta regla de estilo se puede aplicar a campos, propiedades, métodos o eventos.
 
-- Prefiere que el elemento de código *no* esté precedido por "this".
-- Prefiere que los campos *no* estén precedidos por "this".
+- Prefiere que el elemento de código *no* esté precedido por `this.`
+- Prefiere que los campos *no* estén precedidos por `this.`
+
   ```csharp
+
   //Right
   capacity = 0;
   ```
@@ -52,6 +54,7 @@ Esta regla de estilo se puede aplicar a campos, propiedades, métodos o eventos.
   //Wrong
   this.Display();
   ```
+
 - Prefiero que los eventos *no* vayan precedidos deh `this.`
 
   ```csharp
@@ -69,6 +72,7 @@ Esta regla de estilo se puede aplicar a campos, propiedades, métodos o eventos.
 Esta regla de estilo se puede aplicar a variables locales, parámetros de método y miembros de clase, o como una regla separada para escribir expresiones de acceso a miembros.
 
 - Prefiera la palabra clave de idioma para variables locales, parámetros de método y miembros de clase, en lugar del nombre de tipo, para tipos que tienen una palabra clave para representarlos.
+
   ```csharp
   //Right
   private int _member;
@@ -115,7 +119,7 @@ Las reglas de estilo de esta sección se refieren a las preferencias de los modi
 
 - Prefiera el orden especificado:
 
-	*`public, private, protected, internal, static, extern, new, virtual, abstract, sealed, override, readonly, unsafe, volatile, async:silent`*
+	*`público, privado, protegido, interno, estático, externo, nuevo, virtual, abstracto, sellado, override, readonly, unsafe, volatile, async:silent`*
 
   ```csharp
   //Right
@@ -131,6 +135,7 @@ Las reglas de estilo de esta sección se refieren a las preferencias de parénte
 
 - Prefiere paréntesis para aclarar el operador aritmético (*, /, %, +, -, <<, >>, &, ^, |) precedencia
   ```csharp
+
   //Right
   var v = a + (b * c);
   ```
@@ -267,6 +272,7 @@ Las reglas de estilo de esta sección se refieren a las preferencias de nivel de
   ```
 
 -Prefiere usar una verificación nula con coincidencia de patrones sobre *`object.ReferenceEquals`*
+
   ```csharp
   //Right
   if (value is null)
@@ -360,7 +366,7 @@ Las reglas de estilo de esta sección se refieren a las preferencias de verifica
   var v = o != null ? o.String() : null;
   ```
 
-### Configuración de estilo de código C #
+### Configuración de estilo de código C#
 
 #### Tipos implícitos y explícitos
 
@@ -479,6 +485,7 @@ Las reglas de estilo de esta sección se refieren al uso de [miembros con cuerpo
   //Wrong
   public int Age { get { return _age; } set { _age = value; } }
   ```
+
 - Preferir cuerpos de expresión para lambdas
 
   ```csharp
@@ -541,7 +548,7 @@ Esta regla de estilo se refiere a si las variables de salida se declaran en lín
 
 Esta regla de estilo se refiere al uso del [literal predeterminado para expresiones de valor predeterminado](https://docs.microsoft.com/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) cuando el compilador puede inferir el tipo de expresión.
 
-- Prefiere *`default`*sobre*` default (T)`*
+- Prefiere *`default`*sobre* `default (T)`*
 
   ```csharp
   //Right
@@ -606,7 +613,7 @@ Esta regla de estilo se refiere al uso de llaves {} para rodear bloques de códi
 
 Estas reglas de formato se refieren a la clasificación y visualización de directivas *`using`* y declaraciones *`Imports`*.
 
-- Sistema de clasificación. * *`Using`* directivas alfabéticamente y colóquelas antes que otras directivas using.
+- Sistema de clasificación.* *`Using`* directivas alfabéticamente y colóquelas antes que otras directivas using.
 
   ```csharp
   //Right
@@ -647,7 +654,7 @@ Las reglas de formato de esta sección se aplican solo al código C #.
 
 Estas reglas de formato se refieren al uso de nuevas líneas para formatear el código.
 
-- Requiere que las llaves estén en una nueva línea para todas las expresiones (estilo "Allman").
+- Requiere que las llaves estén en una nueva línea para todas las expresiones (estilo "Allman".
   ```csharp
   //Right
   void MyMethod()
@@ -1015,8 +1022,7 @@ Estas reglas de formato se refieren al uso de caracteres de espacio para formate
   return x  *  (x-y);
   ```
 
-- Eliminar los espacios después del paréntesis de apertura y antes del paréntesis de cierre de una lista de parámetros de declaración 
-de método 
+- Eliminar los espacios después del paréntesis de apertura y antes del paréntesis de cierre de una lista de parámetros de declaración de método. 
 
   ```csharp
   //Right

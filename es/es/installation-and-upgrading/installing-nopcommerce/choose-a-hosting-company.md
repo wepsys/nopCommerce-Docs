@@ -18,6 +18,6 @@ Elegir un proveedor de hosting es una decisión importante. Hay muchos factores 
 1. **Copias de seguridad**: asegúrese de que su proveedor ofrezca copias de seguridad de su instalación y base de datos. Esto puede ser una copia de seguridad automática o manual, pero se sentirá más seguro sabiendo que se ha realizado una copia de seguridad de sus datos.
 1. **Opciones de crecimiento**: a medida que su sitio obtenga más usuarios y usted genere más ventas, su sitio también deberá crecer. Un buen proveedor ofrecerá opciones para hacer crecer su sitio, desde más espacio en disco hasta más espacio en la base de datos. Esto también incluiría pasar de un servidor compartido a un servidor dedicado.
 
-> [!SUGERENCIA]
+> [!TIP]
 >
 > Puede obtener más información sobre los socios de alojamiento recomendados de nopCommerce aquí: [socios de alojamiento](https://www.nopcommerce.com/hosting-partners?utm_source=docs_nopcommerce&utm_medium=link&utm_content=hosting&utm_campaign=parnters_page).

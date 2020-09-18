@@ -5,122 +5,122 @@ author: nop.sea
 contributors: git.RomanovM, git.DmitriyKulagin
 ---
 
-# Instruction on how to start developing on nopCommerce 4.30
+# Instrucción sobre cómo empezar a desarrollar el nopCommerce 4.30
 
-## Things covered in this tutorial
+## Cosas cubiertas en este tutorial
 
-1. Tools Required for Development.
-2. Stack of technologies used in nopCommerce.
-3. Instructions on how to download the project and run it on the local machine.
-4. How to configure nopCommerce to run on HTTPS.
+1. Herramientas necesarias para el desarrollo.
+2. Pila de tecnologías utilizadas en nopCommerce.
+3. Instrucciones para descargar el proyecto y ejecutarlo en la máquina local.
+4. Cómo configurar nopCommerce para que funcione con HTTPS.
 
-## Summary
+## Resumen
 
-nopCommerce is open-source Microsoft ASP.NET based eCommerce solution. This is a basic guide for developers on how to start developing on nopCommerce.
+nopCommerce es una solución de comercio electrónico de código abierto basada en Microsoft ASP.NET. Esta es una guía básica para los desarrolladores sobre cómo empezar a desarrollar en nopCommerce.
 
-## 1. Tools Required for Development
+## 1. Herramientas necesarias para el desarrollo
 
-You can learn about technology and system requirement from the **"[Tools Required for Development](xref:en/developer/tutorials/system-requirements-for-developing#2-tools-required-for-development)"** article
+Puedes aprender sobre la tecnología y los requisitos del sistema en el **"[Tools Required for Development](xref:en/developer/tutorials/system-requirements-for-developing#2-tools-required-for-development)"** article
 
-## 2. Stack of technologies used in nopCommerce
+## 2. La pila de tecnologías utilizadas en nopCommerce
 
-The best part of nopCommerce is that its source code is fully customizable and its pluggable architecture makes it easy to develop custom functionality and follow any business requirements by using plugin system. It follows well-known software architectures, patterns and the best security practices. And above all of that it runs on latest technologies to offer the best experience possible to end-users. So, in order to achieve all of this nopCommerce uses a stack of technologies in its architecture.
+Lo mejor de nopCommerce es que su código fuente es totalmente personalizable y su arquitectura enchufable facilita el desarrollo de funcionalidades personalizadas y el seguimiento de cualquier requisito empresarial mediante el uso de un sistema de plugin. Sigue arquitecturas de software bien conocidas, patrones y las mejores prácticas de seguridad. Y sobre todo, funciona con las últimas tecnologías para ofrecer la mejor experiencia posible a los usuarios finales. Así que, para lograr todo esto nopCommerce utiliza una pila de tecnologías en su arquitectura.
 
-* Application Layer
+* Capa de aplicación
   * Razor View Engine
 
-    It is to render html page on client side. Razor View engine is a markup syntax which helps us to write HTML and server-side code in web pages using C# or VB.NET.
+    Es para renderizar la página html en el lado del cliente. El motor de Razor View es una sintaxis de marcado que nos ayuda a escribir HTML y código del lado del servidor en páginas web usando C# o VB.NET.
   * JQuery
 
-    It is a javascript library used to extend the UI & UX functionality of html pages.
+    Es una biblioteca de javascript utilizada para extender la funcionalidad de UI & UX de las páginas html.
   * Kendo UI
 
-    Kendo UI is a comprehensive HTML5 user interface framework for building interactive and high-performance websites and applications
+    La interfaz de usuario de Kendo es un marco completo de interfaz de usuario HTML5 para construir sitios web y aplicaciones interactivas y de alto rendimiento
 
-* Business Layer
-  * Fluent Validation
+* Capa de negocios
+  * Validación fluida
 
-    It is a validation library for .NET that uses a fluent interface and lambda expressions for building validation rules.
+    Es una biblioteca de validación para .NET que utiliza una interfaz fluida y expresiones lambda para construir reglas de validación.
   * AutoMapper
 
-    AutoMapper is a simple library that helps us to transform one object type to another. It is a convention-based object-to-object mapper that requires very little configuration.
+    AutoMapper es una simple biblioteca que nos ayuda a transformar un tipo de objeto en otro. Es un mapeador convencional de objeto a objeto que requiere muy poca configuración.
   * AutoFac
 
-    Autofac is an addictive IoC container for .NET. It manages the dependencies between classes so that applications stay easy to change as they grow in size and complexity.
+    El Autofac es un contenedor de IO adictivo para el .NET. Maneja las dependencias entre clases para que las aplicaciones sean fáciles de cambiar a medida que crecen en tamaño y complejidad.
   * Linq2DB
 
-    Linq2DB is an open-source ORM framework for .NET applications. It is a .NET Foundation project. It enables developers to work with data using objects of domain specific classes without focusing on the underlying database tables and columns where this data is stored. So, it is the bridge between Business Layer and Data Layer.
+    Linq2DB es un marco ORM de código abierto para aplicaciones .NET. Es un proyecto de la Fundación .NET. Permite a los desarrolladores trabajar con datos utilizando objetos de clases específicas del dominio sin centrarse en las tablas y columnas de la base de datos subyacentes donde se almacenan estos datos. Por lo tanto, es el puente entre la capa de negocios y la capa de datos.
   * FluentMigrator
 
-    Fluent Migrator is a migration framework for .NET. Migrations are a structured way to alter your database schema and are an alternative to creating lots of sql scripts that have to be run manually by every developer involved. Migrations solve the problem of evolving a database schema for multiple databases (for example, the developer's local database, the test database and the production database). Database schema changes are described in classes written in C# that can be checked into a version control system.
-* Data Layer
+    Fluent Migrator es un marco de migración para .NET. Las migraciones son una forma estructurada de alterar el esquema de la base de datos y son una alternativa a la creación de muchos scripts sql que tienen que ser ejecutados manualmente por cada desarrollador involucrado. Las migraciones resuelven el problema de la evolución de un esquema de base de datos para múltiples bases de datos (por ejemplo, la base de datos local del desarrollador, la base de datos de prueba y la base de datos de producción). Los cambios en el esquema de la base de datos se describen en clases escritas en C# que se pueden comprobar en un sistema de control de versiones.
+* Capa de datos
   * Microsoft SQL Server
 
-    SQL Server is Microsoft's full-featured relational database management system (RDBMS).
-  * MySQL Server
+    SQL Server es el sistema de gestión de bases de datos relacionales de Microsoft con todas las funciones (RDBMS).
+  * Servidor MySQL
 
-    MySQL is the world's most popular open source database. With its proven performance, reliability and ease-of-use, MySQL has become the leading database choice for web-based applications.
-  * Redis (cache)
+    MySQL es la base de datos de código abierto más popular del mundo. Con su probado rendimiento, fiabilidad y facilidad de uso, MySQL se ha convertido en la principal base de datos para aplicaciones basadas en la web.
+  * Redis (caché)
 
-    Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. So, in nopCommerce Redis is used to store old data as in-memory cache dataset. Which boosts the speed and performance of application.
-  * Microsoft Azure(Optional)
+    Redis es un almacén de estructura de datos en memoria de código abierto (con licencia BSD), utilizado como base de datos, caché y agente de mensajes. Así que, en nopCommerce Redis se utiliza para almacenar datos antiguos como conjunto de datos en la memoria caché. Lo que aumenta la velocidad y el rendimiento de la aplicación.
+  * Microsoft Azure(Opcional)
 
-    Azure is a public cloud computing platform with solutions including Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS) that can be used for services such as analytics, virtual computing, storage, networking, and much more. 
+    Azure es una plataforma pública de computación en nube con soluciones que incluyen Infraestructura como un Servicio (IaaS), Plataforma como un Servicio (PaaS) y Software como un Servicio (SaaS) que puede ser utilizada para servicios tales como análisis, computación virtual, almacenamiento, redes y mucho más. 
 
-## 3. How to download the project and run it on the local machine
+## 3. Cómo descargar el proyecto y ejecutarlo en la máquina local
 
-Before we begin to work with nopCommerce we need to ensure that our local machine is configured and need to ensure that all of our tools required to develop in nopCommerce are installed properly and working correctly. Now, let us go to step by step instructions on how to download and run nopCommerce on our local machine.
+Antes de empezar a trabajar con nopCommerce necesitamos asegurarnos de que nuestra máquina local está configurada y necesitamos asegurarnos de que todas nuestras herramientas necesarias para desarrollar en nopCommerce están instaladas correctamente y funcionan correctamente. Ahora, vayamos a las instrucciones paso a paso sobre cómo descargar y ejecutar nopCommerce en nuestra máquina local.
 
-### Step 1: Download nopCommerce source code
+### Paso 1: Descargar el código fuente de nopCommerce
 
-To download please visit [this site](https://www.nopcommerce.com/download-nopcommerce). There you can see two download buttons one with a source code and one without source code like shown in the picture below.
+Para descargarlo, por favor visite [este sitio](https://www.nopcommerce.com/download-nopcommerce). Allí puede ver dos botones de descarga, uno con un código fuente y otro sin código fuente como se muestra en la imagen de abajo.
 
 ![image1](_static/instruction-on-how-to-start-developing-on-nopcommerce/image1.png)
 
-Since we are downloading nopCommerce for development purpose so we need to download the one that says "Package with source code" which contains all source code of nopCommerce. In order to download nopCommerce you need to be logged in or register a new account. Now you can download nopCommerce as a RAR file, and extract it to your desired folder location.
+Ya que estamos descargando nopCommerce con fines de desarrollo, necesitamos descargar el que dice "Paquete con código fuente" que contiene todo el código fuente de nopCommerce. Para poder descargar nopCommerce es necesario iniciar sesión o registrar una nueva cuenta. Ahora puedes descargar nopCommerce como un archivo RAR, y extraerlo a la ubicación de la carpeta deseada.
 
-### Step 2: Open nopCommerce solution in Visual Studio
+### Paso 2: Abrir la solución nopCommerce en Visual Studio
 
-Open the folder, Inside that folder you will see a bunch of files and folders which contains all of the sources code for nopCommerce.
+Abre la carpeta, dentro de esa carpeta verás un montón de archivos y carpetas que contienen todo el código fuente de nopCommerce.
 
 ![image2](_static/instruction-on-how-to-start-developing-on-nopcommerce/image2.png)
 
-In there you will also see a solution file with extension of `.sln`, please double click that solution file to open nopCommerce project in you Visual Studio.
+Allí también verás un archivo de solución con la extensión `.sln`, por favor, haz doble clic en ese archivo de solución para abrir el proyecto nopCommerce en tu Visual Studio.
 
-### Step 3: Running nopCommerce project using Visual Studio
+### Paso 3: Ejecutar el proyecto nopCommerce usando Visual Studio
 
-nopCommerce does not require you to have any further configuration just to run the project. nopCommerce is ready to run out of the box. So, now you can run project using Visual Studio by hitting ctrl+F5 or just F5 to run project in debugging mode, or you can run using physical button with play icon in Visual Studio. After you run the project for the first time you will see a installation page like below:
+nopCommerce no requiere de ninguna otra configuración para ejecutar el proyecto. nopCommerce está listo para salir de la caja. Por lo tanto, ahora puedes ejecutar el proyecto utilizando Visual Studio pulsando ctrl+F5 o sólo F5 para ejecutar el proyecto en modo de depuración, o puedes ejecutarlo utilizando el botón físico con el icono de reproducción en Visual Studio. Después de ejecutar el proyecto por primera vez, verás una página de instalación como la que se muestra a continuación:
 
 ![image3](_static/instruction-on-how-to-start-developing-on-nopcommerce/nop_install.jpg)
 
-Here you need to fill all required information to complete your installation.
+Aquí tienes que rellenar toda la información necesaria para completar tu instalación.
 
-#### Store information
+#### Información de la tienda
 
-Here you are required to provide an email address and password which then be used as your administrator account in your nopCommerce shop.
+Aquí se requiere una dirección de correo electrónico y una contraseña que luego se utiliza como cuenta de administrador en su tienda nopCommerce.
 
-#### Database information
+#### Información de la base de datos
 
-Here you need to provide your information you want to use for this project.
+Aquí tienes que proporcionar la información que quieres usar para este proyecto.
 
-Here you have two choose your database storage. You can use MS SQL Server or MySQL server. It is your decision which one you want to use.
+Aquí tienes dos elegir tu almacenamiento de base de datos. Puedes usar MS SQL Server o MySQL server. Es tu decisión cuál quieres usar.
 
-For the sake of this tutorial we will be using the MS SQL Server.
+En este tutorial utilizaremos el MS SQL Server.
 
-Also you will see the checkbox asking if you want to create a database if not exist, please check the checkbox.
+También verás la casilla de verificación que te preguntará si quieres crear una base de datos si no existe, por favor marca la casilla.
 
-Moving further you need to set up your connection string. For that, you have two options. One is fill form with "SQL Server name" and "Database name". In SQL Server name you need to provide your SQL server's name and in Database name you need to provide a database name you want to create or if you already have one then it will not create but use the existing one. However, you also can choose the option "Enter raw connection string" then you need to write whole connection string by yourself. After that you need to provide your SQL server's credentials for authentication.
+Avanzando un poco más, necesita configurar su cadena de conexión. Para ello, tienes dos opciones. Una es llenar el formulario con "Nombre del servidor SQL" y "Nombre de la base de datos". En el nombre del servidor SQL tienes que proporcionar el nombre de tu servidor SQL y en el nombre de la base de datos tienes que proporcionar el nombre de la base de datos que quieres crear o si ya tienes una entonces no creará sino que utilizará la existente. Sin embargo, también puede elegir la opción "Introducir cadena de conexión en bruto", entonces usted necesita escribir toda la cadena de conexión por sí mismo. Después de eso usted necesita proporcionar las credenciales de su servidor SQL para la autenticación.
 
-After you fill all of this information you need to press "install" button, it will take about 1 minute to complete the installation, then you will be redirected to online shop homepage.
+Después de rellenar toda esta información, debe pulsar el botón "instalar", le llevará aproximadamente 1 minuto completar la instalación, y luego será redirigido a la página de inicio de la tienda online.
 
-### 4. How to configure nopCommerce to run on HTTPS
+### 4. Cómo configurar nopCommerce para que funcione con HTTPS
 
-In order to set SSL/HTTPS for your nopCommerce you need to go to the property window of `Nop.Web` project under Presentation folder since it is the startup project for nopCommerce. To open property window right click on `Nop.Web` project and at the bottom of the context menu you will see a menu named "Properties", just click on that menu then a property window will appear. In property window navigate to "Debug" tab.
+Para establecer SSL/HTTPS para tu nopCommerce necesitas ir a la ventana de propiedades del proyecto `Nop.Web` en la carpeta de presentación ya que es el proyecto de inicio de nopCommerce. Para abrir la ventana de propiedades haz click con el botón derecho del ratón sobre el proyecto `Nop.Web` y en la parte inferior del menú contextual verás un menú llamado "Properties", simplemente haz click en ese menú y aparecerá una ventana de propiedades. En la ventana de propiedades navega a la pestaña "Debug".
 
 ![image4](_static/instruction-on-how-to-start-developing-on-nopcommerce/image4.png)
 
-Check the "Enable SSL", and enter the HTTPS URL besides it. Then save this project.
+Marque la casilla "Activar SSL", e introduzca la URL HTTPS al lado. Luego guarda este proyecto.
 
-Now run your project again and navigate to the given URL and you can see that now it is running on SSL/HTTPS. So this is the one way for configuring HTTPS in you WebProject but there is also another way to configure SSL. For that go to your `Nop.Web` project and expand the project inside there you will see a virtual file named "Properties" in your project structure just below "Dependencies". Inside Properties there you will find a JSON file called launchSetting.json. Open that file and you will see bunch of configuration setting already written in that file.
+Ahora ejecuta tu proyecto de nuevo y navega a la URL dada y puedes ver que ahora se está ejecutando en SSL/HTTPS. Así que esta es la única manera de configurar HTTPS en tu proyecto web, pero también hay otra manera de configurar SSL. Para eso ve a tu proyecto `Nop.Web` y expande el proyecto dentro de allí verás un archivo virtual llamado "Propiedades" en tu estructura de proyecto justo debajo de "Dependencias". Dentro de "Propiedades" encontrarás un archivo JSON llamado launchSetting.json. Abre ese archivo y verás un montón de ajustes de configuración ya escritos en ese archivo.
 
-Inside that file you may have a section as shown in the figure above. So to enable SSL you just need to replace 0 under "sslPort" property to the port you want to run for SSL connection, make sure the port is available. To test, run your project and navigate to `https://localhost:yourport`.
+Dentro de ese archivo puedes tener una sección como la que se muestra en la figura de arriba. Así que para habilitar SSL sólo necesitas reemplazar el 0 en la propiedad "sslPort" al puerto que quieres ejecutar para la conexión SSL, asegúrate de que el puerto esté disponible. Para probar, ejecuta tu proyecto y navega a `https://localhost:yourport`.

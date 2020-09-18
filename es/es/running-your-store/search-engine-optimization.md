@@ -75,8 +75,8 @@ Aquí puede filtrar los nombres de páginas compatibles con los motores de búsq
 * [Fabricantes](xref:en/running-your-store/catalog/Manufacturers)
 * [Proveedores](xref:en/running-your-store / vendor-management)
 * [Temas (páginas)](xref:en/running-your-store/content-management/topics-pages)
-* [Noticias] (xref:en/running-your-store/content-management/news)
-* [Blog] (xref:en/running-your-store/content-management/blog)
+* [Noticias](xref:en/running-your-store/content-management/news)
+* [Blog](xref:en/running-your-store/content-management/blog)
 
 ## Tutoriales
 

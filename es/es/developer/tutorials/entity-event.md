@@ -5,9 +5,9 @@ author: git.sinaislam
 contributors: git.DmitriyKulagin
 ---
 
-Eventos de entidad y cómo funcionan
+# Eventos de entidad y cómo funcionan
 
-Los [métodos de extensión] **EntityInserted**, **EntityUpdated** y **EntityDeleted** (https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/extension-methods ) con **BaseEntity** [restricción](https://docs.microsoft.com/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters) de la interfaz **IEventPublisher** son responsables de transmitir la entidad insertada, actualizada y eliminada respectivamente.
+Los [métodos_de_extensión]**EntityInserted**, **EntityUpdated** y **EntityDeleted** (https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/extension-methods) con **BaseEntity** [restricción](https://docs.microsoft.com/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters) de la interfaz **IEventPublisher** son responsables de transmitir la entidad insertada, actualizada y eliminada respectivamente.
 
 1. Se invoca el método de extensión **EntityInserted** para publicar una entidad insertada. Invoca el constructor parametrizado de **EntityInsertedEvent** [clase genérica](https://docs.microsoft.com/dotnet/csharp/programming-guide/generics/generic-classes) y expone la entidad insertada por su **Propiedad** de la entidad. **EntityInsertedEvent** tiene la misma restricción que **EntityInserted**. El desarrollador puede obtener la nueva entidad insertada implementando la interfaz **IConsumer** y puede hacer otros trabajos necesarios.
 

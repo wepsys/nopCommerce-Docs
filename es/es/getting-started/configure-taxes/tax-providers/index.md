@@ -9,12 +9,12 @@ contributors: git.exileDev, git.mariannk
 
 Para definir los proveedores de tasas de impuestos, vaya a **Configuración → Proveedores de impuestos**.
 
-![Proveedores de impuestos](_static/index/tax-Suppliers.png)
+ ![Tax providers](_static/index/tax-providers.png)
 
 Solo se puede utilizar un proveedor de tipos impositivos para el cálculo de impuestos. Se recomienda agregar nuevos proveedores de impuestos solo para usuarios avanzados.
 Para seleccionar el proveedor de impuestos predeterminado, haga clic en el botón **Marcar como proveedor principal**.
 
-> [!SUGERENCIA]
+> [!TIP]
 >
 > De forma predeterminada, hay varios proveedores de impuestos disponibles en nopCommerce, pero puede encontrar más proveedores de impuestos en nopCommerce [marketplace](https://www.nopcommerce.com/marketplace).
 

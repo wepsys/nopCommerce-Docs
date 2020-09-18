@@ -31,7 +31,7 @@ Este proyecto contiene un conjunto de servicios básicos, lógica empresarial, v
 
 ## `\Presentación\Nop.Web`
 
-`Nop.Web` es un proyecto de aplicación web MVC, una capa de presentación para tienda pública que también contiene un panel de administración incluido como área. Si no ha utilizado `ASP.NET` antes, busque más información [aquí] (http://www.asp.net/). Esta es la aplicación que realmente ejecuta. Es el proyecto de inicio de la aplicación.
+`Nop.Web` es un proyecto de aplicación web MVC, una capa de presentación para tienda pública que también contiene un panel de administración incluido como área. Si no ha utilizado `ASP.NET` antes, busque más información [aquí](http://www.asp.net/). Esta es la aplicación que realmente ejecuta. Es el proyecto de inicio de la aplicación.
 
 ## `\Presentation\Nop.Web.Framework`
 

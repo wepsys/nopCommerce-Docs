@@ -56,14 +56,14 @@ Luego configure el IVA en el panel *IVA*:
 * **Usar el servicio web:** marque esta casilla de verificación para usar el servicio web para validar los números de IVA.
 * **Notificar al administrador cuando se envíe un nuevo número de IVA**: marque esta casilla de verificación para recibir una notificación por correo electrónico cuando se envíe un nuevo número de IVA.
 
-> [!NOTA]
+> [!NOTE]
 >
 > Si el IVA está habilitado, se cobra 0% de impuestos a los envíos fuera de la UE y 0% a aquellos que han proporcionado un número de IVA validado y aprobado y están enviando dentro de la UE pero fuera del país de la tienda. Consulte un artículo para obtener más información sobre el IVA de la UE.
 
-> [!SUGERENCIA]
+> [!TIP]
 >
 > Lea cómo configurar el IVA de la UE aquí: [Guía de configuración del IVA de la UE](xref:es/Getting-started/configure-tax/index#eu-vat-configuration-guide).
 
-Clic en Guardar**.
+Clic en **Guardar**.
 
-## Tutor(https://www.youtube.com/watch?v=8iF5nQvIoLs&feature=youtu.be)
+### Tutor(https://www.youtube.com/watch?v=8iF5nQvIoLs&feature=youtu.be)

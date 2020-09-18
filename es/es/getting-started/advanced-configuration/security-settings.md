@@ -17,10 +17,10 @@ Defina la configuración de *Seguridad* de la siguiente manera:
 ![Seguridad](_static/security-settings/security.jpg)
 
 * En el campo **IP permitida del área de administración**, ingrese las direcciones IP que pueden acceder al backend. Deje este campo vacío si no desea restringir el acceso al backend. Utilice comas entre las direcciones IP (por ejemplo, 127.0.0.10, 232.18.204.16).
-* Marque **Habilitar honeypot** para habilitar [honeypot] (https://en.wikipedia.org/wiki/Honeypot_(informática)). En terminología informática, un honeypot es una trampa tendida para detectar, desviar o, de alguna manera, contrarrestar los intentos de uso no autorizado de los sistemas de información.
+* Marque **Habilitar honeypot** para habilitar [honeypot](https://en.wikipedia.org/wiki/Honeypot_(informática)). En terminología informática, un honeypot es una trampa tendida para detectar, desviar o, de alguna manera, contrarrestar los intentos de uso no autorizado de los sistemas de información.
 * En el campo **Clave privada de cifrado**, ingrese la clave privada de cifrado que se utiliza para almacenar datos confidenciales. Haga clic en **Cambiar** en cualquier momento para cambiar esta clave. Todos los datos confidenciales se cifran con esta clave privada.
 
-> [!NOTA]
+> [!NOTE]
 >
 > Se recomienda hacer una copia de seguridad de su base de datos antes de cambiar la clave de cifrado. Los datos confidenciales incluyen toda la información de la tarjeta de crédito (solo cuando esta información de la tarjeta de crédito se almacena en la base de datos de la tienda).
 
@@ -48,6 +48,6 @@ Este panel revelará las siguientes configuraciones cuando **CAPTCHA habilitado*
 * Ingrese la clave pública **reCAPTCHA**.
 * Ingrese la clave privada **reCAPTCHA**.
 
-> [!NOTA]
+> [!NOTE]
 >
 > Soporte eliminado para Recaptcha v1.

@@ -5,148 +5,148 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---
 
-# How to deploy nopCommerce to Azure
+# Cómo implementar nopCommerce en Azure
 
-## Create a VM on Azure
+## Crear una máquina virtual en Azure
 
-This instruction of the steps required to set up an Azure virtual machine to host nopCommerce web applications, and to allow to be published using WebDeploy.
+Esta instrucción de los pasos necesarios para configurar una máquina virtual de Azure para hospedar aplicaciones web de nopCommerce y permitir que se publiquen mediante WebDeploy.
 
-### Create a new VM
+### Crear una nueva máquina virtual
 
-1. Log in to the [Azure portal](https://portal.azure.com/)
-1. Click **Add** button
+1. Inicie sesión en [AzurePortal](https://portal.azure.com/)
+1. Haga clic en el botón  **Agregar**
 
     ![azure-publish_1](_static/azure-publish/azure-publish_1.png)
 
-1. Select *Windows Server 2016 VM* in the *Get Started* category or any Windows Server 2016 in the Compute category, such as **Windows Server 2016 Datacenter**
-1. Complete the required fields to configure the new VM.
-    - Username/password. You will need it to access the VM. This is admin account for connect on VM by RDP.
-    - Resource group. This is the name of the "virtual folder" that contains all resources created for this VM. You can delete all the resources created during this process by deleting the resource group.
+1. Seleccione  *Windows Server 2016 VM*  en la categoría *Get Started*  o cualquier Windows Server 2016 en la categoría Compute, como  **Windows Server 2016 Datacenter**
+1. Complete los campos necesarios para configurar la nueva máquina virtual.
+    - Nombre de usuario/contraseña. Lo necesitará para acceder a la máquina virtual. Esta es la cuenta de administrador para conectarse en la máquina virtual mediante RDP.
+    - Grupo de recursos. Este es el nombre de la "carpeta virtual" que contiene todos los recursos creados para esta máquina virtual. Puede eliminar todos los recursos creados durante este proceso eliminando el grupo de recursos.
 
-### Configure components and features on the VM
+### Configurar componentes y características en la máquina virtual
 
-1. DNS-name:
-    - From the [Azure portal](https://portal.azure.com/), navigate to the Overview page of your virtual machine.
-    - Under DNS name, click **Configure**
-    - Provide a globally unique DNS name. (A green tick appears when the name is validated.)
-    - Click **Save** to save the configuration.
+1. Nombre DNS:
+    - Desde [AzurePortal](https://portal.azure.com/), vaya a la página Información general de la máquinavirtual.
+    - En Nombre DNS, haga clic en  **Configurar**
+    - Proporcionar un nombre DNS único a nivel mundial. (Una marca verde aparece cuando se valida el nombre.)
+    - Haga clic en  **Guardar**  para guardar la configuración.
 
-### Configure Azure Firewall rules
+### Configurar reglas de Azure Firewall
 
-1. Configure inbound firewall rules in the Azure portal. On the Networking section add inbound port rule to create new firewall entries:
-    - http - Port 80 (Priority 100)
-    - WebDeploy - Port 8172 (Priority 1010)
-    - RDP - Port 3389 (Priority 320)
+1. Configure las reglas de firewall de entrada en Azure Portal. En la sección Redes, agregue la regla de puerto de entrada para crear nuevas entradas de firewall:
+    - http - Puerto 80 (Prioridad 100)
+    - WebDeploy - Puerto 8172 (Prioridad 1010)
+    - RDP - Puerto 3389 (Prioridad 320)
 
     ![azure-publish_2](_static/azure-publish/azure-publish_2.png)
 
-2. Configure outbound firewall rules in the Azure portal. On the Networking section add outbound port rule to create new firewall entries:
-    - RDP - Port 3389 (Priority 100)
+2. Configure las reglas de firewall saliente en Azure Portal. En la sección Redes, agregue la regla de puerto de salida para crear nuevas entradas de firewall:
+    - RDP - Puerto 3389 (Prioridad 100)
 
-### Connect to the VM (RDP) using login and password
+## Conéctese a la máquina virtual (RDP) mediante el inicio de sesión y la contraseña
 
 ![azure-publish_3](_static/azure-publish/azure-publish_3.png)
 
-### Install IIS (Web Server) and ASP.NET 4.6
+### Instalar IIS (servidor web) y ASP.NET 4.6
 
-1. Open the **Server Manager Dashboard** (Server Manager - Dashboard opens on first startup)
-1. Choose **2 Add roles and features**
+1. Abra el panel del administrador del servidor ** (administrador del servidor - el panel se abre en el primer inicio)
+1. Elija  **2 Añadir roles y características**
 
-    ![azure-publish_4](_static/azure-publish/azure-publish_4.png)
+![azure-publish_4](_static/azure-publish/azure-publish_4.png)
 
-1. Accept the defaults and press **Next** three times to progress to the Server Roles section.
-1. Select **Web Server (IIS)**
+1. Acepte los valores predeterminados y presione  **Next**  tres veces para avanzar a la sección Roles de servidor.
+1. Seleccione  **Servidor Web (IIS)**
 
-    ![azure-publish_5](_static/azure-publish/azure-publish_5.png)
+![azure-publish_5](_static/azure-publish/azure-publish_5.png)
 
-1. When prompted, confirm the additional installation of *IIS Management Console*.
-1. Press **Next** three times to progress to the *Web Server Role (IIS) --> Roles Services section*
-1. Select **Management** Service, which is required to enable Web Deploy (through port 8172). When prompted, confirm the additional installation of ASP.NET 4.6.
+1. Cuando se le solicite, confirme la instalación adicional de  *IIS Management Console*.
+1. Presione  **Next**  tres veces para avanzar a la  sección *Web Server Role (IIS) --> Roles Services*
+1. Seleccione el servicio de administración, que es necesario para habilitar Web Deploy (a través del puerto 8172). Cuando se le solicite, confirme la instalación adicional de ASP.NET 4.6.
 
     ![azure-publish_6](_static/azure-publish/azure-publish_6.png)
 
-1. Select **Next** to confirm the configuration, then **Install** to complete IIS setup.
+1. Seleccione  **Next**  para confirmar la configuración y, a continuación,  **Instalar**  para completar la instalación de IIS.
 
     ![azure-publish_7](_static/azure-publish/azure-publish_7.png)
 
-    Once installation completes:
-    - IIS is installed and running with internal firewall rule created for port 80.
-    - Web Management Service is installed with internal firewall rule created for port 8172.
+Una vez completada la instalación:
+    - IIS se instala y se ejecuta con la regla de firewall interna creada para el puerto 80.
+    - El servicio de administración web se instala con la regla de firewall interno creada para el puerto 8172.
 
-### Configure IE Enhanced Security (Off)
+### Configurar la seguridad mejorada de IE (desactivado)
 
-On a new Azure VM, default security rules prevent executables from being downloaded via Internet Explorer. In order to download the WebDeploy executable, you must first disable IE enhanced security.
+En una nueva máquina virtual de Azure, las reglas de seguridad predeterminadas impiden que los ejecutables se descarguen a través de Internet Explorer. Para descargar el ejecutable de WebDeploy, primero debe deshabilitar la seguridad mejorada de IE.
 
-1. In the **Server Manager**, open the **Local Server** section on the left.
-1. In the main panel, next to "**IE Enhanced Security Configuration:**", select On.
-1. In the dialog that appears, select **Off for Administrators**, select **On for Users**, then select **OK**.
+1. En el  **Server Manager**, abrala sección **Local Server**  a la izquierda.
+1. En el panel principal, junto a "**IE Enhanced Security Configuration:**", seleccione On.
+1. En el cuadro de diálogo que aparece, seleccione  **Off para Administradores**,seleccione  **Activado para Usuarios**y, a continuación, seleccione  **OK**.
 
     ![azure-publish_8](_static/azure-publish/azure-publish_8.png)
 
-### Install Web Deploy
+### Instalar Web Deploy
 
-1. Launch Internet Explorer.
-1. Accept default security settings.
-1. [Download](https://www.microsoft.com/download/details.aspx?id=43717) *WebDeploy_amd64_en-US.msi*
-1. Follow installation steps for Web Deploy
-1. Choose Complete option to install all components
+1. Inicie Internet Explorer.
+1. Acepte la configuración de seguridad predeterminada.
+1. [Descargar](https://www.microsoft.com/download/details.aspx?id=43717)  *WebDeploy_amd64_en-US.msi*
+1. Siga los pasos de instalación para Web Deploy
+1. Elija la opción Completar para instalar todos los componentes
 
-### Install last version [NET Core SDK](https://www.microsoft.com/net/download/all)
+### Instalar la última versión [SDK de NET Core](https://www.microsoft.com/net/download/all)
 
-### Install package [.NET Core Windows Server Hosting](https://www.microsoft.com/net/download/all)
+### Instalar paquete [.NET Core Windows Server Hosting](https://www.microsoft.com/net/download/all)
 
 ![azure-publish_9](_static/azure-publish/azure-publish_9.png)
 
-IIS is used to host ASP.NET Core web applications, its role will be reduced to a proxy server. Hosting of ASP.NET Core applications on IIS occurs using the native AspNetCoreModule, which is configured to redirect requests to the Kestrel web server. This module controls the start of the external process `dotnet.exe`, within which the application is hosted, and forwards all requests from IIS to this host process.
+IIS se utiliza para hospedar ASP.NET aplicaciones web principales, su rol se reducirá a un servidor proxy. El hospedaje de aplicaciones ASP.NET Core en IIS se produce mediante el AspNetCoreModule nativo, que está configurado para redirigir las solicitudes al servidor web de Kestrel. Este módulo controla el inicio del proceso externo `dotnet.exe`, dentro del cual se hospeda la aplicación, y reenvía todas las solicitudes de IIS a este proceso de host.
 
-After installing this package, run the **iisreset** command on the command line or manually restart IIS so that the server applies the changes.
+Después de instalar este paquete, ejecute el comando **iisreset**  en la línea de comandos o reinicie IIS manualmente para que el servidor aplique los cambios.
 
-### Configure IIS
+### Configurar IIS
 
-1. You must grant permission to the folder wwwroot. With the site selected in the **IIS Manager**, choose **Edit Permissions**, and make sure that *IUSR*, *IIS_IUSRS*, or the user configured for the Application Pool is an authorized user with Read & Execute rights. If none of these users are present, add *IUSR* as a user with *Read & Execute* rights.
+1. Debe conceder permiso a la carpeta wwwroot. Con el sitio seleccionado en el Administrador de IIS ,elija  **Editar permisos**y asegúrese de que  *IUSR*,  *IIS_IUSRS*o el usuario configurado para el grupo de aplicaciones es un usuario autorizado con derechos de lectura y ejecución. Si ninguno de estos usuarios está presente, agregue  *IUSR*  como usuario con los derechos *Read &  Execute*.
 
-    ![azure-publish_10](_static/azure-publish/azure-publish_10.png)
+![azure-publish_10](_static/azure-publish/azure-publish_10.png)
 
-1. Click **Restart** on right panel to restart IIS
+1. Haga clic en Reiniciar en el  panel derecho para reiniciar IIS
 
-Now everything is ready to publish the project.
+Ahora todo está listo para publicar el proyecto.
 
-## Publish nopCommerce to an Azure VM from Visual Studio
+## Publicar nopCommerce en una máquina virtual de Azure desde Visual Studio
 
-Publishing the nopCommerce application is no different from publishing any other ASP.NET Core application. Therefore, there will be described the minimum requirements to run the publication. More details can be found [here](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.1#deploy-the-app-to-azure).
+Publicar la aplicación nopCommerce no es diferente de publicar cualquier otra aplicación ASP.NET Core. Por lo tanto, se describirán los requisitos mínimos para ejecutar la publicación. Puede encontrar más detalles [aquí](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.1#deploy-the-app-to-azure).
 
-## Publish project `Nop.Web`
+### Publicar el proyecto 'Nop.Web'
 
-1. Open your web app solution in Visual Studio 2017. Right-click the project in Solution Explorer and choose *Publish*.
+1. Abra la solución de aplicación web en Visual Studio 2017. Haga clic con el botón derecho en el proyecto en el Explorador de soluciones y elija  *Publicar*.
 
-    ![azure-publish_11](_static/azure-publish/azure-publish_11.png)
+![azure-publish_11](_static/azure-publish/azure-publish_11.png)
 
-1. Use the arrow on the right of the page to scroll through the publishing options until you find **Microsoft Azure Virtual Machines**. Select the appropriate VM from the list of Existing Virtual Machines.
-1. Click **Create Profile**.
+1. Utilice la flecha a la derecha de la página para desplazarse por las opciones de publicación hasta que encuentre  **Microsoft Azure Virtual Machines**. Seleccione la máquina virtual adecuada en la lista de Máquinas virtuales existentes.
+1. Haga clic en Crear perfil..
 
-    ![azure-publish_12](_static/azure-publish/azure-publish_12.png)
+![azure-publish_12](_static/azure-publish/azure-publish_12.png)
 
-1. To view and modify the publish profile settings, select **Configure**. Use the **Validate Connection** button to confirm that you have entered the right information.
+1. Para ver y modificar la configuración del perfil de publicación, seleccione  **Configurar**. Utilice el botón Validar conexión para confirmar que ha introducido la información correcta.
 
-    ![azure-publish_13](_static/azure-publish/azure-publish_13.png)
+![azure-publish_13](_static/azure-publish/azure-publish_13.png)
 
-1. If you want to ensure that the web server has a clean copy of the web application after each upload (and that no other files are left hanging around from a previous deployment), you can check the **Remove additional files at destination** checkbox in the **Settings** tab. Warning: Publishing with this setting deletes all files that exist on the web server (wwwroot directory). Be sure you know the state of the machine before publishing with this option enabled.
+1. Si desea asegurarse de que el servidor web tiene una copia limpia de la aplicación web después de cada carga (y que no quedan otros archivos colgados de una implementación anterior), puede marcar la casilla de verificación  **Eliminar archivos adicionales en destino** en la pestaña **Configuración**  Advertencia: Publicar con esta configuración elimina todos los archivos que existen en el servidor web (directorio wwwroot). Asegúrese de conocer el estado de la máquina antes de publicar con esta opción habilitada.
 
-    ![azure-publish_14](_static/azure-publish/azure-publish_14.png)
+![azure-publish_14](_static/azure-publish/azure-publish_14.png)
 
-1. Click **Save**.
-1. Click **Publish** to begin publishing.
+1. Haga clic en  **Guardar**.
+1. Haga clic en  **Publicar**  para comenzar a publicar.
 
-You have now published your web app to an Azure virtual machine.
+Ahora ha publicado la aplicación web en una máquina virtual de Azure.You have published your web app to an Azure virtual machine.
 
-## Potential problems and solutions
+## Problemas y soluciones potenciales
 
-To [more](https://docs.microsoft.com/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-2.0) accurately understand what the problem is, you need to enable logging - enabled stdoutLog in web.config:
+Para [más](https://docs.microsoft.com/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-2.0) entender con precisión cuál esel problema, usted necesita habilitar el registro - stdoutLog habilitado en el web.config:
 
-```sh
-stdoutLogEnabled="true" stdoutLogFile=".\logs\stdout"
+````sh
+stdoutLogEnabled" ``true`stdoutLogFile=".\logs\stdout"
 ```
 
-## IIS not able to locate the web.config
+## IIS no puede localizar el web.config
 
-Solution:  [support.microsoft.com](http://support.microsoft.com/kb/942055)
+Solución: [support.microsoft.com](http://support.microsoft.com/kb/942055)

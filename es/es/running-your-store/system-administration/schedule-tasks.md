@@ -13,7 +13,7 @@ Para ver las tareas programadas, en el menú **Sistema**, seleccione **Programar
 ![Programar tareas](_static/schedule-tasks/schedule-tasks.png)
 
 Para editar una tarea programada, haga clic en el botón **Editar** junto a la tarea. La ventana se expande de la siguiente manera:
-! [Programar tareas - Editar] (_static/schedule-tasks/schedule-tasks-edit.png)
+![Programar tareas - Editar](_static/schedule-tasks/schedule-tasks-edit.png)
 
 Puede editar la tarea programada de la siguiente manera:
 * Edite el **Nombre**.
@@ -23,7 +23,7 @@ Puede editar la tarea programada de la siguiente manera:
 
 Haga clic en **Actualizar** para guardar sus cambios.
 
-> [!NOTA]
+> [!NOTE]
 >
 > No olvide reiniciar la aplicación una vez que se haya modificado una tarea.
 

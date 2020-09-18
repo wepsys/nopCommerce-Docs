@@ -5,9 +5,9 @@ author: git.AndreiMaz
 contributors: git.exileDev
 ---
 
-# Exposing and Handling Events
+# Exponer y manejar eventos
 
-Events are notifications broadcasted to interested parties. Events are triggered on data changes like inserts, updates and deletes. nopCommerce allows developers to "listen" for events they might be interested in. There are two ways a developer will work with events. A developer will either want to publish events for listeners to consume, or subscribe to events other developers will have programmatically published.
+Los eventos son notificaciones que se transmiten a las partes interesadas. Los eventos se activan con los cambios de datos como inserciones, actualizaciones y eliminaciones. nopCommerce permite a los desarrolladores "escuchar" los eventos que podrían interesarles. Hay dos formas en que un desarrollador trabajará con los eventos. Un desarrollador querrá publicar eventos para que los oyentes los consuman, o suscribirse a eventos que otros desarrolladores habrán publicado programáticamente.
 
-1. To publish an event a developer will need to obtain an instance of **IEventPublisher** and call the **Publish** method with the appropriate event data.
-1. To listen for an event the developer will want to create a new implementation of the generic **IConsumer** interface. Once a new consumer implementation has been created nopCommerce uses reflection to find and register the implementation for event handling.
+1. Para publicar un evento un desarrollador necesitará obtener una instancia de **IEventPublisher** y llamar al método **Publish** con los datos del evento apropiado.
+1. Para escuchar un evento el desarrollador querrá crear una nueva implementación de la interfaz genérica de **Consumidor**. Una vez que una nueva implementación de consumo ha sido creada nopCommerce utiliza la reflexión para encontrar y registrar la implementación para el manejo de eventos.

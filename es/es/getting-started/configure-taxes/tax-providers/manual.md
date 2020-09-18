@@ -9,7 +9,7 @@ contributors: git.exileDev
 
 Para configurar el proveedor de impuestos manual (fijo o por país/estado/código postal), vaya a **Configuración → Proveedores de impuestos**.
 
-![Proveedores de impuestos](_static/manual/tax-Suppliers.png)
+![Tax providers](_static/manual/tax-providers.png)
 
 Haga clic en **Configurar** en la línea del proveedor **Manual (fijo o por país/estado/código postal)** para editar las tasas de impuestos.
 Puede cambiar *Tasa fija* cálculo de impuestos a *País/estado/código postal* cálculo de impuestos haciendo clic en el botón en la parte superior de la página.
@@ -26,7 +26,7 @@ Asegúrese de que sus productos tengan asignada una categoría de impuestos en s
 
 ![Producto](_static/manual/product.jpg)
 
-> [!NOTA]
+> [!NOTE]
 >
 > Esta sección muestra solo categorías de impuestos creadas previamente. Lea cómo crear nuevas categorías a continuación: [configurar categorías de impuestos](#configure-tax-categorías).
 
@@ -49,7 +49,7 @@ Haga clic en **Agregar tasa impositiva**. Se muestra la nueva tasa impositiva de
 
 ![Agregar tasa de impuestos](_static/manual/add-tax-rate.png)
 
-> [!NOTA]
+> [!NOTE]
 >
 > Esta sección muestra solo categorías de impuestos creadas previamente. Lea cómo crear nuevas categorías a continuación: [configurar categorías de impuestos](#configure-tax-categorías).
 

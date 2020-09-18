@@ -67,5 +67,3 @@ Iniciado a partir de la versión 4.30 nopCommerce utiliza Linq2DB como un marco 
 # Servicio de Información de Internet (IIS) 7.0 o superior
 
 Para alojar aplicación/proyecto nopCommerce podemos usar IIS. Que es la tecnología de Microsoft utilizada para hospedar aplicaciones basadas en web de Microsoft en Windows. Pero usted no está limitado para alojar su nopCommerce en Windows sólo usted puede alojar nopCommerce en Linux y MacOS también. Como puede saber que IIS no se admite en otra plataforma, a continuación, Windows. Por lo tanto, puede utilizar otras herramientas como Apache o Nginx para alojar su aplicación en el servidor Linux.
-
-

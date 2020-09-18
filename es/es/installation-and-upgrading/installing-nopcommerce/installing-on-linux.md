@@ -38,7 +38,7 @@ Actualice los productos disponibles para la instalación, luego instale el tiemp
 
 ![nopCommerce installation](_static/installing-on-linux/net_core.jpg)
 
-> [!NOTA]
+> [!NOTE]
 >
 > Si tiene algún error, consulte la información detallada en el https://docs.microsoft.com/en-us/dotnet/core/install/linux-package-manager-ubuntu-2004#troubleshoot-the-package-manager page.
 
@@ -62,7 +62,7 @@ Por defecto, la contraseña de root está vacía, configurémosla
 
 ![nopCommerce installation](_static/installing-on-linux/config_mysql.jpg)
 
-> [!NOTA]
+> [!NOTE]
 >
 > Si tiene algún problema con la configuración de la contraseña de root en su servidor MySql, lea los siguientes artículos:
 > https://dev.mysql.com/doc/refman/8.0/en/resetting-permissions.html and
