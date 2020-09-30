@@ -1,0 +1,237 @@
+---
+- 
+ name: documentación de nopCommerce
+  href: /
+  topicHref: index.md
+-
+  name: Instalación y actualización
+  href: instalación-y-actualización/index.md
+  artículos:
+    -
+      name: Tecnología y requisitos del sistema
+      href: instalación-y-actualización/technology-and-system-requirements.md
+    -
+      name: Instalando nopCommerce
+      href: instalación-y-actualización/instalación-nopcommerce/index.md
+      artículos:
+        -
+          name: Elija una empresa de alojamiento
+          href: instalación-y-actualización/instalación-nopcommerce/choose-a-hosting-company.md
+        -
+          name: Instalación local (solo para desarrolladores)
+          href: instalación-y-actualización/instalación-nopcommerce/install-local.md
+        -
+          name: Instalación en Windows
+          href: instalación-y-actualización/instalación-nopcommerce/install-on-windows.md
+        -
+          name: Instalación en Microsoft Azure
+          href: instalación-y-actualización/instalación-nopcommerce/install-on-microsoft-azure.md
+        -
+          name: Instalación en Linux
+          href: instalación-y-actualización/instalación-nopcommerce/install-on-linux.md
+        -
+          name: nopCommerce preinstalado
+          href: instalación-y-actualización/instalación-nopcommerce/preinstalado-nopcommerce.md
+    -
+      name: Actualización de nopCommerce
+      href: instalación-y-actualización/actualización-nopcommerce.md
+-
+  name: Empezando
+  href: empezar/index.md
+  items:
+    -
+      name: descripción general del área de administración
+      href: Getting-started/admin-area-overview.md
+    -
+      name: crea un catálogo y agrega productos
+      href: ejecutar-su-tienda/catalog/index.md
+    -
+      name: Diseña tu tienda
+      href: empezar/diseñar-su-tienda/index.md
+      artículos:
+        -
+          name: elige e instala un tema
+          href: comenzar/diseñar-su-tienda/elegir-e-instalar-un-tema.md
+        -
+          name: Subiendo su logo
+          href: empezar/diseñar-su-tienda/uploading-your-logo.md
+        -
+          name: Agregar un favicon
+          href: empezar/diseñar-su-tienda/agregar-a-favicon.md
+        -
+          name: control deslizante Nivo
+          href: empezar/diseñar-su-tienda/nivo-slider.md
+        -
+          name: menú superior y pie de página
+          href: empezar/diseñar-su-tienda/top-menu-and-footer.md
+        -
+          name: configuraciónde medios
+          href: empezar/diseñar-su-tienda/media-settings.md
+    -
+      name: Configurar pagos
+      href: empezar/configurar-pagos/index.md
+      artículos:
+        -
+          name: métodos de pago
+          href: comenzar/configurar-pagos/métodos-de-pago/index.md
+          artículos:
+            -
+              name: Cheque/giro postal
+              href: comenzar/configurar-pagos/métodos-de-pago /cheque-money-order.md
+            -
+              name: Tarjeta de crédito (procesamiento manual)
+              href: Getting-started/configure-payments/payment-methods/credit-card-manual-processing.md
+            -
+              name: Estándar de PayPal
+              href: comenzar/configurar-pagos/métodos-de-pago/paypal-standard.md
+            -
+              name: Botones de pago inteligente de PayPal
+              href: comenzar/configurar-pagos/métodos-de-pago/paypal-smart-payment-buttons.md
+        -
+          name: Configuración avanzada
+          href: empezar/configurar-pagos/configuración-avanzada /index.md
+          artículos:
+            -
+              name: restricciones de método de pago
+              href: Getting-started/configure-payments/advanced-configuration/payment-method-restrictions.md
+            -
+              name: Monedas
+              href: Getting-started/configure-payments/advanced-configuration/currencies.md
+    -
+      name: Configurar envío
+      href: empezar/configurar-envío/index.md
+      artículos:
+        -
+          name: Configuración de envío
+          href: Getting-started/configure-shipping/shipping-settings.md
+        -
+          name: proveedores de envío
+          href: comenzar/configurar-envío/proveedores-de-envío/index.md
+          artículos:
+            -
+              name: Manual (Fijo o por peso y por total)
+              href: comenzar/configurar-envío/proveedores-de-envío/manual.md
+            -
+              name: ShipStation
+              href: comenzar/configurar-envío/proveedores-de-envío/shipstation.md
+            -
+              name: UPS
+              href: comenzar/configurar-envío/proveedores-de-envío / ups.md
+        -
+          name: Configuración avanzada
+          href: empezar/configurar-envío/configuración-avanzada/index.md
+          artículos:
+            -
+              name: Países, estados
+              href: Getting-started/configure-shipping/advanced-configuration/countries-states.md
+            -
+              name: Almacenes
+              href: comenzar/configurar-envío/configuración-avanzada/warehouse.md
+            -
+              name: Fechas y rangos
+              href: empezar/configurar-envío/configuración-avanzada/fechas-y-rangos.md
+            -
+              name: Medidas
+              href: comenzar/configurar-envío/configuración-avanzada/medidas.md
+            -
+              name: Puntos de recogida
+              href: comenzar/configurar-envío/configuración-avanzada/pickup-points.md
+    -
+      name: Configurar impuestos
+      href: empezar/configure-tax/index.md
+      artículos:
+        -
+          name: Configuración de impuestos
+          href: Getting-started/configure-tax/tax-settings.md
+        -
+          name: Proveedores de impuestos
+          href: empezar/configurar-impuestos/proveedores-de-impuestos/index.md
+          artículos:
+            -
+              name: Manual (fijo o por país/estado /código postal)
+              href: comenzar/configurar-impuestos/proveedores-de-impuestos/manual.md
+            -
+              name: Avalara
+              href: comenzar/configurar-impuestos/proveedores-de-impuestos/avalara.md
+    -
+      name: cuentas de correo electrónico
+      href: Getting-started/email-accounts.md
+    -
+      name: Configuración avanzada
+      href: empezar/configuración-avanzada/index.md
+      artículos:
+        -
+          name: Cómo instalar y configurar la certificación SSL
+          href: Getting-started/advanced-configuration/how-to-install-and-configure-ssl-certification.md
+        -
+          name: la información de su tienda
+          href: Getting-Started/Advanced-Configuration/Your-Store-information.md
+        -
+          name: configuración de GDPR
+          href: introducción/configuración-avanzada/gdpr-settings.md
+        -
+          name: Localización
+          href: empezar/configuración-avanzada/localization.md
+        -
+          name: métodos de autenticación externos
+          href: Getting-Started/Advanced-Configuration/External-authentication-methods.md
+        -
+          name: configurar análisis
+          href: introducción/configuración-avanzada/configure-analytics.md
+        -
+          name: Complementos en nopCommerce
+          href: introducción/configuración-avanzada/plugins-in-nopcommerce.md
+        -
+          name: Multi-tienda
+          href: introducción/configuración-avanzada/multi-store.md
+        -
+          name: configuración de seguridad
+          href: empezar/configuración-avanzada/security-settings.md
+        -
+          name: configuración de PDF
+          href: introducción/configuración-avanzada/pdf-settings.md
+        -
+          name: todas las configuraciones
+          href: empezar/configuración-avanzada/all-settings.md
+-
+  name: Ejecutando su tienda
+  href: ejecutando-su-tienda/index.md
+  artículos:
+    -
+      name: Catálogo
+      href: ejecutar-su-tienda/catalog/index.md
+      artículos:
+        -
+          name: Productos
+          href: ejecutar-su-tienda/catálogo/productos/index.md
+          artículos:
+            -
+              name: Agregar productos
+              href: ejecutar-su-tienda /catálogo/productos/add-products.md
+            -
+              name: atributos del producto
+              href: ejecutar-su-tienda/catalog/products/product-attributes.md
+            -
+              name: atributos de especificación
+              href: ejecutar-su-tienda/catálogo/productos/especificación-attributes.md
+            -
+              name: Productos descargables
+              href: ejecutar-su-tienda/catalog/products/downloadable-products.md
+            -
+              name: Productos agrupados (variantes)
+              href: ejecutar-su-tienda/catalog/products/grouped-products-variants.md
+            -
+              name: Productos recurrentes
+              href: ejecutar-su-tienda/catalog/products/recurring-products.md
+            -
+              name: Productos de alquiler
+              href: ejecutar-su-tienda/catalog/products/rental-products.md
+            -
+              name: Importar/exportarproductos
+              href: ejecutar-su-tienda/catálogo/productos/import-export-products.md
+            -
+              name: Etiquetas de producto
+              href: ejecutar-su-tienda/catalog/products/product-tags.md
+            -
+              name: Reseñas de productos
+              href: ejecutar-su-tienda/catálogo/productos/producto-rev
