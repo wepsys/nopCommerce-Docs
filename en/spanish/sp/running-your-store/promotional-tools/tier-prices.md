@@ -5,35 +5,35 @@ author: git.AndreiMaz
 contributors: git.exileDev, git.DmitriyKulagin, git.IvanIvanIvanov, git.mariannk
 ---
 
-# Tier prices
+# Los precios de los pisos
 
-Tier prices is a promotional tool that allows a store owner to offer special prices when customers buy bigger amounts of a particular product. This tool is typically used in wholesales, but retailers can apply it as well to incentivize buyers and drive more sales.
+Los precios escalonados son una herramienta de promoción que permite al dueño de una tienda ofrecer precios especiales cuando los clientes compran mayores cantidades de un producto en particular. Esta herramienta se utiliza típicamente en las ventas al por mayor, pero los minoristas también pueden aplicarla para incentivar a los compradores e impulsar más ventas.
 
-Tier prices can be applied to a product on the product edit page. Go to **Catalog → Products**, select a product you want to add a tier price to and click **Edit**. Look for the *Tier prices* panel to add a new tier price:
+Los precios por niveles se pueden aplicar a un producto en la página de edición del producto. Vaya a **Catálogo → Productos**, seleccione un producto al que desee añadir un precio de nivel y haga clic en **Editar**. Busque el panel de *Precios por niveles* para añadir un nuevo precio por niveles.
 ![Tier prices](_static/tier-prices/tier.png)
 
 > [!NOTE]
 > 
-> You need to save the product before you can add tier prices for the product page.
+> Necesitas guardar el producto antes de poder añadir precios de nivel para la página del producto.
 
-## Adding tier prices
+## Agregar precios de nivel
 
-Click the **Add new tier price** button to add a new tier price. The *Add new tier price* window will be displayed:
+Haga clic en el botón **Agregar nuevo precio de nivel** para agregar un nuevo precio de nivel. Aparecerá la ventana *Agregar nuevo precio de la grada*.
 ![Adding tier prices](_static/tier-prices/add-new.jpg)
 
-- In the **Quantity** and **Price** fields, define the price applicable to a certain quantity of the product.
-- In case you run several stores, from the **Store** drop-down list, select the one in which you plan to apply the tier prices.
-- From the **Customer role** drop-down list, select the customer role based on which the tier price will be defined, ex. *All* customers, *Registered*, *Guests*.
-- In the **Start date** and **End date** fields enter the period of tier prices availability. Leave these fields empty if not applicable.
+- En los campos **Cantidad** y **Precio**, defina el precio aplicable a una determinada cantidad del producto.
+- En caso de que tenga varias tiendas, en la lista desplegable **Tienda**, seleccione aquella en la que piensa aplicar los precios de nivel.
+- En la lista desplegable **Relación de cliente**, seleccione la relación de cliente en base a la cual se definirá el precio de nivel, por ejemplo: *Todos* los clientes, *Registrados*, *Invitados*.
+- En los campos **Fecha de inicio** y **Fecha de finalización** introduzca el período de disponibilidad de los precios de nivel. Deje estos campos vacíos si no son aplicables.
 
-Click **Save**. The *Tier prices* table is updated with the new data.
+Haga clic en **Guardar**. La tabla de *Precios escalonados* se actualiza con los nuevos datos.
 
-You can now view the updated product details page in the public store:
+Ahora puede ver la página de detalles de los productos actualizada en la tienda pública:
 
 ![Tier price example](_static/tier-prices/TierPriceExample.jpg)
 
-When a customer adds a certain quantity of a product to their cart, the price is being automatically changed to reflect the discount. 
+Cuando un cliente añade una cierta cantidad de un producto a su carrito, el precio se cambia automáticamente para reflejar el descuento. 
 
-## Tutorials
+## Tutoriales
 
 - [Managing tier pricing](https://www.youtube.com/watch?v=ERE08UEDU58&t=10s)

@@ -11,7 +11,7 @@ contributors: git.exileDev, git.mariannk
 
 Después de instalar la integración de AvaTax, debe configurar la integración.
 
-> [!NOTA]
+> [!NOTE]
 >
 > Asegúrese de que el complemento esté instalado y marcado como "Habilitado" (**Configuración → Complementos locales**). Para habilitar el complemento, haga clic en **Editar** y marque la casilla de verificación  **Está habilitado**.
 
@@ -19,7 +19,7 @@ Después de instalar la integración de AvaTax, debe configurar la integración.
 
 Para configurar el proveedor de impuestos de Avalara, vaya a **Configuración → Proveedores de impuestos**.
 
-![Proveedores de impuestos] (_static/avalara/tax-Suppliers.png)
+![Proveedores de impuestos](_static/avalara/tax-Suppliers.png)
 
 Haga clic en **Marcar como proveedor principal**.
 
@@ -27,7 +27,7 @@ Haga clic en **Configurar** junto a la opción del proveedor de impuestos de Ava
 
 Siga las instrucciones en la parte superior de la página, la función de cada campo se anota cuando "?" se mantiene suspendido.
 
-![Configuración] (_static/avalara/avalara-configuration.jpg)
+![Configuración](_static/avalara/avalara-configuration.jpg)
 
 1. Configure sus credenciales de Avalara Tax:
     * **ID de cuenta**: proporcionado durante el proceso de activación de su cuenta AvaTax.
@@ -61,7 +61,7 @@ En la parte superior derecha de la página, verá el botón **Códigos fiscales 
     ![Detalles del cliente](_static/avalara/customer-entity-use-code.png)
 1. Haga clic en **Guardar**
 
-> [!NOTA]
+> [!NOTE]
 >
 > No es necesario marcar la casilla **Exento de impuestos**: basta con asignar **Código de uso de entidad**.
 
