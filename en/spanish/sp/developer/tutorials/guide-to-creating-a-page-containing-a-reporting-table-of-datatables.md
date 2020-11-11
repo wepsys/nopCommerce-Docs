@@ -1,5 +1,5 @@
 ﻿---
-title: Guide to creating a page containing a reporting table of DataTables
+title: Guide to creating a page containing a c 
 uid: en/developer/tutorials/guide-to-creating-a-page-containing-a-reporting-table-of-datatables
 author: nop.sea
 contributors: git.RomanovM, git.DmitriyKulagin
@@ -10,20 +10,20 @@ contributors: git.RomanovM, git.DmitriyKulagin
 En este tutorial aprenderemos sobre cómo extender la funcionalidad de nopCommerce con funcionalidad personalizada para el panel de administración y crear una página que contenga una tabla con algunos datos como informe. Entonces, antes de comenzar con este tutorial, debe tener algunos conocimientos y comprensión previos sobre algunos de los temas como.
 
 * [arquitectura nopCommerce](xref:en/developer/tutorials/source-code-organization).
-* Complemento nopCommerce.
+* plugin nopCommerce.
 * Enrutamiento nopCommerce.
 
 Si no está familiarizado con los temas anteriores, le recomendamos que los conozca primero. Sin embargo, si se siente cómodo o al menos tiene algunos conocimientos básicos sobre el tema anterior, entonces es lo suficientemente bueno para continuar con este tutorial.
 
-Entonces, en este tutorial crearemos un complemento con una página que contiene la tabla que muestra información sobre la distribución de usuarios por país (según la dirección de facturación). Repasemos el proceso paso a paso para crear la funcionalidad mencionada anteriormente.
+Entonces, en este tutorial crearemos un plugin con una página que contiene la tabla que muestra información sobre la distribución de usuarios por país (según la dirección de facturación). Repasemos el proceso paso a paso para crear la funcionalidad mencionada anteriormente.
 
-## Crea un proyecto de complemento nopCommerce
+## Crea un proyecto de plugin nopCommerce
 
-Supongo que ya sabe dónde y cómo crear el proyecto de complemento nopCommerce y configurar el proyecto de acuerdo con el estándar nopCommerce. Si no lo sabe, puede visitar el enlace [esta_página](xref:en/developer/plugins/how-to-write-plugin-4.30) para saber cómo crear y configurar el proyecto de complemento nopCommerce.
+Supongo que ya sabe dónde y cómo crear el proyecto de plugin nopCommerce y configurar el proyecto de acuerdo con el estándar nopCommerce. Si no lo sabe, puede visitar el enlace [esta_página](xref:en/developer/plugins/how-to-write-plugin-4.30) para saber cómo crear y configurar el proyecto de plugin nopCommerce.
 
-Si ha seguido el enlace proporcionado anteriormente para crear y configurar su proyecto de complemento, puede terminar con la estructura de carpetas como esta.
+Si ha seguido el enlace proporcionado anteriormente para crear y configurar su proyecto de plugin, puede terminar con la estructura de carpetas como esta.
 
-![imagen1](_estática/guía-para-crear-una-página-que-contiene-una-tabla-de-datos-tablas-de-informes/image1.png)
+![image1](_static/guide-to-creating-a-page-containing-a-reporting-table-of-datatables/image1.png)
 
 Y también sabe qué tipo de archivos contiene cada una de estas carpetas/directorios. Aquí el archivo "DistOfCustBuCountryPlugin.cs" es el inherente a la clase BasePlugin. Aquí está el código básico que queremos en este archivo por el bien de este tutorial.
 
@@ -54,7 +54,7 @@ public class DistOfCustByCountryPlugin: BasePlugin
     }
 ```
 
-Esta clase tiene dos métodos reemplazados Instalar y Desinstalar de la clase BasePlugin. Si queremos hacer algo antes de instalar y desinstalar nuestro plugin pondremos ese código antes de llamar al método de instalación y desinstalación desde la clase base. Por ejemplo, si nuestro complemento puede tener que crear su propia tabla, entonces crearemos esa tabla antes de llamar al método de instalación desde la clase base y, de la misma forma, es posible que también deseemos eliminar nuestra tabla de la base de datos si los usuarios desean desinstalar nuestro complemento. En este caso, es posible que deseemos ejecutar código para eliminar tablas antes de llamar al método de desinstalación desde la clase base.
+Esta clase tiene dos métodos reemplazados Instalar y Desinstalar de la clase BasePlugin. Si queremos hacer algo antes de instalar y desinstalar nuestro plugin pondremos ese código antes de llamar al método de instalación y desinstalación desde la clase base. Por ejemplo, si nuestro plugin puede tener que crear su propia tabla, entonces crearemos esa tabla antes de llamar al método de instalación desde la clase base y, de la misma forma, es posible que también deseemos eliminar nuestra tabla de la base de datos si los usuarios desean desinstalar nuestro plugin. En este caso, es posible que deseemos ejecutar código para eliminar tablas antes de llamar al método de desinstalación desde la clase base.
 
 Primero creemos un modelo llamado "ClientesDistribución" dentro de la carpeta/directorio Modelos.
 
@@ -94,7 +94,7 @@ public interface ICustomersByCountry
 }
 ```
 
-Aquí solo tenemos una descripción de método ya que por el bien de este complemento no necesitamos ningún otro método.
+Aquí solo tenemos una descripción de método ya que por el bien de este plugin no necesitamos ningún otro método.
 
 ## #Services/ CustomersByCountry.cs
 
@@ -132,7 +132,7 @@ public class CustomersByCountry : ICustomersByCountry
 
 Aquí estamos creando una clase llamada "Clientes por País" que es inherente a la interfaz "ICustomersByCountry". Además, estamos implementando el método que recupera datos de la base de datos. Usamos este enfoque para poder usar técnicas de inyección de dependencia para inyectar este servicio en el controlador.
 
-Ahora creemos una clase de controlador. Una buena práctica para nombrar controladores de complementos es como {Grupo} {Nombre} Controller.cs. Por ejemplo, TutorialCustomersByCountryController, aquí {Tutorial} {ClientesByCountry} Controlador. Pero recuerde que no es un requisito nombrar el controlador con {Group} {Name}, solo es una forma recomendada por nopCommerce para la convención de nomenclatura, pero la parte del controlador es el requisito de .Net MVC.
+Ahora creemos una clase de controlador. Una buena práctica para nombrar controladores de plugins es como {Grupo} {Nombre} Controller.cs. Por ejemplo, TutorialCustomersByCountryController, aquí {Tutorial} {ClientesByCountry} Controlador. Pero recuerde que no es un requisito nombrar el controlador con {Group} {Name}, solo es una forma recomendada por nopCommerce para la convención de nomenclatura, pero la parte del controlador es el requisito de .Net MVC.
 
 ## # Controladores/ClientesByCountryController.cs
 
@@ -245,7 +245,7 @@ class DependencyRegistrar : IDependencyRegistrar
 }
 ```
 
-Aquí estamos heredando de la interfaz "IDependencyRegistrar" que es proporcionada por nopCommerce. Aquí tenemos que implementar un método de "registro" y una propiedad entera Order. Dentro del método Register registramos todos nuestros servicios para nuestro complemento como se muestra en el código anterior. Bajo el capó Utiliza AutoFac para registrar nuestros servicios DependencyRegistrar es solo la capa creada por nopCommerce que estamos usando para registrar nuestras dependencias.
+Aquí estamos heredando de la interfaz "IDependencyRegistrar" que es proporcionada por nopCommerce. Aquí tenemos que implementar un método de "registro" y una propiedad entera Order. Dentro del método Register registramos todos nuestros servicios para nuestro plugin como se muestra en el código anterior. Bajo el capó Utiliza AutoFac para registrar nuestros servicios DependencyRegistrar es solo la capa creada por nopCommerce que estamos usando para registrar nuestras dependencias.
 
 Ahora el último paso es registrar nuestra ruta para la Acción "GetCustomersCountByCountry" del Controlador "TutorialCustomersByCountry". No necesitamos registrar la ruta para la acción "Configurar" porque ya la hemos registrado en la clase `DistOfCustByCountryPlugin`.
 
@@ -277,6 +277,6 @@ public class RouteProvider : IRouteProvider
 
 Para obtener más información sobre el enrutamiento de nopCommerce, visite [esta página](xref:en/developer/tutorials/register-new-routes)
 
-Ahora solo cree su proyecto y ejecútelo. Inicie sesión como usuario administrativo y vaya al menú LocalPlugins en Configuración, allí verá su complemento recién creado. Instale ese complemento. Una vez completada la instalación, verá un botón de configuración en su complemento. Si ha seguido correctamente este tutorial, verá un resultado como:
+Ahora solo cree su proyecto y ejecútelo. Inicie sesión como usuario administrativo y vaya al menú LocalPlugins en Configuración, allí verá su plugin recién creado. Instale ese plugin. Una vez completada la instalación, verá un botón de configuración en su plugin. Si ha seguido correctamente este tutorial, verá un resultado como:
 
 ![image2](_static/guide-to-creating-a-page-containing-a-reporting-table-of-datatables/image2.png)

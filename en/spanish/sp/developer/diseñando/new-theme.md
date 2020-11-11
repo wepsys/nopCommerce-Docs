@@ -20,7 +20,7 @@ Abra su solución o sitio web nopCommerce (versión web) en Visual Studio - Vaya
 
 1. Ahora seleccione lacarpeta "Tema" → haga clic derecho → PEGAR
 
-    ![paso-3] (_tatic/new-theme/new-theme-step-3.jpg)
+    ![paso-3](_static/new-theme/new-theme-step-3.jpg)
 
 1. Obtendrá algo como "Copia del tema predeterminado/actual"
 

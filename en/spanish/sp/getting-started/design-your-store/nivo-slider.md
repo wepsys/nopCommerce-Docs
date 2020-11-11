@@ -23,8 +23,7 @@ Marque la casilla de verificación **Está activo** para habilitar el complement
 
 Haga clic en **Configurar**. Se muestra la ventana *Configurar - Control deslizante Nivo*, de la siguiente manera:
 
-![Nivo-Configurar](_static/nivo-slider/nivo-slider-configure.jpg)
-
+![Nivo - Configure](_static/nivo-slider/nivo-slider-configure.jpg)
 Realice lo siguiente para cada diapositiva que desee cargar:
 
 * En el campo **Imagen**, haga clic en **Cargar un archivo** para cargar la imagen requerida. Haga clic en **Eliminar imagen** para eliminar la existente.

@@ -29,7 +29,7 @@ Para agregar un nuevo idioma, haga clic en **Agregar nuevo**. En la ventana *Agr
 * La **Cultura del idioma**: un código de idioma específico (por ejemplo, de-AT para el alemán austriaco).
 * El **Código SEO único**: un código SEO de dos letras que se utiliza para generar URL como `http: // www.yourstore.com / en /` cuando tienes más de un idioma publicado.
 
-   > [!NOTA]
+   > [!NOTE]
    >
    > La opción **URL amigables para SEO con varios idiomas** debe estar habilitada en el panel **Configuración → Configuración → Configuración general → Configuración de localización**.
 
