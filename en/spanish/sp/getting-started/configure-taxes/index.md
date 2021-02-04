@@ -1,4 +1,4 @@
-﻿---
+﻿    ---
 title: Configure taxes
 uid: en/getting-started/configure-taxes/index
 author: git.AndreiMaz
