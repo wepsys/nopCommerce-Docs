@@ -1,6 +1,6 @@
 ---
 title: Topics (pages)
-uid: en/running-your-store/content-management/topics-pages
+uid: es/running-your-store/content-management/topics-pages
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 ---
@@ -37,12 +37,12 @@ En el panel de *Diplay* define los siguientes detalles del tema:
 * En la lista desplegable **Roles de cliente** seleccione un rol o roles de cliente que puedan acceder a este tema.
   > [!NOTE]
   >
-  > Para poder utilizar esta función, debe desactivar la siguiente configuración: **Configuración → Configuración del catálogo → Ignorar las reglas de ACL (sitewide)**. Lea más sobre la lista de control de acceso [here](xref:en/running-your-store/customer-management/access-control-list).
+  > Para poder utilizar esta función, debe desactivar la siguiente configuración: **Configuración → Configuración del catálogo → Ignorar las reglas de ACL (sitewide)**. Lea más sobre la lista de control de acceso [here](xref:es/running-your-store/customer-management/access-control-list).
 
 * En la lista desplegable **Limitado a las tiendas** seleccione las tiendas en las que se mostrará el tema.
   > [!NOTE]
   >
-	> Para poder utilizar esta función, debe desactivar la siguiente configuración: **Configuración del catálogo → Ignorar las reglas de "límite por tienda" (en todo el sitio)**. Lea más sobre la funcionalidad de multi-tienda [here](xref:en/getting-started/advanced-configuration/multi-store).
+	> Para poder utilizar esta función, debe desactivar la siguiente configuración: **Configuración del catálogo → Ignorar las reglas de "límite por tienda" (en todo el sitio)**. Lea más sobre la funcionalidad de multi-tienda [here](xref:es/getting-started/advanced-configuration/multi-store).
 
 *  Utilice el campo **Accesible cuando la tienda está cerrada** para que este tema sea accesible cuando la tienda esté cerrada.
 * Selecciona este tema **Orden de visualización**. Por ejemplo, 1 representaría el artículo primero de una lista.
@@ -83,7 +83,7 @@ Click **Save**. The topic will be displayed in the public store.
 
 ## See also
 
-- [SEO](xref:en/running-your-store/search-engine-optimization)
+- [SEO](xref:es/running-your-store/search-engine-optimization)
 
 ## Tutorials
 

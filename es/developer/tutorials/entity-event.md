@@ -1,6 +1,6 @@
 ---
 title: Entity events and how they work
-uid: en/developer/tutorials/entity-event
+uid: es/developer/tutorials/entity-event
 author: git.sinaislam
 contributors: git.DmitriyKulagin
 ---

@@ -1,6 +1,6 @@
 ---
 title: Order management
-uid: en/running-your-store/order-management/orders
+uid: es/running-your-store/order-management/orders
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 ---
@@ -61,7 +61,7 @@ En el panel **Info** el dueño de una tienda puede realizar lo siguiente:
 * Ver el **Estado del pago**. Podría ser uno de los siguientes: *Pendiente*, *Autorizado*, *Pagado (capturado)*, *Reembolsado*, *Reembolsado parcialmente*, o *Viado*.
 	> [!NOTE]
 	> 
-	> No todas las pasarelas de pago soportan todos estos estados. Lea más sobre los métodos de pago en el [Payment methods](xref:en/getting-started/configure-payments/payment-methods/index) chapter.
+	> No todas las pasarelas de pago soportan todos estos estados. Lea más sobre los métodos de pago en el [Payment methods](xref:es/getting-started/configure-payments/payment-methods/index) chapter.
 
 	Si el estado del pago es *Autorizado* los botones correspondientes estarán disponibles para **Voidar** y **Capturar** el pedido. **Captura** se utiliza para recoger los fondos del cliente. **Void** cancela una orden que no ha sido capturada. 
 	
@@ -117,6 +117,6 @@ En el panel **Order notes**, el dueño de la tienda puede ver las notas que se a
 
 ## See also
 
-* [Adding products](xref:en/running-your-store/catalog/products/add-products)
-* [Shipments](xref:en/running-your-store/order-management/shipping-management)
+* [Adding products](xref:es/running-your-store/catalog/products/add-products)
+* [Shipments](xref:es/running-your-store/order-management/shipping-management)
 * [YouTube tutorial on managing orders](https://www.youtube.com/watch?v=z6TUJOO3gVg&index=5&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)

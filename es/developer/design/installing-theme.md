@@ -1,6 +1,6 @@
 ---
 title: Installing / Applying theme in nopCommerce
-uid: en/developer/design/installing-theme
+uid: es/developer/design/installing-theme
 author: git.AndreiMaz
 contributors: git.exileDev, git.DmitriyKulagin
 ---

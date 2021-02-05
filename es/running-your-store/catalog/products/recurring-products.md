@@ -1,6 +1,6 @@
 ---
 title: Recurring product
-uid: en/running-your-store/catalog/products/recurring-products
+uid: es/running-your-store/catalog/products/recurring-products
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.IvanIvanIvanov, git.mariannk
 ---
@@ -25,4 +25,4 @@ You can define a recurring cycle to any product in order to enable the system to
 
 ## See also
 
-- [Payment methods](xref:en/getting-started/configure-payments/payment-methods/index)
+- [Payment methods](xref:es/getting-started/configure-payments/payment-methods/index)

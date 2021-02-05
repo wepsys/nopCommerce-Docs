@@ -1,6 +1,6 @@
 ﻿---
 title: Entity events system
-uid: en/developer/design/entity-events-system
+uid: es/developer/design/entity-events-system
 author: git.nopsg
 contributors: git.nopsg, git.DmitriyKulagin
 ---

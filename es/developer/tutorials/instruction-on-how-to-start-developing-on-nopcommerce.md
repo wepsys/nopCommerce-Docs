@@ -1,6 +1,6 @@
 ---
 title: Instruction on how to start developing on nopCommerce
-uid: en/developer/tutorials/instruction-on-how-to-start-developing-on-nopcommerce
+uid: es/developer/tutorials/instruction-on-how-to-start-developing-on-nopcommerce
 author: nop.sea
 contributors: git.RomanovM, git.DmitriyKulagin
 ---
@@ -20,7 +20,7 @@ nopCommerce es una solución de comercio electrónico basada en Microsoft ASP.NE
 
 ## 1. Herramientas necesarias para el desarrollo
 
-Puede obtener información sobre la tecnología y los requisitos del sistema en el **"[Herramientas necesarias para el desarrollo](xref:en/developer/tutorials/system-requirements-for-development#2-tools-required-for-development)"** artículo
+Puede obtener información sobre la tecnología y los requisitos del sistema en el **"[Herramientas necesarias para el desarrollo](xref:es/developer/tutorials/system-requirements-for-development#2-tools-required-for-development)"** artículo
 
 ## 2. Pila de tecnologías utilizadas en nopCommerce
 

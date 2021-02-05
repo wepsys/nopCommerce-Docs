@@ -1,6 +1,6 @@
 ﻿---
 title: Rental products
-uid: en/running-your-store/catalog/products/rental-products
+uid: es/running-your-store/catalog/products/rental-products
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.IvanIvanIvanov, git.mariannk
 ---
@@ -23,9 +23,9 @@ Which functionality will be useful in this case?
 
 - Use *checkout attributes* to allow a customer to specify return time when a carrier should pick up the dress:
 	![Rental example](_static/rental-products/time.jpg)
-	Read more about checkout attributes [here](xref:en/running-your-store/order-management/checkout-attributes).
+	Read more about checkout attributes [here](xref:es/running-your-store/order-management/checkout-attributes).
 
-If you already learned how to set up a [common product](xref:en/running-your-store/catalog/products/add-products) learn how to make this product rental in the section below.
+If you already learned how to set up a [common product](xref:es/running-your-store/catalog/products/add-products) learn how to make this product rental in the section below.
 
 ## Set up a rental product
 

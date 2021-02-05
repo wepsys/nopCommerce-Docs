@@ -1,6 +1,6 @@
 ---
 title: Templates
-uid: en/running-your-store/system-administration/templates
+uid: es/running-your-store/system-administration/templates
 author: git.mariannk
 ---
 

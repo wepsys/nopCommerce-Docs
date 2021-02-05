@@ -1,6 +1,6 @@
 ---
 title: Checkout attributes
-uid: en/running-your-store/order-management/checkout-attributes
+uid: es/running-your-store/order-management/checkout-attributes
 author: git.AndreiMaz
 contributors: git.exileDev, git.DmitriyKulagin, git.dunaenko, git.mariannk
 ---

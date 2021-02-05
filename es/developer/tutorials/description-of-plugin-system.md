@@ -1,6 +1,7 @@
 ﻿---
 title: Description of plugin system
-uid: en/developer/tutorials/description-of-plugin-system
+uid: es
+developer/tutorials/description-of-plugin-system
 author: git.nopsg
 contributors: git.nopsg, git.DmitriyKulagin
 ---

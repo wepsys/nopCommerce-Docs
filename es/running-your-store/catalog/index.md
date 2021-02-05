@@ -1,6 +1,6 @@
 ﻿---
 title: Catalog
-uid: en/running-your-store/catalog/index
+uid: es/running-your-store/catalog/index
 author: git.AndreiMaz
 contributors: git.exileDev, git.dunaenko, git.IvanIvanIvanov, git.mariannk
 ---
@@ -38,7 +38,7 @@ subcategorías:
 
 - Permita que sus clientes busquen en las categorías usando filtros:
 	![Filters](_static/index/filters.jpg)
-	*The filter functionality uses [atributos de especificación](xref:en/runninging-your-store/catalog/products/specification-attributes).*
+	*The filter functionality uses [atributos de especificación](xref:es/runninging-your-store/catalog/products/specification-attributes).*
 
 - Permite a sus clientes clasificar los productos y cambiar el modo de visualización: 
 	![Filters](_static/index/filters.jpg)
@@ -48,8 +48,8 @@ Para aprender a crear una categoría visite el capítulo [Categorías](xref:es/r
 
 ## Ver también
 
-* [Categories](xref:en/running-your-store/catalog/categories)
-* [Manufacturers](xref:en/running-your-store/catalog/manufacturers)
-* [Attributes](xref:en/running-your-store/catalog/products/product-attributes)
-* [Products](xref:en/running-your-store/catalog/products/index)
-* [Catalog settings](xref:en/running-your-store/catalog/catalog-settings)
+* [Categories](xref:es/running-your-store/catalog/categories)
+* [Manufacturers](xref:es/running-your-store/catalog/manufacturers)
+* [Attributes](xref:es/running-your-store/catalog/products/product-attributes)
+* [Products](xref:es/running-your-store/catalog/products/index)
+* [Catalog settings](xref:es/running-your-store/catalog/catalog-settings)

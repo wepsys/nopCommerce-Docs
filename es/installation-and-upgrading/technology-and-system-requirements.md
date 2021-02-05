@@ -1,6 +1,6 @@
 ---
 title: Technology & system requirements
-uid: en/installation-and-upgrading/technology-and-system-requirements
+uid: es/installation-and-upgrading/technology-and-system-requirements
 author: git.AndreiMaz
 contributors: git.IvanIvanIvanov, git.rajupaladiya, git.exileDev, git.DmitriyKulagin
 ---

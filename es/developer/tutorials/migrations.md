@@ -1,6 +1,6 @@
 ---
 title: How do migrations work?
-uid: en/developer/tutorials/migrations
+uid: es/developer/tutorials/migrations
 author: git.AndreiMaz
 contributors: git.skoshelev
 ---
@@ -36,7 +36,7 @@ Y para resolver el último problema, tenemos que lidiar con el segundo marco del
 > [!NOTE]
 > Fluent Migrator es un marco de migración para .NET muy parecido a Ruby on Rails Migrations. *Las migraciones* son una forma estructurada de alterar el esquema de su base de datos y son una alternativa a la creación de muchos scripts SQL que deben ser ejecutados manualmente por cada desarrollador involucrado. Las migraciones resuelven el problema de desarrollar un esquema de base de datos para múltiples bases de datos (por ejemplo, base de datos local del desarrollador, base de datos de prueba y base de datos de producción). Los cambios en el esquema de la base de datos se describen en clases escritas en C #. Estas clases se pueden registrar en un sistema de control de versiones.
 
-El plan detallado para agregar sus entidades se describe en el siguiente artículo: [Complemento con acceso a datos](xref:en/developer/plugins/how-to-write-plugin-4.30). Por lo tanto, nos quedaremos solo en puntos teóricos generales:
+El plan detallado para agregar sus entidades se describe en el siguiente artículo: [Complemento con acceso a datos](xref:es/developer/plugins/how-to-write-plugin-4.30). Por lo tanto, nos quedaremos solo en puntos teóricos generales:
 
 1. Las migraciones se admiten a nivel del código nopCommerce en sí.
 1. Puede crear cualquier migración heredada de la clase abstracta **MigrationBase**.

@@ -1,13 +1,13 @@
 ---
 title: Customer roles
-uid: en/running-your-store/customer-management/customer-roles
+uid: es/running-your-store/customer-management/customer-roles
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp, git.mariannk
 ---
 
 # Roles de los clientes
 
-Los roles de los clientes en nopCommerce le permiten formar grupos de usuarios de su tienda web. Puedes crear varios grupos como administradores de la tienda, compradores, [vendedores](xref:en/running-your-store/vendor-management), y otros. También puede conceder a estos grupos ciertos derechos, como descuentos en los precios y otros estatus especiales (como exención de impuestos, envío gratuito y más) utilizando la [lista de control de acceso](xref:es/running-your-store/customer-management/access-control-list).
+Los roles de los clientes en nopCommerce le permiten formar grupos de usuarios de su tienda web. Puedes crear varios grupos como administradores de la tienda, compradores, [vendedores](xref:es/running-your-store/vendor-management), y otros. También puede conceder a estos grupos ciertos derechos, como descuentos en los precios y otros estatus especiales (como exención de impuestos, envío gratuito y más) utilizando la [lista de control de acceso](xref:es/running-your-store/customer-management/access-control-list).
 
 Para gestionar los roles de los clientes vaya a **Customers → Customer roles**. La ventana *Roles de los clientes* se muestra de la siguiente manera:
 

@@ -1,6 +1,6 @@
 ---
 title: Managing customers
-uid: en/running-your-store/customer-management/managing-customers
+uid: es/running-your-store/customer-management/managing-customers
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.mariannk
 ---
@@ -14,13 +14,13 @@ La lista de clientes contiene los detalles de todos los clientes existentes, as�
 Para buscar clientes, en la ventana *Clientes* introduzca uno o más de los siguientes criterios de búsqueda:
 
 - **Email**.
-- **Username**, if enabled in the [customer settings](xref:en/running-your-store/customer-management/customer-settings).
+- **Username**, if enabled in the [customer settings](xref:es/running-your-store/customer-management/customer-settings).
 - **First name**.
 - **Last name**.
-- **Date of birth**, if enabled in the [customer settings](xref:en/running-your-store/customer-management/customer-settings).
-- **Company**, if enabled in the [customer settings](xref:en/running-your-store/customer-management/customer-settings).
-- **Phone**, if enabled in the [customer settings](xref:en/running-your-store/customer-management/customer-settings).
-- **Zip code**, if enabled in the [customer settings](xref:en/running-your-store/customer-management/customer-settings).
+- **Date of birth**, if enabled in the [customer settings](xref:es/running-your-store/customer-management/customer-settings).
+- **Company**, if enabled in the [customer settings](xref:es/running-your-store/customer-management/customer-settings).
+- **Phone**, if enabled in the [customer settings](xref:es/running-your-store/customer-management/customer-settings).
+- **Zip code**, if enabled in the [customer settings](xref:es/running-your-store/customer-management/customer-settings).
 - **Dirección IP**.
 - **Roles de los clientes** - puede seleccionar uno o más roles de clientes para ser mostrados.
 
@@ -59,7 +59,7 @@ Haga clic en el botón **Guardar** para guardar los cambios o haga clic en el bo
 También verá los botones **Enviar correo electrónico**, **Enviar mensaje privado** (si [foros](xref:es/ejecución de su tienda/gestión de contenidos/foros) está activado) y **Borrar**.
 ![Buttons](_static/managing-customers/edit_customer_details.png)
 
-Después de hacer clic en el botón **Enviar correo electrónico**, se mostrará la ventana *Enviar correo electrónico* que permite al propietario de la tienda enviar un correo electrónico al cliente. Después de hacer clic en el botón **Enviar mensaje privado** se mostrará la ventana *Enviar mensaje privado* que permite enviar un mensaje al cliente. Para utilizar la mensajería privada, permita los mensajes privados en [forum settings](xref:en/running-your-store/content-management/forums). 
+Después de hacer clic en el botón **Enviar correo electrónico**, se mostrará la ventana *Enviar correo electrónico* que permite al propietario de la tienda enviar un correo electrónico al cliente. Después de hacer clic en el botón **Enviar mensaje privado** se mostrará la ventana *Enviar mensaje privado* que permite enviar un mensaje al cliente. Para utilizar la mensajería privada, permita los mensajes privados en [forum settings](xref:es/running-your-store/content-management/forums). 
 
 ## Ordenes
 En el panel de "Pedidos" puede ver los detalles de los pedidos de los clientes.
@@ -75,7 +75,7 @@ Haga clic en el botón **Añadir nueva dirección** para añadir una nueva direc
 En el panel de *Carro de la compra actual y lista de deseos* puedes ver el carro de la compra y la lista de deseos del cliente.
 
 ## Registro de actividad
-En el panel *Registro de actividad* puede ver el registro de actividad del cliente. Vea cómo gestionar las clases de actividad en el [Activity log - Activity types](xref:en/running-your-store/customer-management/activity-log#activity-types) section.
+En el panel *Registro de actividad* puede ver el registro de actividad del cliente. Vea cómo gestionar las clases de actividad en el [Activity log - Activity types](xref:es/running-your-store/customer-management/activity-log#activity-types) section.
 
 ## Hacer el pedido (imitar)
 En el panel de *Place order (suplantar)* los dueños de las tiendas pueden crear pedidos para sus clientes sin tener que tener la información de la contraseña. Esto es útil para los clientes que no quieren registrarse, o para los sitios grandes que usan CSR para hacer pedidos por teléfono. 
@@ -102,8 +102,8 @@ En este panel:
 
 ## Ver también
 
-- [Customer roles](xref:en/running-your-store/customer-management/customer-roles)
-- [Vendors](xref:en/running-your-store/vendor-management)
+- [Customer roles](xref:es/running-your-store/customer-management/customer-roles)
+- [Vendors](xref:es/running-your-store/vendor-management)
 
 ## Tutorials
 

@@ -1,81 +1,81 @@
 ---
 title: Specification attributes
-uid: en/running-your-store/catalog/products/specification-attributes
+uid: es/running-your-store/catalog/products/specification-attributes
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.mariannk
 ---
 
 # Specification attributes
 
-Specification attributes are similar to [product attributes](xref:en/running-your-store/catalog/products/product-attributes), however, they are only used for information purposes (visible on the product details page) and for filtering products on the category details page. They don't define a product price as well as can't be used for the inventory tracking.
+Los atributos de especificación son similares a los [atributos del producto](xref:es/running-your-store/catalog/products/product-attributes), sin embargo, sólo se utilizan con fines informativos (visibles en la página de detalles del producto) y para filtrar productos en la página de detalles de la categoría. No definen el precio del producto ni pueden utilizarse para el seguimiento del inventario.
 
-## Example
-Let's say you are running an online computer store. What helps a customer to make a decision? 
+## Ejemplo
+Supongamos que tiene una tienda de informática online. ¿Qué ayuda a un cliente a tomar una decisión? 
 
-- Provide a customer full and descriptive information about your products. Despite you fill the short and full description of the certain computer, allow the customer to see the product's characteristic where reflected it's most important details: 
+- Proporcionar a un cliente información completa y descriptiva sobre sus productos. A pesar de que usted llene la descripción corta y completa de la computadora determinada, permitir que el cliente vea la característica del producto donde se reflejan sus detalles más importantes: 
 	![Specification attributes](_static/specification-attributes/specs.jpg)
 
-	This table can be displayed on the product details page if you select the **Show on product page** field when [adding a specification attribute to a product](xref:en/running-your-store/catalog/products/add-products#specification-attributes).
+	Esta tabla puede mostrarse en la página de detalles del producto si selecciona el campo **Mostrar en la página del producto** cuando [adding a specification attribute to a product](xref:es/running-your-store/catalog/products/add-products#specification-attributes).
 
-- Allow your customers to search computers using the filter functionality. Let's say we can search in your store by color, screensize, CPU type and memory. Then the category page will look the following way:
+- Permita a sus clientes buscar ordenadores utilizando la función de filtro. Digamos que podemos buscar en su tienda por color, tamaño de pantalla, tipo de CPU y memoria. Entonces la página de la categoría tendrá el siguiente aspecto:
 	![Filtering](_static/specification-attributes/filter.jpg)
 
-	Select the **Allow filtering** field when [adding a specification attribute to a product](xref:en/running-your-store/catalog/products/add-products#specification-attributes) to allow filtering by this attribute for the certain product.
+	Select the **Allow filtering** field when [adding a specification attribute to a product](xref:es/running-your-store/catalog/products/add-products#specification-attributes) to allow filtering by this attribute for the certain product.
 
-- Include the "Compare products" functionality in your store. This feature is also uses specification attributes. For your computer store the "Compare products" page will look the following way:
+- Incluya la funcionalidad "Comparar productos" en su tienda. Esta función también utiliza atributos de especificación. Para su tienda de informática, la página "Comparar productos" tendrá el siguiente aspecto:
 	![Compare products](_static/specification-attributes/compare.jpg)
 
-	To enable the "Compare products" functionality go to **Configuration → Settings → Catalog settings**. In the *Compare products* panel tick the **'Compare products' enabled** checkbox.
+	Para activar la funcionalidad "Comparar productos" vaya a **Configuración → Ajustes → Ajustes del catálogo**. En el panel *Comparar productos* marque la casilla **'Comparar productos' habilitada**.
 
-The next section describes how to create specification attributes. Note that after creating a list of specification attributes you will need to add the specification attributes to the products one by one. Learn how add specification attributes to products in the [Add products - Specification attributes](xref:en/running-your-store/catalog/products/add-products#specification-attributes) section.
+La siguiente sección describe cómo crear atributos de especificación. Tenga en cuenta que después de crear una lista de atributos de especificación tendrá que añadir los atributos de especificación a los productos uno por uno. Aprenda a añadir atributos de especificación a los productos en la sección [Añadir productos - Atributos de especificación](xref:es/running-your-store/catalog/products/add-products#specification-attributes) section.
 
-## Create a specification attribute
+## Crear un atributo de especificación
 
-> [!NOTE]
+> [!NOTA]
 > 
-> By default, there are no specification attributes pre-created in nopCommerce.
+> Por defecto, no hay atributos de especificación precreados en nopCommerce.
 
-To see and edit a list of specification attributes, go to **Catalog → Attributes → Specification attributes**.
+Para ver y editar una lista de atributos de especificación, vaya a **Catálogo → Atributos → Atributos de especificación**.
 
 ![Specification attributes](_static/specification-attributes/specification_attributes.jpg)
 
-On this page you can delete specification attributes by selecting them and then clicking the **Delete(selected)** button.
+En esta página puede eliminar los atributos de las especificaciones seleccionándolos y haciendo clic en el botón **Borrar(seleccionado)**.
 
-Click **Add new** to add a new attribute. The *Add a new specification attribute* window is displayed, as follows:
+Haga clic en **Añadir nuevo** para añadir un nuevo atributo. Aparece la ventana *Añadir un nuevo atributo de especificación*, como se indica a continuación:
 
 ![Add new](_static/specification-attributes/new-attribute.jpg)
 
-In the *Attribute info* panel, enter:
-- The **Name** of the specification attribute.
-- The **Display order** number.
+En el panel *Información del atributo*, introduzca:
+- El **Nombre** del atributo de especificación.
+- El **número de orden de visualización**.
 
-Click **Save and continue edit** to proceed to the *Options* editing panel. 
+Haga clic en **Guardar y continuar editando** para pasar al panel de edición de *Opciones*. 
 
-### Add a new option
+### Añadir una nueva opción
 
-Click the **Add a new option** button in the *Options* panel to create a new specification attribute option. The *Add a new option* window will be displayed, as follows:
+Haga clic en el botón **Añadir una nueva opción** del panel *Opciones* para crear una nueva opción de atributo de especificación. Aparecerá la ventana *Añadir una nueva opción*, como se indica a continuación:
 
 ![Add a new option](_static/specification-attributes/add_a_new_option.jpg)
 
-Define the following option settings:
-- The **Name** of the specification attribute option.
-- Tick the **Specify color** checkbox to choose color to be used instead of an option text name (it'll be displayed as a "color square").
-	- Choose the **RGB color** which will be displayed to customers.
-- The **Display order** number.
+Defina las siguientes opciones:
+- El **Nombre** de la opción del atributo de especificación.
+- Marque la casilla **Especificar color** para elegir el color que se utilizará en lugar del nombre del texto de la opción (se mostrará como un "cuadrado de color").
+	- Elija el **color RGB** que se mostrará a los clientes.
+- El **número de pedido**.
 
-Click **Save** to save the option details.
+Haga clic en **Guardar** para guardar los detalles de la opción.
 
 The following screenshot shows the already added options:
 ![Options](_static/specification-attributes/options.jpg)
 
-### Used by products
+### Utilizado por los productos
 
-If you applied the specification attribute to products you can see the list of these products in the *Used by products* panel:
+Si ha aplicado el atributo de especificación a los productos, puede ver la lista de estos productos en el panel *Usado por los productos*.:
 
 ![Used by products](_static/specification-attributes/used-by.jpg)
 
 ## See also
 
-- [Adding products](xref:en/running-your-store/catalog/products/add-products)
-- [Product attributes](xref:en/running-your-store/catalog/products/product-attributes)
-- [YouTube tutorial: Managing Specification Attributes](https://www.youtube.com/watch?v=YmD_vHqWzQw&index=11&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)
+- [Añadir productos](xref:es/running-your-store/catalog/products/add-products)
+- [Atributos del producto](xref:es/running-your-store/catalog/products/product-attributes)
+- [Tutorial de YouTube: Gestión de los atributos de las especificaciones](https://www.youtube.com/watch?v=YmD_vHqWzQw&index=11&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)

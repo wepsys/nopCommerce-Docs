@@ -1,6 +1,6 @@
 ---
 title: Product attributes
-uid: en/running-your-store/catalog/products/product-attributes
+uid:es/running-your-store/catalog/products/product-attributes
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.mariannk
 ---

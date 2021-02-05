@@ -1,6 +1,6 @@
 ---
 title: Blog
-uid: en/running-your-store/content-management/blog
+uid: es/running-your-store/content-management/blog
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp, git.mariannk
 ---
@@ -37,7 +37,7 @@ En el panel *Info* define los siguientes detalles de la entrada del blog:
 - Elija las tiendas en el campo **Limitado a las tiendas** para habilitar esta entrada del blog sólo para tiendas específicas. Deje el campo vacío en caso de que esta funcionalidad no sea necesaria.
   > [!NOTE]
   >
-	> Para poder utilizar esta función, debe desactivar la siguiente configuración: **Configuración del catálogo → Ignorar las reglas de "límite por tienda" (en todo el sitio)**. Lea más sobre la funcionalidad de multi-tienda [here](xref:en/getting-started/advanced-configuration/multi-store).
+	> Para poder utilizar esta función, debe desactivar la siguiente configuración: **Configuración del catálogo → Ignorar las reglas de "límite por tienda" (en todo el sitio)**. Lea más sobre la funcionalidad de multi-tienda [here](xref:es/getting-started/advanced-configuration/multi-store).
 
 Mientras edita una entrada de blog existente o después de hacer clic en el botón **Guardar y continuar editando** para una nueva, puede hacer clic en el botón **Previsión** en la parte superior derecha para ver cómo la entrada del blog aparecerá en el sitio.
 
@@ -63,7 +63,7 @@ También puedes editar o eliminar un comentario del blog. Si lo borra, este come
 
 Puede gestionar los ajustes del blog en **Configuración → Ajustes → Ajustes del blog**. Esta página está disponible en 2 modos: *avanzado* y *básico*.
 
-Esta página permite la configuración de varias tiendas, lo que significa que se pueden definir los mismos ajustes para todas las tiendas, o diferir de una tienda a otra. Si desea gestionar la configuración de una tienda determinada, elija su nombre en la lista desplegable de configuración de varias tiendas y marque todas las casillas de verificación necesarias en el lado izquierdo para establecer un valor personalizado para ellas. Para obtener más detalles, consulte [Multi-store](xref:en/getting-started/advanced-configuration/multi-store).
+Esta página permite la configuración de varias tiendas, lo que significa que se pueden definir los mismos ajustes para todas las tiendas, o diferir de una tienda a otra. Si desea gestionar la configuración de una tienda determinada, elija su nombre en la lista desplegable de configuración de varias tiendas y marque todas las casillas de verificación necesarias en el lado izquierdo para establecer un valor personalizado para ellas. Para obtener más detalles, consulte [Multi-store](xref:es/getting-started/advanced-configuration/multi-store).
 
 ![Blog settings](_static/blog/Blog-Setting.png)
 
@@ -87,4 +87,4 @@ Haga clic en **Guardar**.
 
 > [!NOTE]
 >
-> Puedes habilitar el CAPTCHA para los comentarios del blog por motivos de seguridad. Para obtener más información, vaya a la página [CAPTCHA](xref:en/getting-started/advanced-configuration/security-settings#captcha) section.
+> Puedes habilitar el CAPTCHA para los comentarios del blog por motivos de seguridad. Para obtener más información, vaya a la página [CAPTCHA](xref:es/getting-started/advanced-configuration/security-settings#captcha) section.

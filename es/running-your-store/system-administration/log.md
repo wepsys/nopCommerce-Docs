@@ -1,6 +1,6 @@
 ﻿---
 title: Log
-uid: en/running-your-store/system-administration/log
+uid: es/running-your-store/system-administration/log
 author: git.AndreiMaz
 contributors: git.exileDev, git.mariannk
 ---

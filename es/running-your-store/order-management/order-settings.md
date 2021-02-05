@@ -1,6 +1,6 @@
 ---
 title: Order settings
-uid: en/running-your-store/order-management/order-settings
+uid: es/running-your-store/order-management/order-settings
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 ---
@@ -9,7 +9,7 @@ contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 
 Para definir los ajustes del orden, vaya a **Configuración → Ajustes → Ajustes del orden**. Aparecerá la ventana *Configuración del pedido*. 
 
-Esta página permite la configuración de varias tiendas, lo que significa que se pueden definir los mismos ajustes para todas las tiendas o que pueden ser diferentes de una tienda a otra. Si desea administrar la configuración de una tienda determinada, elija su nombre en la lista desplegable de configuración de varias tiendas y marque todas las casillas de verificación necesarias en el lado izquierdo para establecer un valor personalizado para ellas. Para obtener más detalles, consulte [Multi-store](xref:en/getting-started/advanced-configuration/multi-store).
+Esta página permite la configuración de varias tiendas, lo que significa que se pueden definir los mismos ajustes para todas las tiendas o que pueden ser diferentes de una tienda a otra. Si desea administrar la configuración de una tienda determinada, elija su nombre en la lista desplegable de configuración de varias tiendas y marque todas las casillas de verificación necesarias en el lado izquierdo para establecer un valor personalizado para ellas. Para obtener más detalles, consulte [Multi-store](xref:es/getting-started/advanced-configuration/multi-store).
 
 En esta ventana se pueden definir los siguientes ajustes de orden:
 
@@ -57,7 +57,7 @@ Defina los siguientes ajustes en el panel de *Factura PDF*.:
 
 > [!TIP]
 >
-> Aprende a configurar el PDF en el [PDF settings](xref:en/getting-started/advanced-configuration/pdf-settings) chapter.
+> Aprende a configurar el PDF en el [PDF settings](xref:es/getting-started/advanced-configuration/pdf-settings) chapter.
 
 ## Tarjetas de regalo
 Defina los siguientes ajustes en el panel *Tarjetas de regalo*:
@@ -68,11 +68,11 @@ Defina los siguientes ajustes en el panel *Tarjetas de regalo*:
 * **Desactivar las tarjetas de regalo después de la eliminación de un pedido**, para desactivar las tarjetas de regalo relacionadas cuando se elimina un pedido.
 * **Borrar el historial de uso de tarjetas de regalo después de la cancelación de un pedido**, para borrar el historial de uso de tarjetas de regalo después de la cancelación de un pedido.
 
-En el panel *Configuración de las solicitudes de devolución* puede configurar las solicitudes de devolución. Para obtener más detalles, consulte el [Return request settings](xref:en/running-your-store/order-management/return-requests#return-request-settings) section.
+En el panel *Configuración de las solicitudes de devolución* puede configurar las solicitudes de devolución. Para obtener más detalles, consulte el [Return request settings](xref:es/running-your-store/order-management/return-requests#return-request-settings) section.
 ## Configuración de la solicitud de devolución
 
 ## Ver también
 
-* [Orders](xref:en/running-your-store/order-management/orders)
-* [Return requests](xref:en/running-your-store/order-management/return-requests)
-* [PDF settings](xref:en/getting-started/advanced-configuration/pdf-settings)
+* [Orders](xref:es/running-your-store/order-management/orders)
+* [Return requests](xref:es/running-your-store/order-management/return-requests)
+* [PDF settings](xref:es/getting-started/advanced-configuration/pdf-settings)

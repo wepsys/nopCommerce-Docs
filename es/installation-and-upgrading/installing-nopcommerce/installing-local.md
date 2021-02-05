@@ -1,6 +1,6 @@
 ﻿---
 title: Installing local
-uid: en/installation-and-upgrading/installing-nopcommerce/installing-local
+uid: es/installation-and-upgrading/installing-nopcommerce/installing-local
 author: git.AndreiMaz
 contributors: git.IvanIvanIvanov, git.mariannk
 ---

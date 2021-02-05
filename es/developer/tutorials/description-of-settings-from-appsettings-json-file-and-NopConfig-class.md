@@ -1,6 +1,6 @@
 ---
 title: Description settings from appsettings.json file and NopConfig and HostingConfig class
-uid: en/developer/tutorials/description-of-settings-from-appsettings-json-file-and-NopConfig-class
+uid: es/developer/tutorials/description-of-settings-from-appsettings-json-file-and-NopConfig-class
 author: git.nopsg
 contributors: git.nopsg, git.DmitriyKulagin
 ---

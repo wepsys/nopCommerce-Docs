@@ -1,6 +1,6 @@
 ﻿---
 title: Reports
-uid: en/running-your-store/reports
+uid: es/running-your-store/reports
 author: git.AndreiMaz
 contributors: git.exileDev, git.mariannk
 ---

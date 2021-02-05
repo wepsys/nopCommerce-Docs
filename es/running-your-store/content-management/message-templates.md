@@ -1,6 +1,6 @@
 ---
 title: Message templates
-uid: en/running-your-store/content-management/message-templates
+uid: es/running-your-store/content-management/message-templates
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 ---
@@ -25,7 +25,7 @@ If you have more than one language installed select the required **language tab*
 
 > [!TIP]
 > 
-> Por defecto, en el sistema sólo se utiliza el idioma inglés. Se pueden gestionar los idiomas en **Configuración → Idioma**. Lea más acerca de los idiomas en nopCommerce en el [Localization](xref:en/getting-started/advanced-configuration/localization) section.
+> Por defecto, en el sistema sólo se utiliza el idioma inglés. Se pueden gestionar los idiomas en **Configuración → Idioma**. Lea más acerca de los idiomas en nopCommerce en el [Localization](xref:es/getting-started/advanced-configuration/localization) section.
 
 Edite los detalles de la plantilla de mensajes de la siguiente manera:
 - Editar el **Sujeto** del mensaje. Puede incluir fichas en el asunto. Puede ver la lista con todas las fichas permitidas en la parte superior de la página.
@@ -38,7 +38,7 @@ Edite los detalles de la plantilla de mensajes de la siguiente manera:
 	
 > [!TIP]
 > 
-> Las cuentas de correo electrónico están configuradas en **Configuración → Cuentas de correo electrónico**. Lea más sobre esto en el [Emails accounts](xref:en/getting-started/email-accounts) section.
+> Las cuentas de correo electrónico están configuradas en **Configuración → Cuentas de correo electrónico**. Lea más sobre esto en el [Emails accounts](xref:es/getting-started/email-accounts) section.
 
 - Seleccione la opción **Está activo** para indicar que este mensaje debe ser enviado.
 - Marque la casilla de verificación **Enviar inmediatamente** si quiere que este correo electrónico se envíe inmediatamente.
@@ -47,7 +47,7 @@ Edite los detalles de la plantilla de mensajes de la siguiente manera:
 - Seleccione las tiendas en el campo **Limitado a tiendas** si la categoría se vende en tiendas específicas. Deje el campo vacío en caso de que esta funcionalidad no sea necesaria.
   > [!NOTE]
   >
-	> Para poder utilizar esta función, debe desactivar la siguiente configuración: **Configuración del catálogo → Ignorar las reglas de "límite por tienda" (en todo el sitio)**. Lea más sobre la funcionalidad de multi-tienda [here](xref:en/getting-started/advanced-configuration/multi-store).
+	> Para poder utilizar esta función, debe desactivar la siguiente configuración: **Configuración del catálogo → Ignorar las reglas de "límite por tienda" (en todo el sitio)**. Lea más sobre la funcionalidad de multi-tienda [here](xref:es/getting-started/advanced-configuration/multi-store).
 
 Click **Save**.
 
@@ -57,8 +57,8 @@ Click **Save**.
 
 ## See also
 
-- [Email accounts](xref:en/getting-started/email-accounts)
-- [Languages](xref:en/getting-started/advanced-configuration/localization)
+- [Email accounts](xref:es/getting-started/email-accounts)
+- [Languages](xref:es/getting-started/advanced-configuration/localization)
 
 ## Tutorials
 

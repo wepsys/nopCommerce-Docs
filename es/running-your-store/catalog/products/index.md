@@ -1,6 +1,6 @@
 ---
 title: Products
-uid: en/running-your-store/catalog/products/index
+uid: es/running-your-store/catalog/products/index
 author: git.AndreiMaz
 contributors: git.exileDev, git.dunaenko, git.mariannk
 ---
@@ -13,13 +13,13 @@ Adding products also includes some important internal settings, such as inventor
 
 Learn how to create products in nopCommerce in the following chapters:
 
-- [Adding products](xref:en/running-your-store/catalog/products/add-products)
-- [Product attributes](xref:en/running-your-store/catalog/products/product-attributes)
-- [Specification attributes](xref:en/running-your-store/catalog/products/specification-attributes)
-- [Downloadable products](xref:en/running-your-store/catalog/products/downloadable-products)
-- [Grouped products (variants)](xref:en/running-your-store/catalog/products/grouped-products-variants)
-- [Recurring products](xref:en/running-your-store/catalog/products/recurring-products)
-- [Rental products](xref:en/running-your-store/catalog/products/rental-products)
-- [Import/export](xref:en/running-your-store/catalog/products/import-export-products)
-- [Product tags](xref:en/running-your-store/catalog/products/product-tags)
-- [Product reviews](xref:en/running-your-store/catalog/products/product-reviews)
+- [Adding products](xref:es/running-your-store/catalog/products/add-products)
+- [Product attributes](xref:es/running-your-store/catalog/products/product-attributes)
+- [Specification attributes](xref:es/running-your-store/catalog/products/specification-attributes)
+- [Downloadable products](xref:es/running-your-store/catalog/products/downloadable-products)
+- [Grouped products (variants)](xref:es/running-your-store/catalog/products/grouped-products-variants)
+- [Recurring products](xref:es/running-your-store/catalog/products/recurring-products)
+- [Rental products](xref:es/running-your-store/catalog/products/rental-products)
+- [Import/export](xref:es/running-your-store/catalog/products/import-export-products)
+- [Product tags](xref:es/running-your-store/catalog/products/product-tags)
+- [Product reviews](xref:es/running-your-store/catalog/products/product-reviews)

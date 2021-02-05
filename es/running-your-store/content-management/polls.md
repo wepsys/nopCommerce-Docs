@@ -1,6 +1,6 @@
 ---
 title: Polls
-uid: en/running-your-store/content-management/polls
+uid: es/running-your-store/content-management/polls
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---

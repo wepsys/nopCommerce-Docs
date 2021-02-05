@@ -1,6 +1,6 @@
 ---
 title: Installing on Microsoft Azure
-uid: en/installation-and-upgrading/installing-nopcommerce/installing-on-microsoft-azure
+uid: es/installation-and-upgrading/installing-nopcommerce/installing-on-microsoft-azure
 author: git.AndreiMaz
 contributors: git.skoshelev, git.DmitriyKulagin, git.exileDev, git.ivkadp, git.mariannk
 ---

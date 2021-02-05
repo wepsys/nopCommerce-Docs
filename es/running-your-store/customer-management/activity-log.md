@@ -1,6 +1,6 @@
 ---
 title: Activity log
-uid: en/running-your-store/customer-management/activity-log
+uid: es/running-your-store/customer-management/activity-log
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git., git.exileDev, git.dunaenko, git.mariannk
 ---

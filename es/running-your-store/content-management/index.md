@@ -1,6 +1,6 @@
 ---
 title: Content management
-uid: en/running-your-store/content-management/index
+uid: es/running-your-store/content-management/index
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 ---
@@ -11,11 +11,11 @@ La gestión de contenidos es un conjunto de procesos y tecnologías que apoyan l
 
 ## Más información
 
-- [Blog](xref:en/running-your-store/content-management/blog)
-- [News](xref:en/running-your-store/content-management/news)
-- [Forums](xref:en/running-your-store/content-management/forums)
-- [Polls](xref:en/running-your-store/content-management/polls)
-- [Topics (pages)](xref:en/running-your-store/content-management/topics-pages)
-- [Message templates](xref:en/running-your-store/content-management/message-templates)
-- [SEO](xref:en/running-your-store/search-engine-optimization)
-- [Email campaigns](xref:en/running-your-store/promotional-tools/email-campaigns)
+- [Blog](xref:es/running-your-store/content-management/blog)
+- [News](xref:es/running-your-store/content-management/news)
+- [Forums](xref:es/running-your-store/content-management/forums)
+- [Polls](xref:es/running-your-store/content-management/polls)
+- [Topics (pages)](xref:es/running-your-store/content-management/topics-pages)
+- [Message templates](xref:es/running-your-store/content-management/message-templates)
+- [SEO](xref:es/running-your-store/search-engine-optimization)
+- [Email campaigns](xref:es/running-your-store/promotional-tools/email-campaigns)

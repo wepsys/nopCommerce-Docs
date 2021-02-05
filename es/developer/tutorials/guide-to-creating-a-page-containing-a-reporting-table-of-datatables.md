@@ -1,6 +1,6 @@
 ﻿---
 title: Guide to creating a page containing a c 
-uid: en/developer/tutorials/guide-to-creating-a-page-containing-a-reporting-table-of-datatables
+uid: es/developer/tutorials/guide-to-creating-a-page-containing-a-reporting-table-of-datatables
 author: nop.sea
 contributors: git.RomanovM, git.DmitriyKulagin
 ---
@@ -9,7 +9,7 @@ contributors: git.RomanovM, git.DmitriyKulagin
 
 En este tutorial aprenderemos sobre cómo extender la funcionalidad de nopCommerce con funcionalidad personalizada para el panel de administración y crear una página que contenga una tabla con algunos datos como informe. Entonces, antes de comenzar con este tutorial, debe tener algunos conocimientos y comprensión previos sobre algunos de los temas como.
 
-* [arquitectura nopCommerce](xref:en/developer/tutorials/source-code-organization).
+* [arquitectura nopCommerce](xref:es/developer/tutorials/source-code-organization).
 * plugin nopCommerce.
 * Enrutamiento nopCommerce.
 
@@ -19,7 +19,7 @@ Entonces, en este tutorial crearemos un plugin con una página que contiene la t
 
 ## Crea un proyecto de plugin nopCommerce
 
-Supongo que ya sabe dónde y cómo crear el proyecto de plugin nopCommerce y configurar el proyecto de acuerdo con el estándar nopCommerce. Si no lo sabe, puede visitar el enlace [esta_página](xref:en/developer/plugins/how-to-write-plugin-4.30) para saber cómo crear y configurar el proyecto de plugin nopCommerce.
+Supongo que ya sabe dónde y cómo crear el proyecto de plugin nopCommerce y configurar el proyecto de acuerdo con el estándar nopCommerce. Si no lo sabe, puede visitar el enlace [esta_página](xref:es/developer/plugins/how-to-write-plugin-4.30) para saber cómo crear y configurar el proyecto de plugin nopCommerce.
 
 Si ha seguido el enlace proporcionado anteriormente para crear y configurar su proyecto de plugin, puede terminar con la estructura de carpetas como esta.
 
@@ -275,7 +275,7 @@ public class RouteProvider : IRouteProvider
 }
 ```
 
-Para obtener más información sobre el enrutamiento de nopCommerce, visite [esta página](xref:en/developer/tutorials/register-new-routes)
+Para obtener más información sobre el enrutamiento de nopCommerce, visite [esta página](xref:es/developer/tutorials/register-new-routes)
 
 Ahora solo cree su proyecto y ejecútelo. Inicie sesión como usuario administrativo y vaya al menú LocalPlugins en Configuración, allí verá su plugin recién creado. Instale ese plugin. Una vez completada la instalación, verá un botón de configuración en su plugin. Si ha seguido correctamente este tutorial, verá un resultado como:
 

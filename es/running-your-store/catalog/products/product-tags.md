@@ -1,6 +1,6 @@
 ---
 title: Product tags
-uid: en/running-your-store/catalog/products/product-tags
+uid: es/running-your-store/catalog/products/product-tags
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.mariannk
 ---
@@ -28,9 +28,9 @@ Enter tags separating them by comma. Once the tags are created, they can be used
 
 ## Setting up product tags
 
-The following section describes product tags settings: [Tags](xref:en/running-your-store/catalog/catalog-settings#tags).
+The following section describes product tags settings: [Tags](xref:es/running-your-store/catalog/catalog-settings#tags).
 
 ## See also
 
-* [Product categories](xref:en/running-your-store/catalog/categories)
-* [Adding products](xref:en/running-your-store/catalog/products/add-products)
+* [Product categories](xref:es/running-your-store/catalog/categories)
+* [Adding products](xref:es/running-your-store/catalog/products/add-products)

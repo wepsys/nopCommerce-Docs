@@ -1,6 +1,6 @@
 ---
 title: Installing nopCommerce
-uid: en/installation-and-upgrading/installing-nopcommerce/index
+uid: es/installation-and-upgrading/installing-nopcommerce/index
 author: git.AndreiMaz
 contributors: git.rajupaladiya, git.exileDev, git.DmitriyKulagin, git.IvanIvanIvanov
 ---
@@ -15,4 +15,4 @@ Elige una de las siguientes opciones:
 - [Instalación en Windows](xref:es/instalación-y-actualización/instalación-nopcommerce/instalación-en-windows)
 - [Instalación en Microsoft Azure](xref:es/installation-and-upgrade/installation-nopcommerce/install-on-microsoft-azure)
 - [Instalación en Linux](xref:es/installation-and-upgrade/installation-nopcommerce/install-on-linux)
-- [NopCommerce preinstalado](xref:en/installation-and-upgrade/installation-nopcommerce/pre-installed-nopcommerce)
+- [NopCommerce preinstalado](xref:es/installation-and-upgrade/installation-nopcommerce/pre-installed-nopcommerce)

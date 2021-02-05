@@ -1,6 +1,6 @@
 ---
 title: Installing on Linux
-uid: en/installation-and-upgrading/installing-nopcommerce/installing-on-linux
+uid: es/installation-and-upgrading/installing-nopcommerce/installing-on-linux
 author: git.AndreiMaz
 contributors: git.skoshelev
 ---

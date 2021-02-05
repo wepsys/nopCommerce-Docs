@@ -1,6 +1,6 @@
 ---
 title: Forums
-uid: en/running-your-store/content-management/forums
+uid: es/running-your-store/content-management/forums
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 ---
@@ -47,7 +47,7 @@ To view an example of how forums should work go to <http://www.nopcommerce.com/b
 
 Para acceder a la configuración del foro vaya a **Configuración → Configuración → Configuración del foro**. Esta página está disponible en 2 modos: *avanzado* y *básico*.
 
-Esta página permite la configuración de varias tiendas, lo que significa que se puede definir la misma configuración para todas las tiendas, o diferir de una tienda a otra. Si desea gestionar la configuración de una tienda determinada, elija su nombre en la lista desplegable de configuración de varias tiendas y marque todas las casillas de verificación necesarias en el lado izquierdo para establecer un valor personalizado para ellas. Para obtener más detalles, consulte [Multi-store](xref:en/getting-started/advanced-configuration/multi-store).
+Esta página permite la configuración de varias tiendas, lo que significa que se puede definir la misma configuración para todas las tiendas, o diferir de una tienda a otra. Si desea gestionar la configuración de una tienda determinada, elija su nombre en la lista desplegable de configuración de varias tiendas y marque todas las casillas de verificación necesarias en el lado izquierdo para establecer un valor personalizado para ellas. Para obtener más detalles, consulte [Multi-store](xref:es/getting-started/advanced-configuration/multi-store).
 
 ### Common
 ![Common settings](_static/forums/common.jpg)

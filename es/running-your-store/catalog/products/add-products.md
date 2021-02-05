@@ -1,79 +1,85 @@
 ---
 title: Add products
-uid: en/running-your-store/catalog/products/add-products
+uid: es/running-your-store/catalog/products/add-products
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.sanju741, git.exileDev, git.IvanIvanIvanov, git.mariannk
 ---
 
-# Add products
+# Añadir productos
 
-Setting up products in the best way possible is highly important for a store. Make sure to not miss any detail, such as displaying different size and color options, giving a thorough product description, adding appealing pictures, etc.
+Configurar los productos de la mejor manera posible es muy importante para una tienda. Asegúrese de no perder ningún detalle, como mostrar diferentes opciones de tamaño y color, dar una descripción completa del producto, añadir imágenes atractivas, etc.
 
-To add a new product, go to **Catalog → Products**. Click **Add new** button in the right top corner.
+Para añadir un nuevo producto, vaya a **Catálogo → Productos**. Haz clic en el botón **Añadir nuevo** en la esquina superior derecha.
+
+Traducción realizada con la versión gratuita del traductor www.DeepL.com/Translator
 
 ![Products](_static/add-product-for-beginners/products.jpg)
 
 > [!NOTE]
 > 
-> You can import products from an external file by clicking the **Import** button. Once you have a list of products, you can export it to an external file for backup purposes, by clicking the **Export** button. After clicking the **Export** button you will see the dropdown menu enabling you to **Export to XML (all found)** or **Export to XML (selected)** and **Export to Excel (all found)** or **Export to Excel (selected)**. Additionally, it is possible to **Download catalog as PDF** to print the selected products to a PDF file. To remove products from the list, select the items to be deleted and click the **Delete (selected)** button.
+> Puede importar productos desde un archivo externo haciendo clic en el botón **Importar**. Una vez que tenga una lista de productos, puede exportarla a un archivo externo para realizar una copia de seguridad, haciendo clic en el botón **Exportar**. Después de hacer clic en el botón **Exportar** verá el menú desplegable que le permite **Exportar a XML (todos los encontrados)** o **Exportar a XML (seleccionado)** y **Exportar a Excel (todos los encontrados)** o **Exportar a Excel (seleccionado)**. Además, es posible **Descargar el catálogo como PDF** para imprimir los productos seleccionados en un archivo PDF. Para eliminar productos de la lista, seleccione los elementos que desea eliminar y haga clic en el botón **Borrar (seleccionado)**.
 
-*Add a new product* page is available in two modes: **advanced** and **basic** (in advanced mode by default). You can switch to the basic mode which displays the only required fields.
+La página **Añadir un nuevo producto* está disponible en dos modos: **avanzado** y **básico** (en modo avanzado por defecto). Puede cambiar al modo básico que muestra los únicos campos obligatorios.
+
+
 
 ![Add a new product](_static/add-product-for-beginners/add_a_new_product.png)
 
-You can also set up the *basic* mode to choose which exactly fields you want to be required. To do this click the **Settings** button beside the swith. The *Setting* popup will be displayed, as follows:
+También puede configurar el modo *básico* para elegir qué campos exactamente quiere que sean obligatorios. Para ello, haga clic en el botón **Configuración** situado al lado del swith. Aparecerá la ventana emergente *Configuración*, como se indica a continuación:
 
 ![Settings](_static/add-product-for-beginners/settings.jpg)
 
 Tick the needed fields and click **Save**. Note that the page will be refreshed in this case.
 
-## Product info
+## Información del producto
 
-Start by filling up general information in the *Product info* panel:
+Comience por rellenar la información general en el panel *Información del producto*:
 
-- Enter the **Product name**.
-- Enter the product **Short description** that will be displayed in the catalog.
-- Enter the product **Full description** that will be shown on the product details page. Here you can add text, bullet points, links, or additional images. Make sure to write a detailed description as it affects your buyers' decision making.
-- Enter the product **SKU**. This is the product stock keeping unit, used internally for tracking the product. This is your internal unique ID used to track this product.
-- **Categories**. You can assign a product to as many categories as you want. You can manage [product categories](xref:en/running-your-store/catalog/categories) in **Catalog → Categories**.
+- Introduzca el **nombre del producto**.
+- Introduzca la **descripción corta** del producto que se mostrará en el catálogo.
+- Introduzca la **descripción completa** del producto que se mostrará en la página de detalles del producto. Aquí puede añadir texto, viñetas, enlaces o imágenes adicionales. Asegúrese de escribir una descripción detallada, ya que afecta a la toma de decisiones de sus compradores.
+- Introduzca el **SKU** del producto. Esta es la unidad de mantenimiento de stock del producto, utilizada internamente para el seguimiento del producto. Este es su ID único interno utilizado para el seguimiento de este producto.
 
-- **Manufacturers**. You can assign a product to as many manufacturers as you want. You can manage [manufacturers](xref:en/running-your-store/catalog/manufacturers) in **Catalog → Manufacturers**.
+Traducción realizada con la versión gratuita del traductor www.DeepL.com/Translator
+- **Categories**. You can assign a product to as many categories as you want. You can manage [product categories](xref:es/running-your-store/catalog/categories) in **Catalog → Categories**.
 
-- Tick **Published**, to make the product visible in your store.
-- Enter the **Product tags**, the keywords for product identification. Enter tags separating them by comma. The more products are associated with a particular tag, the larger it will look in the *Popular tags* cloud, displayed in the sidebar of the catalog page. Read more how to manage product tags in the [Product tags](xref:en/running-your-store/catalog/products/product-tags) section.
+- **Fabricantes**. Puede asignar un producto a tantos fabricantes como desee. Puede gestionar [manufacturers](xref:es/running-your-store/catalog/manufacturers) in **Catalog → Manufacturers**.
+
+- Marque **Publicado**, para que el producto sea visible en su tienda.
+- Introduzca las **etiquetas del producto**, las palabras clave para la identificación del producto. Introduzca las etiquetas separándolas por comas. Cuantos más productos estén asociados a una etiqueta concreta, más grande será su aspecto en la nube de *Etiquetas populares*, que se muestra en la barra lateral de la página del catálogo. Read more how to manage product tags in the [Product tags](xref:es/running-your-store/catalog/products/product-tags) section.
   
   ![Popular tags](_static/add-product-for-beginners/popular_tags.png)
 
-- Enter the **GTIN (global trade item number)**. These identifiers include UPC (in North America), EAN (in Europe), JAN (in Japan), and ISBN (for Books).
-- Enter the **Manufacturer part number**. It's a part number provided by a manufacturer for the product.
-- Tick the **Show on homepage** checkbox to display this product on your store's home page. Recommended for your most popular products. If this checkbox is ticked, the store owner can also specify the **Display order** of the product. 1 represents the top of the list.
-- Set up the **Product type** as *Simple* or *Grouped*. Read more about product types in the [Grouped products (variants)](xref:en/running-your-store/catalog/products/grouped-products-variants) chapter.
-- The **Product template** field is visible if you have any custom product templates installed on the **Sysytem → Templates** page.
-- Tick **Visible individually** if you want the product to be in catalog or search results, otherwise the product will be hidden in the catalog and accessible only from a grouped product details page.
-- Choose **Customer roles** which will be able to see the product in the catalog. Leave this field empty if this option is not required and the product can be seen by everyone. 
+- Introduzca el **GTIN (número de artículo comercial global)**. Estos identificadores incluyen UPC (en Norteamérica), EAN (en Europa), JAN (en Japón) e ISBN (para libros).
+- Introduzca el **número de pieza del fabricante**. Es un número de pieza proporcionado por el fabricante para el producto.
+- Marque la casilla **Mostrar en la página de inicio** para mostrar este producto en la página de inicio de su tienda. Recomendado para sus productos más populares. Si esta casilla está marcada, el propietario de la tienda también puede especificar el **Orden de visualización** del producto. El 1 representa la parte superior de la lista.
+- Configure el **tipo de producto** como *Simple* o *Agrupado*. Lea más sobre los tipos de producto en el capítulo [Productos agrupados (variantes)](xref:es/running-your-store/catalog/products/grouped-products-variants).
+- El campo **Plantilla de producto** es visible si tiene alguna plantilla de producto personalizada instalada en la página **Sistema → Plantillas**.
+- Marque **Visible individualmente** si desea que el producto aparezca en el catálogo o en los resultados de la búsqueda; de lo contrario, el producto estará oculto en el catálogo y sólo será accesible desde una página de detalles de productos agrupados.
+- Elija **Roles de los clientes** que podrán ver el producto en el catálogo. Deje este campo vacío si esta opción no es necesaria y el producto puede ser visto por todos. 
     > [!NOTE]
     >
-    > In order to use this functionality you have to disable the following setting: **Configuration → Catalog settings → Ignore ACL rules (sitewide)**. Read more about access control list [here](xref:en/running-your-store/customer-management/access-control-list).
-- Choose the stores in the **Limited to stores** field if the product is sold in specific stores. Leave the field empty in case this functionality is not required.
+    > Para utilizar esta funcionalidad, debe desactivar la siguiente configuración: **Configuración → Configuración del catálogo → Ignorar reglas ACL (sitewide)**. Más información sobre la lista de control de acceso [here](xref:es/running-your-store/customer-management/access-control-list).
+- Elija las tiendas en el campo **Limitado a tiendas** si el producto se vende en tiendas específicas. Deje el campo vacío en caso de que esta funcionalidad no sea necesaria.
   > [!NOTE]
   >
-	> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+	> Para poder utilizar esta funcionalidad, debe desactivar la siguiente configuración: **Configuración del catálogo → Ignorar reglas de "límite por tienda" (en todo el sitio)**. Más información sobre la funcionalidad multitienda [here](xref:es/getting-started/advanced-configuration/multi-store).
 
-- **Vendor**. You can manage [vendors](xref:en/running-your-store/vendor-management) in **Customers → Vendors**.
-- Define whether the product **Require other products**. In this case select the **Required product IDs** entering them separated by comma, ensure that there are no circular references, e.g. A requires B, B requires A. Chose to **Automatically add these products to the cart** if required.
-- Tick **Allow customer reviews**, to enable customers to review this product.
-- Define **Available start date** and/or **Available end date** of the product availability.
-- Tick **Mark as new**, to mark the product as recently added. This way you can manage a list of products displayed on the "New products" page. You can also specify a period during which this product will be marked as new using the **Mark as new. Start date** and **Mark as new. End date** fields.
-- In the **Admin comment** field enter a comment for information purposes. This comment is for internal use only, not visible for customers.
+- **Vendedor**. Puede gestionar [vendedores](xref:es/running-your-store/vendor-management) in **Customers → Vendors**. en **Clientes → Vendedores**.
+- Defina si el producto **Requiere otros productos**. En este caso seleccione los **Identificadores de productos requeridos** introduciéndolos separados por coma, asegúrese de que no hay referencias circulares, por ejemplo, A requiere B, B requiere A. Elija **Añadir automáticamente estos productos al carrito** si es necesario.
+- Marque **Permitir comentarios de los clientes**, para permitir que los clientes revisen este producto.
+- Definir **Fecha de inicio disponible** y/o **Fecha de finalización disponible** de la disponibilidad del producto.
+- Marque **Marcar como nuevo**, para marcar el producto como recientemente añadido. De este modo, podrá gestionar la lista de productos que se muestran en la página "Nuevos productos". También puede especificar un periodo durante el cual este producto se marcará como nuevo utilizando los campos **Mark as new. Fecha de inicio** y **Marca como nuevo. Fecha de finalización**.
+- En el campo **Comentario del administrador** introduzca un comentario a título informativo. Este comentario es sólo para uso interno, no es visible para los clientes.
 
-## Price
+## Pricio
 
-In the *Price* panel define:
+En el panel *Precios* defina:
 
 - **Price**, in a predefined currency.
     > [!NOTE]
     >
-    > You can change the store currency in **Configuration → Currencies**. Read more about currencies [here](xref:en/getting-started/configure-payments/advanced-configuration/currencies).
+    > You can change the store currency in **Configuration → Currencies**. Read more about currencies [here](xref:es/getting-started/configure-payments/advanced-configuration/currencies).
 
 - **Old price**. If it is larger than zero it becomes visible in the public store and is displayed beside the new price for comparison purposes.
 - **Product cost**, the sum of all costs associated with the production of the product or service. This is not displayed to customers.
@@ -89,14 +95,14 @@ In the *Price* panel define:
   - **Unit of product** - measure of a previously entered value.
   - **Reference amount** - the base amount.
   - **Reference unit** - measure of a previously entered value.
-- **Discounts**. Learn how to set up discounts [here](xref:en/running-your-store/promotional-tools/discounts).
+- **Discounts**. Learn how to set up discounts [here](xref:es/running-your-store/promotional-tools/discounts).
     > [!NOTE]
     >
     > If you want to use discounts make sure the **Ignore discounts (sitewide)** setting is disabled in the **Configuration → Settings → Catalog settings → Performance** panel.
 
 - Whether the product is exempted from tax, by ticking **Tax exempt**. Otherwise, from the **Tax category** dropdown list, select the required tax classification for this product. Tax categories can be configured by the store owner in  the **Configuration → Tax → Tax categories**.
 - The product as **Telecommunications, broadcasting, and electronic services**, to apply special tax rules used in the European Union.
-- Set up [tier prices](xref:en/running-your-store/promotional-tools/tier-prices) if required.
+- Set up [tier prices](xref:es/running-your-store/promotional-tools/tier-prices) if required.
 
 ## Shipping
 
@@ -118,23 +124,23 @@ Define product-specific shipping details in the *Shipping* panel:
 
 > [!NOTE]
 > 
-> There is **Estimate shipping enabled (product page)** setting which can be enabled on **Configuration → Settings → Shipping settings**. 
-> This setting allows to display estimate shipping information based on customer's shipping address in pop-up window on the product details page.
+> There is **Estimate shipping enabled (product page)** setting which can be enabled on **Configuration → Settings → Shipping ajustes**. 
+> Esta configuración permite mostrar la información de envío estimada basada en la dirección de envío del cliente en una ventana emergente en la página de detalles del producto.
 
 ## Inventory
 
-Define the inventory settings for the product as described [here](xref:en/running-your-store/order-management/inventory-management).
+Definir la configuración del inventario para el producto como se describe [here](xref:es/running-your-store/order-management/inventory-management).
 
 ## Pictures
 
-In the *Pictures* panel you can add the product pictures.
+En el panel *Imágenes* puede añadir las imágenes del producto.
 
-- In the *Add a new picture* area, click **Upload a file** to select a new picture you want to upload to your product page.
-- In the **Alt** field, enter a value for the "alt" attribute of "img" HTML element. If empty, then a default rule will be used (e.g. product name).
-- In the **Title** field, enter a value for the "title" attribute of "img" HTML element. If empty, then a default rule will be used (e.g. product name).
-- Define the **Display order** of the image on a product page. 1 represents the top of the list.
+- En el área *Añadir una nueva imagen*, haz clic en **Cargar un archivo** para seleccionar una nueva imagen que quieras subir a tu página de producto.
+- En el campo **Alt**, introduzca un valor para el atributo "alt" del elemento HTML "img". Si está vacío, se utilizará una regla por defecto (por ejemplo, el nombre del producto).
+- En el campo **Title**, introduzca un valor para el atributo "title" del elemento HTML "img". Si está vacío, se utilizará una regla por defecto (por ejemplo, el nombre del producto).
+- Defina el **Orden de visualización** de la imagen en una página de producto. El 1 representa la parte superior de la lista.
 
-Click **Add product picture** to save the picture.
+Haga clic en **Añadir imagen del producto** para guardar la imagen.
 
 > [!TIP]
 > 
@@ -142,7 +148,7 @@ Click **Add product picture** to save the picture.
 
 ## Product attributes 
 
-In the *Product attributes* panel you can add product attributes. Learn more about product attributes and how to create them [here](xref:en/running-your-store/catalog/products/product-attributes). 
+In the *Product attributes* panel you can add product attributes. Learn more about product attributes and how to create them [here](xref:es/running-your-store/catalog/products/product-attributes). 
 
 ![Product attributes](_static/add-product-for-beginners/product_attributes2.png)
 
@@ -160,7 +166,7 @@ Set up a new attribute:
 - Define the **Control type** for this attribute (e.g. dropdown list, radio button list, etc.).
     > [!NOTE]
     > 
-    > For the "Date picker" control type, it is possible to set a number of years to be displayed by using **catalogsettings.countdisplayedyearsdatepicker** parameter on the *All settings (advanced)* page. For example, if you set zero then only current year will be displayed. If you set 5 then current year and the next 5 years will be displayed. Read how to set this up on the [All settings](xref:en/getting-started/advanced-configuration/all-settings) page. 
+    > For the "Date picker" control type, it is possible to set a number of years to be displayed by using **catalogsettings.countdisplayedyearsdatepicker** parameter on the *All settings (advanced)* page. For example, if you set zero then only current year will be displayed. If you set 5 then current year and the next 5 years will be displayed. Read how to set this up on the [All settings](xref:es/getting-started/advanced-configuration/all-settings) page. 
 
 - Define the **Display order** of the attribute on a product page. 1 represents the top of the list.
 
@@ -241,7 +247,7 @@ To generate all possible combinations use the **Generate all possible combinatio
 
 ## Specification attributes
 
-Specification attributes are product features i.e, screen size, number of USB-ports visible on product details page. Specification attributes can be used for filtering products on the category details page. Read more about specification attributes [here](xref:en/running-your-store/catalog/products/specification-attributes).
+Specification attributes are product features i.e, screen size, number of USB-ports visible on product details page. Specification attributes can be used for filtering products on the category details page. Read more about specification attributes [here](xref:es/running-your-store/catalog/products/specification-attributes).
 
 > [!NOTE]
 >
@@ -272,10 +278,10 @@ Click **Save**.
 
 Define whether the product is a
 
-- [Gift card](xref:en/running-your-store/promotional-tools/gift-cards)
-- [Downloadable product](xref:en/running-your-store/catalog/products/downloadable-products)
-- [Rental](xref:en/running-your-store/catalog/products/rental-products)
-- [Recurring product](xref:en/running-your-store/catalog/products/recurring-products)
+- [Gift card](xref:es/running-your-store/promotional-tools/gift-cards)
+- [Downloadable product](xref:es/running-your-store/catalog/products/downloadable-products)
+- [Rental](xref:es/running-your-store/catalog/products/rental-products)
+- [Recurring product](xref:es/running-your-store/catalog/products/recurring-products)
 
 ## SEO
 
@@ -286,11 +292,11 @@ Define the following SEO parameters for the product page:
 - **Meta keywords** - a brief and concise list of the most important themes (keywords and key phrases) related to the product. These words will be added to the product page header.
 - **Meta description** - a brief description of the product that will be added to the product page header.
 
-Read more about SEO [here](xref:en/running-your-store/search-engine-optimization).
+Read more about SEO [here](xref:es/running-your-store/search-engine-optimization).
 
 ## Related products and cross-sells
 
-Set up related products and cross-sells as described [here](xref:en/running-your-store/promotional-tools/cross-sells-and-related-products).
+Set up related products and cross-sells as described [here](xref:es/running-your-store/promotional-tools/cross-sells-and-related-products).
 
 ## Purchased with orders
 
@@ -306,13 +312,13 @@ On this tab you can view all the product quantity changes, orders with the produ
 
 ## Setting up product page
 
-The following sections describes product page settings: [Product fields](xref:en/running-your-store/catalog/catalog-settings#product-fields), [Product page](xref:en/running-your-store/catalog/catalog-settings#product-page) and [Share](xref:en/running-your-store/catalog/catalog-settings#share).
+The following sections describes product page settings: [Product fields](xref:es/running-your-store/catalog/catalog-settings#product-fields), [Product page](xref:es/running-your-store/catalog/catalog-settings#product-page) and [Share](xref:es/running-your-store/catalog/catalog-settings#share).
 
 ## See also
 
-- [Product categories](xref:en/running-your-store/catalog/categories)
-- [Product manufacturers](xref:en/running-your-store/catalog/manufacturers)
-- [Order management](xref:en/running-your-store/order-management/index)
+- [Product categories](xref:es/running-your-store/catalog/categories)
+- [Product manufacturers](xref:es/running-your-store/catalog/manufacturers)
+- [Order management](xref:es/running-your-store/order-management/index)
 - [Webinar. First steps in nopCommerce](https://www.youtube.com/watch?v=B_CfgJH0ylM&list=PLnL_aDfmRHwsJn1rnKaXdIcJg4pKJeeXs)
 
 ## Tutorials

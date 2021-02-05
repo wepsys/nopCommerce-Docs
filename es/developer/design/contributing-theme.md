@@ -1,6 +1,6 @@
 ---
 title: Contributing a Theme
-uid: en/developer/design/contributing-theme
+uid: es/developer/design/contributing-theme
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---

@@ -1,64 +1,64 @@
 ---
 title: Product reviews
-uid: en/running-your-store/catalog/products/product-reviews
+uid: es/running-your-store/catalog/products/product-reviews
 author: git.AndreiMaz
 contributors: git.exileDev, git.DmitriyKulagin, git.dunaenko, git.mariannk
 ---
 
-# Product reviews
+# Reseñas de productos
 
-Product reviews are customers' comments on a product. Reviews can also include ratings.
+Las reseñas de productos son los comentarios de los clientes sobre un producto. Las reseñas también pueden incluir valoraciones.
 
-In the public store, reviews are displayed on the product details page. Customers can write reviews for different products. After a review has been written and approved by a store owner, other customers can define whether the review is helpful or not by clicking *Yes* or *No* beside the review.
+En la tienda pública, las opiniones se muestran en la página de detalles del producto. Los clientes pueden escribir reseñas para diferentes productos. Una vez que se ha escrito una opinión y ha sido aprobada por el propietario de la tienda, otros clientes pueden definir si la opinión es útil o no haciendo clic en *Sí* o *No* al lado de la opinión.
 
-> [!NOTE]
+> [!NOTA]
 > 
-> By default, the reviews must be approved by the store owner before they appear in the public store. However, in case a store owner decides that reviews do not have to be approved, this default behavior can be changed. To opt out of the obligatory product reviews approval, go to **Configuration → Settings → Catalog settings** and untick the **Product reviews must be approved** option.
+> Por defecto, las reseñas deben ser aprobadas por el propietario de la tienda antes de que aparezcan en la tienda pública. Sin embargo, en caso de que el propietario de la tienda decida que las reseñas no tienen que ser aprobadas, este comportamiento por defecto puede ser cambiado. Para optar por no aprobar obligatoriamente las reseñas de productos, vaya a **Configuración → Ajustes → Ajustes del catálogo** y desmarque la opción **Las reseñas de productos deben ser aprobadas**.
 
-## Managing product reviews
+## Gestión de las reseñas de productos
 
-To manage product reviews go to **Catalog → Product reviews**. The *Product reviews* window is displayed, as follows:
+Para gestionar las reseñas de productos vaya a **Catálogo → Reseñas de productos**. Aparecerá la ventana *Revisiones de productos*, como se indica a continuación:
 
 ![Managing product reviews](_static/product-reviews/product_reviews2.png)
 
-### Search for reviews
+### Búsqueda de reseñas
 
-You can search for reviews by:
-- Date range using the **Created from** and **Created to**. In the Created From and Created to fields, enter the date range for your search. Alternatively, you can click on the dropdown calendar and select the required date range.
-- **Message**. Can be used to find a review by the title or a part of its text.
-- **Approved**. Can be used to find a review by a "Approved" property.
-- **Product**. Sorts and shows the reviews related to a particular product.
-- **Store**. Allows to view all reviews of a particular store's products. This field is displayed if you have more than one store.
+Puede buscar reseñas por:
+- Rango de fechas utilizando los campos **Creado desde** y **Creado hasta**. En los campos Creado desde y Creado hasta, introduzca el intervalo de fechas para su búsqueda. También puede hacer clic en el calendario desplegable y seleccionar el intervalo de fechas deseado.
+- **Mensaje**. Se puede utilizar para encontrar una revisión por el título o una parte de su texto.
+- Aprobado**. Se puede utilizar para encontrar una revisión por una propiedad "Aprobada".
+- Producto**. Ordena y muestra las reseñas relacionadas con un producto en particular.
+- Tienda**. Permite ver todas las reseñas de los productos de una tienda en particular. Este campo se muestra si tiene más de una tienda.
 
-### Approve or disapprove
+### Aprobar o desaprobar
 
-Select the reviews you want to approve or disapprove and click the **Approve selected** button or the **Disapprove selected** button accordingly.
+Seleccione las reseñas que desea aprobar o desaprobar y haga clic en el botón **Aprobar seleccionados** o en el botón **Desaprobar seleccionados** según corresponda.
 
-## Editing product reviews
+## Editar reseñas de productos
 
-To edit the product review click **Edit** beside the review. The *Edit product review details* window will be displayed, as follows:
+Para editar la reseña del producto, haga clic en **Editar** junto a la reseña. Aparecerá la ventana *Editar detalles de la reseña del producto*, como se indica a continuación:
 
 ![Editing product reviews](_static/product-reviews/edit_product_review_details.png)
 
-- See the **Product** which this review was added for. After clicking on this field, you will be redirected to the edit product details window where you can edit the product details.
-- See the **Store** in which this review was written.
-- And **Customer** who created the review. After clicking on this field, you will be redirected to the edit customer details window where you can edit the details.
-- You can edit the review **Title**.
-- As well as the its **Text**.
-- In the **Reply text** field you can leave a reply to review, it will be visible in the public store below the review.
-- **Rating** displays the customer rating. It cannot be edited.
-- Tick the **Is approved** checkbox, to approve the review.
-- **Created on** shows the date and time when the review was created.
+- Ver el **Producto** para el que se ha añadido esta reseña. Después de hacer clic en este campo, se le redirigirá a la ventana de edición de los detalles del producto, donde podrá editar los detalles del producto.
+- Ver la **Tienda** en la que se escribió esta reseña.
+- Y el **Cliente** que creó la reseña. Después de hacer clic en este campo, será redirigido a la ventana de edición de los detalles del cliente donde puede editar los detalles.
+- Puede editar el **Título** de la reseña.
+- Así como su **Texto**.
+- En el campo **Texto de respuesta** puede dejar una respuesta a la opinión, que será visible en la tienda pública debajo de la opinión.
+- La **Calificación** muestra la calificación del cliente. No se puede editar.
+- Marque la casilla **Es aprobada**, para aprobar la reseña.
+- Creado el** muestra la fecha y la hora en que se creó la opinión.
 
-## Review types
+## Tipos de reseñas
 
-If you created custom review types you will see the *Review types* panel:
+Si ha creado tipos de valoración personalizados, verá el panel *Tipos de valoración*:
 
 ![Review types](_static/product-reviews/review-types.jpg)
 
-On this area, you can view the all addition reviews on current product. **Rating** displays the customer rating. All columns in the table cannot be edited.
+En esta área, puede ver todas las opiniones adicionales sobre el producto actual. **Calificación** muestra la calificación de los clientes. Todas las columnas de la tabla no se pueden editar.
 
-For more information on setting up reviews, click see the [Product reviews](xref:en/running-your-store/catalog/catalog-settings#product-reviews) and [Review types](xref:en/running-your-store/catalog/catalog-settings#review-types) chapters.
+Para obtener más información sobre la configuración de las revisiones, haga clic en ver el [Product reviews](xref:es/running-your-store/catalog/catalog-settings#product-reviews) and [Review types](xref:es/running-your-store/catalog/catalog-settings#review-types) chapters.
 
 ## Tutorials
 

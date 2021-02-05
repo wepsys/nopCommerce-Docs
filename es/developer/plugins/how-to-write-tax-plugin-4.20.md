@@ -1,6 +1,6 @@
 ---
 title: How to write a Tax Plugin for nopCommerce 4.20
-uid: en/developer/plugins/how-to-write-tax-plugin-4.20
+uid: es/developer/plugins/how-to-write-tax-plugin-4.20
 author: git.nopsg
 contributors: git.nopsg, git.DmitriyKulagin
 ---

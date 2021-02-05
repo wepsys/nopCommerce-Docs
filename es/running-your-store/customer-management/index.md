@@ -1,6 +1,6 @@
 ---
 title: Customer management
-uid: en/running-your-store/customer-management/index
+uid: es/running-your-store/customer-management/index
 author: git.AndreiMaz
 contributors: git.exileDev, git.dunaenko, git.mariannk
 ---
@@ -13,9 +13,9 @@ En este capítulo se describe cómo gestionar los perfiles de los clientes, hace
 
 Aprende a sacar el máximo partido a la gestión de clientes de tu tienda nopCommerce en los siguientes capítulos:
 
-* [Managing customers](xref:en/running-your-store/customer-management/managing-customers)
-* [Customer roles](xref:en/running-your-store/customer-management/customer-roles)
-* [Access control list](xref:en/running-your-store/customer-management/access-control-list)
-* [Activity log](xref:en/running-your-store/customer-management/activity-log)
-* [Online customers](xref:en/running-your-store/customer-management/online-customers)
-* [Customer settings](xref:en/running-your-store/customer-management/customer-settings)
+* [Managing customers](xref:es/running-your-store/customer-management/managing-customers)
+* [Customer roles](xref:es/running-your-store/customer-management/customer-roles)
+* [Access control list](xref:es/running-your-store/customer-management/access-control-list)
+* [Activity log](xref:es/running-your-store/customer-management/activity-log)
+* [Online customers](xref:es/running-your-store/customer-management/online-customers)
+* [Customer settings](xref:es/running-your-store/customer-management/customer-settings)

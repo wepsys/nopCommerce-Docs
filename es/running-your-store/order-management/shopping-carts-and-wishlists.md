@@ -1,6 +1,6 @@
 ---
 title: Shopping carts and wishlists
-uid: en/running-your-store/order-management/shopping-carts-and-wishlists
+uid: es/running-your-store/order-management/shopping-carts-and-wishlists
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 ---
@@ -31,19 +31,19 @@ Taquí hay algunos elementos en la página del carrito de compras. Algunos de el
   ![Estimate shipping](_static/shopping-carts-and-wishlists/estimate-shipping.jpg)
   In this window, the customer can enter the shipping address and see the appropriate shipping options.
   You can disable the shipping estimate in the shopping cart page by unchecking the **Shipping estimate enabled (cart page)** checkbox in the **Setup → Settings** page.
-1. You can see the **Gift wrapping** dropdown in the shopping cart screenshot provided above. This is an attribute of the checkout process. Read more about how to manage payment attributes in the [Checkout attributes](xref:en/running-your-store/order-management/checkout-attributes) capitulo.
-1. La sección **Código de descuento** permite a un cliente introducir un código de descuento. Puede desactivarlo desmarcando la casilla **Mostrar caja de descuento** en la página **Configuración → Ajustes → Ajustes del carro de la compra**. Lea más sobre los descuentos en la sección [Discounts](xref:en/running-your-store/promotional-tools/discounts) chapter.
-1. La sección de **Tarjetas de regalo** permite a un cliente usar una tarjeta de regalo. Puede desactivarla desmarcando la casilla **Mostrar tarjeta de regalo** en la página **Configuración → Ajustes → Configuración de la cesta de la compra**. Lea más sobre las tarjetas de regalo en el [Gift cards](xref:en/running-your-store/promotional-tools/gift-cards) capitulo.
-1. En la sección de totales del carrito de compras un cliente ve la tarifa de envío. Lea cómo configurar el envío en la[Configure shipping](xref:en/getting-started/configure-shipping/index) sección. 
-1. En la misma sección un cliente ve la información de los impuestos. Lea cómo configurar los impuestos en el [Configure taxes](xref:en/getting-started/configure-taxes/index) sección. 
-1. En la misma sección un cliente ve cuántos puntos de recompensa se ganarán. Lea cómo configurar los puntos de recompensa en la [Reward points](xref:en/running-your-store/promotional-tools/reward-points) secció
+1. You can see the **Gift wrapping** dropdown in the shopping cart screenshot provided above. This is an attribute of the checkout process. Read more about how to manage payment attributes in the [Checkout attributes](xref:es/running-your-store/order-management/checkout-attributes) capitulo.
+1. La sección **Código de descuento** permite a un cliente introducir un código de descuento. Puede desactivarlo desmarcando la casilla **Mostrar caja de descuento** en la página **Configuración → Ajustes → Ajustes del carro de la compra**. Lea más sobre los descuentos en la sección [Discounts](xref:es/running-your-store/promotional-tools/discounts) chapter.
+1. La sección de **Tarjetas de regalo** permite a un cliente usar una tarjeta de regalo. Puede desactivarla desmarcando la casilla **Mostrar tarjeta de regalo** en la página **Configuración → Ajustes → Configuración de la cesta de la compra**. Lea más sobre las tarjetas de regalo en el [Gift cards](xref:es/running-your-store/promotional-tools/gift-cards) capitulo.
+1. En la sección de totales del carrito de compras un cliente ve la tarifa de envío. Lea cómo configurar el envío en la[Configure shipping](xref:es/getting-started/configure-shipping/index) sección. 
+1. En la misma sección un cliente ve la información de los impuestos. Lea cómo configurar los impuestos en el [Configure taxes](xref:es/getting-started/configure-taxes/index) sección. 
+1. En la misma sección un cliente ve cuántos puntos de recompensa se ganarán. Lea cómo configurar los puntos de recompensa en la [Reward points](xref:es/running-your-store/promotional-tools/reward-points) secció
 1. 
 1. .
 1. En la misma sección un cliente ve las condiciones del servicio. Puede desactivarlo desmarcando la casilla de verificación **Términos de servicio (página del carrito de compras)** en la página **Configuración → Ajustes → Ajustes del pedido**.. 
 
 > [!NOTE]
 >
-> En caso de que no quieras permitir que un cliente añada un determinado producto a un carrito de la compra, marca la casilla de verificación **Deshabilitar botón de compra** en el panel *Precios* de la página de edición del producto. Lee más acerca de cómo añadir un producto en el [Add products](xref:en/running-your-store/catalog/products/add-products) chapter.
+> En caso de que no quieras permitir que un cliente añada un determinado producto a un carrito de la compra, marca la casilla de verificación **Deshabilitar botón de compra** en el panel *Precios* de la página de edición del producto. Lee más acerca de cómo añadir un producto en el [Add products](xref:es/running-your-store/catalog/products/add-products) chapter.
 
 > [!NOTE]
 > 
@@ -70,13 +70,13 @@ Hay algunos elementos en la página de la lista de deseos:
 
 > [!NOTE]
 >
-> En caso de que no quieras permitir que un cliente añada un determinado producto a una lista de deseos, marca la casilla de verificación **Deshabilitar el botón de la lista de deseos** en el panel *Precios* de la página de edición del producto. Lee más sobre cómo añadir un producto en la sección [Add products](xref:en/running-your-store/catalog/products/add-products) chapter.
+> En caso de que no quieras permitir que un cliente añada un determinado producto a una lista de deseos, marca la casilla de verificación **Deshabilitar el botón de la lista de deseos** en el panel *Precios* de la página de edición del producto. Lee más sobre cómo añadir un producto en la sección [Add products](xref:es/running-your-store/catalog/products/add-products) chapter.
 
 ## Configuración de la cesta de la compra y la lista de deseos
 
 Para cambiar los ajustes del carrito de compras y de la lista de deseos vaya a la página **Configuración → Ajustes → Ajustes del carrito de compras**.
 
-Esta página permite la configuración de varias tiendas, lo que significa que se pueden definir los mismos ajustes para todas las tiendas o que pueden ser diferentes de una tienda a otra. Si desea administrar los ajustes de una tienda determinada, elija su nombre en la lista desplegable de configuración de varias tiendas y marque todas las casillas de verificación necesarias en el lado izquierdo para establecer un valor personalizado para ellas. Para obtener más detalles, consulte [Multi-stovvre](xref:en/getting-started/advanced-configuration/multi-store).
+Esta página permite la configuración de varias tiendas, lo que significa que se pueden definir los mismos ajustes para todas las tiendas o que pueden ser diferentes de una tienda a otra. Si desea administrar los ajustes de una tienda determinada, elija su nombre en la lista desplegable de configuración de varias tiendas y marque todas las casillas de verificación necesarias en el lado izquierdo para establecer un valor personalizado para ellas. Para obtener más detalles, consulte [Multi-stovvre](xref:es/getting-started/advanced-configuration/multi-store).
 
 ### Common 
 In the *Common* panel you can define:
@@ -113,8 +113,8 @@ En el panel de la *Lista de deseos* se puede definir:
 
 ## Ver también
 
-* [Orders](xref:en/running-your-store/order-management/orders)
-* [Promotional tools](xref:en/running-your-store/promotional-tools/index)
+* [Orders](xref:es/running-your-store/order-management/orders)
+* [Promotional tools](xref:es/running-your-store/promotional-tools/index)
 
 ## Tutoriales
 

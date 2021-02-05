@@ -1,6 +1,6 @@
 ---
 title: How to add a menu item into the administration area from a plugin
-uid: en/developer/plugins/menu-item
+uid: es/developer/plugins/menu-item
 author: git.AndreiMaz
 contributors: git.Sandeep911, git.DmitriyKulagin, git.exileDev
 ---

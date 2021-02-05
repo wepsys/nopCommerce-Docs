@@ -1,6 +1,6 @@
 ---
 title: Maintenance
-uid: en/running-your-store/system-administration/maintenance
+uid: es/running-your-store/system-administration/maintenance
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 ---

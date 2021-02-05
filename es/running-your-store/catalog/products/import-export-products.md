@@ -1,6 +1,6 @@
 ---
 title: Import/export products
-uid: en/running-your-store/catalog/products/import-export-products
+uid: es/running-your-store/catalog/products/import-export-products
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.mariannk
 ---
@@ -51,8 +51,8 @@ Then click **Import**, choose the file and click the **Import from Excel** butto
 
 ## Setting up import/export
 
-The following section describes import/export settings: [Export/import](xref:en/running-your-store/catalog/catalog-settings#exportimport).
+The following section describes import/export settings: [Export/import](xref:es/running-your-store/catalog/catalog-settings#exportimport).
 
 ## See also
 
-* [Adding products](xref:en/running-your-store/catalog/products/add-products)
+* [Adding products](xref:es/running-your-store/catalog/products/add-products)

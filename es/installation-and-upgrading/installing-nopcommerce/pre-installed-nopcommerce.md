@@ -1,6 +1,6 @@
 ---
 title: Pre-installed nopCommerce
-uid: en/installation-and-upgrading/installing-nopcommerce/pre-installed-nopcommerce
+uid: es/installation-and-upgrading/installing-nopcommerce/pre-installed-nopcommerce
 author: git.mariannk
 ---
 

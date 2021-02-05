@@ -1,13 +1,13 @@
 ---
 title: How to code my own payment method
-uid: en/developer/plugins/payment-method
+uid: es/developer/plugins/payment-method
 author: git.AndreiMaz
 contributors: git.Sandeep911, git.exileDev, git.DmitriyKulagin
 ---
 
 # Cómo codificar mi propio método de pago
 
-Los métodos de pago se implementan como complementos en nopCommerce. Le recomendamos que lea [Cómo escribir un complemento para nopCommerce 4.30](xref:en/developer/plugins/how-to-write-plugin-4.30) antes de comenzar a codificar un nuevo método de pago. Le explicará cuáles son los pasos necesarios para crear un complemento.
+Los métodos de pago se implementan como complementos en nopCommerce. Le recomendamos que lea [Cómo escribir un complemento para nopCommerce 4.30](xref:es/developer/plugins/how-to-write-plugin-4.30) antes de comenzar a codificar un nuevo método de pago. Le explicará cuáles son los pasos necesarios para crear un complemento.
 
 Entonces, en realidad, un método de pago es un complemento ordinario que implementa una interfaz IPaymentMethod (espacio de nombres Nop.Services.Payments). Como ya adivinó, la interfaz IPaymentMethod se utiliza para crear complementos de métodos de pago. Contiene algunos métodos que son específicos solo para métodos de pago como ProcessPayment () o GetAdditionalHandlingFee (). Así que agregue un nuevo proyecto de complemento de pago (biblioteca de clases) a la solución y comencemos.
 

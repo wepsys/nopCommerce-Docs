@@ -1,6 +1,6 @@
 ---
 title: Content Security Policy (CSP) Headers
-uid: en/developer/tutorials/csp-headers
+uid: es/developer/tutorials/csp-headers
 author: git.nopsg
 contributors: git.nopsg, git.DmitriyKulagin
 ---

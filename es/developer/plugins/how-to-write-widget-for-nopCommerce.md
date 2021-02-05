@@ -1,6 +1,6 @@
 ﻿---
 title: How to write a widget for nopCommerce
-uid: en/developer/plugins/how-to-write-widget-for-nopCommerce
+uid: es/developer/plugins/how-to-write-widget-for-nopCommerce
 author: git.nopsg
 contributors: git.nopsg, git.DmitriyKulagin
 ---

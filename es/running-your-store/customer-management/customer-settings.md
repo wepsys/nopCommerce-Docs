@@ -1,6 +1,6 @@
 ---
 title: Customer settings
-uid: en/running-your-store/customer-management/customer-settings
+uid: es/running-your-store/customer-management/customer-settings
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.ivkadp, git.mariannk
 ---
@@ -65,7 +65,7 @@ Defina la configuración común de los clientes, de la siguiente manera:
 * En el **Vida útil de la contraseña** introduzca el número de días para la expiración de la contraseña.
   > [!NOTE]
   >
-  > Para usar la característica **Vida útil de la contraseña** no te olvides de marcar la propiedad **Habilitar la vida útil de la contraseña** en la página de edición del rol de cliente (**Clientes → Roles de cliente**) para aquellos roles, que necesitan cambiar las contraseñas. Para más detalles, consulte [Customer roles](xref:en/running-your-store/customer-management/customer-roles).
+  > Para usar la característica **Vida útil de la contraseña** no te olvides de marcar la propiedad **Habilitar la vida útil de la contraseña** en la página de edición del rol de cliente (**Clientes → Roles de cliente**) para aquellos roles, que necesitan cambiar las contraseñas. Para más detalles, consulte [Customer roles](xref:es/running-your-store/customer-management/customer-roles).
 
 * In the **Password recovery link. Days valid** field, enter the number of days for password recovery link. Set it to 0 if you don't want the link to expire.
 * Enter the **Maximum login failures** number. Set 0 to disable this feature.

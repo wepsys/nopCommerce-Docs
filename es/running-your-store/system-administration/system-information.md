@@ -1,6 +1,6 @@
 ---
 title: System information
-uid: en/running-your-store/system-administration/system-information
+uid: es/running-your-store/system-administration/system-information
 author: git.AndreiMaz
 contributors: git.exileDev, git.mariannk
 ---

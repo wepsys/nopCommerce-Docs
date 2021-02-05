@@ -1,6 +1,6 @@
 ---
 title: News
-uid: en/running-your-store/content-management/news
+uid: es/running-your-store/content-management/news
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp, git.mariannk
 ---
@@ -39,7 +39,7 @@ In the *Info* panel define the following news item details:
  - Elija las tiendas en el campo **Limitado a las tiendas** para habilitar esta noticia sólo para tiendas específicas. Deje el campo vacío en caso de que esta funcionalidad no sea necesaria.
   > [!NOTE]
   >
-	> Para poder utilizar esta función, debe desactivar la siguiente configuración: **Configuración del catálogo → Ignorar las reglas de "límite por tienda" (en todo el sitio)**. Lea más sobre la funcionalidad de multi-tienda [here](xref:en/getting-started/advanced-configuration/multi-store).
+	> Para poder utilizar esta función, debe desactivar la siguiente configuración: **Configuración del catálogo → Ignorar las reglas de "límite por tienda" (en todo el sitio)**. Lea más sobre la funcionalidad de multi-tienda [here](xref:es/getting-started/advanced-configuration/multi-store).
 
 - Selecciona la casilla **Publicado**, para publicar esta noticia en tu tienda.
 
@@ -67,7 +67,7 @@ También puede editar o eliminar un comentario. Si borra este comentario será e
 
 Puede gestionar los ajustes de las noticias en **Configuración → Ajustes → Ajustes de las noticias**. Esta página está disponible en 2 modos: *avanzado* y *básico*.
 
-Esta página permite la configuración de varias tiendas, lo que significa que se pueden definir los mismos ajustes para todas las tiendas, o diferir de una tienda a otra. Si desea administrar la configuración de una tienda determinada, elija su nombre en la lista desplegable de configuración de varias tiendas y marque todas las casillas de verificación necesarias en el lado izquierdo para establecer un valor personalizado para ellas. Para obtener más detalles, consulte [Multi-store](xref:en/getting-started/advanced-configuration/multi-store).
+Esta página permite la configuración de varias tiendas, lo que significa que se pueden definir los mismos ajustes para todas las tiendas, o diferir de una tienda a otra. Si desea administrar la configuración de una tienda determinada, elija su nombre en la lista desplegable de configuración de varias tiendas y marque todas las casillas de verificación necesarias en el lado izquierdo para establecer un valor personalizado para ellas. Para obtener más detalles, consulte [Multi-store](xref:es/getting-started/advanced-configuration/multi-store).
 
 ![News settings](_static/news/news-settings.jpg)
 

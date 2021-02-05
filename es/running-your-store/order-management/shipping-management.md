@@ -1,6 +1,6 @@
 ---
 title: Shipping management
-uid: en/running-your-store/order-management/shipping-management
+uid: es/running-your-store/order-management/shipping-management
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 ---
@@ -47,9 +47,9 @@ En esta ventana puedes:
 
 ## Configuración del envío
 
-Para configurar el envío visite la sección [Configurar envío](xref:en/getting-started/configure-shipping/index).
+Para configurar el envío visite la sección [Configurar envío](xref:es/getting-started/configure-shipping/index).
 
 ## Ver también
 
-* [Orders](xref:en/running-your-store/order-management/orders)
-* [Adding products](xref:en/running-your-store/catalog/products/add-products)
+* [Orders](xref:es/running-your-store/order-management/orders)
+* [Adding products](xref:es/running-your-store/catalog/products/add-products)

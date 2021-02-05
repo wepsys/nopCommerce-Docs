@@ -1,6 +1,6 @@
 ---
 title: Vendor management
-uid: en/running-your-store/vendor-management
+uid: es/running-your-store/vendor-management
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp, git.mariannk
 ---

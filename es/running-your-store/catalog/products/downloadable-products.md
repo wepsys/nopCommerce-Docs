@@ -1,6 +1,6 @@
 ﻿---
 title: Downloadable products
-uid: en/running-your-store/catalog/products/downloadable-products
+uid: es/running-your-store/catalog/products/downloadable-products
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.IvanIvanIvanov, git.dunaenko, git.mariannk
 ---
@@ -28,7 +28,7 @@ What distinguishes a ebook-store from other stores?
 
 All these features can be set up when you editing a product. Futhermore, in special cases you can restrict downloads of the certain book by setting up a number of days during customers keeps access to the book or maximum downloads number. Or you can choose when customer is enabled to download a book: immediately after the book is paid or after manual validation.
 
-If you already learned how to set up a [common product](xref:en/running-your-store/catalog/products/add-products) learn how to make this product downloadable in the section below.
+If you already learned how to set up a [common product](xref:es/running-your-store/catalog/products/add-products) learn how to make this product downloadable in the section below.
 
 ## Set up a downloadable product
 
@@ -68,7 +68,7 @@ If you would like to hide the 'Downloadable products' menu item from the custome
 
 ## See also
 
-- [Orders](xref:en/running-your-store/order-management/orders)
+- [Orders](xref:es/running-your-store/order-management/orders)
 
 ## Tutorials
 

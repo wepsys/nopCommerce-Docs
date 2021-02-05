@@ -1,6 +1,6 @@
 ---
 title: Search engine optimization
-uid: en/running-your-store/search-engine-optimization
+uid: es/running-your-store/search-engine-optimization
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 ---
@@ -70,13 +70,13 @@ Aquí puede filtrar los nombres de páginas compatibles con los motores de búsq
 
 ## Ver también
 
-* [Agregar productos](xref:en/running-your-store/catalog/products/add-products)
-* [Categorías de productos](xref:en/running-your-store/catalog/categories)
-* [Fabricantes](xref:en/running-your-store/catalog/Manufacturers)
-* [Proveedores](xref:en/running-your-store / vendor-management)
-* [Temas (páginas)](xref:en/running-your-store/content-management/topics-pages)
-* [Noticias](xref:en/running-your-store/content-management/news)
-* [Blog](xref:en/running-your-store/content-management/blog)
+* [Agregar productos](xref:es/running-your-store/catalog/products/add-products)
+* [Categorías de productos](xref:es/running-your-store/catalog/categories)
+* [Fabricantes](xref:es/running-your-store/catalog/Manufacturers)
+* [Proveedores](xref:es/running-your-store / vendor-management)
+* [Temas (páginas)](xref:es/running-your-store/content-management/topics-pages)
+* [Noticias](xref:es/running-your-store/content-management/news)
+* [Blog](xref:es/running-your-store/content-management/blog)
 
 ## Tutoriales
 

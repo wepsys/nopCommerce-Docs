@@ -1,6 +1,6 @@
 ---
 title: How do I register new routes?
-uid: en/developer/tutorials/register-new-routes
+uid: es/developer/tutorials/register-new-routes
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---

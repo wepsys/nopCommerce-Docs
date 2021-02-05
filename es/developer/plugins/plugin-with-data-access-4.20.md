@@ -1,6 +1,6 @@
 ---
 title: Plugin with data access
-uid: en/developer/plugins/plugin-with-data-access-4.20
+uid: es/developer/plugins/plugin-with-data-access-4.20
 author: nop.52152
 contributors: git.DmitriyKulagin, git.rodolphito, git.exileDev
 ---
@@ -9,9 +9,9 @@ contributors: git.DmitriyKulagin, git.rodolphito, git.exileDev
 
 En este tutorial, usaré la arquitectura del complemento nopCommerce para implementar un rastreador de vistas de productos. Antes de comenzar con el desarrollo, es muy importante que haya leído, comprendido y completado con éxito los tutoriales que se enumeran a continuación. Pasaré por alto algunas explicaciones cubiertas en los artículos anteriores, pero puede recapitular utilizando los enlaces proporcionados.
 
-- [Tutoriales para desarrolladores](xref:en/developer/tutorials/index)
-- [Actualización de una entidad existente. Cómo agregar una nueva propiedad.](Xref:en/developer/tutorials/update-existing-entity)
-- [Cómo escribir un complemento para nopCommerce 4.20](xref:en/developer/plugins/how-to-write-plugin-4.20)
+- [Tutoriales para desarrolladores](xref:es/developer/tutorials/index)
+- [Actualización de una entidad existente. Cómo agregar una nueva propiedad.](Xref:es/developer/tutorials/update-existing-entity)
+- [Cómo escribir un complemento para nopCommerce 4.20](xref:es/developer/plugins/how-to-write-plugin-4.20)
 
 Comenzaremos a codificar con la capa de acceso a datos, pasaremos a la capa de servicio y finalmente terminaremos con la inyección de dependencia.
 

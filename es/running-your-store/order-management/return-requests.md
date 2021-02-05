@@ -1,6 +1,6 @@
 ---
 title: Return requests
-uid: en/running-your-store/order-management/return-requests
+uid: es/running-your-store/order-management/return-requests
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 ---
@@ -73,7 +73,7 @@ El administrador de la tienda está autorizado a hacerlo:
 ## Configuración de la solicitud de devolución
 Para definir la configuración de la solicitud de devolución, vaya a **Configuración → Configuración → Configuración de la solicitud**. 
 
-Esta página permite la configuración de varias tiendas, lo que significa que se pueden definir los mismos ajustes para todas las tiendas o que pueden ser diferentes de una tienda a otra. Si desea administrar la configuración de una tienda determinada, elija su nombre en la lista desplegable de configuración de varias tiendas y marque todas las casillas de verificación necesarias en el lado izquierdo para establecer un valor personalizado para ellas. Para obtener más detalles, consulte [Multi-store](xref:en/getting-started/advanced-configuration/multi-store).
+Esta página permite la configuración de varias tiendas, lo que significa que se pueden definir los mismos ajustes para todas las tiendas o que pueden ser diferentes de una tienda a otra. Si desea administrar la configuración de una tienda determinada, elija su nombre en la lista desplegable de configuración de varias tiendas y marque todas las casillas de verificación necesarias en el lado izquierdo para establecer un valor personalizado para ellas. Para obtener más detalles, consulte [Multi-store](xref:es/getting-started/advanced-configuration/multi-store).
 
 Go to the *Return request settings* panel:
 ![Return request settings](_static/return-requests/return-request-settings.jpg)
@@ -109,5 +109,5 @@ Introduzca la acción de solicitud de devolución **Nombre** y **Número de orde
 ## Ver también
 
 * [YouTube tutorial: managing return requests](https://www.youtube.com/watch?v=VqF2GZ2ip_0&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4&index=17)
-* [Order settings](xref:en/running-your-store/order-management/order-settings)
-* [Orders](xref:en/running-your-store/order-management/orders)
+* [Order settings](xref:es/running-your-store/order-management/order-settings)
+* [Orders](xref:es/running-your-store/order-management/orders)

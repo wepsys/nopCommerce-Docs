@@ -1,6 +1,6 @@
 ---
 title: Categories
-uid: en/running-your-store/catalog/categories
+uid: es/running-your-store/catalog/categories
 author: git.AndreiMaz
 contributors: git.exileDev, git.DmitriyKulagin, git.dunaenko, git.IvanIvanIvanov, git.mariannk
 ---
@@ -50,7 +50,7 @@ En el panel de *Mostrar*, defina la siguiente información de la categoría:
   > 
   > Por ejemplo, cuando añades siete productos a una categoría y estableces el tamaño de su página en tres. Tres productos por página se mostrarán en esta página de detalles de la categoría en la tienda pública, y la cantidad total de páginas será de tres.
 
-- **Rangos de precios** - permiten definir rangos de precios por los cuales los clientes pueden filtrar los productos. Los rangos se establecen en la moneda que se define en la página [Monedas](xref:en/getting-started/configure-payments/advanced-configuration/currencies). Separe los rangos con un punto y coma, por ejemplo, 0-999; 1000-1200; 1201 - (1201 significa 1201 y más).
+- **Rangos de precios** - permiten definir rangos de precios por los cuales los clientes pueden filtrar los productos. Los rangos se establecen en la moneda que se define en la página [Monedas](xref:es/getting-started/configure-payments/advanced-configuration/currencies). Separe los rangos con un punto y coma, por ejemplo, 0-999; 1000-1200; 1201 - (1201 significa 1201 y más).
 - **Orden de visualización** - el número de orden para mostrar la categoría. Este número de visualización se utiliza para clasificar las categorías en la tienda pública (ascendente). La categoría con el orden de exhibición 1 se colocará en la parte superior de la lista.
 - El archivo **Plantilla de la categoría** es visible si tiene alguna plantilla de categoría personalizada instalada en la página **Plantillas del sistema →**. Esta plantilla define cómo se mostrará esta categoría (y sus productos).
 
@@ -60,7 +60,7 @@ En el panel de *Mostrar*, defina la siguiente información de la categoría:
 
 En el panel de *Mapas*, defina la siguiente información de la categoría:
 
-- **Descuentos** - seleccione los descuentos asociados a esta categoría. Puede crear descuentos en la página **Promociones → Descuentos**. Lee más sobre los descuentos en el capítulo [Currencies](xref:en/getting-started/configure-payments/advanced-configuration/currencies).
+- **Descuentos** - seleccione los descuentos asociados a esta categoría. Puede crear descuentos en la página **Promociones → Descuentos**. Lee más sobre los descuentos en el capítulo [Currencies](xref:es/getting-started/configure-payments/advanced-configuration/currencies).
 
     > [!NOTE]
     >
@@ -75,5 +75,5 @@ En el panel de *Mapas*, defina la siguiente información de la categoría:
     >
     > Para poder utilizar esta función, debe desactivar la siguiente configuración: **Configuración → Configuración del catálogo 
 
-- [Adding products](xref:en/running-your-store/catalog/products/add-products)
-- [SEO](xref:en/running-your-store/search-engine-optimization)
+- [Adding products](xref:es/running-your-store/catalog/products/add-products)
+- [SEO](xref:es/running-your-store/search-engine-optimization)
