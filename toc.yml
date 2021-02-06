@@ -3,3 +3,7 @@
   name: English
   href: en/
   topicHref: en/index.md
+
+  name: español
+  href: es/
+  topicHref: en/index.md

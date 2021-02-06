@@ -1,97 +1,97 @@
 ﻿---
 title: Discounts
-uid: en/running-your-store/promotional-tools/discounts
+uid: es/running-your-store/promotional-tools/discounts
 author: git.AndreiMaz
 contributors: git.exileDev, git.DmitriyKulagin, git.IvanIvanIvanov, git.mariannk
 ---
 
-# Discounts
+# Descuentos
 
-In nopCommerce you can use discounts to enable access to special offers. They can be applied to certain categories, products, to the total amount and so on. You can use different requirements available out of the box and via plugins from [nopCommerce marketplace](http://www.nopcommerce.com/marketplace) for applying to your discounts.
+En nopCommerce puede utilizar los descuentos para permitir el acceso a ofertas especiales. Se pueden aplicar a determinadas categorías, productos, al importe total, etc. Usted puede utilizar diferentes requisitos disponibles fuera de la caja y a través de plugins de [nopCommerce marketplace](http://www.nopcommerce.com/marketplace) para aplicar a sus descuentos.
 
-Products in nopCommerce can have any number of discounts attached. In case of several discounts applied, nopCommerce will automatically calculate the best possible price for the customer based on all the available discounts and group memberships.
+Los productos en nopCommerce pueden tener cualquier número de descuentos adjuntos. En caso de que se apliquen varios descuentos, nopCommerce calculará automáticamente el mejor precio posible para el cliente basándose en todos los descuentos disponibles y en las afiliaciones a grupos.
 
-The most common way of using the discounts is a coupon code. The coupon code is entered by your customer on the shopping cart page just before checking out.
+La forma más común de utilizar los descuentos es un código de cupón. El código de cupón lo introduce el cliente en la página del carrito de la compra justo antes de pasar por caja.
 
-To see the list of discounts go to **Promotions → Discounts** page:
+Para ver la lista de descuentos vaya a la página **Promociones → Descuentos**:
 
 ![Discounts](_static/discounts/list.jpg)
 
-The top area of the page enables you to search for a discounts by different search criteria:
+La zona superior de la página le permite buscar un descuento por diferentes criterios de búsqueda:
 
-- **Start date** and **End date** for discounts created between these dates.
-- **Discount type**.
-- **Coupon code**.
-- **Discount name** is a full discount name or a part of the discount name.
+- **Fecha de inicio** y **Fecha de finalización** para los descuentos creados entre estas fechas.
+- Tipo de descuento**.
+- Código del cupón**.
+- **Nombre del descuento** es el nombre completo del descuento o una parte del mismo.
 
-> [!NOTE]
+> [!NOTA]
 > 
-> By default, there are no discounts available in nopCommerce, so you can create them from scratch and follow your own marketing strategy.
+> Por defecto, no hay descuentos disponibles en nopCommerce, así que puede crearlos desde cero y seguir su propia estrategia de marketing.
 
-## Adding new discount
+## Añadir un nuevo descuento
 
-To add a new discount go to **Promotions → Discounts** and click **Add new**.
+Para añadir un nuevo descuento vaya a **Promociones → Descuentos** y haga clic en **Añadir nuevo**.
 
 ![Add a new discount](_static/discounts/add-new.jpg)
 
-- Enter the **Name** of the discount.
-- From the **Discount type** dropdown list, assign the discount to the required option, as follows:
-  - *Assigned to order total*: these discounts are applied to the entire customer order (order total).
-  - *Assigned to products*: after this discount is created, the store owner can assign this discount to a product on the product details page or add products in the *Applied to products* panel which will be displayed below after you save the new discount.
-  - *Assigned to categories*: after this discount is created, the store owner can assign this discount to a category on the category edit page or add categories in the *Applied to categories* panel which will be displayed below after you save the new discount. This enables the discount to be applied to all products in this category.
-    - If selected the **Apply to subcategories** field will be displayed to allow applying this discount to subcategories.
-  - *Assigned to manufacturers*: after this discount is created, the store owner can assign this discount to a manufacturer on the manufacturer edit page or add manufacturer in the *Applied to manufacturer* panel which will be displayed below after you save the new discount. This enables the discount to be applied to all products in this manufacturer.
-  - *Assigned to shipping*: these discounts are applied to the shipping fee.
-  - *Assigned to order subtotal*: these discounts are applied to the order subtotal value.
+- Introduzca el **Nombre** del descuento.
+- En la lista desplegable **Tipo de descuento**, asigne el descuento a la opción requerida, como sigue:
+  - *Asignado al total del pedido*: estos descuentos se aplican a todo el pedido del cliente (total del pedido).
+  - *Asignado a productos*: después de crear este descuento, el propietario de la tienda puede asignar este descuento a un producto en la página de detalles del producto o añadir productos en el panel *Aplicado a productos* que se mostrará a continuación después de guardar el nuevo descuento.
+  - *Asignado a categorías*: después de crear este descuento, el propietario de la tienda puede asignar este descuento a una categoría en la página de edición de la categoría o añadir categorías en el panel *Aplicado a categorías* que se mostrará más abajo después de guardar el nuevo descuento. Esto permite que el descuento se aplique a todos los productos de esta categoría.
+    - Si se selecciona el campo **Aplicado a subcategorías** se mostrará para permitir aplicar este descuento a las subcategorías.
+  - *Asignada a fabricantes*: después de crear esta rebaja, el propietario de la tienda puede asignar esta rebaja a un fabricante en la página de edición del fabricante o añadir el fabricante en el panel *Aplicada a fabricantes* que se mostrará a continuación después de guardar la nueva rebaja. Esto permite que el descuento se aplique a todos los productos de este fabricante.
+  - *Asignado al envío*: estos descuentos se aplican a los gastos de envío.
+  - *Asignado al subtotal del pedido*: estos descuentos se aplican al valor del subtotal del pedido.
 
-- Tick the **Use percentage** checkbox if you want to apply a percentage discount.
-  - If the previous checkbox is ticked the **Discount percentage** field will be displayed.
-  - You can also set the **Maximum discount amount**. Leave this field empty to allow any discount amount. If you're using *Assigned to products* discount type, then it's applied to each product separately.
+- Marque la casilla **Utilizar porcentaje** si desea aplicar un descuento porcentual.
+  - Si la casilla anterior está marcada se mostrará el campo **Porcentaje de descuento**.
+  - También puede establecer el **Importe máximo de descuento**. Deje este campo vacío para permitir cualquier cantidad de descuento. Si utiliza el tipo de descuento *Asignado a productos*, se aplicará a cada producto por separado.
 
-- Or you can apply **Discount amount** to the order or SKU.
-- Tick the **Requires coupon code** checkbox, to enable a customer to supply a coupon code for the discount to be applied.
-  - After ticking the checkbox the **Coupon code** option appears. You can enter the required coupon code in this field. This enables customers to enter this coupon code during checkout to apply the discount.
+- O puede aplicar el **Importe de descuento** al pedido o al SKU.
+- Marque la casilla **Requiere código de cupón** para que el cliente pueda proporcionar un código de cupón para que se aplique el descuento.
+  - Después de marcar la casilla aparece la opción **Código de cupón**. En este campo se puede introducir el código del cupón requerido. Esto permite a los clientes introducir este código de cupón durante la compra para aplicar el descuento.
     > [!NOTE]
     > 
-    > A customer can apply an unlimited number of coupon codes to one order if they fit it.
+    > Un cliente puede aplicar un número ilimitado de códigos de cupón a un mismo pedido si le conviene.
 
-- If you want to specify the **Start date** and the **End date** for your discount, select them in the calendar field in Coordinated Universal Time (UTC).
-- The **Cumulative with other discounts** option allows customers use several discounts at the same time. If checked, this discount can be used with other ones simultaneously. 
-  > [!NOTE]
+- Si desea especificar la **fecha de inicio** y la **fecha de finalización** de su descuento, selecciónelas en el campo de calendario en Tiempo Universal Coordinado (UTC).
+- La opción **Cumulable con otros descuentos** permite a los clientes utilizar varios descuentos al mismo tiempo. Si está marcada, este descuento puede ser utilizado con otros simultáneamente. 
+  > [!NOTA]
   >
-  > This feature works only for discounts with the same discount type. Right now, discounts with distinct types are already cumulative.
+  > Esta característica sólo funciona para los descuentos con el mismo tipo de descuento. En este momento, los descuentos con tipos distintos ya son acumulativos.
 
-- You can also limit the number of times the discount will be used. From the **Discount limitation** dropdown list, select the required limitation regarding the discount:
-  - *Unlimited*.
-  - *N times only*: select this option and enter the number of times this discount will be available.
-  - *N times per customer*: select this option and enter the number of times this discount will be available for one customer.
+- También puede limitar el número de veces que se utilizará el descuento. En la lista desplegable **Limitación del descuento**, seleccione la limitación deseada con respecto al descuento:
+  - *Sin límite*.
+  - *Sólo N veces*: seleccione esta opción e introduzca el número de veces que estará disponible este descuento.
+  - *N veces por cliente*: seleccione esta opción e introduzca el número de veces que este descuento estará disponible para un cliente.
 
-- In the **Maximum discounted quantity** field (only visible when the **Discount type** is set to *Assigned to products*, *categories* or *manufacturers*) specify the maximum product quantity which could be discounted. It can be used for scenarios like "buy 2 get 1 free". 
-- Enter the **Admin comment** if needed. It is not visible for customers.
+- En el campo **Cantidad máxima con descuento** (sólo visible cuando el **Tipo de descuento** está configurado como *Asignado a productos*, *categorías* o *fabricantes*) especifique la cantidad máxima de productos que puede ser descontada. Se puede utilizar para escenarios como "compre 2 y reciba 1 gratis". 
+- Introduzca el **Comentario del administrador** si es necesario. No es visible para los clientes.
 
-Click **Save** to save the changes or click **Save and continue edit** to proceed to editing other panels.
+Haga clic en **Guardar** para guardar los cambios o haga clic en **Guardar y continuar editando** para proceder a editar otros paneles.
 
-## Adding discount requirements
+## Añadir requisitos de descuento
 
-After creating the discount it's allowed to add discount requirements if you want some specific rules to be applied to the discount. 
-Set up requirements if you want to limit the discount to certain user categories depending on a customer role, the amount spent, etc. You can use single requirement type, or group several types and apply them simultaneously.
+Después de crear el descuento se permite añadir requisitos de descuento si quiere que se apliquen algunas reglas específicas al descuento. 
+Configure los requisitos si quiere limitar el descuento a ciertas categorías de usuarios en función de un rol de cliente, la cantidad gastada, etc. Puede utilizar un solo tipo de requisito, o agrupar varios tipos y aplicarlos simultáneamente.
 
-To add discount requirements go to *Requirements* panel:
+Para añadir requisitos de descuento vaya al panel de *Requisitos*:
 
 ![Requirements](_static/discounts/requirements.jpg)
 
-To add a new requirement select the **Discount requirement type** from the dropdown list.
+Para añadir un nuevo requisito seleccione el **tipo de requisito de descuento** de la lista desplegable.
 
-- There is one requirement type available in nopCommerce out of the box: *Must be assigned to a customer role*. This allows you to configure discounts for certain customer groups (roles). Other requirements are available as plugins on our [marketplace](https://www.nopcommerce.com/en/extensions?searchterm=discount+requirement&category=discounts-promotions).
+- Hay un tipo de requisito disponible en nopCommerce: *Debe ser asignado a un rol de cliente*. Esto le permite configurar descuentos para ciertos grupos de clientes (roles). Otros requisitos están disponibles como plugins en nuestro [marketplace](https://www.nopcommerce.com/es/extensions?searchterm=discount+requirement&category=discounts-promotions).
 
-- Also, you can create a group of requirements to deal with complex requirements with multiple rules. Requirement group is a useful feature for creating discount requirement templates. You can create a requirement group just once and then use it every time you want this limitation to be applied. You can include one requirement group into another one if needed. 
-  The requirements are set using boolean logic. For instance, if you want the discount to be assigned to a particular customer role or in case a customer had spent a certain amount. Such requirements and more are available as plugins on our [marketplace](https://www.nopcommerce.com/en/extensions?searchterm=discount+requirement&category=discounts-promotions).
+- Además, puede crear un grupo de requisitos para tratar requisitos complejos con múltiples reglas. El grupo de requisitos es una función útil para crear plantillas de requisitos con descuento. Puede crear un grupo de requisitos una sola vez y luego utilizarlo cada vez que quiera que se aplique esta limitación. Puede incluir un grupo de requisitos en otro si es necesario. 
+  Los requisitos se establecen mediante una lógica booleana. Por ejemplo, si quiere que el descuento se asigne a un rol de cliente concreto o en caso de que un cliente haya gastado una cantidad determinada. Estos requisitos y otros están disponibles como plugins en nuestro [marketplace](https://www.nopcommerce.com/es/extensions?searchterm=discount+requirement&category=discounts-promotions).
 
 ![Group requirements](_static/discounts/discount-requirenents-group.png)
 
-You can set an unlimited number of requirement groups, one inside another. For example, more complex case, when you want you customers get a discount if they are vendors and had spent a certain amount or if they are forum moderators and they put a certain product to the cart at the same time.
+Puedes establecer un número ilimitado de grupos de requisitos, uno dentro de otro. Por ejemplo, un caso más complejo, cuando quieres que tus clientes obtengan un descuento si son vendedores y han gastado una determinada cantidad o si son moderadores del foro y ponen un determinado producto en el carrito al mismo tiempo.
 
-When customers apply a discount while proceeding to the checkout, it is displayed, as follows:
+Cuando los clientes aplican un descuento al pasar por caja, éste se muestra de la siguiente manera:
 
 ![discount-in-shopping-cart](_static/discounts/discount-in-shopping-cart.png)
 
@@ -115,28 +115,28 @@ Black Friday is always the day after Thanksgiving. It's quite common discount ca
 - **Cumulative with other discounts** option allows customers use several discounts at the same time.
 - The last setting is for **Discount limitation** usage. For instance, this discount can be applied once per customer.
 
-### Buy one item and get 50% on the second
+### Compre un artículo y obtenga un 50% en el segundo
 
-Often you need to sell more items of the certain product. In this case, to encourage your customers to buy several items of that, you can offer them a discount. Let's see how to use the discount "Buy one item and get 50% on the second" in your nopCommerce store.
+A menudo necesitas vender más artículos de un determinado producto. En este caso, para animar a sus clientes a comprar varios artículos de ese producto, puede ofrecerles un descuento. Veamos cómo utilizar el descuento "Compre un artículo y obtenga el 50% en el segundo" en su tienda nopCommerce.
 
 ![Edit discount details](_static/discounts/buy_1.png)
 
-- The **Discount type** is *Assigned to products*. In *Applied to products* panel you can add them, here will be an "Oversized T-shirt". 
-- We want our customers to get 50% discount on the 2nd t-shirt. 
-- This discount can be used once per customer, so the **Maximum discounted quantity** is 1.
-- You can set up requirements to the product quantity in *Requirements* panel. Add a requirement type *Customer has all of these products* and add T-shirt with a quantity 2. This requirement type can be dowloaded as a plugin [here](https://www.nopcommerce.com/en/has-all-products-discount-requirement-rule).     Read how to install plugins in the [Plugins](xref:en/getting-started/advanced-configuration/plugins-in-nopcommerce) section.
+- El **Tipo de descuento** es *Aplicado a productos*. En el panel *Aplicado a productos* puedes añadirlos, aquí habrá una "Camiseta de gran tamaño". 
+- Queremos que nuestros clientes obtengan un 50% de descuento en la segunda camiseta. 
+- Este descuento se puede utilizar una vez por cliente, por lo que la **cantidad máxima de descuento** es 1.
+- Puede establecer requisitos para la cantidad de productos en el panel de *Requisitos*. Añada un tipo de requisito *El cliente tiene todos estos productos* y añada la camiseta con una cantidad 2. Este tipo de requisito puede ser descargado como un plugin [aquí](https://www.nopcommerce.com/es/has-all-products-discount-requirement-rule).     Lea cómo instalar plugins en la sección [Plugins](xref:es/getting-started/advanced-configuration/plugins-in-nopcommerce).
 
-![Buy one item and get 50% on the second](_static/discounts/buy_2.png)
+![Compre un artículo y obtenga un 50% en el segundo](_static/discounts/buy_2.png)
 
-You can use this scenario to set up other popular discount - "Buy one and get the second for free" if you set up a 100% discount.
+Puede utilizar este escenario para establecer otro descuento popular: "Compre uno y llévese el segundo gratis" si establece un descuento del 100%.
 
 
-## See also
+## Ver también
 
-- More plugins on discount types and discount requirement types on [nopCommerce marketplace](http://www.nopcommerce.com/marketplace)
-- How to [install plugins](xref:en/getting-started/advanced-configuration/plugins-in-nopcommerce)
+- Más plugins sobre tipos de descuento y tipos de requisitos de descuento en [nopCommerce marketplace](http://www.nopcommerce.com/marketplace)
+- Cómo [instalar plugins](xref:es/getting-started/advanced-configuration/plugins-in-nopcommerce)
 
-## Tutorials
+## Tutoriales
 
-- [Using discounts in nopCommerce](https://www.youtube.com/watch?v=cAXxnV79dzw&index=7&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)
-- [Configuring discounts with boolean logic](https://www.youtube.com/watch?v=gBtZG3OcjnQ)
+- [Uso de descuentos en nopCommerce](https://www.youtube.com/watch?v=cAXxnV79dzw&index=7&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)
+- [Configuración de descuentos con lógica booleana](https://www.youtube.com/watch?v=gBtZG3OcjnQ)

@@ -43,4 +43,4 @@ Esta página habilita la **configuración de múltiples tiendas**, lo que signif
 
 ## Tutoriales
 
-- [Gestión de la configuración de medios](https://www.youtube.com/watch?v=3JS4Zj4TBwQ)
+- [Gestión de la configuración de los medios de comunicación](https://www.youtube.com/watch?v=3JS4Zj4TBwQ)

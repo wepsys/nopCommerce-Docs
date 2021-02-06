@@ -1,6 +1,6 @@
 ---
 title: Getting started
-uid: en/getting-started/index
+uid: es/getting-started/index
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---
@@ -11,10 +11,10 @@ Si es un novato en nopCommerce, siga los pasos a continuación para configurar s
 
 ## 1. Configura tu tienda
 
-- [Configure los ajustes generales de la tienda](xref:en/Getting-Start/Advanced-Configuration/Your-Store-Information)
-- [Configurar métodos de pago](xref:en/Getting-started/configure-payments/payment-methods/index)
-- [Configurar opciones de envío](xref:en/Getting-started/configure-shipping/index)
-- [Configure la lista de usuarios: [cree diferentes grupos](xref:en/running-your-store/customer-management/customer-roles) de usuarios, déles [acceso separado a áreas de su sitio](xref:en/running-your-store/customer-management/access-control-list), ofertas y así sucesivamente.
+- [Configurar los ajustes generales de la tienda](xref:es/getting-started/advanced-configuration/your-store-information)
+- [Configurar la lista de usuarios: crear](xref:es/getting-started/configure-payments/payment-methods/index)
+- [Configurar las opciones de envío](xref:es/getting-started/configure-shipping/index)
+- Configurar la lista de usuarios: crear [diferentes grupos](xref:es/running-your-store/customer-management/customer-roles) de los usuarios, darles [acceso separado a las áreas de su sitio](xref:es/running-your-store/customer-management/access-control-list), ofertas, etc.
 
 ## 2. Crea un catálogo y agrega productos
 
@@ -25,13 +25,13 @@ Un catálogo es lo que tratan constantemente sus clientes. Por eso es fundamenta
 Las categorías y los fabricantes se utilizarán en su catálogo para el filtrado de productos. Aprenda a lidiar con ellos y facilite la navegación del sitio.
 
 * [Categorías](xref:es/ejecutar-su-tienda/catálogo/categorías)
-* [Fabricantes](xref:en/running-your-store/catalog/Manufacturers)
+* [Fabricantes](xref:es/running-your-store/catalog/Manufacturers)
 
 ### Agregar productos
 
 Puede agregar productos manualmente uno por uno o importar su catálogo desde un archivo xml.
 
-* [Productos](xref:en/running-your-store/catalog/products/index)
+* [Productos](xref:es/running-your-store/catalog/products/index)
 
 ### Definir variaciones de productos
 
@@ -47,32 +47,32 @@ Ahora, cuando su catálogo esté lleno de productos, asegúrese de que sus clien
 
 La experiencia de compra personal cuenta. Hace que la gente confíe más en ti como vendedor. Aprenda cómo hacer que las reseñas de productos estén disponibles para su tienda en línea y adminístrelas aquí.
 
-* [Reseñas de productos](xref:en/running-your-store/catalog/products/product-reviews)
+* [Reseñas de productos](xref:es/running-your-store/catalog/products/product-reviews)
 
 ### Soporte de chat en vivo
 
 A menudo, sus clientes necesitan hacer una pregunta aquí y ahora. La opción de chat en vivo puede ser una buena forma de ayudarlos. Encuentra complementos de chat en el mercado de nopCommerce.
 
-* [Obtenga más información sobre los complementos en nopCommerce](xref:en/Getting-started/advanced-configuration/plugins-in-nopcommerce)
+* [Obtenga más información sobre los complementos en nopCommerce](xref:es/Getting-started/advanced-configuration/plugins-in-nopcommerce)
 
 ### Listas de deseos
 
 Una lista de deseos es una buena opción para compras diferidas. Deje que sus clientes agreguen algunos productos a la lista de deseos para comprarlos más tarde o para compartirlos con amigos. También es una buena opción para analizar el comportamiento de sus clientes.
 
-* [Carritos de la compra y listas de deseos](xref:en/running-your-store/order-management/shopping-carts-and-wishlists)
+* [Carritos de la compra y listas de deseos](xref:es/running-your-store/order-management/shopping-carts-and-wishlists)
 
 ## 4. Herramientas promocionales y de marketing
 
 Comercializar tu tienda es fundamental para fidelizar a tus clientes y concienciar a los clientes potenciales. Hay muchas opciones de marketing en nopCommerce: puedes ofrecer precios especiales, asesorar productos en función del comportamiento de compra, promocionar tu tienda a través de campañas de correo electrónico y mucho más.
 
-* [Herramientas de promoción](xref:en/ejecutando-su-tienda/herramientas-promocionales/index)
+* [Herramientas de promoción](xref:es/ejecutando-su-tienda/herramientas-promocionales/index)
 
 ### Descuentos y precios especiales
 
 La aplicación de precios especiales a los productos puede alentar a sus clientes a realizar una compra antes y (o) a comprar más.
 
 * [Descuentos](xref:es/ejecutar-su-tienda/herramientas-promocionales/descuentos)
-* [Precios de nivel](xref:en/running-your-store/otional-tools/tier-precios)
+* [Precios de nivel](xref:es/running-your-store/otional-tools/tier-precios)
 
 ### Programa de fidelidad
 
@@ -96,13 +96,13 @@ Ya sea que desee darle una oportunidad a un proyecto pequeño o que desee inicia
 
 nopCommerce le permite ejecutar más de una tienda usando una interfaz desde una sola instalación de nopCommerce y administrar todas las operaciones de administración desde un solo panel. Aprenda [aquí](xref:es/Getting-started/advanced-configuration/multi-store) cómo configurar varias tiendas.
 
-* [Multi-tienda](xref:en/Getting-Start/Advanced-Configuration/Multi-Store)
+* [Multi-tienda](xref:es/Getting-Start/Advanced-Configuration/Multi-Store)
 
 ### Multi vendedor
 
 * Las herramientas de envío directo y de múltiples proveedores le permiten vender en línea sin tener que mantener existencias ni enviarpedidos. Vea el [tutorial-de-vídeo](https://www.youtube.com/watchv=MH6r6tqfLF8&index=9&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4) on multi-vendor support.
 
-* [Vendor management](xref:en/running-your-store/vendor-management)
+* [Vendor management](xref:es/running-your-store/vendor-management)
 
 > [!TIP]
 > 

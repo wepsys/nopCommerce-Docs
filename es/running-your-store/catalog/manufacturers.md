@@ -80,6 +80,6 @@ En el panel de *Mappings*, defina los siguientes detalles:
 - [Adding products](xref:en/running-your-store/catalog/products/add-products)
 - [SEO](xref:en/running-your-store/search-engine-optimization)
 
-## Tutorials
+## Tutoriales
 
 - [Managing manufacturers in nopCommerce](https://www.youtube.com/watch?v=NnWD9-zi8s4&feature=youtu.be)

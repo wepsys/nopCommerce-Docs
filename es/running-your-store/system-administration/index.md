@@ -14,9 +14,9 @@ Este capítulo se concentra más en el back-end, el front-end está cubierto en 
 ## Mira aquí
 
 * [Información del sistema](xref:es/running-your-store/system-administration/system-information)
-* [Registro](xref:es/ejecutando-su-tienda/administración-del-sistema/registro)
-* [Advertencias](xref:es/ejecutando-su-tienda/administración-del-sistema/advertencias)
-* [Mantenimiento](xref:es/ejecutando-su-tienda/administración-del-sistema/mantenimiento)
-* [Cola de mensajes](xref:es/ejecutando-su-tienda/administración-del-sistema/cola-de-mensajes)
-* [Programar tareas](xref:es/running-your-store/system-Administration/schedule-tasks)
-* [Plantillas](xref:es/running-your-store/system-Administration/templates)
+* [Registro](xref:es/running-your-store/system-administration/log)
+* [Advertencias](xref:es/running-your-store/system-administration/warnings)
+* [Mantenimiento](xref:es/running-your-store/system-administration/maintenance)
+* [Cola del mensaje](xref:es/running-your-store/system-administration/message-queue)
+* [Programar tareas](xref:es/running-your-store/system-administration/schedule-tasks)
+* [Plantillas](xref:es/running-your-store/system-administration/templates)
