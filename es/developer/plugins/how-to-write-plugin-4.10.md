@@ -19,7 +19,7 @@ Los complementos se utilizan para ampliar la funcionalidad de nopCommerce. nopCo
 
     ![p1](_static/how-to-write-plugin-4.10/write_plugin_4.10_1.jpg)
 
-1. Once the plugin project is created you have to open its `.csproj` file in any text editor and replace its content with the following one:
+1. Una vez creado el proyecto del plugin hay que abrir su archivo `.csproj` en cualquier editor de texto y sustituir su contenido por el siguiente:
 
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">

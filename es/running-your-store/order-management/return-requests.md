@@ -53,11 +53,11 @@ El administrador de la tienda está autorizado a hacerlo:
 * Introduzca la **Cantidad** del producto devuelto.
 * Seleccione el **Estado de la solicitud de devolución**:  
   * *Pendiente*
-  * * Recibido *
-  * * Retorno autorizado *
-  * * Artículo(s) reparado(s) *
-  * * Artículo(s) reembolsado(s) *
-  * * Solicitud rechazada *
+  * *Recibido*
+  * *Retorno autorizado*
+  * *Artículo(s) reparado(s)*
+  * *Artículo(s) reembolsado(s)*
+  * *Solicitud rechazada*
   * *Cancelado*
 
 * En el campo **Razón de la devolución**, edite la razón de la devolución, si es necesario.

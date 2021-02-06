@@ -5,43 +5,43 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.IvanIvanIvanov, git.mariannk
 ---
 
-# Rental products
+# Productos de alquiler
 
-The rental products functionality is useful when you want to create a website allows customers to book rooms and hotels. This feature is also can be used for a website that offers clothes such as wedding dresses, camping stuff, children toys and more for rent.
+La funcionalidad de productos de alquiler es útil cuando se quiere crear un sitio web que permita a los clientes reservar habitaciones y hoteles. Esta función también se puede utilizar para un sitio web que ofrece ropa como vestidos de novia, material de camping, juguetes para niños y más para alquilar.
 
-## Example
+## Ejemplo
 
-Let's say you wish to create a website provides wedding dresses for rent. 
+Supongamos que desea crear un sitio web que ofrece vestidos de novia en alquiler. 
 
-Which functionality will be useful in this case?
+¿Qué funcionalidad será útil en este caso?
 
-- One of the most important feature is to allow customers to choose *rent period*. In nopCommerce, it is allowed to choose the start date and end date, as on the screenshot below:
-	![Rental example](_static/rental-products/example.jpg)
+- Una de las funcionalidades más importantes es permitir a los clientes elegir el *periodo de alquiler*. En nopCommerce, se permite elegir la fecha de inicio y la fecha de finalización, como en la captura de pantalla de abajo:
+	![Ejemplo de alquiler](_static/rental-products/example.jpg)
 
-- nopCommerce also allows the store administrator to chose *rental period* and *rental period length*. For example, you want to give the wedding dress for rent for 3 days minimum. In this case a customer will see the following on the product details page:
-	![Rental period](_static/rental-products/period.jpg)
+- nopCommerce también permite al administrador de la tienda elegir *periodo de alquiler* y *duración del periodo de alquiler*. Por ejemplo, usted quiere dar el vestido de novia en alquiler durante 3 días como mínimo. En este caso un cliente verá lo siguiente en la página de detalles del producto:
+	![Periodo de alquiler](_static/rental-products/period.jpg)
 
-- Use *checkout attributes* to allow a customer to specify return time when a carrier should pick up the dress:
-	![Rental example](_static/rental-products/time.jpg)
-	Read more about checkout attributes [here](xref:es/running-your-store/order-management/checkout-attributes).
+- Utilice los atributos *checkout* para permitir que el cliente especifique la hora de devolución cuando un transportista debe recoger el vestido:
+	![Ejemplo de alquiler](_static/rental-products/time.jpg)
+	Más información sobre los atributos de la caja [here](xref:es/running-your-store/order-management/checkout-attributes).
 
-If you already learned how to set up a [common product](xref:es/running-your-store/catalog/products/add-products) learn how to make this product rental in the section below.
+Más información sobre los atributos de la caja
 
-## Set up a rental product
+## Configurar un producto de alquiler
 
-To create a rental product, go to **Catalog → Products**. Click **Add new**, fill up the common product fields and tick the corresponding checkbox in the *Rental* panel.
+Para crear un producto de alquiler, vaya a **Catálogo → Productos**. Haga clic en **Añadir nuevo**, rellene los campos comunes del producto y marque la casilla correspondiente en el panel *Alquiler*.
 
 ![Rental panel](_static/rental-products/rental.png)
 
-Define the following details:
+Defina los siguientes detalles:
 
-- **Rental period length** is a rental cycle length, minimum billing period. Price is specified for this period.
-- **Rental period** in *Days*, *Weeks*, *Months* or *Years*. It defines units time rental period will be measured in.
+- **Longitud del periodo de alquiler** es la longitud del ciclo de alquiler, periodo mínimo de facturación. El precio se especifica para este periodo.
+- Periodo de alquiler** en *Días*, *Semanas*, *Meses* o *Años*. Define las unidades en las que se medirá el periodo de alquiler.
 
-When buying rental products, customers have to specify the rental period in the public store. The amount to be paid is calculated automatically.
+Al comprar productos de alquiler, los clientes tienen que especificar el periodo de alquiler en la tienda pública. El importe a pagar se calcula automáticamente.
 
-![Rental in public store](_static/rental-products/rental1.png)
+![Alquiler en tienda pública](_static/rental-products/rental1.png)
 
-## Tutorials
+## Tutoriales
 
-- [Managing rental products](https://www.youtube.com/watch?v=tOaC6hOILZY&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4&index=24)
+- [Gestión de productos de alquiler](https://www.youtube.com/watch?v=tOaC6hOILZY&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4&index=24)

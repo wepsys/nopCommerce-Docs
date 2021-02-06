@@ -55,7 +55,7 @@ En el panel **Info** el dueño de una tienda puede realizar lo siguiente:
 > Cuando un cliente utiliza el método de pago manual de la tarjeta de crédito, que permite almacenar la información de la tarjeta de crédito en la base de datos, aparece un botón **Editar tarjeta de crédito**. Si se utiliza un método de pago diferente, este botón no será visible.
 
 * Ver el **Subtotal del pedido**, **Envío del pedido**, **Impuesto del pedido**, **Total del pedido**, **Ganancia**. Si hace clic en el botón **Editar totales del pedido** podrá editar los totales del pedido como en la siguiente captura de pantalla:
-	![Order totals](_static/orders/edit-totals.jpg)
+    ![Order totals](_static/orders/edit-totals.jpg)
 
 * Vea el **Método de pago** utilizado para este pedido.
 * Ver el **Estado del pago**. Podría ser uno de los siguientes: *Pendiente*, *Autorizado*, *Pagado (capturado)*, *Reembolsado*, *Reembolsado parcialmente*, o *Viado*.

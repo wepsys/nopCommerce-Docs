@@ -14,27 +14,27 @@ Las noticias se muestran en tu tienda en la página de inicio o en el menú de p
 ![p1](_static/news/news_1.png)
 
 Para gestionar las noticias vaya a **Gestión de contenidos → News itmes**. La lista de todas las noticias se muestra como sigue:
-![News](_static/news/list.jpg)
+![Noticias](_static/news/list.jpg)
 
 ## Añadiendo noticias
 
 Para añadir una nueva noticia pulse el botón **Editar** y rellene la información sobre la noticia. 
 
-![Adding news](_static/news/add-new.jpg)
+![Añadir noticias](_static/news/add-new.jpg)
 
-### Info
+### Información
 
-In the *Info* panel define the following news item details:
-- If more than one language is enabled, from the **Language** dropdown list, select the language of this news item. Customers will only see news for their selected language.
-- Enter the **Title** of this news item. For example: "The launch of our new nopCommerce store".
-- In the **Short description** field, enter an abstract of this news item. This is the text your visitors will see on the news list in the public store.
-- In the **Full description** field, enter the text of this news item.
-- Select the **Allow comments** checkbox, to enable customers to add comments to the news item.
-* Enter **Start date** and **End date** for displaying this news item in Coordinated Universal Time (UTC).
+En el panel *Info* defina los siguientes detalles de la noticia:
+- Si hay más de un idioma habilitado, en la lista desplegable **Idioma**, seleccione el idioma de esta noticia. Los clientes sólo verán las noticias en el idioma seleccionado.
+- Introduzca el **Título** de esta noticia. Por ejemplo: "El lanzamiento de nuestra nueva tienda nopCommerce".
+- En el campo **Descripción corta**, introduzca un resumen de esta noticia. Este es el texto que sus visitantes verán en la lista de noticias de la tienda pública.
+- En el campo **Descripción completa**, introduzca el texto de esta noticia.
+- Seleccione la casilla **Permitir comentarios**, para que los clientes puedan añadir comentarios a la noticia.
+* Introduzca la **fecha de inicio** y la **fecha de finalización** para mostrar esta noticia en Tiempo Universal Coordinado (UTC).
 
  > [!NOTE]
  > 
- > You can leave these fields empty if you do not want to define news item start and end dates.
+ > Puede dejar estos campos vacíos si no desea definir las fechas de inicio y fin de las noticias.
 
  - Elija las tiendas en el campo **Limitado a las tiendas** para habilitar esta noticia sólo para tiendas específicas. Deje el campo vacío en caso de que esta funcionalidad no sea necesaria.
   > [!NOTE]
@@ -58,7 +58,7 @@ En el panel *SEO* define los siguientes detalles de la noticia:
 
 Para gestionar los comentarios de las noticias, vaya a **Gestión de contenidos → Comentarios de noticias**.
 
-![News comments](_static/news/news-comments.jpg)
+![Comentarios de las noticias](_static/news/news-comments.jpg)
 
 Use el botón **Aprobar seleccionados** para aprobar los comentarios seleccionados y el botón **Desaprobar seleccionados** para desaprobarlos.
 También puede editar o eliminar un comentario. Si borra este comentario será eliminado del sistema
@@ -92,4 +92,4 @@ Haga clic en **Guardar**.
 
 ## Tutoriales
 
-- [Managing news in nopCommerce](https://www.youtube.com/watch?v=ztLlRXvBQK4)
+- [Gestión de noticias en nopCommerce](https://www.youtube.com/watch?v=ztLlRXvBQK4)

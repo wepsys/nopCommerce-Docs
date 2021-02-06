@@ -17,7 +17,7 @@ Para el nuevo portal azul vaya [portal.azure.com](http://portal.azure.com/) → 
 
 1. **Instalador de plataforma web**. nopCommerce está disponible en la galería de aplicaciones de Azure Web Sites. Así que vaya a Azure Portal, haga clic en "inicio, nuevo sitio, desde la galería". Selecciona nopCommerce en la lista de aplicaciones disponibles. Después de introducir la información de conexión de la base de datos y hacer clic en Aceptar, nopCommerce estará listo para iniciarse.
 
-Una vez que el sitio está implementado tienes que instalar nopCommerce. Por favor, lea más sobre él [aquí](xref:en/installation-and-upgrading/installing-nopcommerce/index).
+Una vez que el sitio está implementado tienes que instalar nopCommerce. Por favor, lea más sobre él [aquí](xref:es/installation-and-upgrading/installing-nopcommerce/index).
 
 Azure es compatible con varias instancias desde la versión 3.70. Es ideal para cualquier escalabilidad de aplicaciones. Ahora no debe preocuparse si su sitio puede manejar un gran número de visitantes. Entonces, ¿qué se ha hecho exactamente para admitir varias instancias en Azure y granjas de servidores web?
 

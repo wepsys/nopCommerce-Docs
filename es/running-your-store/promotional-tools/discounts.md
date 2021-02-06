@@ -15,7 +15,7 @@ La forma más común de utilizar los descuentos es un código de cupón. El cód
 
 Para ver la lista de descuentos vaya a la página **Promociones → Descuentos**:
 
-![Discounts](_static/discounts/list.jpg)
+![Descuentos](_static/discounts/list.jpg)
 
 La zona superior de la página le permite buscar un descuento por diferentes criterios de búsqueda:
 
@@ -24,7 +24,7 @@ La zona superior de la página le permite buscar un descuento por diferentes cri
 - Código del cupón**.
 - **Nombre del descuento** es el nombre completo del descuento o una parte del mismo.
 
-> [!NOTA]
+> [!NOTE]
 > 
 > Por defecto, no hay descuentos disponibles en nopCommerce, así que puede crearlos desde cero y seguir su propia estrategia de marketing.
 
@@ -32,7 +32,7 @@ La zona superior de la página le permite buscar un descuento por diferentes cri
 
 Para añadir un nuevo descuento vaya a **Promociones → Descuentos** y haga clic en **Añadir nuevo**.
 
-![Add a new discount](_static/discounts/add-new.jpg)
+![Añadir un nuevo descuento](_static/discounts/add-new.jpg)
 
 - Introduzca el **Nombre** del descuento.
 - En la lista desplegable **Tipo de descuento**, asigne el descuento a la opción requerida, como sigue:
@@ -57,7 +57,7 @@ Para añadir un nuevo descuento vaya a **Promociones → Descuentos** y haga cli
 
 - Si desea especificar la **fecha de inicio** y la **fecha de finalización** de su descuento, selecciónelas en el campo de calendario en Tiempo Universal Coordinado (UTC).
 - La opción **Cumulable con otros descuentos** permite a los clientes utilizar varios descuentos al mismo tiempo. Si está marcada, este descuento puede ser utilizado con otros simultáneamente. 
-  > [!NOTA]
+  > [!NOTE]
   >
   > Esta característica sólo funciona para los descuentos con el mismo tipo de descuento. En este momento, los descuentos con tipos distintos ya son acumulativos.
 
@@ -78,7 +78,7 @@ Configure los requisitos si quiere limitar el descuento a ciertas categorías de
 
 Para añadir requisitos de descuento vaya al panel de *Requisitos*:
 
-![Requirements](_static/discounts/requirements.jpg)
+![Requerimentos](_static/discounts/requirements.jpg)
 
 Para añadir un nuevo requisito seleccione el **tipo de requisito de descuento** de la lista desplegable.
 
@@ -87,39 +87,39 @@ Para añadir un nuevo requisito seleccione el **tipo de requisito de descuento**
 - Además, puede crear un grupo de requisitos para tratar requisitos complejos con múltiples reglas. El grupo de requisitos es una función útil para crear plantillas de requisitos con descuento. Puede crear un grupo de requisitos una sola vez y luego utilizarlo cada vez que quiera que se aplique esta limitación. Puede incluir un grupo de requisitos en otro si es necesario. 
   Los requisitos se establecen mediante una lógica booleana. Por ejemplo, si quiere que el descuento se asigne a un rol de cliente concreto o en caso de que un cliente haya gastado una cantidad determinada. Estos requisitos y otros están disponibles como plugins en nuestro [marketplace](https://www.nopcommerce.com/es/extensions?searchterm=discount+requirement&category=discounts-promotions).
 
-![Group requirements](_static/discounts/discount-requirenents-group.png)
+![Requisitos del grupo](_static/discounts/discount-requirenents-group.png)
 
 Puedes establecer un número ilimitado de grupos de requisitos, uno dentro de otro. Por ejemplo, un caso más complejo, cuando quieres que tus clientes obtengan un descuento si son vendedores y han gastado una determinada cantidad o si son moderadores del foro y ponen un determinado producto en el carrito al mismo tiempo.
 
 Cuando los clientes aplican un descuento al pasar por caja, éste se muestra de la siguiente manera:
 
-![discount-in-shopping-cart](_static/discounts/discount-in-shopping-cart.png)
+![descuento en la cesta de la compra](_static/discounts/discount-in-shopping-cart.png)
 
-![coupone-code](_static/discounts/coupone-code.png)
+![código de cupón](_static/discounts/coupone-code.png)
 
 
 ## Common type of discounts
 
 ### Black Friday sale
 
-Black Friday is always the day after Thanksgiving. It's quite common discount campaign, almost every online store has a Black Friday sale.
+El Black Friday es siempre el día después de Acción de Gracias. Es una campaña de descuentos bastante común, casi todas las tiendas en línea tienen una venta de Viernes Negro.
 
 ![Black Friday](_static/discounts/Black-friday.png)
 
-- **Name** - you can enter any name, it's only internal.
-- **Discount type** - here it's *Assigned to subtotal* type when a discount is applied to the whole order amount before all the fees are added (like shipping fee and taxes). It's relevant here because we want all the products in the cart to be discounted.
-- We can apply the discount in % or just enter the amount in chosen currency. We have 10% here.
-- The **Maximum discount amount** can be limited as well, so even if the total amount of products in the cart will be $300 a customer will only have 10$ discount anyway.
-- This discount will require a **Coupon code**. You can apply discounts without entering coupon codes, but it's not recommended considering marketing purposes. Coupon codes allow you to check campaigns results.
-- Frequently discounts are time-based. Here we entered Black Friday weekend dates in the **Start date** and **End date** fields.
-- **Cumulative with other discounts** option allows customers use several discounts at the same time.
-- The last setting is for **Discount limitation** usage. For instance, this discount can be applied once per customer.
+- Nombre** - puede introducir cualquier nombre, es sólo interno.
+- **Tipo de descuento** - aquí es del tipo *Asignado al subtotal* cuando se aplica un descuento a todo el importe del pedido antes de que se añadan todos los gastos (como los gastos de envío y los impuestos). Es relevante aquí porque queremos que todos los productos del carrito tengan un descuento.
+- Podemos aplicar el descuento en % o simplemente introducir la cantidad en la moneda elegida. Aquí tenemos un 10%.
+- El **Máximo de descuento** puede ser limitado también, así que incluso si la cantidad total de productos en el carrito será de 300$ un cliente sólo tendrá 10$ de descuento de todos modos.
+- Este descuento requiere un **código de cupón**. Puede aplicar descuentos sin introducir códigos de cupón, pero no se recomienda teniendo en cuenta los propósitos de marketing. Los códigos de cupón le permiten comprobar los resultados de las campañas.
+- A menudo los descuentos se basan en el tiempo. Aquí hemos introducido las fechas del fin de semana del Black Friday en los campos **Fecha de inicio** y **Fecha de finalización**.
+- La opción **Cumulable con otros descuentos** permite a los clientes utilizar varios descuentos al mismo tiempo.
+- La última opción es para el uso de la **Limitación del descuento**. Por ejemplo, este descuento se puede aplicar una vez por cliente.
 
 ### Compre un artículo y obtenga un 50% en el segundo
 
-A menudo necesitas vender más artículos de un determinado producto. En este caso, para animar a sus clientes a comprar varios artículos de ese producto, puede ofrecerles un descuento. Veamos cómo utilizar el descuento "Compre un artículo y obtenga el 50% en el segundo" en su tienda nopCommerce.
+A menudo necesita vender más artículos de un determinado producto. En este caso, para animar a sus clientes a comprar varios artículos de ese producto, puede ofrecerles un descuento. Veamos cómo utilizar el descuento "Compre un artículo y obtenga el 50% en el segundo" en su tienda nopCommerce.
 
-![Edit discount details](_static/discounts/buy_1.png)
+![Editar los detalles del descuento](_static/discounts/buy_1.png)
 
 - El **Tipo de descuento** es *Aplicado a productos*. En el panel *Aplicado a productos* puedes añadirlos, aquí habrá una "Camiseta de gran tamaño". 
 - Queremos que nuestros clientes obtengan un 50% de descuento en la segunda camiseta. 

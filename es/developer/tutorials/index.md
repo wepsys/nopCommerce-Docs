@@ -19,7 +19,7 @@ La siguiente es una lista de preguntas comunes hechas por los desarrolladores qu
 * [Eventos de entidad y cómo funcionan](xref:es/developer/tutorials/entity-event)
 * [Inversión de control e inyección de dependencia](xref:es/developer/tutorials/inversión-of-control)
 * [¿Cómo registro nuevas rutas?](Xref:es/developer/tutorials/register-new-routes)
-* [Una guía para expandir la funcionalidad de las funciones básicas de nopCommerce a través de un complemento](xref:es/developer/tutorials/   guide-to-expand-the-functions-of-the-basic-functions-of-nop-commerce-a través de un complemento)
+* [Una guía para ampliar la funcionalidad de las funciones básicas de nopCommerce a través de un plugin](xref:en/developer/tutorials/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin)
 * [Validación de datos](xref:es/developer/tutorials/data-validation)
 * [Tareas programadas](xref:es/desarrollador/tutoriales/tareasprogramadas)
 * [Exposición y manejo de eventos](xref:es/developer/tutorials/events)

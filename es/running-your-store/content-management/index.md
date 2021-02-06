@@ -12,10 +12,10 @@ La gestión de contenidos es un conjunto de procesos y tecnologías que apoyan l
 ## Más información
 
 - [Blog](xref:es/running-your-store/content-management/blog)
-- [News](xref:es/running-your-store/content-management/news)
-- [Forums](xref:es/running-your-store/content-management/forums)
-- [Polls](xref:es/running-your-store/content-management/polls)
+- [Noticias](xref:es/running-your-store/content-management/news)
+- [Foros](xref:es/running-your-store/content-management/forums)
+- [Encuestas](xref:es/running-your-store/content-management/polls)
 - [Topics (pages)](xref:es/running-your-store/content-management/topics-pages)
-- [Message templates](xref:es/running-your-store/content-management/message-templates)
+- [Plantillas de mensajes](xref:es/running-your-store/content-management/message-templates)
 - [SEO](xref:es/running-your-store/search-engine-optimization)
-- [Email campaigns](xref:es/running-your-store/promotional-tools/email-campaigns)
+- [Campañas de correo electrónico](xref:es/running-your-store/promotional-tools/email-campaigns)

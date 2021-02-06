@@ -43,7 +43,7 @@ Taquí hay algunos elementos en la página del carrito de compras. Algunos de el
 
 > [!NOTE]
 >
-> En caso de que no quieras permitir que un cliente añada un determinado producto a un carrito de la compra, marca la casilla de verificación **Deshabilitar botón de compra** en el panel *Precios* de la página de edición del producto. Lee más acerca de cómo añadir un producto en el [Add products](xref:es/running-your-store/catalog/products/add-products) chapter.
+> En caso de que no quieras permitir que un cliente añada un determinado producto a un carrito de la compra, marca la casilla de verificación **Deshabilitar botón de compra** en el panel *Precios* de la página de edición del producto. Lee más acerca de cómo añadir un producto en el [Añadir productos](xref:es/running-your-store/catalog/products/add-products) capítulo.
 
 > [!NOTE]
 > 
@@ -113,9 +113,9 @@ En el panel de la *Lista de deseos* se puede definir:
 
 ## Ver también
 
-* [Orders](xref:es/running-your-store/order-management/orders)
-* [Promotional tools](xref:es/running-your-store/promotional-tools/index)
+* [Pedidos](xref:es/running-your-store/order-management/orders)
+* [Herramientas de promoción](xref:es/running-your-store/promotional-tools/index)
 
 ## Tutoriales
 
-* [Overview of wishlists in nopCommerce](https://www.youtube.com/watch?v=9EN7oZSwIVE)
+* [Visión general de las listas de deseos en nopCommerce](https://www.youtube.com/watch?v=9EN7oZSwIVE)

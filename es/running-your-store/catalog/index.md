@@ -20,12 +20,12 @@ Hay algunos consejos que te ayudarán a crear un catálogo bien diseñado para t
 ### Categorías
 
 - Cuando añada categorías a su tienda, asegúrese de que describan claramente los productos (o subcategorías) que contienen. Como en el siguiente ejemplo, la categoría Tableros contiene sólo tableros:
-	![Category](_static/index/category.jpg)
+	![Categoría](_static/index/category.jpg)
 	*Crear categorías usando el botón **Agregar nuevo** en la página **Catálogo → Categorías***.
 
 - Use subcategorías cuando necesite separar una categoría general de las específicas. Esto facilita el proceso de búsqueda para sus clientes. Como en el ejemplo a continuación, la categoría de Deportes Acuáticos contiene el Surf, Windsurf y Kitesurf
 subcategorías:
-	![Subcategories](_static/index/subcategories.jpg)
+![Subcategorías](_static/index/subcategories.jpg)
 	*Añade **Categoría de padres** en la página de edición de la categoría para hacerla subcategoría.*
 
 - Añade las categorías más populares al menú superior que está visible en cada página para atraer más clientes:
@@ -33,23 +33,23 @@ subcategorías:
 	*Para hacer esto usa la casilla de verificación **Incluir en el menú superior** en la página de edición de la categoría.*
 
 - Añade las categorías más interesantes a la página de inicio. Estas categorías serán lo primero que vea un cliente cuando visite su tienda:
-	![Homepage categories](_static/index/homepage-categories.jpg)
+	![Categorías de la página web](_static/index/homepage-categories.jpg)
 	*Para hacer esto usa la casilla de verificación **Mostrar en la página de inicio** en la página de edición de la categoría.*
 
 - Permita que sus clientes busquen en las categorías usando filtros:
-	![Filters](_static/index/filters.jpg)
+	![Filtros](_static/index/filters.jpg)
 	*The filter functionality uses [atributos de especificación](xref:es/runninging-your-store/catalog/products/specification-attributes).*
 
 - Permite a sus clientes clasificar los productos y cambiar el modo de visualización: 
-	![Filters](_static/index/filters.jpg)
+	![Filtros](_static/index/filters.jpg)
 	*Para obtener más información sobre la clasificación, visite la sección [Configuración del catálogo - Clasificación de productos](xref:es/running-your-store/catalog/catalog-settings#product-sorting). Utilice los campos **Permitir a los clientes seleccionar el tamaño de la página** y **Opciones de tamaño de la página** de la página de edición de la categoría para configurar el modo de visualización.*
 
 Para aprender a crear una categoría visite el capítulo [Categorías](xref:es/running-your-store/catalog/categories).
 
 ## Ver también
 
-* [Categories](xref:es/running-your-store/catalog/categories)
-* [Manufacturers](xref:es/running-your-store/catalog/manufacturers)
-* [Attributes](xref:es/running-your-store/catalog/products/product-attributes)
-* [Products](xref:es/running-your-store/catalog/products/index)
-* [Catalog settings](xref:es/running-your-store/catalog/catalog-settings)
+* [Categorias](xref:es/running-your-store/catalog/categories)
+* [Fabricantes](xref:es/running-your-store/catalog/manufacturers)
+* [Attributos](xref:es/running-your-store/catalog/products/product-attributes)
+* [Productos](xref:es/running-your-store/catalog/products/index)
+* [Configuración del catálogo](xref:es/running-your-store/catalog/catalog-settings)

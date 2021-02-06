@@ -24,7 +24,7 @@ Defina la siguiente información:
 * Marque la casilla **Exento de impuestos** para que los clientes con este rol puedan hacer compras libres de impuestos.
 * Marque la casilla de verificación **Anular el tipo de visualización de impuestos predeterminados** y seleccione en la lista desplegable **Tipo de visualización de impuestos predeterminados** uno de los tipos de impuestos:
   * *Incluyendo los impuestos*
-  * * Excluyendo los impuestos *
+  * *Excluyendo los impuestos *
 * Marque la casilla **Habilitar la vida útil de la contraseña**, para obligar a los clientes a cambiar sus contraseñas después de un tiempo determinado.
 * **Comprado con el producto**. Marque el botón **Elegir producto** para elegir un producto especial. Un cliente se añade a este rol de cliente una vez que este producto es comprado (pagado). 
   > [!NOTE]
@@ -38,5 +38,5 @@ Haga clic en **Save**.
 
 ## Tutoriales
 
-* [Overview of customer roles](https://www.youtube.com/watch?v=3vdIDNIYFIQ)
-* [Recovering back a deleted admin user](https://www.youtube.com/watch?v=D45WkrbaA38)
+* [Resumen de las funciones del cliente](https://www.youtube.com/watch?v=3vdIDNIYFIQ)
+* [Recuperación de un usuario administrador eliminado](https://www.youtube.com/watch?v=D45WkrbaA38)

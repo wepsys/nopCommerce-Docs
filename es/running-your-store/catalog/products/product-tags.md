@@ -5,32 +5,32 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.mariannk
 ---
 
-# Product tags
+# Etiquetas de productos
 
-Product tags are keywords for product identification. They are used to sort the products by a certain feature and to enable a specific, narrow product search.
-For example, if you sell apparel, and you want to create tags for T-shirts, it can be "t-shirt", "cotton", "polo", etc.
+Las etiquetas de los productos son palabras clave para la identificación de los productos. Se utilizan para clasificar los productos por una determinada característica y para permitir una búsqueda específica y limitada de productos.
+Por ejemplo, si vendes ropa y quieres crear etiquetas para camisetas, puede ser "camiseta", "algodón", "polo", etc.
 
-To edit product tags that are displayed in the public store, go to **Catalog → Product tags**.
+Para editar las etiquetas de productos que se muestran en la tienda pública, vaya a **Catálogo → Etiquetas de productos**..
 
 ![Product tags](_static/product-tags/tags.jpg)
 
-On the product tags page, you can see how many products have a certain tag in the **Tagged products** column. You can edit the tag by clicking the **Edit** button beside it. Or you can also delete tags by selecting them and then clicking the **Delete(selected)** button.
+En la página de etiquetas de productos, puede ver cuántos productos tienen una determinada etiqueta en la columna **Productos etiquetados**. Puede editar la etiqueta haciendo clic en el botón **Editar** que aparece al lado. O también puede eliminar las etiquetas seleccionándolas y haciendo clic en el botón **Borrar (seleccionado)**.
 
-## Adding product tags
+## Añadir etiquetas a los productos
 
-You can add tags on the Edit product details page when adding or editing a product.
+Puede añadir etiquetas en la página de detalles del producto al añadir o editar un producto.
 
 ![Add tags](_static/product-tags/product_tags2.png)
 
-Enter tags separating them by comma. Once the tags are created, they can be used for other products as well. The more products are associated with a particular tag, the larger it will look in the *Popular tags* area, displayed in the sidebar of the catalog page:
+Introduzca las etiquetas separándolas por comas. Una vez creadas las etiquetas, pueden utilizarse también para otros productos. Cuantos más productos estén asociados a una etiqueta concreta, mayor será su aspecto en el área de *Etiquetas populares*, que se muestra en la barra lateral de la página del catálogo:
 
 ![Popular tags](_static/product-tags/popular_tags.png)
 
-## Setting up product tags
+## Configuración de las etiquetas de los productos
 
-The following section describes product tags settings: [Tags](xref:es/running-your-store/catalog/catalog-settings#tags).
+La siguiente sección describe la configuración de las etiquetas de los productos: Etiquetas](xref:es/running-your-store/catalog/catalog-settings#tags).
 
-## See also
+## Ver también
 
-* [Product categories](xref:es/running-your-store/catalog/categories)
-* [Adding products](xref:es/running-your-store/catalog/products/add-products)
+* [Categorías de productos](xref:es/running-your-store/catalog/categories)
+* [Añadir productos](xref:es/running-your-store/catalog/products/add-products)

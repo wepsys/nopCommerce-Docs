@@ -217,5 +217,5 @@ Este paso es opcional. Algunos widgets pueden requerir lógica adicional durante
     }
     ```
 
- >[!IMPORTANTE]
+ >[!IMPORTANT]
  > Si anula uno de estos métodos, no oculte su implementación base - **base.Install()** and **base.Uninstall()** que ha sido marcado en las imágenes de arriba

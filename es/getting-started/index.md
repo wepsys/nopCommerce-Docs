@@ -24,7 +24,7 @@ Un catálogo es lo que tratan constantemente sus clientes. Por eso es fundamenta
 
 Las categorías y los fabricantes se utilizarán en su catálogo para el filtrado de productos. Aprenda a lidiar con ellos y facilite la navegación del sitio.
 
-* [Categorías](xref:es/ejecutar-su-tienda/catálogo/categorías)
+* [Categorías](xref:es/running-your-store/catalog/categories)
 * [Fabricantes](xref:es/running-your-store/catalog/Manufacturers)
 
 ### Agregar productos
@@ -37,7 +37,7 @@ Puede agregar productos manualmente uno por uno o importar su catálogo desde un
 
 ¿Qué pasa si sus productos son variables, por ejemplo, vende zapatillas en diferentes colores y tamaños? En nopCommerce puede configurar las especificaciones y los atributos del producto para gestionar esto.
 
-* [Productos agrupados (variantes)](xref:es/ejecutar-su-tienda/catálogo/productos/productos-agrupados-variantes)
+* [Productos agrupados (variantes)](xref:en/running-your-store/catalog/products/grouped-products-variants)
 
 ## 3. Mejore la experiencia del cliente en su tienda
 
@@ -65,28 +65,28 @@ Una lista de deseos es una buena opción para compras diferidas. Deje que sus cl
 
 Comercializar tu tienda es fundamental para fidelizar a tus clientes y concienciar a los clientes potenciales. Hay muchas opciones de marketing en nopCommerce: puedes ofrecer precios especiales, asesorar productos en función del comportamiento de compra, promocionar tu tienda a través de campañas de correo electrónico y mucho más.
 
-* [Herramientas de promoción](xref:es/ejecutando-su-tienda/herramientas-promocionales/index)
+* [Herramientas de promoción](xref:es/running-your-store/promotional-tools/index)
 
 ### Descuentos y precios especiales
 
 La aplicación de precios especiales a los productos puede alentar a sus clientes a realizar una compra antes y (o) a comprar más.
 
-* [Descuentos](xref:es/ejecutar-su-tienda/herramientas-promocionales/descuentos)
+* [Descuentos](xref:es/running-your-store/promotional-tools/discounts)
 * [Precios de nivel](xref:es/running-your-store/otional-tools/tier-precios)
 
 ### Programa de fidelidad
 
 La funcionalidad de puntos de recompensa en nopCommerce permite a los clientes ganar puntos por determinadas acciones (registro, compras).
 
-* [Puntos de recompensa](xref:es/ejecutar-su-tienda/herramientas-promocionales/puntos-de-recompensa)
+* [Puntos de recompensa](xref:es/running-your-store/promotional-tools/reward-points)
 
 ### Marketing cruzado
 
-En nopCommerce, puede ofrecer a sus clientes [productos adicionales](xref:es/ejecutar-su-tienda/herramientas-promocionales/ventas-cruzadas-y-productos-relacionados) que pueden gustarles en función de su comportamiento de compra. También es una buena oportunidad para vender algunos productos.
+En nopCommerce, puede ofrecer a sus clientes [productos adicionales](xref:es/running-your-store/promotional-tools/cross-sells-and-related-products)  que pueden gustarles en función de su comportamiento de compra. También es una buena oportunidad para vender algunos productos.
 
 ### Campañas de correo electrónico
 
-Cree [campañas de correo electrónico](xref:es/ejecutar-su-tienda/herramientas-promocionales/campañas-de-correo-electrónico) para llegar fácil y rápidamente a su público objetivo con ofertas especiales, noticias, contenido educativo, etc.
+Cree [campañas de correo electrónico](xref:es/running-your-store/promotional-tools/email-campaigns) para llegar fácil y rápidamente a su público objetivo con ofertas especiales, noticias, contenido educativo, etc.
 
 ## 5. Funciones especiales de nopCommerce para tiendas de cualquier tipo
 
@@ -102,7 +102,7 @@ nopCommerce le permite ejecutar más de una tienda usando una interfaz desde una
 
 * Las herramientas de envío directo y de múltiples proveedores le permiten vender en línea sin tener que mantener existencias ni enviarpedidos. Vea el [tutorial-de-vídeo](https://www.youtube.com/watchv=MH6r6tqfLF8&index=9&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4) on multi-vendor support.
 
-* [Vendor management](xref:es/running-your-store/vendor-management)
+* [Gestión de proveedores](xref:es/running-your-store/vendor-management)
 
 > [!TIP]
 > 

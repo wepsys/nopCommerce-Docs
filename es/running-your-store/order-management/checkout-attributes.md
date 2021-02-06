@@ -76,11 +76,11 @@ Puede **Editar** y **Borrar** los valores de atributo haciendo clic en los boton
 
 En el panel *Condición*, el dueño de la tienda puede especificar una condición para que el atributo de la caja sea visible (dependiendo de otros atributos). El atributo condicional sólo aparece si se selecciona un atributo anterior.
 
-![condition](_static/checkout-attributes/condition.png)
+![condición](_static/checkout-attributes/condition.png)
 
 Haga clic en **Save**. El nuevo atributo se mostrará en la página del carrito de la compra en la tienda pública.
 
 ## Tutoriales
 
-- [Adding checkout attributes](https://www.youtube.com/watch?v=sJcZP1qjHmY&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4&index=3)
-- [Overview of conditional checkout attributes](https://www.youtube.com/watch?v=z3UiXgK8Jgo&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4&index=18)
+- [Añadir atributos de pago](https://www.youtube.com/watch?v=sJcZP1qjHmY&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4&index=3)
+- [Visión general de los atributos de la caja condicional](https://www.youtube.com/watch?v=z3UiXgK8Jgo&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4&index=18)

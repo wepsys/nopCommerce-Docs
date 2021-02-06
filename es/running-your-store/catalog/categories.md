@@ -9,7 +9,7 @@ contributors: git.exileDev, git.DmitriyKulagin, git.dunaenko, git.IvanIvanIvanov
 
 Antes de añadir nuevos productos, el gerente de la tienda debe crear categorías, a las cuales los productos serán asignados más tarde. Para gestionar las categorías, vaya a **Catálogo → Categorías**.
 
-![Categories](_static/categories/categories.jpg)
+![Categorias](_static/categories/categories.jpg)
 
 Busca una categoría en el panel *Búsqueda* introduciendo el **Nombre de la categoría** o una parte del nombre, por la propiedad **Publicado** o entre todas las categorías de una determinada **Tienda** (si se habilita más de una tienda).
 
@@ -22,7 +22,7 @@ Busca una categoría en el panel *Búsqueda* introduciendo el **Nombre de la cat
 
 Para añadir una nueva categoría, haga clic en el botón **Añadir nuevo** en la parte superior de la página. Aparecerá la ventana *Añadir una nueva categoría*.
 
-![Add a new category](_static/categories/add-new.jpg)
+![Añadir una nueva categoría](_static/categories/add-new.jpg)
 
 Esta página está disponible en dos modos: **avanzado** y **básico**. Cambie al modo básico que muestra los únicos campos principales o utilice el modo avanzado que muestra todos los campos disponibles.
 
@@ -56,11 +56,11 @@ En el panel de *Mostrar*, defina la siguiente información de la categoría:
 
 ### Mapeos
 
-![Mappings](_static/categories/mappings.jpg)
+![Mapeos](_static/categories/mappings.jpg)
 
 En el panel de *Mapas*, defina la siguiente información de la categoría:
 
-- **Descuentos** - seleccione los descuentos asociados a esta categoría. Puede crear descuentos en la página **Promociones → Descuentos**. Lee más sobre los descuentos en el capítulo [Currencies](xref:es/getting-started/configure-payments/advanced-configuration/currencies).
+- **Descuentos** - seleccione los descuentos asociados a esta categoría. Puede crear descuentos en la página **Promociones → Descuentos**. Lee más sobre los descuentos en el capítulo [Monedas](xref:es/getting-started/configure-payments/advanced-configuration/currencies).
 
     > [!NOTE]
     >
@@ -75,5 +75,5 @@ En el panel de *Mapas*, defina la siguiente información de la categoría:
     >
     > Para poder utilizar esta función, debe desactivar la siguiente configuración: **Configuración → Configuración del catálogo 
 
-- [Adding products](xref:es/running-your-store/catalog/products/add-products)
+- [Añadir productos](xref:es/running-your-store/catalog/products/add-products)
 - [SEO](xref:es/running-your-store/search-engine-optimization)

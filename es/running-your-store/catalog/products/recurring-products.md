@@ -5,24 +5,24 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.IvanIvanIvanov, git.mariannk
 ---
 
-# Recurring products
+# Productos recurrentes
 
-Recurring product type is usually used for subscriptions or products with installment payment plans. In case your product is recurring, tick the corresponding checkbox in the *Recurring product* panel.
+El tipo de producto recurrente se utiliza normalmente para suscripciones o productos con planes de pago a plazos. Si su producto es recurrente, marque la casilla correspondiente en el panel *Producto recurrente*.
 
 ![Recurring](_static/recurring-products/recurring.png)
 
-Define the following details:
+Defina los siguientes detalles:
 
-- **Cycle length**. It is a time period recurring order can be repeated.
-- **Cycle Period** in *Days*, *Weeks*, *Months* or *Years*. It defines units time period will be measured in.
-- **Total cycles** is a number of times customer will receive the recurring product.
+- **Longitud del ciclo**. Es un periodo de tiempo en el que la orden recurrente puede repetirse.
+- Periodo del ciclo** en *Días*, *Semanas*, *Meses* o *Años*. Define las unidades en las que se medirá el periodo de tiempo.
+- **Ciclos totales** es el número de veces que el cliente recibirá el producto recurrente.
 
-You can define a recurring cycle to any product in order to enable the system to automatically create repetitive orders. In this case, any time when the payment must be done, the system will use the payment details of the initial order for subsequent recurring orders. In addition, the original shipping charges will apply to subsequent orders.
+Puede definir un ciclo recurrente a cualquier producto para que el sistema pueda crear automáticamente pedidos repetitivos. En este caso, cada vez que haya que realizar el pago, el sistema utilizará los datos de pago del pedido inicial para los siguientes pedidos recurrentes. Además, los gastos de envío originales se aplicarán a los pedidos posteriores.
 
 > [!NOTE]
 > 
-> At least one of the active payment modules should support recurring payments.
+> Al menos uno de los módulos de pago activos debe admitir los pagos recurrentes.
 
-## See also
+## Ver también
 
-- [Payment methods](xref:es/getting-started/configure-payments/payment-methods/index)
+- [Métodos de pago](xref:es/getting-started/configure-payments/payment-methods/index)

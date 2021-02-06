@@ -11,7 +11,7 @@ Las reseñas de productos son los comentarios de los clientes sobre un producto.
 
 En la tienda pública, las opiniones se muestran en la página de detalles del producto. Los clientes pueden escribir reseñas para diferentes productos. Una vez que se ha escrito una opinión y ha sido aprobada por el propietario de la tienda, otros clientes pueden definir si la opinión es útil o no haciendo clic en *Sí* o *No* al lado de la opinión.
 
-> [!NOTA]
+> [!NOTE]
 > 
 > Por defecto, las reseñas deben ser aprobadas por el propietario de la tienda antes de que aparezcan en la tienda pública. Sin embargo, en caso de que el propietario de la tienda decida que las reseñas no tienen que ser aprobadas, este comportamiento por defecto puede ser cambiado. Para optar por no aprobar obligatoriamente las reseñas de productos, vaya a **Configuración → Ajustes → Ajustes del catálogo** y desmarque la opción **Las reseñas de productos deben ser aprobadas**.
 
@@ -38,7 +38,7 @@ Seleccione las reseñas que desea aprobar o desaprobar y haga clic en el botón 
 
 Para editar la reseña del producto, haga clic en **Editar** junto a la reseña. Aparecerá la ventana *Editar detalles de la reseña del producto*, como se indica a continuación:
 
-![Editing product reviews](_static/product-reviews/edit_product_review_details.png)
+![Edición de reseñas de productos](_static/product-reviews/edit_product_review_details.png)
 
 - Ver el **Producto** para el que se ha añadido esta reseña. Después de hacer clic en este campo, se le redirigirá a la ventana de edición de los detalles del producto, donde podrá editar los detalles del producto.
 - Ver la **Tienda** en la que se escribió esta reseña.
@@ -54,13 +54,13 @@ Para editar la reseña del producto, haga clic en **Editar** junto a la reseña.
 
 Si ha creado tipos de valoración personalizados, verá el panel *Tipos de valoración*:
 
-![Review types](_static/product-reviews/review-types.jpg)
+![Tipos de revisión](_static/product-reviews/review-types.jpg)
 
 En esta área, puede ver todas las opiniones adicionales sobre el producto actual. **Calificación** muestra la calificación de los clientes. Todas las columnas de la tabla no se pueden editar.
 
 Para obtener más información sobre la configuración de las revisiones, haga clic en ver el [Product reviews](xref:es/running-your-store/catalog/catalog-settings#product-reviews) and [Review types](xref:es/running-your-store/catalog/catalog-settings#review-types) chapters.
 
-## Tutorials
+## Tutoriales
 
-- [Managing product reviews](https://www.youtube.com/watch?v=TBOpCoEAMnU&feature=youtu.be)
-- [Managing product review types](https://youtu.be/Ts7_T9sd1Do)
+- [Gestionar las revisiones de los productos](https://www.youtube.com/watch?v=TBOpCoEAMnU&feature=youtu.be)
+- [Gestión de los tipos de revisión de productos](https://youtu.be/Ts7_T9sd1Do)

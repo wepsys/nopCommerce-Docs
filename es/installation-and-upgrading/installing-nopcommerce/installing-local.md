@@ -9,10 +9,10 @@ contributors: git.IvanIvanIvanov, git.mariannk
 
 Este capítulo describe cómo descargar el software nopCommerce, cargarlo en su servidor, definir los permisos de archivo e instalarlo en su sistema. También puede ver el screencast sobre la instalación de nopCommerce en nuestro [canal de YouTube](https://www.youtube.com/watch?v=L7NGodeB9sQ).
 
-Antes de comenzar la instalación, asegúrese de que su servidor web tenga los [requisitos mínimos para ejecutar nopCommerce](xref:en/installation-and-upgrade/technology-and-system-requirements).
+Antes de comenzar la instalación, asegúrese de que su servidor web tenga los [requisitos mínimos para ejecutar nopCommerce](xref:es/installation-and-upgrade/technology-and-system-requirements).
 
 > [!NOTE]
-> Para obtener más información sobre las pautas de selección de alojamiento, visite [esta página](xref:en/installation-and-upgrade/installation-nopcommerce/choose-a-hosting-company).
+> Para obtener más información sobre las pautas de selección de alojamiento, visite [esta página](xref:es/installation-and-upgrade/installation-nopcommerce/choose-a-hosting-company).
 
 Hay varias opciones disponibles al descargar nopCommerce. Para determinar qué opción descargar, debe decidir cómo la usará. Las siguientes opciones están disponibles:
 1. **Web (sin fuente)**. Esta opción está disponible para usuarios que no deseen/necesiten desarrollar ningún código personalizado. Esta es una versión precompilada de nopCommerce que simplemente puede cargarse en su proveedor de alojamiento y usarse de inmediato. Con esta opción, los usuarios aún pueden modificar la apariencia o la interfaz de usuario (UI) de su sitio para satisfacer sus necesidades, pero no tienen que preocuparse por el desarrollo.

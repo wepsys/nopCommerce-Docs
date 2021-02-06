@@ -1365,7 +1365,7 @@ Estas reglas de formato se refieren al uso de líneas simples frente a líneas s
   protected int testField;
   ```
 
-- All other code elements such as variables, method parameters and class fields (except open ones) are named in camelCase notation.
+- Todos los demás elementos del código, como las variables, los parámetros de los métodos y los campos de las clases (excepto los abiertos) se nombran en notación camelCase.
 
   ```csharp
   //Right

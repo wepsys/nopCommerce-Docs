@@ -9,7 +9,7 @@ contributors: git.DmitriyKulagin, git.exileDev
 
 La documentación para desarrolladores de nopCommerce está aquí para ayudarlo a través del proceso de personalización de nopCommerce. Aquí tendrás varias secciones:
 
-* [Tutoriales para desarrolladores](xref:en/developer/tutorials/index)
-* [Creando un complemento nopCommerce](xref:en/developer/plugins/index)
-* [Guía del diseñador](xref:en/developer/design/index)
-* [aviso de copyright](xref:en/developer/copyright-notice)
+* [Tutoriales para desarrolladores](xref:es/developer/tutorials/index)
+* [Creando un complemento nopCommerce](xref:es/developer/plugins/index)
+* [Guía del diseñador](xref:es/developer/design/index)
+* [aviso de copyright](xref:es/developer/copyright-notice)

@@ -13,16 +13,16 @@ La lista de clientes contiene los detalles de todos los clientes existentes, as�
 
 Para buscar clientes, en la ventana *Clientes* introduzca uno o más de los siguientes criterios de búsqueda:
 
-- **Email**.
-- **Username**, if enabled in the [customer settings](xref:es/running-your-store/customer-management/customer-settings).
-- **First name**.
-- **Last name**.
-- **Date of birth**, if enabled in the [customer settings](xref:es/running-your-store/customer-management/customer-settings).
-- **Company**, if enabled in the [customer settings](xref:es/running-your-store/customer-management/customer-settings).
-- **Phone**, if enabled in the [customer settings](xref:es/running-your-store/customer-management/customer-settings).
-- **Zip code**, if enabled in the [customer settings](xref:es/running-your-store/customer-management/customer-settings).
+- **Envíe un correo electrónico a**.
+- **Nombre de usuario**, if enabled in the [ajustes del cliente](xref:es/running-your-store/customer-management/customer-settings).
+- **Nombre**.
+- **Apellido**.
+- **Fecha de nacimiento**, if enabled in the [ajustes del cliente](xref:es/running-your-store/customer-management/customer-settings).
+- **Empresa**, if enabled in the [ajustes del cliente](xref:es/running-your-store/customer-management/customer-settings).
+- **Teléfono**, if enabled in the [ajustes del cliente](xref:es/running-your-store/customer-management/customer-settings).
+- **Código postal**, if enabled in the [ajustes del cliente](xref:es/running-your-store/customer-management/customer-settings).
 - **Dirección IP**.
-- **Roles de los clientes** - puede seleccionar uno o más roles de clientes para ser mostrados.
+- **Customer roles** - puede seleccionar uno o más roles de clientes para ser mostrados.
 
 > [!NOTE]
 > 
@@ -102,11 +102,11 @@ En este panel:
 
 ## Ver también
 
-- [Customer roles](xref:es/running-your-store/customer-management/customer-roles)
-- [Vendors](xref:es/running-your-store/vendor-management)
+- [Funciones del cliente](xref:es/running-your-store/customer-management/customer-roles)
+- [Proveedores](xref:es/running-your-store/vendor-management)
 
-## Tutorials
+## Tutoriales
 
-- [Customer management in nopCommerce](https://www.youtube.com/watch?v=DOl-g-NNFEM&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4&index=1)
-- [Re-assigning a deleted email address](https://www.youtube.com/watch?v=lqmrWJdXZEE&t=1s)
-- [Overview of impersonation mode](https://www.youtube.com/watch?v=KQi-CDVawJ4)
+- [Gestión de clientes en nopCommerce](https://www.youtube.com/watch?v=DOl-g-NNFEM&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4&index=1)
+- [Reasignación de una dirección de correo electrónico eliminada](https://www.youtube.com/watch?v=lqmrWJdXZEE&t=1s)
+- [Resumen del modo de suplantación de identidad](https://www.youtube.com/watch?v=KQi-CDVawJ4)

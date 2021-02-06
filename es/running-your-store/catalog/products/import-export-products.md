@@ -5,54 +5,54 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.mariannk
 ---
 
-# Import/export products
+# Importar/exportar productos
 
-nopCommerce supports importing from Excel format and exporting products in XML or Excel. You can download products from your catalog in PDF.
-You can find these options in **Catalog → Products** at the main page top left.
+nopCommerce soporta la importación desde formato Excel y la exportación de productos en XML o Excel. Puede descargar los productos de su catálogo en PDF.
+Puede encontrar estas opciones en **Catálogo → Productos** en la parte superior izquierda de la página principal.
 
 ![Products](_static/import-export-products/buttons.jpg)
 
-## Exporting products
+## Exportar productos
 
- You can export products in XML or Excel formats by clicking the **Export** button. After clicking the **Export** button you will see the dropdown menu enabling you to **Export to XML (all found)** or **Export to XML (selected)** and **Export to Excel (all found)** or **Export to Excel (selected)**. 
+ Puede exportar productos en formato XML o Excel haciendo clic en el botón **Exportar**. Después de hacer clic en el botón **Exportar** verá el menú desplegable que le permite **Exportar a XML (todos los encontrados)** o **Exportar a XML (seleccionado)** y **Exportar a Excel (todos los encontrados)** o **Exportar a Excel (seleccionado)**. 
  
 ![Exporting product](_static/import-export-products/exporting_product.png)
 
- If you don't need to download all the products use the *Search* panel to find the required products or/and use checkboxes to select the needed products. A file with products you have chosen will be downloaded. The file consists of all the products characteristics from product editing page panels (Product info, SEO, Pictures and so on).
+ Si no necesita descargar todos los productos, utilice el panel de *Búsqueda* para encontrar los productos necesarios o/y utilice las casillas de verificación para seleccionar los productos necesarios. Se descargará un archivo con los productos que haya elegido. El archivo consiste en todas las características de los productos de los paneles de la página de edición de productos (información del producto, SEO, imágenes, etc.).
 
 > [!NOTE]
 > 
-> If you use product attributes, an exported Excel table will be grouped by rows. To view attribute details click + next to your product in the table. 
-> ![Simple product](_static/import-export-products/simple_product.png)
+> Si utiliza los atributos del producto, la tabla de Excel exportada se agrupará por filas. Para ver los detalles de los atributos, haga clic en + junto a su producto en la tabla. 
+> ![Producto sencillo](_static/import-export-products/simple_product.png)
 
-## Importing products
+## Importar productos
 
-If you do not want to add all the products to your catalog manually you can use the import option.
+Si no quiere añadir todos los productos a su catálogo manualmente, puede utilizar la opción de importación.
 
 > [!NOTE]
 > 
-> Before you start import you should download a table template for import in Excel format as it was described in the [exporting products](#exporting-products) section. For accurate and correct import of your products it's crucial to name all the columns in the table properly (exactly as in the downloaded table).
+> Antes de iniciar la importación, debe descargar una plantilla de tabla para la importación en formato Excel, tal y como se describe en el [productos de exportación](#exporting-products) sección. Para una importación precisa y correcta de sus productos es crucial nombrar todas las columnas de la tabla correctamente (exactamente como en la tabla descargada).
 
-It is not mandatory to fill all the table fields. The product will be created based on the filled fields.
+No es obligatorio rellenar todos los campos de la tabla. El producto se creará en base a los campos rellenados.
 
-Imported products are distinguished by SKU. If the SKU already exists, then its corresponding product will be updated.
+Los productos importados se distinguen por el SKU. Si el SKU ya existe, se actualizará su producto correspondiente.
 
-Import requires a lot of memory resources. That's why it's not recommended to import more than 500 - 1000 records at once. If you have more records, it's better to split them into multiple Excel files and import separately.
+La importación requiere muchos recursos de memoria. Por eso no se recomienda importar más de 500 - 1000 registros a la vez. Si tiene más registros, es mejor dividirlos en varios archivos de Excel e importarlos por separado.
 
-### Example
+### Ejemplo
 
-For example, we want to add Dancing shoes to our catalog. Let's create a new row in the table:
+Por ejemplo, queremos añadir zapatos de baile a nuestro catálogo. Vamos a crear una nueva fila en la tabla:
 
 ![product table](_static/import-export-products/product_table.png)
 
-Then click **Import**, choose the file and click the **Import from Excel** button. Then check if you have a new product in the catalog.
+Luego haga clic en **Importar**, elija el archivo y haga clic en el botón **Importar desde Excel**. A continuación, comprueba si tienes un nuevo producto en el catálogo.
 
-![product catalog](_static/import-export-products/product_catalog.png)
+![catálogo de productos](_static/import-export-products/product_catalog.png)
 
-## Setting up import/export
+## Configuración de la importación/exportación
 
-The following section describes import/export settings: [Export/import](xref:es/running-your-store/catalog/catalog-settings#exportimport).
+La siguiente sección describe la configuración de la importación/exportación: [Export/import](xref:es/running-your-store/catalog/catalog-settings#exportimport).
 
 ## See also
 
-* [Adding products](xref:es/running-your-store/catalog/products/add-products)
+* [Añadir productos](xref:es/running-your-store/catalog/products/add-products)

@@ -11,7 +11,7 @@ Los ajustes del catálogo incluyen la habilitación de opciones para la clasific
 
 Para definir los ajustes del catálogo, vaya a **Configuración → Ajustes → Ajustes del catálogo**. La página de ajustes de catálogo está disponible en los modos *avanzado* y *básico* (en el modo avanzado por defecto).
 
-Esta página permite la configuración de varias tiendas, lo que significa que se pueden definir los mismos ajustes para todas las tiendas o que pueden ser diferentes de una tienda a otra. Si desea administrar la configuración de una tienda determinada, elija su nombre en la lista desplegable de configuración de varias tiendas y marque todas las casillas de verificación necesarias en el lado izquierdo para establecer un valor personalizado para ellas. Para obtener más detalles, consulte [Multi-store](xref:en/getting-started/advanced-configuration/multi-store).
+Esta página permite la configuración de varias tiendas, lo que significa que se pueden definir los mismos ajustes para todas las tiendas o que pueden ser diferentes de una tienda a otra. Si desea administrar la configuración de una tienda determinada, elija su nombre en la lista desplegable de configuración de varias tiendas y marque todas las casillas de verificación necesarias en el lado izquierdo para establecer un valor personalizado para ellas. Para obtener más detalles, consulte [Multi-store](xref:es/
 
 ## Configurar la búsqueda
 El panel superior de la página establece *Búsqueda*:
@@ -19,7 +19,7 @@ El panel superior de la página establece *Búsqueda*:
 - Marque la casilla de verificación **Búsqueda habilitada** si desea que la función de búsqueda se habilite en la tienda pública.
 - Marca la casilla de verificación **Búsqueda autocompletada activada**, para que aparezca la casilla de búsqueda autocompletada en la tienda pública, de la siguiente manera:
 
-![Search](_static/catalog-settings/search.png)
+![Buscar en](_static/catalog-settings/search.png)
 
 Cuando esta opción está activada, se muestran los siguientes campos adicionales:
 
@@ -51,7 +51,7 @@ El siguiente bloque establece *Tipos de revisión*. Puedes configurar una lista 
 
 Haga clic en **Agregar nuevo botón** para crear un nuevo tipo de revisión.
 
-![Quality rating](_static/catalog-settings/quality_rating.png)
+![Clasificación de la calidad](_static/catalog-settings/quality_rating.png)
 
 Define lo siguiente:
 
@@ -65,17 +65,17 @@ Haga clic en el botón **Guardar** para añadir un nuevo tipo de revisión.
 
 Ahora en la tienda pública los clientes podrán llenar calificaciones adicionales en la página de revisión de productos.
 
-![Product reviews](_static/catalog-settings/product_reviews.png)
+![Comentarios sobre el producto](_static/catalog-settings/product_reviews.png)
 
 También en esta página puede ver la retroalimentación izquierda de todos los clientes (si este ajuste está activo). En la página de la cuenta personal del cliente también hay una oportunidad de ver todos los comentarios dejados en los productos.
 
-![My account](_static/catalog-settings/my_account.png)
+![Mi cuenta](_static/catalog-settings/my_account.png)
 
 ## Performance
 El siguiente panel establece el *Rendimiento*. Tener los siguientes ajustes activados puede mejorar significativamente el rendimiento de la tienda:
 
-- **Ignorar reglas de ACL (en todo el sitio)** desactiva las[ACL rules](xref:en/running-your-store/customer-management/access-control-list) configured for entities configuradas para las entidades.
-- **Ignorar límite por tienda (sitewide)** permite ignorar las reglas de límite por tienda configuradas para las entidades. Se recomienda habilitar esta configuración si sólo tiene una tienda o no tiene ninguna limitación específica para la tienda. Más información sobre multi-tienda en[Multi-store](xref:en/getting-started/advanced-configuration/multi-store) section.**Ignorar los descuentos (en todo el sitio)**.
+- **Ignorar reglas de ACL (en todo el sitio)** desactiva las[ACL rules](xref:es/running-your-store/customer-management/access-control-list) configured for entities configuradas para las entidades.
+- **Ignorar límite por tienda (sitewide)** permite ignorar las reglas de límite por tienda configuradas para las entidades. Se recomienda habilitar esta configuración si sólo tiene una tienda o no tiene ninguna limitación específica para la tienda. Más información sobre multi-tienda en[Multi-store](xref:es/getting-started/advanced-configuration/multi-store) section.**Ignorar los descuentos (en todo el sitio)**.
 - **Ignorar productos destacados (todo el sitio)**.
 - **Precios de productos de caché**. No debe habilitarlo si utiliza algunos descuentos complejos, reglas de requisito de descuento o códigos de cupón.
 
@@ -102,7 +102,7 @@ La opción Comparar productos permite a los clientes comparar diferentes ofertas
 - Marque la casilla de verificación **Incluir una breve descripción en los productos de comparación**, para que aparezcan breves descripciones de los productos en la página de comparación de productos.
 - Marque la casilla **Incluir descripción completa en los productos comparados**, para mostrar las descripciones completas de los productos en la página de comparación de productos.
 
-![compare_product](_static/catalog-settings/compare_product.png)
+![comparar_producto](_static/catalog-settings/compare_product.png)
 
 ## Secciones adicionales
 El panel de *Secciones adicionales* le permite configurar las siguientes opciones:
@@ -170,6 +170,6 @@ En el panel de *Exportación/importación* puede definir:
 En el panel de *clasificación de productos* puedes definir:
 * Marque la casilla de verificación **Permitir la clasificación de productos**, para habilitar una opción de clasificación de productos en las páginas de categorías y fabricantes. Puede activar/desactivar la clasificación por *Posición*, *Nombre*, *Precio* y *Fecha de creación*.
 
-![product_sorting](_static/catalog-settings/product_sorting.png)
+![clasificación_de_productos](_static/catalog-settings/product_sorting.png)
 
 Puedes editar la propiedad **Orden de visualización** y **Es activo** de cada opción haciendo clic en el botón **Editar**.

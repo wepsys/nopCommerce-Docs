@@ -8,10 +8,10 @@ author: git.mariannk
 
 Este capítulo describe cómo descargar el software nopCommerce, cargarlo en su servidor e instalarlo. También puede ver el screencast sobre la instalación de nopCommerce en nuestro [canal de YouTube](https://www.youtube.com/watch?v=L7NGodeB9sQ).
 
-Antes de comenzar la instalación, asegúrese de que su servidor web tenga los [requisitos mínimos para ejecutar nopCommerce](xref:en/installation-and-upgrade/technology-and-system-requirements).
+Antes de comenzar la instalación, asegúrese de que su servidor web tenga los [requisitos mínimos para ejecutar nopCommerce](xref:es/installation-and-upgrade/technology-and-system-requirements).
 
 > [!NOTE]
-> Para obtener más información sobre las pautas de selección de alojamiento, visite [esta página](xref:en/installation-and-upgrade/installation-nopcommerce/choose-a-hosting-company).
+> Para obtener más información sobre las pautas de selección de alojamiento, visite [esta página](xref:es/installation-and-upgrade/installation-nopcommerce/choose-a-hosting-company).
 
 ## Descarga nopCommerce
 Para instalar nopCommerce en Windows, primero debe descargarlo. Vaya a la [página de descarga](https://www.nopcommerce.com/download-nopcommerce) y elija la versión **Paquete sin código fuente** para Windows. Esta es una versión precompilada de nopCommerce que simplemente puede cargarse en su proveedor de alojamiento y usarse de inmediato.

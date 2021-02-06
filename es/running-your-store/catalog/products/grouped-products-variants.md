@@ -5,38 +5,38 @@ author: git.AndreiMaz
 contributors: git.exileDev, git.dunaenko, git.IvanIvanIvanov, git.mariannk
 ---
 
-# Grouped products (variants)
+# Productos agrupados (variantes)
 
-Grouped products, or products with variants, is a convenient tool to sell a product that has different supplementary items or different attribute sets. Different combinations of such product can be sold as separate products, and the price may vary.
+Los productos agrupados, o productos con variantes, son una herramienta conveniente para vender un producto que tiene diferentes artículos complementarios o diferentes conjuntos de atributos. Las diferentes combinaciones de dicho producto pueden venderse como productos separados, y el precio puede variar.
 
-In nopCommerce, grouped products look like a single product details page displaying all possible options. It is a convenient and SEO-friendly tool to sell complex products.
+En nopCommerce, los productos agrupados se ven como una sola página de detalles del producto que muestra todas las opciones posibles. Es una herramienta conveniente y amigable con el SEO para vender productos complejos.
 
 > [!TIP]
 >
-> For example, a base product, such as a camera body, can be grouped with different sets of lens. Another use case of a grouped product is selling one type of a product with different attribute sets. For example, chocolate with different flavours. In this case, a customer can easily see the main product and all its options on the same page.
+> Por ejemplo, un producto base, como un cuerpo de cámara, puede agruparse con diferentes conjuntos de lentes. Otro caso de uso de un producto agrupado es la venta de un tipo de producto con diferentes conjuntos de atributos. Por ejemplo, chocolate con diferentes sabores. En este caso, un cliente puede ver fácilmente el producto principal y todas sus opciones en la misma página.
 
 ![Grouped](_static/grouped-products-variants/grouped.jpg)
 
-## Adding a new grouped product
+## Añadir un nuevo producto agrupado
 
-To create a grouped product, go to **Catalog → Products**. There are several steps to follow:
+Para crear un producto agrupado, vaya a **Catálogo → Productos**. Hay que seguir varios pasos:
 
   > [!TIP]
   >
-  > Learn how to fill up the product fields [here](xref:es/running-your-store/catalog/products/add-products).
+  > Aprenda a rellenar los campos del producto [here](xref:es/running-your-store/catalog/products/add-products).
 
-1. Create several products with a *simple* product type. These are the variants of the main product. Define whether you want them to be visible separately in catalog and search results, or be shown only on a product page of the main product using the **Visible individually** checkbox.
-1. Create a **Grouped (product with variants)** product and assign these simple products you created in the previous step on the **Associated products (variants)** panel:
+1. Cree varios productos con un tipo de producto *simple*. Son las variantes del producto principal. Defina si quiere que sean visibles por separado en el catálogo y en los resultados de búsqueda, o que se muestren sólo en una página de producto del producto principal utilizando la casilla **Visible individualmente**.
+1. Cree un **producto agrupado (producto con variantes)** y asigne estos productos simples que creó en el paso anterior en el panel de **productos asociados (variantes)**:
 
-    ![variants](_static/grouped-products-variants/variants.png)
+    ![variantes](_static/grouped-products-variants/variants.png)
 
 > [!NOTE]
 > 
-> - In the public store, a customer sees a separate **Add to cart** button for each associated product on the *grouped* product details page.
-> - A *simple* product can be associated with the only one *grouped* product.
-> - *Grouped* products are **not orderable directly**. However, associated with them *simple* products are. For example, a customer cannot order the Creative Sound Card product directly. The customer must order an OEM or Retail version of the Creative Sound Card instead. In this case, the *grouped* product is a Creative Sound Card, and there are two associated *simple* products for this *grouped* product: OEM and Retail, each with potentially different prices.
+> - En la tienda pública, un cliente ve un botón separado de **Añadir a la cesta** para cada producto asociado en la página de detalles del producto *agrupado*.
+> - Un producto *simple* puede estar asociado a un solo producto *agrupado*.
+> - Los productos *agrupados* **no se pueden pedir directamente**. Sin embargo, los productos *simples* asociados a ellos sí lo son. Por ejemplo, un cliente no puede pedir directamente el producto Tarjeta de sonido Creative. El cliente debe pedir una versión OEM o Retail de la tarjeta de sonido Creative en su lugar. En este caso, el producto *agrupado* es una tarjeta de sonido Creative, y hay dos productos *simples* asociados para este producto *agrupado*: OEM y Retail, cada uno con precios potencialmente diferentes.
 
-## Tutorials
+## Tutoriales
 
-- [Understanding grouped products in nopCommerce](https://www.youtube.com/watch?v=B1UdxXf_jmE)
-- [Creating Bundled products in nopCommerce](https://www.youtube.com/watch?v=sf9jP6KFcko)
+- [Entender los productos agrupados en nopCommerce](https://www.youtube.com/watch?v=B1UdxXf_jmE)
+- [Creación de productos agrupados en nopCommerce](https://www.youtube.com/watch?v=sf9jP6KFcko)

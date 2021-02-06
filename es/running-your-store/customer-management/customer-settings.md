@@ -92,9 +92,9 @@ Defina la configuración común de los clientes, de la siguiente manera:
   * Marque el campo **Use regex for username validation** para utilizar una expresión regular para la validación del nombre de usuario (cuando se registre o cambie en la página "Mi cuenta" en la tienda pública).
 * Seleccione el **Formato de nombre de usuario**, como se indica a continuación:
   * *Muestra los correos electrónicos*
-  * * Mostrar nombres de usuario *
-  * * Mostrar nombres completos *
-  * * Mostrar el primer nombre *
+  * *Mostrar nombres de usuario *
+  * *Mostrar nombres completos *
+  * *Mostrar el primer nombre *
   El nombre del cliente se mostrará en la tienda junto a las noticias del cliente y los comentarios del blog, en las páginas del foro y otros.
 * Marque la casilla **La validación del número de teléfono está activada** si desea activar la validación del número de teléfono (al registrarse o al cambiar en la página "Mi cuenta" en la tienda pública). Cuando se selecciona esta casilla de verificación, se muestran las siguientes opciones:
   * **Regla de validación de número de teléfono**: establece la regla de validación para un número de teléfono en este campo. Puede especificar una lista de caracteres permitidos o una expresión regular. Si utiliza una expresión regular, marque el campo **Utilizar regex para la validación del nombre de usuario** que se describe a continuación.

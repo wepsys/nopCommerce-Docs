@@ -11,8 +11,8 @@ nopCommerce es una solución multiplataforma y se puede ejecutar en Windows y Li
 
 Elige una de las siguientes opciones:
 
-- [Instalación local (solo para desarrolladores)](xref:en/installation-and-upgradeding/installation-nopcommerce/install-local)
-- [Instalación en Windows](xref:es/instalación-y-actualización/instalación-nopcommerce/instalación-en-windows)
+- [Instalación local (solo para desarrolladores)](xref:es/installation-and-upgradeding/installation-nopcommerce/install-local)
+- [Installing on Windows](xref:es/installation-and-upgrading/installing-nopcommerce/installing-on-windows)
 - [Instalación en Microsoft Azure](xref:es/installation-and-upgrade/installation-nopcommerce/install-on-microsoft-azure)
 - [Instalación en Linux](xref:es/installation-and-upgrade/installation-nopcommerce/install-on-linux)
 - [NopCommerce preinstalado](xref:es/installation-and-upgrade/installation-nopcommerce/pre-installed-nopcommerce)

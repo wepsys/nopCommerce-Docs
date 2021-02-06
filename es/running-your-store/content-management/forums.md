@@ -15,13 +15,13 @@ Un foro es un sitio de discusión en línea donde la gente puede mantener conver
 
 Para gestionar los grupos de foros y los foros (dentro de los grupos de foros) vaya a **Gestión de contenidos → Foros**.
 
-![Manage forums](_static/forums/list.jpg)
+![Gestionar los foros](_static/forums/list.jpg)
 
 ## Agregar un nuevo grupo del foro
 
 Haz clic en el botón **Añadir nuevo grupo del foro**.
 
-![Add a new forum group](_static/forums/forums2.png)
+![Añadir un nuevo grupo del foro](_static/forums/forums2.png)
 
 - Definir un nuevo grupo del foro **Nombre**.
 - En el campo **Orden de visualización**, introduce el orden de visualización del grupo del foro. Un valor de 1 representa la parte superior de la lista
@@ -30,7 +30,7 @@ Haga clic en **Save**.
 
 ## Agregar un nuevo foro
 
-![Add a new forum](_static/forums/forums3.png)
+![Añadir un nuevo foro](_static/forums/forums3.png)
 
 - En la lista desplegable **Grupo de foros**, seleccione el grupo de foros requerido.
 - Introduce el **Nombre** del nuevo foro.
@@ -39,7 +39,7 @@ Haga clic en **Save**.
 
 Haga clic en **Save**.
 
-To view an example of how forums should work go to <http://www.nopcommerce.com/boards/>.
+Para ver un ejemplo de cómo deberían funcionar los foros, vaya a <http://www.nopcommerce.com/boards/>.
 
 ![nopCommerce forums](_static/forums/example.jpg)
 
@@ -50,7 +50,7 @@ Para acceder a la configuración del foro vaya a **Configuración → Configurac
 Esta página permite la configuración de varias tiendas, lo que significa que se puede definir la misma configuración para todas las tiendas, o diferir de una tienda a otra. Si desea gestionar la configuración de una tienda determinada, elija su nombre en la lista desplegable de configuración de varias tiendas y marque todas las casillas de verificación necesarias en el lado izquierdo para establecer un valor personalizado para ellas. Para obtener más detalles, consulte [Multi-store](xref:es/getting-started/advanced-configuration/multi-store).
 
 ### Common
-![Common settings](_static/forums/common.jpg)
+![Configuración comúns](_static/forums/common.jpg)
 
 Defina los siguientes ajustes del foro en el panel *Común*:
 - Habilita los foros marcando la casilla **Foros habilitados**.
@@ -88,8 +88,8 @@ Defina los siguientes ajustes del foro en el panel *Tamaño de la página*:
 - **Tamaño de la página de resultados de búsqueda** - el tamaño de la página para los resultados de búsqueda, por ejemplo, '10' resultados por página.
 - **Tamaño de la página de debates activos** - el tamaño por página para los debates activos, por ejemplo, '10' resultados por página.
 
-### Feeds
-![Feeds settings](_static/forums/feeds.jpg)
+### Alimentadores
+![Configuración de la alimentación](_static/forums/feeds.jpg)
 
 Defina los siguientes ajustes del foro en el panel *Feeds*:
 - Selecciona la casilla **Fuentes del foro habilitados** para habilitar los canales RSS de cada foro.
@@ -97,6 +97,6 @@ Defina los siguientes ajustes del foro en el panel *Feeds*:
 - Selecciona la casilla de verificación **Feed de debates activos habilitados** para habilitar los feeds RSS de los temas de debate activos.
 - En el campo **Suministro activo de debates** establezca el número de debates que se incluirán en el suministro de "Debates activos"..
 
-## Tutorials
+## Tutoriales
 
-- [Managing forums in nopCommerce](https://www.youtube.com/watch?v=wW2QvC4WA_8)
+- [Gestión de foros en nopCommerce](https://www.youtube.com/watch?v=wW2QvC4WA_8)

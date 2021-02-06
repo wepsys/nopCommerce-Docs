@@ -79,7 +79,7 @@ En el panel *SEO* define los siguientes detalles del tema:
    <meta name="description" content="Brief description of the contents of your page.">
    ```
 
-Click **Save**. The topic will be displayed in the public store.
+Haga clic en **Guardar**. El tema se mostrará en la tienda pública.
 
 ## See also
 
@@ -87,4 +87,4 @@ Click **Save**. The topic will be displayed in the public store.
 
 ## Tutorials
 
-- [Adding new topic template](https://www.youtube.com/watch?v=M-g4Ux2GCaY)
+- [Añadir una nueva plantilla de temas](https://www.youtube.com/watch?v=M-g4Ux2GCaY)

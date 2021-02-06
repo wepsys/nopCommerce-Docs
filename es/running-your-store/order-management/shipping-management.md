@@ -51,5 +51,5 @@ Para configurar el envío visite la sección [Configurar envío](xref:es/getting
 
 ## Ver también
 
-* [Orders](xref:es/running-your-store/order-management/orders)
-* [Adding products](xref:es/running-your-store/catalog/products/add-products)
+* [Pedidos](xref:es/running-your-store/order-management/orders)
+* [Añadir productos](xref:es/running-your-store/catalog/products/add-products)

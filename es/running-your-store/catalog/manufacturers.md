@@ -9,7 +9,7 @@ contributors: git.exileDev, git.DmitriyKulagin, git.dunaenko, git.mariannk
 
 Para gestionar los fabricantes ir a **Catálogo → Fabricantes**.
 
-![Manufactures](_static/manufacturers/manufactures.jpg)
+![Fabrica](_static/manufacturers/manufactures.jpg)
 
 Busque un fabricante en el panel *Búsqueda* introduciendo el **Nombre del fabricante** o una parte del nombre, por la propiedad **Publicada** o entre todos los fabricantes de una determinada **Tienda** (si se habilita más de una tienda).
 
@@ -22,7 +22,7 @@ Busque un fabricante en el panel *Búsqueda* introduciendo el **Nombre del fabri
 
 Para añadir un nuevo fabricante, haga clic en el botón **Añadir nuevo** en la parte superior de la página. Aparecerá la ventana *Añadir un nuevo fabricante*.
 
-![Add a new manufacturer](_static/manufacturers/add_a_new_manufacturer.png)
+![Añadir un nuevo fabricante](_static/manufacturers/add_a_new_manufacturer.png)
 
 Esta página está disponible en dos modos: **avanzado** y **básico**. Cambie al modo básico que muestra los únicos campos principales o utilice el modo avanzado que muestra todos los campos disponibles.
 
@@ -57,7 +57,7 @@ En el panel de *Mostrar*, defina los siguientes detalles:
 
 En el panel de *Mappings*, defina los siguientes detalles:
 
-- **Descuentos** - seleccione los descuentos asociados a este fabricante. Puede crear descuentos en la página **Promociones → Descuentos**. Lea más acerca de los descuentos en el capítulo [Discounts](xref:en/running-your-store/promotional-tools/discounts)
+- **Descuentos** - seleccione los descuentos asociados a este fabricante. Puede crear descuentos en la página **Promociones → Descuentos**. Lea más acerca de los descuentos en el capítulo [Discounts](xref:es/running-your-store/promotional-tools/discounts)
 
     > [!NOTE]
     >
@@ -77,9 +77,9 @@ En el panel de *Mappings*, defina los siguientes detalles:
   >
 	> Para poder usar esta función, tienes que desactivar la siguiente configuración: **Catálogo s
 
-- [Adding products](xref:en/running-your-store/catalog/products/add-products)
-- [SEO](xref:en/running-your-store/search-engine-optimization)
+- [añadir productos](xref:es/running-your-store/catalog/products/add-products)
+- [SEO](xref:es/running-your-store/search-engine-optimization)
 
 ## Tutoriales
 
-- [Managing manufacturers in nopCommerce](https://www.youtube.com/watch?v=NnWD9-zi8s4&feature=youtu.be)
+- [Gestión de fabricantes en nopCommerce](https://www.youtube.com/watch?v=NnWD9-zi8s4&feature=youtu.be)

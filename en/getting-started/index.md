@@ -102,7 +102,7 @@ nopCommerce enables you to run more than one store using one interface from a si
 
 Multi-vendor and drop shipping tools enable you to sell online without having to keep stocks or ship orders. Watch the [video tutorial](https://www.youtube.com/watch?v=MH6r6tqfLF8&index=9&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4) on multi-vendor support.
 
-* [Vendor management](xref:en/running-your-store/vendor-management)
+* [Vendor management    ](xref:en/running-your-store/vendor-management)
 
 > [!TIP]
 > 
