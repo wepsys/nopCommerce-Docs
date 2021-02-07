@@ -9,10 +9,10 @@ contributors: git.skoshelev
 
 Este capítulo describe cómo instalar el software nopCommerce en el sistema Linux en el ejemplo de XUbuntu 20.04:
 
-1. [Instalar y configurar el software](#instalar-y-configurar-software)
+1. [Instalar y configurar el software](#install-and-configure-software)
 1. [Obtener nopCommerce](#get-nopcommerce)
 1. [Cree y configure el servicio web nopCommerce](#create-the-nopcommerce-service)
-1. [Solución de problemas](#solución-de-problemas)
+1. [Solución de problemas][Troubleshooting](#troubleshooting)
 
 ## Instalar y configurar software
 1a
@@ -26,7 +26,7 @@ Abra una terminal y ejecute los siguientes comandos:
 
 `sudo dpkg -i packages-microsoft-prod.deb`
 
-![nopCommerce installation](_static/installing-on-linux/register_key.jpg)
+![Instalación de nopCommerce](_static/installing-on-linux/register_key.jpg)
 
 ### Instalar.NET Core Runtime
 
@@ -36,7 +36,7 @@ Actualice los productos disponibles para la instalación, luego instale el tiemp
 
 `sudo apt-get install apt-transport-https aspnetcore-runtime-3.1`
 
-![nopCommerce installation](_static/installing-on-linux/net_core.jpg)
+![Instalación de nopCommerce](_static/installing-on-linux/net_core.jpg)
 
 > [!NOTE]
 >
@@ -46,7 +46,7 @@ Puede ver todos los tiempos de ejecución de .Net Core instalados con el siguien
 
 `dotnet --list-runtimes`
 
-![nopCommerce installation](_static/installing-on-linux/list_runtimes.jpg)
+![Instalación de nopCommerce](_static/installing-on-linux/list_runtimes.jpg)
 
 ### Instalar MySql Server
 
@@ -54,13 +54,13 @@ Instala el MySql server 8.0 version
 
 `sudo apt-get install mysql-server`
 
-![nopCommerce installation](_static/installing-on-linux/install_mysql.jpg)
+![Instalación de nopCommerce](_static/installing-on-linux/install_mysql.jpg)
 
 Por defecto, la contraseña de root está vacía, configurémosla
 
 `sudo /usr/bin/mysql_secure_installation`
 
-![nopCommerce installation](_static/installing-on-linux/config_mysql.jpg)
+![Instalación de nopCommerce](_static/installing-on-linux/config_mysql.jpg)
 
 > [!NOTE]
 >
@@ -188,7 +188,7 @@ Verifique el estado del servicio nopCommerce
 
 `sudo systemctl status nopCommerce430.service`
 
-![nopCommerce installation](_static/installing-on-linux/status_nopCommerce.jpg)
+![Instalación de nopCommerce](_static/installing-on-linux/status_nopCommerce.jpg)
 
 Reinicie el servidor nginx
 

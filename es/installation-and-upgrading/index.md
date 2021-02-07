@@ -9,12 +9,12 @@ contributors: git.skoshelev, git.exileDev, git.IvanIvanIvanov
 
 nopCommerce se puede descargar como motor de comercio electrónico listo para instalar o como código fuente completo listo para ser modificado. Este capítulo cubrirá todo lo que necesita saber para descargar e instalar nopCommerce.
 
-- [Requisitos de tecnología y sistema](xref:es/installation-and-upgrade/technology-and-system-requirements)
-- [Guía de instalación](xref:es/installation-and-upgrade/installation-nopcommerce/index)
-- [Elija una empresa de alojamiento](xref:es/installation-and-upgrade/installation-nopcommerce/choose-a-hosting-company)
-- [Instalación local (solo para desarrolladores)](xref:es/installation-and-upgradeding/installation-nopcommerce/install-local)
+- [Requisitos de tecnología y sistema](xref:es/installation-and-upgrading/technology-and-system-requirements)
+- [Installation guide](xref:es/installation-and-upgrading/installing-nopcommerce/index)
+- [Elegir una empresa de hosting](xref:es/installation-and-upgrading/installing-nopcommerce/choose-a-hosting-company)
+- [Instalación local (sólo para desarrolladores)](xref:es/installation-and-upgrading/installing-nopcommerce/installing-local)
 - [Instalación en Windows](xref:es/installation-and-upgrading/installing-nopcommerce/installing-on-windows)
-- [Instalación en Microsoft Azure](xref:es/installation-and-upgrade/installation-nopcommerce/install-on-microsoft-azure)
-- [Instalación en Linux](xref:es/installation-and-upgrade/installation-nopcommerce/install-on-linux)
-- [NopCommerce preinstalado](xref:es/installation-and-upgrade/installation-nopcommerce/pre-installed-nopcommerce)
+- [Instalación en Microsoft Azure](xref:es/installation-and-upgrading/installing-nopcommerce/installing-on-microsoft-azure)
+- [Instalación en Linux](xref:es/installation-and-upgrading/installing-nopcommerce/installing-on-linux)
+- [Preinstalación de nopCommerce](xref:es/installation-and-upgrading/installing-nopcommerce/pre-installed-nopcommerce)
 - [Actualización de nopCommerce](xref:es/installation-and-upgrading/upgrading-nopcommerce)

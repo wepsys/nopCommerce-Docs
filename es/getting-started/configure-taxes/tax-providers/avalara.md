@@ -19,7 +19,7 @@ Después de instalar la integración de AvaTax, debe configurar la integración.
 
 Para configurar el proveedor de impuestos de Avalara, vaya a **Configuración → Proveedores de impuestos**.
 
-![Tax Providers](_static/avalara/tax-providers.png)
+![Proveedores de impuestos](_static/avalara/tax-providers.png)
 
 Haga clic en **Marcar como proveedor principal**.
 
