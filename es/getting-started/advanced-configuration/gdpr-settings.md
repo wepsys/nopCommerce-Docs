@@ -1,6 +1,6 @@
 ---
 title: GDPR settings
-uid: en/getting-started/advanced-configuration/gdpr-settings
+uid: es/getting-started/advanced-configuration/gdpr-settings
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.ivkadp, git.mariannk
 ---
@@ -44,11 +44,11 @@ Defina las siguientes configuraciones de consentimiento:
 
 A continuación, se muestra un ejemplo de una opción de consentimiento en la página de información del cliente:
 
-![agreement](_static/gdpr-settings/agreement.png)
+![acuerdo](_static/gdpr-settings/agreement.png)
 
 Si ha habilitado la configuración del registro de consentimiento, puede ver la actividad del registro yendo a: **Administración → Clientes → Solicitudes de GDPR (registro)**.
 
-![log](_static/gdpr-settings/log.png)
+![Registro](_static/gdpr-settings/log.png)
 
 Cuando la configuración de GDPR está habilitada, el propietario de la tienda también puede realizar acciones como:
 
@@ -57,7 +57,7 @@ Cuando la configuración de GDPR está habilitada, el propietario de la tienda t
 
 Para hacer esto, vaya a la página **Administración → Clientes → Editar cliente**.
 
-![customerdetails](_static/gdpr-settings/customerdetails.png)
+![detalles del cliente](_static/gdpr-settings/customerdetails.png)
 
 ## Tutoriales
 

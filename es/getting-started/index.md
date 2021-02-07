@@ -37,7 +37,7 @@ Puede agregar productos manualmente uno por uno o importar su catálogo desde un
 
 ¿Qué pasa si sus productos son variables, por ejemplo, vende zapatillas en diferentes colores y tamaños? En nopCommerce puede configurar las especificaciones y los atributos del producto para gestionar esto.
 
-* [Productos agrupados (variantes)](xref:en/running-your-store/catalog/products/grouped-products-variants)
+* [Productos agrupados (variantes)](xref:es/running-your-store/catalog/products/grouped-products-variants)
 
 ## 3. Mejore la experiencia del cliente en su tienda
 

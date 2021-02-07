@@ -1,6 +1,6 @@
 ---
 title: Avalara
-uid: en/getting-started/configure-taxes/tax-providers/avalara
+uid: es/getting-started/configure-taxes/tax-providers/avalara
 author: git.AndreiMaz
 contributors: git.exileDev, git.mariannk
 ---

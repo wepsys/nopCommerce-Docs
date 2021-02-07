@@ -1,6 +1,6 @@
 ---
 title: Multi-store
-uid: en/getting-started/advanced-configuration/multi-store
+uid: es/getting-started/advanced-configuration/multi-store
 author: git.AndreiMaz
 contributors: git.rajupaladiya, git.DmitriyKulagin, git.exileDev, git.mariannk
 ---
@@ -24,7 +24,7 @@ En el siguiente ejemplo, describiremos la configuración de dos tiendas de muest
       > [!NOTE]
       >
       > Lea más sobre cómo instalar nopCommerce en el siguiente capítulo:
-      [Instalación de nopCommerce](xref:en/installation-and-upgrade/installation-nopcommerce/index).
+      [Instalación de nopCommerce](xref:es/installation-and-upgrade/installation-nopcommerce/index).
 
 1. Desde el panel de control de `www.store2.com` (es decir, el panel de control de su alojamiento, no el área de administración de nopCommerce) asegúrese de que todas las solicitudes a `www.store2.com` se reenvíen (no se redirijan) a `www.store1 .com`. Realice esto usando registros CNAME. Este paso es crucial.
 

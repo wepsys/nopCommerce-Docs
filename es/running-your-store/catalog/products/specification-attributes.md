@@ -27,11 +27,11 @@ Supongamos que tiene una tienda de informática online. ¿Qué ayuda a un client
 
 	Para activar la funcionalidad "Comparar productos" vaya a **Configuración → Ajustes → Ajustes del catálogo**. En el panel *Comparar productos* marque la casilla **'Comparar productos' habilitada**.
 
-La siguiente sección describe cómo crear atributos de especificación. Tenga en cuenta que después de crear una lista de atributos de especificación tendrá que añadir los atributos de especificación a los productos uno por uno. Aprenda a añadir atributos de especificación a los productos en la sección [Añadir productos - Atributos de especificación](xref:es/running-your-store/catalog/products/add-products#specification-attributes) section.
+La siguiente sección describe cómo crear atributos de especificación. Tenga en cuenta que después de crear una lista de atributos de especificación tendrá que añadir los atributos de especificación a los productos uno por uno. Aprenda a añadir atributos de especificación a los productos en la sección [Añadir productos - Atributos de especificación](xref:es/running-your-store/catalog/products/add-products#specification-attributes) sección.
 
 ## Crear un atributo de especificación
 
-> [!NOTA]
+> [!NOTE]
 > 
 > Por defecto, no hay atributos de especificación precreados en nopCommerce.
 

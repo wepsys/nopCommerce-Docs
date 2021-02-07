@@ -1,6 +1,6 @@
 ---
 title: Security settings
-uid: en/getting-started/advanced-configuration/security-settings
+uid: es/getting-started/advanced-configuration/security-settings
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.ivkadp, git.mariannk
 ---
@@ -9,7 +9,7 @@ contributors: git.DmitriyKulagin, git.ivkadp, git.mariannk
 
 Para administrar la configuración de seguridad, vaya a **Configuración → Configuración → Configuración general**.
 
-Esta página permite la configuración de varias tiendas, lo que significa que se pueden definir las mismas configuraciones para todas las tiendas o diferir de una tienda a otra. Si desea administrar la configuración de una determinada tienda, elija su nombre en la lista desplegable de configuración de varias tiendas y marque todas las casillas de verificación necesarias en el lado izquierdo para establecer un valor personalizado para ellas. Para obtener más detalles, consulte [Multi-store](xref:en/Getting-started/advanced-configuration/multi-store).
+Esta página permite la configuración de varias tiendas, lo que significa que se pueden definir las mismas configuraciones para todas las tiendas o diferir de una tienda a otra. Si desea administrar la configuración de una determinada tienda, elija su nombre en la lista desplegable de configuración de varias tiendas y marque todas las casillas de verificación necesarias en el lado izquierdo para establecer un valor personalizado para ellas. Para obtener más detalles, consulte [Multi-store](xref:es/Getting-started/advanced-configuration/multi-store).
 
 ## Seguridad
 

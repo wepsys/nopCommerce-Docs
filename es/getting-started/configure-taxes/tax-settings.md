@@ -1,6 +1,6 @@
 ---
 title: Tax settings
-uid: en/getting-started/configure-taxes/tax-settings
+uid: es/getting-started/configure-taxes/tax-settings
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 ---
@@ -66,4 +66,6 @@ Luego configure el IVA en el panel *IVA*:
 
 Clic en **Guardar**.
 
-### Tutor(https://www.youtube.com/watch?v=8iF5nQvIoLs&feature=youtu.be)
+### Tutoriales
+
+* [Managing tax settings](https://www.youtube.com/watch?v=8iF5nQvIoLs&feature=youtu.be)

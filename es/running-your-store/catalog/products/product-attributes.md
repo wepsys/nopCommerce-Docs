@@ -60,7 +60,7 @@ Después de rellenar los campos, haga clic en **Guardar**..
 
 > [!NOTE]
 > 
-> Algunos propietarios de tiendas prefieren destacar productos diferenciados por atributos y crear un producto separado con cada atributo específico (por ejemplo, camisetas azules y camisetas rojas listadas por separado). En este caso, recomendamos crear un producto agrupado (camisetas, como en el ejemplo) para que todas las variaciones se muestren en la misma página, una vez que el producto agrupado sea visto por un cliente. Más información sobre [productos agrupados](xref:en/running-your-store/catalog/products/grouped-products-variants).
+> Algunos propietarios de tiendas prefieren destacar productos diferenciados por atributos y crear un producto separado con cada atributo específico (por ejemplo, camisetas azules y camisetas rojas listadas por separado). En este caso, recomendamos crear un producto agrupado (camisetas, como en el ejemplo) para que todas las variaciones se muestren en la misma página, una vez que el producto agrupado sea visto por un cliente. Más información sobre [productos agrupados](xref:es/running-your-store/catalog/products/grouped-products-variants).
 
 ## Panel de productos utilizados
 
@@ -70,8 +70,8 @@ En el panel *Usado por los productos* puedes saber qué productos utilizan este 
 
 ## See also
 
-- [Añadir productos](xref:en/running-your-store/catalog/products/add-products)
-- [Producto agrupado](xref:en/running-your-store/catalog/products/grouped-products-variants)
+- [Añadir productos](xref:es/running-your-store/catalog/products/add-products)
+- [Producto agrupado](xref:es/running-your-store/catalog/products/grouped-products-variants)
 
 ## Tutoriales
 

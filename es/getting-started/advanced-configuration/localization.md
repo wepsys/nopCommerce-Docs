@@ -1,6 +1,6 @@
 ---
 title: Localization
-uid: en/getting-started/advanced-configuration/localization
+uid: es/getting-started/advanced-configuration/localization
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.ivkadp, git.mariannk
 ---

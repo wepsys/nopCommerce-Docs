@@ -1,6 +1,6 @@
 ---
 title: Your store information
-uid: en/getting-started/advanced-configuration/your-store-information
+uid: es/getting-started/advanced-configuration/your-store-information
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp, git.mariannk
 ---
@@ -30,7 +30,7 @@ Configure los detalles de su tienda principal, de la siguiente manera:
   >
   > Lea más sobre la configuración de SSL en el siguiente capítulo: [Cómo instalar y configurar la certificación SSL](xref:es/Getting-started/advanced-configuration/how-to-install-and-configure-ssl-certificate).
 
-* El campo **HOST values​​** es una lista de posibles valores HTTP_HOST de su tienda (por ejemplo, `yourstore.com`, `www.yourstore.com`). Completar este campo solo es necesario cuando tiene una [solución de múltiples tiendas](xref:en/Getting-started/advanced-configuration/multi-store) para determinar la tienda actual. Este campo permite distinguir solicitudes a distintas URL y determina la tienda actual. También puede ver el valor HTTP_POST actual en **Sistema → Información del sistema**.
+* El campo **HOST values​​** es una lista de posibles valores HTTP_HOST de su tienda (por ejemplo, `yourstore.com`, `www.yourstore.com`). Completar este campo solo es necesario cuando tiene una [solución de múltiples tiendas](xref:es/Getting-started/advanced-configuration/multi-store) para determinar la tienda actual. Este campo permite distinguir solicitudes a distintas URL y determina la tienda actual. También puede ver el valor HTTP_POST actual en **Sistema → Información del sistema**.
 * En el campo **Idioma predeterminado**, elija un idioma predeterminado de su tienda. También puede dejarlo sin seleccionar. En este caso, se utilizará el primero encontrado (con el orden de visualización más bajo).
 * Defina el **orden de exhibición** para esta tienda. 1 representa la parte superior de la lista.
 * Defina el **Nombre de la empresa**.
@@ -40,9 +40,9 @@ Configure los detalles de su tienda principal, de la siguiente manera:
 
 ## Ver también
 
-* [Configuración de varias tiendas](xref:en/Getting-started/advanced-configuration/multi-store)
-* [Países](xref:en/Getting-started/configure-shipping/advanced-configuration/countries-states)
-* [Idiomas](xref:en/Getting-started/advanced-configuration/localization)
-* [Configuración de seguridad](xref:en/Getting-started/advanced-configuration/security-settings)
-* [Configuración de PDF](xref:en/Getting-started/advanced-configuration/pdf-settings)
-* [Configuración de GDPR](xref:en/Getting-started/advanced-configuration/gdpr-settings)
+* [Configuración de varias tiendas](xref:es/Getting-started/advanced-configuration/multi-store)
+* [Países](xref:es/Getting-started/configure-shipping/advanced-configuration/countries-states)
+* [Idiomas](xref:es/Getting-started/advanced-configuration/localization)
+* [Configuración de seguridad](xref:es/Getting-started/advanced-configuration/security-settings)
+* [Configuración de PDF](xref:es/Getting-started/advanced-configuration/pdf-settings)
+* [Configuración de GDPR](xref:es/Getting-started/advanced-configuration/gdpr-settings)

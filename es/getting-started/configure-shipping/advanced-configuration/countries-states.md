@@ -1,6 +1,6 @@
 ﻿---
 title: Countries, states
-uid: en/getting-started/configure-shipping/advanced-configuration/countries-states
+uid: es/getting-started/configure-shipping/advanced-configuration/countries-states
 author: git.AndreiMaz
 contributors: git.rajupaladiya, git.DmitriyKulagin, git.exileDev, git.ivkadp, git.mariannk
 ---
@@ -21,7 +21,7 @@ Para definir los países y los estados, vaya a **Configuración > Países**.
 
 Para agregar  un nuevo país,  haga clic en  **Agregar  nuevo**.
 
-![addcountry](_static/countries-states/addcountry.png)
+![añadir país](_static/countries-states/addcountry.png)
 
 En el panel *información de país*,  defina los siguientes ajustes de país:
 
@@ -96,7 +96,7 @@ Para definir los países y los estados, vaya a **Configuración > Países**.
 
 Para agregar un nuevo país, haga clic en **Agregar nuevo**.
 
-![addcountry](_static/countries-states/addcountry.png)
+![añadir país](_static/countries-states/addcountry.png)
 
 En el panel *información de país*,  defina los siguientes ajustes de país:
 

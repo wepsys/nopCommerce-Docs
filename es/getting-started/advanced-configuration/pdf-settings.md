@@ -1,6 +1,6 @@
 ---
 title: PDF settings
-uid: en/getting-started/advanced-configuration/pdf-settings
+uid: es/getting-started/advanced-configuration/pdf-settings
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.ivkadp, git.mariannk
 ---

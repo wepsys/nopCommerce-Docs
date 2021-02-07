@@ -10,18 +10,18 @@ contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.mariannk
 nopCommerce soporta la importación desde formato Excel y la exportación de productos en XML o Excel. Puede descargar los productos de su catálogo en PDF.
 Puede encontrar estas opciones en **Catálogo → Productos** en la parte superior izquierda de la página principal.
 
-![Products](_static/import-export-products/buttons.jpg)
+![Productos](_static/import-export-products/buttons.jpg)
 
 ## Exportar productos
 
  Puede exportar productos en formato XML o Excel haciendo clic en el botón **Exportar**. Después de hacer clic en el botón **Exportar** verá el menú desplegable que le permite **Exportar a XML (todos los encontrados)** o **Exportar a XML (seleccionado)** y **Exportar a Excel (todos los encontrados)** o **Exportar a Excel (seleccionado)**. 
  
-![Exporting product](_static/import-export-products/exporting_product.png)
+![Exportación de productos](_static/import-export-products/exporting_product.png)
 
  Si no necesita descargar todos los productos, utilice el panel de *Búsqueda* para encontrar los productos necesarios o/y utilice las casillas de verificación para seleccionar los productos necesarios. Se descargará un archivo con los productos que haya elegido. El archivo consiste en todas las características de los productos de los paneles de la página de edición de productos (información del producto, SEO, imágenes, etc.).
 
 > [!NOTE]
-> 
+>
 > Si utiliza los atributos del producto, la tabla de Excel exportada se agrupará por filas. Para ver los detalles de los atributos, haga clic en + junto a su producto en la tabla. 
 > ![Producto sencillo](_static/import-export-products/simple_product.png)
 
@@ -43,7 +43,7 @@ La importación requiere muchos recursos de memoria. Por eso no se recomienda im
 
 Por ejemplo, queremos añadir zapatos de baile a nuestro catálogo. Vamos a crear una nueva fila en la tabla:
 
-![product table](_static/import-export-products/product_table.png)
+![tabla de productos](_static/import-export-products/product_table.png)
 
 Luego haga clic en **Importar**, elija el archivo y haga clic en el botón **Importar desde Excel**. A continuación, comprueba si tienes un nuevo producto en el catálogo.
 
@@ -53,6 +53,6 @@ Luego haga clic en **Importar**, elija el archivo y haga clic en el botón **Imp
 
 La siguiente sección describe la configuración de la importación/exportación: [Export/import](xref:es/running-your-store/catalog/catalog-settings#exportimport).
 
-## See also
+## Ver también
 
 * [Añadir productos](xref:es/running-your-store/catalog/products/add-products)

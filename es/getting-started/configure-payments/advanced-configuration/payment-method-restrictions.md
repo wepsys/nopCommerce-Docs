@@ -1,6 +1,6 @@
 ---
 title: Payment method restrictions
-uid: en/getting-started/configure-payments/advanced-configuration/payment-method-restrictions
+uid: es/getting-started/configure-payments/advanced-configuration/payment-method-restrictions
 author: git.AndreiMaz
 contributors: git.ivkadp
 ---
