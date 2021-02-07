@@ -72,7 +72,7 @@ Para configurar varias tiendas, haga clic en **Agregar nuevo** y defina la sigui
 
   > [!TIP]
   >
-  > Lea más sobre la configuración de SSL en el siguiente capítulo: [Cómo instalar y configurar la certificación SSL](xref:esGetting-started/advanced-configuration/how-to-install-and-configure-ssl-certificate).
+  > Lea más sobre la configuración de SSL en el siguiente capítulo: [Cómo instalar y configurar la certificación SSL](xref:es/Getting-started/advanced-configuration/how-to-install-and-configure-ssl-certificate).
 
 * El campo **Valores HOST** es una lista de posibles valores HTTP_HOST de su tienda (por ejemplo, `store1.com`, `www.store1.com`). El llenado de este campo solo es necesario cuando tiene una solución de varias tiendas para determinar la tienda actual. Este campo permite distinguir solicitudes a distintas URL y determina la tienda actual. También puede ver el valor HTTP_POST actual en **Sistema → Información del sistema**.
 * En el campo **Idioma predeterminado**, elija un idioma predeterminado de su tienda. También puede dejarlo sin seleccionar. En este caso, se utilizará el primero encontrado (con el orden de visualización más bajo).

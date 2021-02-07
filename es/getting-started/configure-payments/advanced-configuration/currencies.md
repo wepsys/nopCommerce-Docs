@@ -1,6 +1,6 @@
 ---
 title: Currencies
-uid: en/getting-started/configure-payments/advanced-configuration/currencies
+uid: es/getting-started/configure-payments/advanced-configuration/currencies
 author: git.AndreiMaz
 contributors: git.exileDev, git.ivkadp, git.mariannk
 ---
@@ -55,7 +55,7 @@ Defina la configuración de moneda:
 * En **Limitado a tiendas**, seleccione una tienda creada previamente de la lista desplegable. Deje el campo vacío en caso de que esta funcionalidad no sea necesaria.
   > [!NOTE]
   >
-> Para utilizar esta funcionalidad, debe desactivar la siguiente configuración: **Configuración del catálogo → Ignorar las reglas de "límite por tienda" (en todo el sitio)**. Lea más sobre la funcionalidad de múltiples tiendas [aquí](xref:en/Getting-started/advanced-configuration/multi-store).
+> Para utilizar esta funcionalidad, debe desactivar la siguiente configuración: **Configuración del catálogo → Ignorar las reglas de "límite por tienda" (en todo el sitio)**. Lea más sobre la funcionalidad de múltiples tiendas [aquí](xref:es/Getting-started/advanced-configuration/multi-store).
 
 * De la lista desplegable **Tipo de redondeo**, elija uno de los tipos de redondeo:
   * *Redondeo predeterminado*
@@ -70,7 +70,7 @@ Defina la configuración de moneda:
 * Seleccione la casilla de verificación **Publicado**, para permitir que esta moneda sea visible y seleccionada por los visitantes en su tienda. nopCommerce admite una visualización de precios en varias monedas. Si tiene varias monedas publicadas, los clientes podrán seleccionar la moneda que deseen.
 * En el campo **Mostrar orden**, ingrese el orden de visualización de esta moneda. Un valor de 1 representa la parte superior de la lista.
 
-Clic en Guardar**.
+Clic en **Guardar**.
 
 ## Obtén tarifas en vivo
 

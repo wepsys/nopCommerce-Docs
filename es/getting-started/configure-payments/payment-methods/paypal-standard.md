@@ -1,6 +1,6 @@
 ---
 title: PayPal Standard
-uid: en/getting-started/configure-payments/payment-methods/paypal-standard
+uid: es/getting-started/configure-payments/payment-methods/paypal-standard
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp, git.mariannk
 ---
@@ -91,7 +91,7 @@ Puede limitar cualquier método de pago a la tienda y al rol del cliente. Esto s
 * En el campo **Limitado a roles de cliente**, elija uno o varios roles de cliente, es decir, administradores, proveedores, invitados, que podrán utilizar este plugin. Si no necesita esta opción, deje este campo vacío.
 
 > [!important]
-> Para utilizar esta funcionalidad, debe deshabilitar la siguiente configuración: **Configuración del catálogo → Ignorar las reglas de ACL (en todo el sitio)**. Lea más sobre la lista de control de acceso [aquí](xref:en/running-your-store/customer-management/access-control-list).
+> Para utilizar esta funcionalidad, debe deshabilitar la siguiente configuración: **Configuración del catálogo → Ignorar las reglas de ACL (en todo el sitio)**. Lea más sobre la lista de control de acceso [aquí](xref:es/running-your-store/customer-management/access-control-list).
 
 * Utilice la opción **Limitado a tiendas** para limitar este plugin a una determinada tienda. Si tiene varias tiendas, elija una o varias de la lista. Si no usa esta opción, deje este campo vacío.
 

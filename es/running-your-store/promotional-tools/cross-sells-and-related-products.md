@@ -1,6 +1,6 @@
 ---
 title: Cross-sells and related products
-uid: en/running-your-store/promotional-tools/cross-sells-and-related-products
+uid: es/running-your-store/promotional-tools/cross-sells-and-related-products
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.IvanIvanIvanov, git.mariannk
 ---
@@ -21,11 +21,11 @@ La opción de "productos de venta cruzada" ofrece la oportunidad de vender produ
 
 ![Cross-sells](_static/cross-sells-and-related-products/Cross-sells.png)
 
-### Adding new cross-sells
+### Añadir nuevas ventas cruzadas
 
 Haga clic en **Agregar nuevo producto de venta cruzada** y elija el/los producto/s del catálogo. Puede utilizar los siguientes criterios: **Nombre del producto**, **Categoría**, **Vendedor**, **Tienda**, **Tipo de producto** y **Fabricante** para encontrar un producto fácilmente.
 
-![Añadir nuevas ventas cruzadas](_estatica/ventas cruzadas y productos relacionados/añadir nuevas ventas cruzadas.png)
+![Añadir nuevas ventas cruzadas](_static/cross-sells-and-related-products/add-new-cross-sells.png)
 
 Después de haber elegido el producto de venta cruzada y haberlo guardado, puede comprobar cómo se mostrarán las ventas cruzadas en la página de compra:
 
@@ -37,21 +37,21 @@ La opción de productos relacionados ofrece la oportunidad de anunciar y vender 
 
 ![Related_products](_static/cross-sells-and-related-products/Related.png)
 
-### Adding new related products
+### Añadir nuevos productos relacionados
 
 Haga clic en **Agregar nuevo producto relacionado** y elija el/los producto/s del catálogo. Puede utilizar los siguientes criterios: **Nombre del producto**, **Categoría**, **Vendedor**, **Tienda**, **Tipo de producto** y **Fabricante** para encontrar un producto fácilmente.
 
-![Agregar un nuevo producto relacionado](_estático/ventas cruzadas y productos relacionados/adicion de nuevos productos relacionados.png)
+![Añadir un nuevo producto relacionado](_static/cross-sells-and-related-products/adiing-new-related.png)
 
 Después de haber elegido el producto relacionado y haberlo guardado, puedes comprobar cómo se mostrarán los productos relacionados en la página de detalles del producto:
 [Related products on the product details page](_static/cross-sells-and-related-products/rel-product-on-the-prod-det-page.png)
 
 ## Ver también
 
-- [Adding products](xref:en/running-your-store/catalog/products/add-products)
-- [Tier prices](xref:en/running-your-store/promotional-tools/tier-prices)
+- [Añadir productos](xref:es/running-your-store/catalog/products/add-products)
+- [Tier prices](xref:es/running-your-store/promotional-tools/tier-prices)
 
-## Tutorials
+## Tutoriales
 
-- [Understanding cross-sells in nopCommerce](https://www.youtube.com/watch?v=J_6OlVarIFc)
-- [Managing related products](https://www.youtube.com/watch?v=FGuozvhyqYE&t=6s)
+- [Entender las ventas cruzadas en nopCommerce](https://www.youtube.com/watch?v=J_6OlVarIFc)
+- [Gestión de productos relacionados](https://www.youtube.com/watch?v=FGuozvhyqYE&t=6s)

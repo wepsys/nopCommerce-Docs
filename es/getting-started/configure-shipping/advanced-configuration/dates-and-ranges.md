@@ -1,6 +1,6 @@
 ---
 title: Dates and ranges
-uid: en/getting-started/configure-shipping/advanced-configuration/dates-and-ranges
+uid: es/getting-started/configure-shipping/advanced-configuration/dates-and-ranges
 author: git.AndreiMaz
 contributors: git.rajupaladiya, git.exileDev, git.mariannk
 ---

@@ -1,13 +1,13 @@
 ---
 title: External authentication methods
-uid: en/getting-started/advanced-configuration/external-authentication-methods
+uid: es/getting-started/advanced-configuration/external-authentication-methods
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 ---
 
 # Métodos de autenticación externos
 
-Los métodos de autenticación externos permiten a los usuarios iniciar sesión en un sitio nopCommerce sin ingresar sus credenciales: correo electrónico y contraseña. Los usuarios pueden autenticarse mediante un sitio externo (como Facebook, Google, etc.). nopCommerce tiene una autenticación externa incorporada a través de Facebook. Puede configurar otros métodos utilizando complementos del [mercado] (https://www.nopcommerce.com/marketplace).
+Los métodos de autenticación externos permiten a los usuarios iniciar sesión en un sitio nopCommerce sin ingresar sus credenciales: correo electrónico y contraseña. Los usuarios pueden autenticarse mediante un sitio externo (como Facebook, Google, etc.). nopCommerce tiene una autenticación externa incorporada a través de Facebook. Puede configurar otros métodos utilizando complementos del [mercado](https://www.nopcommerce.com/marketplace).
 
 Una vez que se configura un método de autenticación externo y se marca como activo, los usuarios verán una nueva opción de autenticación en la página de inicio de sesión.
 
@@ -43,4 +43,4 @@ Haga clic en el botón **Guardar**. En la página de inicio de sesión de la tie
 
 ## Ver también
 
-* [Complementos en nopCommerce](xref:en/Getting-started/advanced-configuration/plugins-in-nopcommerce)
+* [Complementos en nopCommerce](xref:es/Getting-started/advanced-configuration/plugins-in-nopcommerce)

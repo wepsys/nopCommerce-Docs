@@ -1,6 +1,6 @@
 ---
 title: Send an order confirmation email
-uid: en/running-your-store/promotional-tools/sendinblue-integration/send-an-order-confirmation-email
+uid: es/running-your-store/promotional-tools/sendinblue-integration/send-an-order-confirmation-email
 author: git.mariannk
 ---
 

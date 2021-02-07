@@ -1,6 +1,6 @@
 ---
 title: ShipStation
-uid: en/getting-started/configure-shipping/shipping-providers/shipstation
+uid: es/getting-started/configure-shipping/shipping-providers/shipstation
 author: git.mariannk, git.skoshelev
 ---
 
@@ -15,7 +15,7 @@ Para utilizar el complemento de integración **ShipStation**, siga estos pasos:
     * En la fila ShipStation, haga clic en el botón **Editar**.
     * En la columna **Está activo**, marque la casilla de verificación.
     * Haga clic en el botón **Actualizar**. La opción falsa se convierte en **verdadera**.
-    * Haga clic en el botón **Configurar** junto a la opción ShipStation en la lista. Se muestra la ventana *Configure - ShipStation*, como sigue:![Configure page](_static/shipstation/shipstation-configure.jpg)
+    * Haga clic en el botón **Configurar** junto a la opción ShipStation en la lista. Se muestra la ventana *Configure - ShipStation*, como sigue:![Configurar la página](_static/shipstation/shipstation-configure.jpg)
 1. Ingrese la siguiente información obtenida del proveedor de ShipStation:
     * La **API Key** y el **API Secret**: estos datos se utilizan para obtener una lista de operadores disponibles. Puede obtenerlos en la página *Configuración - Configuración de API* en el sitio de ShipStation.
     > [!NOTE]
@@ -27,4 +27,4 @@ Para utilizar el complemento de integración **ShipStation**, siga estos pasos:
     > [!Important]
     > No utilice las credenciales de usuario de ShipStation o nopCommerce para estos campos.
 
-    * Marque la casilla de verificación **Pasar dimensiones** si es necesario enviar dimensiones al servidor de ShipStation. Cuando este parámetro está activado, aparece el parámetro adicional **Tipo de embalaje**. Este parámetro es responsable del tipo de datos enviados.   ![Packing type](_static/shipstation/packing-type.jpg)
+    * Marque la casilla de verificación **Pasar dimensiones** si es necesario enviar dimensiones al servidor de ShipStation. Cuando este parámetro está activado, aparece el parámetro adicional **Tipo de embalaje**. Este parámetro es responsable del tipo de datos enviados.   ![Tipo de embalaje](_static/shipstation/packing-type.jpg)

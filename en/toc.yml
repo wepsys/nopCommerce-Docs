@@ -188,21 +188,21 @@
           name: Security settings
           href: getting-started/advanced-configuration/security-settings.md
         -
-          name: PDF settings
+          name: Configuración de PDF
           href: getting-started/advanced-configuration/pdf-settings.md
         -
-          name: All settings
+          name: Todas las configuraciones
           href: getting-started/advanced-configuration/all-settings.md
 -
-  name: Running your store
+  name: Cómo gestionar su tienda
   href: running-your-store/index.md
   items:
     -
-      name: Catalog
+      name: Catalogo
       href: running-your-store/catalog/index.md
       items:
         -
-          name: Products
+          name: Productos
           href: running-your-store/catalog/products/index.md
           items:
             -

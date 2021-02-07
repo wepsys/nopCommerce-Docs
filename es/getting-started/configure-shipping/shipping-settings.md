@@ -1,6 +1,6 @@
 ---
 title: Shipping settings
-uid: en/getting-started/configure-shipping/shipping-settings
+uid: es/getting-started/configure-shipping/shipping-settings
 author: git.AndreiMaz
 contributors: git.rajupaladiya, git.exileDev, git.mariannk
 ---

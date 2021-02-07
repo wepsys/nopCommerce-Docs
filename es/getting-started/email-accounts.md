@@ -1,6 +1,6 @@
 ---
 title: Email accounts
-uid: en/getting-started/email-accounts
+uid: es/getting-started/email-accounts
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 ---

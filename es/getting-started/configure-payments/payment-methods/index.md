@@ -13,7 +13,7 @@ Para definir los métodos de pago, vaya a **Configuración → Métodos de pago*
 
 > [!TIP]
 >
-> De forma predeterminada, hay varios métodos de pago disponibles en nopCommerce, pero puede encontrar más complementos de pago en nopCommerce [marketplace] (https://www.nopcommerce.com/marketplace).
+> De forma predeterminada, hay varios métodos de pago disponibles en nopCommerce, pero puede encontrar más complementos de pago en nopCommerce [marketplace](https://www.nopcommerce.com/marketplace).
 
 Para obtener detalles sobre el desarrollo del método de pago, consulte el [documento](xref:es/developer/plugins/payment-method).
 

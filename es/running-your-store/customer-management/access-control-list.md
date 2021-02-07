@@ -1,6 +1,6 @@
 ---
 title: Access control list
-uid: en/running-your-store/customer-management/access-control-list
+uid: es/running-your-store/customer-management/access-control-list
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.ivkadp, git.mariannk
 ---
@@ -9,7 +9,7 @@ contributors: git.DmitriyKulagin, git.ivkadp, git.mariannk
 
 La Lista de Control de Acceso (ACL) restringe o concede a los usuarios el acceso a ciertas áreas del sitio. Esta lista es administrada por administradores. Por lo tanto, el usuario debe tener derechos de administrador para poder acceder a ella. La lista de acceso tiene las siguientes características:
 
-* La lista de control de acceso se basa en funciones, es decir, gestiona funciones como las de *administradores globales*, *gestores de contenidos*, etc. Esta lista de roles puede ser gestionada en la página **Clientes → Roles de clientes**. Para más detalles, véase [Customer roles](xref:en/running-your-store/customer-management/customer-roles)
+* La lista de control de acceso se basa en funciones, es decir, gestiona funciones como las de *administradores globales*, *gestores de contenidos*, etc. Esta lista de roles puede ser gestionada en la página **Clientes → Roles de clientes**. Para más detalles, véase [Customer roles](xref:es/running-your-store/customer-management/customer-roles)
 * La lista de control de acceso aparece en el área de administración. Asegúrese de que el usuario es un administrador para poder acceder al ACL.
 * Existen acciones de administrador predefinidas. Estas incluyen *Gestionar pedidos*, *Gestionar clientes* y mucho más.
 

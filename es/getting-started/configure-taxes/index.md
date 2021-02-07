@@ -1,6 +1,6 @@
 ﻿---
 title: Configure taxes
-uid: en/getting-started/configure-taxes/index
+uid: es/getting-started/configure-taxes/index
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 ---
@@ -13,7 +13,7 @@ Este capítulo cubre la configuración de las herramientas de impuestos nopComme
 >
 > Este capítulo incluye instrumentos tributarios incorporados de nopCommerce, no servicios tributarios de terceros.
 
-nopCommerce también admite servicios externos, pero requieren la instalación de complementos de un [mercado](http://www.nopcommerce.com/marketplace). El proceso de instalación de dichos módulos se describe en el capítulo [Complementos](xref:en/developer/plugins/index).
+nopCommerce también admite servicios externos, pero requieren la instalación de complementos de un [mercado](http://www.nopcommerce.com/marketplace). El proceso de instalación de dichos módulos se describe en el capítulo [Complementos](xref:es/developer/plugins/index).
 
 ## Guía de configuración del IVA de la UE
 
@@ -62,7 +62,7 @@ Asegúrese de que todos los productos tengan asignada una categoría de impuesto
 
 ### Ver también
 
-* [Configuración de impuestos](xref:en/getting-started/configure-taxes/tax-settings)
-* [Proveedores de impuestos](xref:en/getting-started/configure-taxes/tax-providers/index)
+* [Configuración de impuestos](xref:es/getting-started/configure-taxes/tax-settings)
+* [Proveedores de impuestos](xref:es/getting-started/configure-taxes/tax-providers/index)
 
 

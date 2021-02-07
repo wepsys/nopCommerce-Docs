@@ -1,35 +1,35 @@
 ---
 title: Recover abandoned carts
-uid: en/running-your-store/promotional-tools/sendinblue-integration/recover-abandoned-carts
+uid: es/running-your-store/promotional-tools/sendinblue-integration/recover-abandoned-carts
 author: git.mariannk
 ---
 
-# Recover abandoned carts
+# Recuperar carros abandonados
 
-In this tutorial, you will learn how to create abandoned cart email and how to set up the workflow to recover lost sales. You will also learn which nopCommerce order data is compatible with the SendinBlue platform.
+En este tutorial, aprenderá a crear correos electrónicos de carritos abandonados y a configurar el flujo de trabajo para recuperar las ventas perdidas. También aprenderá qué datos de pedidos de nopCommerce son compatibles con la plataforma SendinBlue.
 
-## Before getting started
+## Antes de empezar
 
-You will need the following:
-* SendinBlue account credentials. If you don't have one, [sign up for free](https://app.sendinblue.com/account/register/?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link). 
+Necesitará lo siguiente:
+* Las credenciales de la cuenta de SendinBlue. Si no tiene una, [sign up for free](https://app.sendinblue.com/account/register/?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link). 
 * Make sure that SendinBlue's [*New Template Language*](https://help.sendinblue.com/hc/en-us/articles/360000659260?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link) for emails is enabled on your account.
 * Follow [these steps](xref:en/running-your-store/promotional-tools/sendinblue-integration/set-up-sendinblue-plugin) to set up the SendinBlue plugin.
 
-## Create an abandoned cart email template
+## Crear una plantilla de correo electrónico de carrito abandonado
 
-First, log into your SendinBlue account then go to the Automation platform > [Email Templates](https://my.sendinblue.com/camp/lists/template?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link). Click on the **New Template** button at the top right.
+Primero, inicie sesión en su cuenta de SendinBlue y luego vaya a la plataforma de automatización > [Email Templates](https://my.sendinblue.com/camp/lists/template?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link). Click on the **New Template** button at the top right.
 
-The email template can be personalized with several types of data:
+La plantilla de correo electrónico puede personalizarse con varios tipos de datos:
 
-* [contact attributes saved in your SendinBlue list](#personalize-your-email-with-contact-attributes)
-* [abandoned item details](#personalize-your-email-with-the-abandoned-items-details)
-* [abandoned cart details](#personalize-your-email-with-the-abandoned-cart-details)
+* [atributos de los contactos guardados en su lista de SendinBlue](#personalize-your-email-with-contact-attributes)
+* [detalles del artículo abandonado](#personalize-your-email-with-the-abandoned-items-details)
+* [detalles del carro abandonado](#personalize-your-email-with-the-abandoned-cart-details)
 
 ### Personalize your email with contact attributes
 
-Let's start by [personalizing with contact attributes](https://help.sendinblue.com/hc/en-us/articles/360001008200?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link).
+Empecemos por [personalización con atributos de contacto](https://help.sendinblue.com/hc/en-us/articles/360001008200?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link).
 
-In the example below, we have included a personalization of:
+En el ejemplo siguiente, hemos incluido una personalización de:
 
 * the recipient's first name using {{ contact.FIRSTNAME }}
 * the recipient's last name using {{ contact.LASTNAME }}
@@ -37,13 +37,13 @@ In the example below, we have included a personalization of:
 > [!NOTE]
 > FIRSTNAME and LASTNAME should be existing attributes in your SendinBlue account.
 
-![Attribute personalization](_static/recover-abandoned-carts/attribute-personalization.gif)
+![Personalización de atributos](_static/recover-abandoned-carts/attribute-personalization.gif)
 
-Now let's personalize the email template with order variables such as the name of the items left behind, their images, price etc. To do so, we will use the *New Template Language* to [insert a dynamic list](https://help.sendinblue.com/hc/en-us/articles/360000887379-Inserting-a-dynamic-list-in-the-Drag-Drop-editor-NEW-?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link).
+Ahora vamos a personalizar la plantilla de correo electrónico con las variables del pedido, como el nombre de los artículos dejados, sus imágenes, el precio, etc. Para ello, utilizaremos el *Lenguaje de la plantilla* para [insertar una lista dinámica](https://help.sendinblue.com/hc/en-us/articles/360000887379-Inserting-a-dynamic-list-in-the-Drag-Drop-editor-NEW-?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link).
 
-### Personalize your email with the abandoned items details
+### Personalice su correo electrónico con los detalles de los artículos abandonados
 
-The following variables may be included directly from a dynamic list within your SendinBlue template content:
+Las siguientes variables pueden incluirse directamente desde una lista dinámica dentro del contenido de su plantilla de SendinBlue:
 
 | Items data | Insert this placeholder in your template |
 | ------------- | ------------- |
@@ -58,17 +58,17 @@ The following variables may be included directly from a dynamic list within your
 | Storefront link of the purchased item | {{ item.url }} |
 | Image | {{ item.image }} |
 
-In the *Drag & Drop Editor*, select your desired block that will display the abandoned items.
+En el *Editor de arrastrar y soltar*, seleccione el bloque deseado que mostrará los elementos abandonados.
 
-1. Click the **pencil icon** to edit the settings for the design block.
-1. Enable the **dynamic list** option.
-1. In the **parameter** field, write `items`.
-1. In the **variable** field, write `item`.
-1. Set the limit for the number of items that will be displayed. For example, if there are 5 items left in the cart, and you set 3 as the limit, only 3 items will be shown in the email.
+1. Haga clic en el icono del **lápiz** para editar los ajustes del bloque de diseño.
+1. Habilite la opción de **lista dinámica**.
+1. En el campo **parámetro**, escriba "elementos".
+1. En el campo **variable**, escriba `item`.
+1. Establezca el límite del número de artículos que se mostrarán. Por ejemplo, si quedan 5 artículos en el carrito y establece 3 como límite, sólo se mostrarán 3 artículos en el correo electrónico.
 
 ![Email editor](_static/recover-abandoned-carts/items.jpg)
 
-Now add the variables to your email template. In the example above, we have added:
+Ahora añada las variables a su plantilla de correo electrónico. En el ejemplo anterior, hemos añadido:
 * `{{ item.name }}` - the name of the item
 * `{{ item.quantity }}` - the quantity of the item
 * `{{ item.price | floatformat: 2 }}` - the price of the item
@@ -81,11 +81,11 @@ To add the image of the item, select the image. On the right sidebar, under *Ima
 
 ![item.image](_static/recover-abandoned-carts/item-image.jpg)
 
-Once your design is complete, click the green **Save & Quit** button. Then click the **Save & Activate** button.
+Una vez que su diseño esté completo, haga clic en el botón verde **Guardar y Salir**. A continuación, haga clic en el botón **Guardar y activar**.
 
-### Personalize your email with the abandoned cart details
+### Personalice su correo electrónico con los detalles del carrito abandonado
 
-The following variables may be included directly within your SendinBlue template content:
+Las siguientes variables pueden incluirse directamente en el contenido de su plantilla SendinBlue:
 
 | Cart details | Insert this placeholder |
 | ------------- | ------------- |
@@ -100,11 +100,11 @@ The following variables may be included directly within your SendinBlue template
 | Link to cart | {{ params.url }} |
 
 > [!NOTE]
-> Items shown in the link to cart page will be different based on where the session is opened from. For example, let's say a customer is browsing from their laptop. If they click on the abandoned cart email from their phone, it will not show their abandoned cart.
+> Los artículos que se muestren en la página de enlace al carrito serán diferentes en función del lugar desde el que se abra la sesión. Por ejemplo, digamos que un cliente está navegando desde su ordenador portátil. Si hace clic en el correo electrónico del carrito abandonado desde su teléfono, no se mostrará su carrito abandonado.
 
-In the *Drag & Drop Editor*, select your desired block that will display the abandoned cart information then add the order variables you want.
+En el *Editor de arrastrar y soltar*, seleccione el bloque deseado que mostrará la información del carrito abandonado y luego añada las variables de pedido que desee.
 
-We recommend formatting numbers by using [floatformat](https://help.sendinblue.com/hc/en-us/articles/360000268730?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link#numbers). In the example below, we have added:
+Se recomienda formatear los números utilizando [floatformat](https://help.sendinblue.com/hc/en-us/articles/360000268730?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link#numbers). En el ejemplo siguiente, hemos añadido:
 
 * `{{ params.currency }}` - the currency of the abandoned cart
 * `{{ params.subtotal | floatformat: 2 }}` - the subtotal of the abandoned cart
@@ -113,19 +113,19 @@ We recommend formatting numbers by using [floatformat](https://help.sendinblue.c
 
 ![Cart](_static/recover-abandoned-carts/cart.jpg)
 
-To add the link of the abandoned cart, select the **Call-To-Action (CTA)** button. On the right sidebar, under *Link*, type `{{ params.url }}`.
+Para añadir el enlace del carrito abandonado, seleccione el botón **Call-To-Action (CTA)**. En la barra lateral derecha, en *Enlace*, escriba `{{ params.url }}`.
 
 ![params.url](_static/recover-abandoned-carts/url.jpg)
 
-Once your design is complete, click the green **Save & Quit** button. Then click the **Save & Activate** button.
+Una vez que su diseño esté completo, haga clic en el botón verde **Guardar y Salir**. A continuación, haga clic en el botón **Guardar y activar**.
 
 
-## Creating the abandoned cart workflow
+## Creación del flujo de trabajo del carrito abandonado
 
-> [!NOTE]
-> A customer has to be identified by their email address to trigger the workflow, i.e. a customer should be logged into their account on your nopCommerce store or input their email address during checkout.
+> NOTA
+> Un cliente tiene que ser identificado por su dirección de correo electrónico para activar el flujo de trabajo, es decir, un cliente debe estar conectado a su cuenta en su tienda nopCommerce o introducir su dirección de correo electrónico durante el pago.
 
-Navigate to the [Automation](https://automation.sendinblue.com/?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link) tab of your SendinBlue account.
+Navegue hasta el [Automation](https://automation.sendinblue.com/?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link) tab of your SendinBlue account.
 
 Click on **+ CREATE A NEW WORKFLOW**, then select **Detailed Abandoned Cart** and follow the steps.
 
@@ -139,9 +139,9 @@ Feel free to read this tutorials to help you creating the workflow:
 * [Recovering abandoned carts: automatically send the emails (step 3)](https://help.sendinblue.com/hc/en-us/articles/360002761299?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link)
 
 
-## Example
+## Ejemplo
 
-Let's say that customer Jean Blue jean.blue@sendinblue.com has visited your store but the following 3 items have been left in the cart.
+Digamos que el cliente Jean Blue jean.blue@sendinblue.com ha visitado su tienda pero se ha dejado los siguientes 3 artículos en el carrito.
 
 ![Cart example](_static/recover-abandoned-carts/cart-example.jpg)
 
@@ -154,5 +154,7 @@ The email received by Jean Blue will look like this:
 ![Cart example](_static/recover-abandoned-carts/email.jpg)
 
 
-## Learn more
-* [Send an order confirmation email](xref:en/running-your-store/promotional-tools/sendinblue-integration/send-an-order-confirmation-email)
+## Más información
+
+* Más información
+* [Enviar un correo electrónico de confirmación del pedido](xref:en/running-your-store/promotional-tools/sendinblue-integration/send-an-order-confirmation-email)

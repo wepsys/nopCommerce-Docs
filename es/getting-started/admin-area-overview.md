@@ -1,6 +1,6 @@
 ---
 title: Admin area overview
-uid: en/getting-started/admin-area-overview
+uid: es/getting-started/admin-area-overview
 author: git.AndreiMaz
 contributors: git.rajupaladiya, git.exileDev, git.DmitriyKulagin, git.IvanIvanIvanov, git.ivkadp
 ---
@@ -25,7 +25,7 @@ El tablero tiene las siguientes secciones:
 
 ![Estadísticas](_static/admin-area-overview/stats.jpg)
 
-Obtenga más información sobre estos informes [aquí](xref:en/running-your-store /reports).
+Obtenga más información sobre estos informes [aquí](xref:es/running-your-store /reports).
 
 Las secciones del tablero se contraen fácilmente haciendo clic en el icono! [Elemento](_static/admin-area-overview/item.png).
 

@@ -1,6 +1,6 @@
 ---
 title: Tier prices
-uid: en/running-your-store/promotional-tools/tier-prices
+uid: es/running-your-store/promotional-tools/tier-prices
 author: git.AndreiMaz
 contributors: git.exileDev, git.DmitriyKulagin, git.IvanIvanIvanov, git.mariannk
 ---

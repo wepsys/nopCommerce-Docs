@@ -1,6 +1,6 @@
 ﻿---
 title: Manual (fixed or by weight and by total)
-uid: en/getting-started/configure-shipping/shipping-providers/manual
+uid: es/getting-started/configure-shipping/shipping-providers/manual
 author: git.AndreiMaz
 contributors: git.rajupaladiya, git.DmitriyKulagin, git.exileDev, git.mariannk
 ---
@@ -9,7 +9,7 @@ contributors: git.rajupaladiya, git.DmitriyKulagin, git.exileDev, git.mariannk
 
 El envío manual (fijo o por peso y total) permite establecer tarifas fijas o calcular tarifas por peso y por total para todos los métodos de envío predefinidos.
 
-Para ver el ejemplo de cómo se puede aplicar este método a su tienda, consulte la sección [Ejemplo] (# ejemplo) a continuación.
+Para ver el ejemplo de cómo se puede aplicar este método a su tienda, consulte la sección [Ejemplo](# ejemplo) a continuación.
 
 ## Definir el proveedor de envío manual
 
@@ -41,7 +41,7 @@ Haga clic en **Actualizar**.
 
 ## Configurar tarifa por peso / total
 
-![by weight](_static/manual/manual-shipping-by-weight-total.png)
+![por peso](_static/manual/manual-shipping-by-weight-total.png)
 
 La opción **envío por peso y por total** permite establecer diferentes tarifas de envío según el peso y el total del envío. La capacidad de cobrar diferentes tarifas según el peso y el total del envío ayuda a mantener bajos los costos de envío de la empresa cuando se envían artículos pesados, pero ofrece costos de envío razonables a los clientes que compran productos ligeros.
 
@@ -154,9 +154,9 @@ Clic en **Guardar**.
 ## Ejemplo
 
 Ley's say you have a store located in the USA and ships to the USA and Canada. You set up a three shipping methods available, such as: 
-- **Ground** that allows shipping by land transport.
-- **Next day air** that provides one day air shipping.
-- **2nd day air** allowing two days air shipping.
+- **Tierra** que permite el envío por transporte terrestre.
+- **Aire al día siguiente** que permite el envío por aire en un día.
+- **2nd day air** que permite el envío por aire en dos días.
 
 > [!TIP]
 >
@@ -170,22 +170,22 @@ A continuación, supongamos que la tarifa de envío depende del total del pedido
 
 Teniendo en cuenta todos los requisitos anteriores, configuraremos el método de pago en la página *Configurar - Manual (Fijo o Por Peso y Por Total)*  de la siguiente manera:
 
-- **Ground** method
-  ![Configuration Ground](_static/manual/configuration-ground.jpg)
+- **Método** de la tierra
+  ![Configuración de la tierra](_static/manual/configuration-ground.jpg)
 
 - **Next day air** method
-  ![Configuration Next day air](_static/manual/configuration-nextday.jpg)
+  ![Configuración Aire al día siguiente](_static/manual/configuration-nextday.jpg)
 
 - **2nd day air** method
-  ![Configuration 2nd day air](_static/manual/configuration-2ndday.jpg)
+  ![Configuración 2do día aéreo](_static/manual/configuration-2ndday.jpg)
 
 To disable the **Next day air** option for Canada click the **Shipping method restrictions** button and fill the *Shipping method restrictions* the following way:
-![Configuration example](_static/manual/restrictions-example.jpg)
+![Ejemplo de configuración](_static/manual/restrictions-example.jpg)
 
 ### Veamos cómo se ven las opciones de envío en la tienda pública
 
 1. Cuando un cliente de EE. UU. Visita la página del producto (o la página del carrito de compras), se muestra la estimación de envío, de la siguiente manera:
-  ![Estimation](_static/manual/estimate-product-page.jpg)
+  ![Estimación](_static/manual/estimate-product-page.jpg)
     > [!TIP]
     >
     > Por cierto, puede deshabilitar la estimación de envío desmarcando las casillas **Envío estimado habilitado (página del carrito)** y **Envío estimado habilitado (página del producto)** en la página **Configuración → Configuración → Configuración de envío**.
@@ -194,14 +194,14 @@ To disable the **Next day air** option for Canada click the **Shipping method re
     ![Estimation USA](_static/manual/estimation-popup-usa.jpg)
 
 2.Cuando un cliente elige Canadá en la ventana de estimación de envío, se mostrarán las siguientes opciones:
-  ![Estimation Canada](_static/manual/estimation-popup-canada.jpg)
+  ![Estimación de Canadá](_static/manual/estimation-popup-canada.jpg)
     Como puede ver, la opción **Aire al día siguiente**  ya no está disponible.
 
 > [!TIP]
 >
 > En caso de que desee proporcionar puntos de recogida a sus clientes ver cómo configurar esto en el
- [Pickup points](xref:en/getting-started/configure-shipping/advanced-configuration/pickup-points) chapter.
+ [Pickup points](xref:es/getting-started/configure-shipping/advanced-configuration/pickup-points) chapter. chapter.
 
-## Tutorials
+## Tutoriales
 
-* [Configuring manual shipping method](https://www.youtube.com/watch?v=1nYj0NqVUWw&t=8s)
+* [Configurar el método de envío manual](https://www.youtube.com/watch?v=1nYj0NqVUWw&t=8s)

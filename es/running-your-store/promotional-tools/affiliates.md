@@ -1,6 +1,6 @@
 ---
 title: Affiliates
-uid: en/running-your-store/promotional-tools/affiliates
+uid: es/running-your-store/promotional-tools/affiliates
 author: git.AndreiMaz
 contributors: git.rajupaladiya, git.exileDev, git.IvanIvanIvanov, git.mariannk
 ---
@@ -47,7 +47,7 @@ Si haces clic en **Guardar y continuar editando** verás dos paneles más donde 
 
 ## Ver también
 
-- [Order management](xref:en/running-your-store/order-management/index)
-- [Customer management](xref:en/running-your-store/customer-management/index)
+- [Order management](xref:es/running-your-store/order-management/index)
+- [Customer management](xref:es/running-your-store/customer-management/index)
 
 

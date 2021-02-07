@@ -1,6 +1,6 @@
 ---
 title: Gift cards
-uid: en/running-your-store/promotional-tools/gift-cards
+uid: es/running-your-store/promotional-tools/gift-cards
 author: git.AndreiMaz
 contributors: git.exileDev, git.DmitriyKulagin, git.IvanIvanIvanov, git.mariannk
 ---
@@ -75,5 +75,5 @@ También puede permitir que sus clientes comprueben el balane de la tarjeta de r
 
 ## Ver también
 
-- [Adding products](xref:en/running-your-store/catalog/products/add-products)
+- [Adding products](xref:es/running-your-store/catalog/products/add-products)
 - [YouTube tutorial on managing gift cards](https://www.youtube.com/watch?v=4SJ7uBZGas0&index=4&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)

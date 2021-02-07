@@ -1,6 +1,6 @@
 ﻿---
 title: Email campaigns
-uid: en/running-your-store/promotional-tools/email-campaigns
+uid: es/running-your-store/promotional-tools/email-campaigns
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.IvanIvanIvanov, git.mariannk
 ---

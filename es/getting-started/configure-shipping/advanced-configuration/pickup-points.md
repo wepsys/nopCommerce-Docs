@@ -1,6 +1,6 @@
 ---
 title: Pickup points
-uid: en/getting-started/configure-shipping/advanced-configuration/pickup-points
+uid: es/getting-started/configure-shipping/advanced-configuration/pickup-points
 author: git.AndreiMaz
 contributors: git.exileDev, git.mariannk
 ---

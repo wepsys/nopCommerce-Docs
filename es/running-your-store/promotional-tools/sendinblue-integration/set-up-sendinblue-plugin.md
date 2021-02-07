@@ -1,6 +1,6 @@
 ---
 title: SendinBlue integration
-uid: en/running-your-store/promotional-tools/sendinblue-integration/set-up-sendinblue-plugin
+uid: es/running-your-store/promotional-tools/sendinblue-integration/set-up-sendinblue-plugin
 author: git.mariannk
 ---
 

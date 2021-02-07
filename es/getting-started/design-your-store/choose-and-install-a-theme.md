@@ -1,6 +1,6 @@
 ---
 title: Choose and install a theme
-uid: en/getting-started/design-your-store/choose-and-install-a-theme
+uid: es/getting-started/design-your-store/choose-and-install-a-theme
 author: git.AndreiMaz
 contributors: git.exileDev, git.DmitriyKulagin
 ---

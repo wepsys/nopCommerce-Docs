@@ -1,6 +1,6 @@
 ---
 title: Measures
-uid: en/getting-started/configure-shipping/advanced-configuration/measures
+uid: es/getting-started/configure-shipping/advanced-configuration/measures
 author: git.AndreiMaz
 contributors: git.exileDev, git.mariannk
 ---

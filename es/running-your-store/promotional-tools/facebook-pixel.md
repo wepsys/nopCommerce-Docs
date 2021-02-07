@@ -1,6 +1,6 @@
 ---
 title: Facebook pixel
-uid: en/running-your-store/promotional-tools/facebook-pixel
+uid: es/running-your-store/promotional-tools/facebook-pixel
 author: git.mariannk
 ---
 

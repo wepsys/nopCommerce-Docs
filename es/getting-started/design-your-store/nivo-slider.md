@@ -1,6 +1,6 @@
 ﻿---
 title: Nivo slider
-uid: en/getting-started/design-your-store/nivo-slider
+uid: es/getting-started/design-your-store/nivo-slider
 author: git.AndreiMaz
 contributors: git.exileDev
 ---

@@ -1,6 +1,6 @@
 ---
 title: Reward points
-uid: en/running-your-store/promotional-tools/reward-points
+uid: es/running-your-store/promotional-tools/reward-points
 author: git.AndreiMaz
 contributors: git.exileDev, git.DmitriyKulagin, git.IvanIvanIvanov, git.mariannk
 ---
@@ -17,7 +17,7 @@ Los puntos también pueden ser cancelados si un cliente cancela un pedido o env�
 
 Para manejar el programa de puntos de recompensa vaya **Configuración → Ajustes → Puntos de recompensa**. Esta página está disponible en dos modos: *básico* y *avanzado*.
 
-Esta página permite la configuración de varias tiendas, esto significa que se pueden definir los mismos ajustes para todas las tiendas, o diferir de una tienda a otra. Si desea gestionar la configuración de una tienda determinada, elija su nombre en la lista desplegable de configuración de varias tiendas y marque todas las casillas de verificación necesarias en el lado izquierdo para establecer un valor personalizado para ellas. Para obtener más detalles, consulte [Multi-store](xref:en/getting-started/advanced-configuration/multi-store).
+Esta página permite la configuración de varias tiendas, esto significa que se pueden definir los mismos ajustes para todas las tiendas, o diferir de una tienda a otra. Si desea gestionar la configuración de una tienda determinada, elija su nombre en la lista desplegable de configuración de varias tiendas y marque todas las casillas de verificación necesarias en el lado izquierdo para establecer un valor personalizado para ellas. Para obtener más detalles, consulte [Multi-store](xref:es/getting-started/advanced-configuration/multi-store).
 
 ![Reward points](_static/reward-points/settings.jpg)
 

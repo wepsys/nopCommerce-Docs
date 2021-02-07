@@ -1,6 +1,6 @@
 ---
 title: Plugins in nopCommerce
-uid: en/getting-started/advanced-configuration/plugins-in-nopcommerce
+uid:en/getting-started/advanced-configuration/plugins-in-nopcommerce
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 ---
