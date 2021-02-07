@@ -11,85 +11,85 @@ Este capítulo describe cómo instalar el software nopCommerce en el sistema Lin
 
 1. [Instalar y configurar el software](#install-and-configure-software)
 1. [Obtener nopCommerce](#get-nopcommerce)
-1. [Create and configure the nopCommerce Web service](#create-the-nopcommerce-service)
+1. [Crear y configurar el servicio web de nopCommerce](#create-the-nopcommerce-service)
 1. [Solución de problemas](#troubleshooting)
 
-## Instalar y configurar software
-1a
-Antes de instalar .NET Core, necesitaremos registrar la clave de Microsoft e instalar las dependencias necesarias. Esto debe hacerse una vez por máquina.
+## Instalar y configurar el software
 
-### Registra la clave y el feed de Microsoft
+Antes de instalar .NET Core, tendremos que registrar la clave de Microsoft e instalar las dependencias necesarias. Esto debe hacerse una vez por máquina.
 
-Abra una terminal y ejecute los siguientes comandos:
+### Register Microsoft key and feed
+
+Abra un terminal y ejecute los siguientes comandos:
 
 `wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb`
 
 `sudo dpkg -i packages-microsoft-prod.deb`
 
-![Instalación de nopCommerce](_static/installing-on-linux/register_key.jpg)
+![nopCommerce installation](_static/installing-on-linux/register_key.jpg)
 
-### Instalar.NET Core Runtime
+### Instalar el tiempo de ejecución de .NET Core
 
-Actualice los productos disponibles para la instalación, luego instale el tiempo de ejecución de .NET:
+Actualice los productos disponibles para la instalación y, a continuación, instale el tiempo de ejecución de .NET:
 
 `sudo apt-get update`
 
 `sudo apt-get install apt-transport-https aspnetcore-runtime-3.1`
 
-![Instalación de nopCommerce](_static/installing-on-linux/net_core.jpg)
+![nopCommerce installation](_static/installing-on-linux/net_core.jpg)
 
 > [!NOTE]
->
-> Si tiene algún error, consulte la información detallada en el https://docs.microsoft.com/en-us/dotnet/core/install/linux-package-manager-ubuntu-2004#troubleshoot-the-package-manager page.
+> 
+> Si tiene algún error consulte la información detallada en el https://docs.microsoft.com/en-us/dotnet/core/install/linux-package-manager-ubuntu-2004#troubleshoot-the-package-manager page.
 
-Puede ver todos los tiempos de ejecución de .Net Core instalados con el siguiente comando:
+Puede ver todos los tiempos de ejecución de .Net Core instalados mediante el siguiente comando:
 
 `dotnet --list-runtimes`
 
-![Instalación de nopCommerce](_static/installing-on-linux/list_runtimes.jpg)
+![nopCommerce installation](_static/installing-on-linux/list_runtimes.jpg)
 
-### Instalar MySql Server
+### Instalar el servidor MySql
 
-Instala el MySql server 8.0 version
+Instalar el servidor MySql versión 8.0
 
 `sudo apt-get install mysql-server`
 
-![Instalación de nopCommerce](_static/installing-on-linux/install_mysql.jpg)
+![nopCommerce installation](_static/installing-on-linux/install_mysql.jpg)
 
-Por defecto, la contraseña de root está vacía, configurémosla
+Por defecto, la contraseña de root está vacía, vamos a establecerla
 
 `sudo /usr/bin/mysql_secure_installation`
 
-![Instalación de nopCommerce](_static/installing-on-linux/config_mysql.jpg)
+![nopCommerce installation](_static/installing-on-linux/config_mysql.jpg)
 
 > [!NOTE]
->
-> Si tiene algún problema con la configuración de la contraseña de root en su servidor MySql, lea los siguientes artículos:
+> 
+> Si tienes algún problema con la configuración de la contraseña de root en tu servidor MySql, por favor lee los siguientes artículos:
 > https://dev.mysql.com/doc/refman/8.0/en/resetting-permissions.html and
 https://stackoverflow.com/questions/41645309/mysql-error-access-denied-for-user-rootlocalhost.
 
 ### Instalar nginx
 
-Instale el paquete nginx:
+Instalar el paquete nginx:
 
 `sudo apt-get install nginx`
 
-![instalación de nopCommerce](_static/installing-on-linux/install_nginx.jpg)
+![Instalación de nopCommerce](_static/installing-on-linux/install_nginx.jpg)
 
-Ejecute el servicio nginx:
+Run the nginx service:
 
 `sudo systemctl start nginx`
 
-y comprobar su estado:
+and check its status:
 
 `sudo systemctl status nginx`
 
-![instalación de nopCommerce](_static/installing-on-linux/status_nginx.jpg)
+![nopCommerce installation](_static/installing-on-linux/status_nginx.jpg)
 
-Para configurar nginx como un proxy inverso para reenviar solicitudes a su ASP.NET Core app, modificar /etc/nginx/sites-available/default. Ábralo en un editor de texto y reemplace el contenido con lo siguiente:
+Para configurar nginx como proxy inverso para reenviar las peticiones a su aplicación ASP.NET Core, modifique /etc/nginx/sites-available/default. Ábrelo en un editor de texto y sustituye el contenido por lo siguiente:
 
 ```
-# Configuración de servidor predeterminada
+# Default server configuration
 #
 server {
     listen 80 default_server;
@@ -113,26 +113,26 @@ server {
     # listen 443 ssl default_server;
     # listen [::]:443 ssl default_server;
     #
-    # Note: Debe deshabilitar gzip para el tráfico SSL.
+    # Note: You should disable gzip for SSL traffic.
     # See: https://bugs.debian.org/773332
     #
-    # Rlea ssl_ciphers para garantizar una configuración segura.
-    # Ver: https://bugs.debian.org/765782
+    # Read up on ssl_ciphers to ensure a secure configuration.
+    # See: https://bugs.debian.org/765782
     #
-    # Certificados autofirmados generados por el paquete ssl-cert
-    # ¡No los uses en un servidor de producción!
+    # Self signed certs generated by the ssl-cert package
+    # Don't use them in a production server!
     #
-    # incluir fragmentos/snakeoil.conf;
+    # include snippets/snakeoil.conf;
 }
 ```
 
-## Obtenga nopCommerce
+## Obtener nopCommerce
 
-Crea un directorio
+Crear un directorio
 
 `mkdir /var/www/nopCommerce430`
 
-Descarga y desempaqueta el nopCommerce:
+Descargue y desempaque el nopCommerce:
 
 `cd /var/www/nopCommerce430`
 
@@ -142,13 +142,13 @@ Descarga y desempaqueta el nopCommerce:
 
 `sudo unzip nopCommerce_4.30_NoSource_linux_x64.zip`
 
-Cree un par de directorios para ejecutar nopCommerce:
+Crear un par de directorios para ejecutar nopCommerce:
 
 `sudo mkdir bin`
 
 `sudo mkdir logs`
 
-Cambiar los permisos del archivo
+Change the file permissions
 
 `cd ..`
 
@@ -156,7 +156,7 @@ Cambiar los permisos del archivo
 
 `sudo chown -R www-data nopCommerce430/`
 
-## Crea el servicio nopCommerce
+## Create the nopCommerce service
 
 Create the /etc/systemd/system/nopCommerce430.service file with the following contents:
 
@@ -180,30 +180,30 @@ Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
 WantedBy=multi-user.target
 ```
 
-Iniciar el servicio
+Start the service
 
 `sudo systemctl start nopCommerce430.service`
 
-Verifique el estado del servicio nopCommerce
+Check the nopCommerce service status
 
 `sudo systemctl status nopCommerce430.service`
 
-![Instalación de nopCommerce](_static/installing-on-linux/status_nopCommerce.jpg)
+![nopCommerce installation](_static/installing-on-linux/status_nopCommerce.jpg)
 
-Reinicie el servidor nginx
+Restart the nginx server
 
 `sudo systemctl restart nginx`
 
-**Ahora todo está listo, puedes proceder a instalar y configurar la tienda**
+**Ahora todo está listo, puede proceder a instalar y configurar la tienda**
 
 ## Solución de problemas
 
 ### Gdip
 
-*Si tiene un problema con la carga de imágenes en RichText Box (el inicializador de tipo para 'Gdip' arrojó una excepción) simplemente instale la biblioteca libgdiplus*:
+*Si tiene un problema con la carga de imágenes en el cuadro de texto enriquecido (el inicializador de tipo para 'Gdip' lanzó una excepción) simplemente instale la biblioteca libgdiplus*:
 
 *`sudo apt-get install libgdiplus`*
 
 ### SSL
 
-*Si desea utilizar SSL en su sitio, no olvide configurarlo en `true` the `UseHttpXForwardedProto` entorno en el **appsettings.json** expediente*.
+*Si quieres usar SSL en tu sitio no olvides configurar `true` el `UseHttpXForwardedProto` en el **appsettings.json** file*.
