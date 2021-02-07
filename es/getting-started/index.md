@@ -12,7 +12,7 @@ Si es un novato en nopCommerce, siga los pasos a continuación para configurar s
 ## 1. Configura tu tienda
 
 - [Configurar los ajustes generales de la tienda](xref:es/getting-started/advanced-configuration/your-store-information)
-- [Configurar la lista de usuarios: crear](xref:es/getting-started/configure-payments/payment-methods/index)
+- [Configurar los métodos de pago](xref:es/getting-started/configure-payments/payment-methods/index)
 - [Configurar las opciones de envío](xref:es/getting-started/configure-shipping/index)
 - Configurar la lista de usuarios: crear [diferentes grupos](xref:es/running-your-store/customer-management/customer-roles) de los usuarios, darles [acceso separado a las áreas de su sitio](xref:es/running-your-store/customer-management/access-control-list), ofertas, etc.
 
@@ -98,7 +98,7 @@ nopCommerce le permite ejecutar más de una tienda usando una interfaz desde una
 
 * [Multi-tienda](xref:es/Getting-Start/Advanced-Configuration/Multi-Store)
 
-### Multi vendedor
+### Multivendedor
 
 * Las herramientas de envío directo y de múltiples proveedores le permiten vender en línea sin tener que mantener existencias ni enviarpedidos. Vea el [tutorial-de-vídeo](https://www.youtube.com/watchv=MH6r6tqfLF8&index=9&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4) on multi-vendor support.
 

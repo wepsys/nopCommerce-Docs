@@ -11,8 +11,8 @@ Este capítulo describe cómo instalar el software nopCommerce en el sistema Lin
 
 1. [Instalar y configurar el software](#install-and-configure-software)
 1. [Obtener nopCommerce](#get-nopcommerce)
-1. [Cree y configure el servicio web nopCommerce](#create-the-nopcommerce-service)
-1. [Solución de problemas][Troubleshooting](#troubleshooting)
+1. [Create and configure the nopCommerce Web service](#create-the-nopcommerce-service)
+1. [Solución de problemas](#troubleshooting)
 
 ## Instalar y configurar software
 1a

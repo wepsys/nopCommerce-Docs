@@ -10,7 +10,7 @@ contributors: git.skoshelev, git.exileDev, git.IvanIvanIvanov
 nopCommerce se puede descargar como motor de comercio electrónico listo para instalar o como código fuente completo listo para ser modificado. Este capítulo cubrirá todo lo que necesita saber para descargar e instalar nopCommerce.
 
 - [Requisitos de tecnología y sistema](xref:es/installation-and-upgrading/technology-and-system-requirements)
-- [Installation guide](xref:es/installation-and-upgrading/installing-nopcommerce/index)
+- [Guía de instalación](xref:es/installation-and-upgrading/installing-nopcommerce/index)
 - [Elegir una empresa de hosting](xref:es/installation-and-upgrading/installing-nopcommerce/choose-a-hosting-company)
 - [Instalación local (sólo para desarrolladores)](xref:es/installation-and-upgrading/installing-nopcommerce/installing-local)
 - [Instalación en Windows](xref:es/installation-and-upgrading/installing-nopcommerce/installing-on-windows)
