@@ -1,6 +1,6 @@
 ---
 title: Payment methods
-uid: en/getting-started/configure-payments/payment-methods/index
+uid: es/getting-started/configure-payments/payment-methods/index
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp
 ---
@@ -15,7 +15,7 @@ Para definir los métodos de pago, vaya a **Configuración → Métodos de pago*
 >
 > De forma predeterminada, hay varios métodos de pago disponibles en nopCommerce, pero puede encontrar más complementos de pago en nopCommerce [marketplace] (https://www.nopcommerce.com/marketplace).
 
-Para obtener detalles sobre el desarrollo del método de pago, consulte el [documento](xref:en/developer/plugins/payment-method).
+Para obtener detalles sobre el desarrollo del método de pago, consulte el [documento](xref:es/developer/plugins/payment-method).
 
 ![métodos](_static/index/payment-methods.jpg)
 
@@ -33,7 +33,7 @@ Haga clic en **Configurar** junto a un método de pago para configurarlo.
 
 ## Ver también
 
-* [Cheque/giropostal](xref:en/Getting-started/configure-payments/payment-methods/cheque-money-order)
+* [Cheque/giropostal](xref:es/Getting-started/configure-payments/payment-methods/cheque-money-order)
 * [Tarjeta de crédito(procesamiento manual)](xref:es/Getting-started/configure-payments/payment-methods/credit-card-manual-processing)
-* [Estándar de PayPal](xref:en/Getting-started/configure-payments/payment-methods/paypal-standard)
+* [Estándar de PayPal](xref:es/Getting-started/configure-payments/payment-methods/paypal-standard)
 * [Botones de pago inteligente de PayPal](xref:es/Getting-started/configure-payments/payment-methods/paypal-smart-payment-buttons)

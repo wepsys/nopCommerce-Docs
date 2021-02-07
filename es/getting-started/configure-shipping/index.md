@@ -1,6 +1,6 @@
 ---
 title: Configure shipping
-uid: en/getting-started/configure-shipping/index
+uid: es/getting-started/configure-shipping/index
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 ---
@@ -13,10 +13,10 @@ Tenga en cuenta que nopCommerce ofrece integración con optimizaciones y servici
 
 ## Ver también
 
-* [Configuración de envío](xref:en/Getting-started/configure-shipping/shipping-settings)
-* [Proveedores de envío](xref:en/Getting-started/configure-shipping/shipping-Suppliers/index)
-* [Almacenes](xref:en/Getting-started/configure-shipping/advanced-configuration/warehouse)
+* [Configuración de envío](xref:es/Getting-started/configure-shipping/shipping-settings)
+* [Proveedores de envío](xref:es/Getting-started/configure-shipping/shipping-Suppliers/index)
+* [Almacenes](xref:es/Getting-started/configure-shipping/advanced-configuration/warehouse)
 * [Fechas y rangos](xref:es/Getting-started/configure-shipping/advanced-configuration/Fechas-y-Rangos)
-* [Medidas](xref:en/Getting-started/configure-shipping/advanced-configuration/Measures)
-* [Puntos de recogida](xref:en/Getting-started/configure-shipping/advanced-configuration/pickup-points)
-* [Países, estados](xref:en/Getting-started/configure-shipping/advanced-configuration/countries-states)
+* [Medidas](xref:es/Getting-started/configure-shipping/advanced-configuration/Measures)
+* [Puntos de recogida](xref:es/Getting-started/configure-shipping/advanced-configuration/pickup-points)
+* [Países, estados](xref:es/Getting-started/configure-shipping/advanced-configuration/countries-states)

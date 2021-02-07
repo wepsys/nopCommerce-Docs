@@ -11,7 +11,7 @@ Los roles de los clientes en nopCommerce le permiten formar grupos de usuarios d
 
 Para gestionar los roles de los clientes vaya a **Customers → Customer roles**. La ventana *Roles de los clientes* se muestra de la siguiente manera:
 
-![Customer roles](_static/customer-roles/customerroles1.png)
+![Roles del cliente](_static/customer-roles/customerroles1.png)
 
 Haga clic en **Agregar nuevo** para agregar un nuevo rol de cliente. Aparecerá la ventana *Agregar un nuevo rol de cliente*:
 
